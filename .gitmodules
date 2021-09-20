@@ -1,0 +1,9 @@
+[submodule ".jqr/jqr"]
+	path = .jqr/jqr
+	url = ../../arcyber-work-role-jqs/ccd-3989.git
+[submodule ".jqr/jqr_product"]
+	path = .jqr/jqr_product
+	url = ../../arcyber-work-role-jqs/jqr_product.git
+[submodule ".jqr/ccd-basic-dev"]
+	path = .jqr/ccd-basic-dev
+	url = ../../arcyber-work-role-jqs/ccd-basic-dev.git
