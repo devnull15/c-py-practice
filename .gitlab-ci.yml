@@ -1,0 +1,26 @@
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+build-tex:
+  image: python
+  stage: .pre
+  script:
+    - python3 -m pip install jinja2 requests
+    - cd .jqr/jqr_product
+    - python3 jqr_generator.py -i ../jqr -t jqr_standard_template.tex
+  artifacts:
+    paths:
+      - .jqr/jqr_product/jqr_*_ccd.tex
+
+build-pdf:
+  image: texlive/texlive
+  stage: build
+  script:
+    - cd .jqr/jqr_product
+    - ln -s ../ccd-basic-dev ccd-basic-dev
+    - pdflatex jqr_*_ccd.tex
+    - pdflatex jqr_*_ccd.tex
+    - mv *.pdf ../../
+  artifacts:
+    paths:
+      - ./*.pdf
