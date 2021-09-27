@@ -1,0 +1,42 @@
+- type: TF
+  resp: 'true'
+  text: >-
+    The von Neumann architecture is also known as the von Neumann model or
+    Princeton architecture.
+  choices: []
+- type: MC
+  resp: 1
+  text: What is the von Neumann bottleneck?
+  choices:
+    - An instruction fetch and an ALU operation cannot occur simultaneously
+    - An instruction fetch and a data operation cannot occur at the same time
+    - A data operation and an ALU operation cannot occur simultaneously
+    - Crystal frequency is a limiting factor on ALU operations
+- type: TF
+  resp: 'true'
+  text: >-
+    The ENIAC has a von Neumann architecture and was programmed by setting
+    switches and inserting patch cables to route data and control signals
+    between various functional units.
+  choices: []
+- type: MA
+  resp:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+  text: Select the components that make up the von Neumann architecture.
+  choices:
+    - Processing unit
+    - Control unit
+    - Memory
+    - External mass storage
+    - Input and output mechanisms
+- type: TF
+  resp: 'false'
+  text: >-
+    One of the ways of mitigating the von Neuman bottleneck is the use of
+    instruction cache and a seperate data cache on the RAM side of the shared
+    bus.
+  choices: []

@@ -1,0 +1,29 @@
+- choices:
+  - adjacency stack
+  - neighbor sub-graph
+  - adjacency list
+  - adjacency matrix
+  - adjacency tree
+  hash: $2b$11$6DanxkL5hYYnKEg086eldO4XxZSyDX/NNUGtdatkotCKYGjUqQDd.
+  text: Which of the following are commonly used representations for associations
+    within a graph?
+  type: MA
+- choices: []
+  hash: $2b$11$WgyZLVqHQHmcyGIRIK8dnO/AS1xsGLBAgpTC/54F5Og7H21jUSGUy
+  text: A weighted graph is always directional
+  type: TF
+- choices: []
+  hash: $2b$11$ppEYgnO2phZC7.BBrMCnkehWpvs7BRBTY/5XluTihTdUUFmHOLbg.
+  text: In a ____ graph, node A might be able to reach node B without node B being
+    able to reach node
+  type: FIB
+- choices: []
+  hash: $2b$11$TzZXnS1ci742XdmP4vXkFucUXVozpb/f8vKyOaeRwCCvKKA4GtZhK
+  text: A weighted graph where each edge has the same weight is equivalent to an unweighted
+    graph
+  type: TF
+- choices: []
+  hash: $2b$11$r3W5kUPb29CPNpTF4ECRfu.jkKVDtKDRygMOJobtU.En1.bCdlHhe
+  text: In an unweighted graph, all shortest paths between the same two nodes will
+    traverse the same number of edges
+  type: TF

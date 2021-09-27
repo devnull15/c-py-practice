@@ -1,0 +1,100 @@
+- type: MC
+  resp: 0
+  text: A thread is a unit of the following.
+  choices:
+    - execution
+    - resource ownership
+    - independence
+    - protection
+- type: MC
+  resp: 1
+  text: What thread state would occur after requesting an I/O resource?
+  choices:
+    - Running
+    - Block
+    - Ready
+    - Suspended
+- type: MA
+  resp:
+    - 0
+    - 3
+  text: What memory space does a thread have access to? Select two.
+  choices:
+    - the heap of the current process
+    - process with a different PID than the current process
+    - other threads
+    - the current thread context
+- type: MC
+  resp: 2
+  text: Where is thread-related state information stored?
+  choices:
+    - Process Control Block
+    - User Stack
+    - Thread Control Block
+    - Kernel Stack
+- type: MA
+  resp:
+    - 0
+    - 1
+    - 2
+  text: >-
+    What are some reasons for using multiple threads instead of multiple
+    processes?
+  choices:
+    - faster termination time
+    - context switching
+    - faster creation time
+    - more memory available
+- type: MA
+  resp:
+    - 0
+    - 1
+    - 3
+  text: What are some good use cases for threads?
+  choices:
+    - foreground and background work
+    - asynchronous processing
+    - simple, single-use programs
+    - modular programming
+- type: FIB
+  resp: process
+  text: A thread lives within a _____, which is managed by the kernel.
+  choices: []
+- type: FIB
+  resp: queue
+  text: The data structure that holds ready threads is most often a _____
+  choices: []
+- type: FIB
+  resp: block
+  text: When a thread is waiting on an event, it will _____
+  choices: []
+- type: FIB
+  resp: lightweight
+  text: Kernel-level threads are also known as _____ processes.
+  choices: []
+- type: FIB
+  resp: context
+  text: The thread _____ is restored when control is passed to the thread.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: Termination of a process by the OS terminates all the related threads.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: >-
+    A new thread uses the register context and stack space of all the other
+    threads.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: One thread blocking can cause the whole process to block.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: The kernel handles scheduling of threads.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: The application uses a threads library to manage threads within the process.
+  choices: []

@@ -1,0 +1,67 @@
+- choices:
+  - 2
+  - 3
+  - 4
+  - 7
+  hash: $2b$11$hI15fDyvaVbvoAbBRWJ5P.1XaXP.AX.ROoHIeBXNtB3AtFZZ0BySq
+  text: ICMP operates at what layer of the OSI model?
+  type: MC
+- choices: []
+  hash: $2b$11$qrO1O1lgLHOANoDlgbTlbuW5sZPRMB7eWXZOH2BhKhT5BPoSZ.3dK
+  text: In the process of transmission, a packet makes it to a router but the router
+    has no knowledge of the destination network in its routing table. What would be
+    the ICMP type of the response (in number form)?.
+  type: FIB
+- choices: []
+  hash: $2b$11$CEEx6i7Ghbhvh4N7eNm.MuETiZvoVKTpbYC/.uhf2etok4bpYErNS
+  text: In the process of transmission, a packet makes it to a router but the router
+    has no knowledge of the destination network in its routing table. What would be
+    the ICMP code of the response in number form?
+  type: FIB
+- choices: []
+  hash: $2b$11$2mb7aHYVdjU56r3q//M3NeFhSfn8TVjBiPDj.m9x9QaRCFCxI4vsu
+  text: In the process of transmission, a packet makes it to the router directly connected
+    to the destination host. The router performs an ARP broadcast requesting the MAC
+    address of the destination host, but doesn't get a response. What would be the
+    ICMP type of the response in number form?
+  type: FIB
+- choices: []
+  hash: $2b$11$fa8V2KL18U/ivwcnZpk8nOjulu.SQ7StaRIWWS2vAQfuZ4ldAjGcS
+  text: In the process of transmission, a packet makes it to the router directly connected
+    to the destination host. The router performs an ARP broadcast requesting the MAC
+    address of the destination host, but doesn't get a response. What would be the
+    ICMP code of the response in number form?
+  type: FIB
+- choices: []
+  hash: $2b$11$09zUDYF6pRB9GSn8WEPQzuySNsdQlaqRtb1Je.zsLbSgyvUwrO09u
+  text: In the process of transmission, a packet gets caught in a routing loop. What
+    would be the ICMP type of the response in number form?
+  type: FIB
+- choices: []
+  hash: $2b$11$Msu2UHyTrDsJb.a6L.UBfutTgEndhIpLieSlU91kCSQeX0pCHUe/a
+  text: In the process of transmission, a packet gets caught in a routing loop. What
+    would be the ICMP code of the response in number form?
+  type: FIB
+- choices: []
+  hash: $2b$11$2Q19b6UsJLVbAfzEBiqxBOzCO8689E0PTuO5ka85ByFto23tKpl7u
+  text: In the process of transmission, a packet carrying DNS request makes it to
+    the destination Linux host, but the Linux hostis not running DNS.What would be
+    the ICMP type of the response in number form?
+  type: FIB
+- choices: []
+  hash: $2b$11$.o5hLkhE8XCMkjsbSP5f2OrCzsXcwE24ugzcd0RomwoyX3TZdUTCG
+  text: In the process of transmission, a packet carrying DNS request makes it to
+    the destination Linux host, but the Linux hostis not running DNS.What would be
+    the ICMP code of the response in number form?
+  type: FIB
+- choices:
+  - Respond with an ICMP type 3, Code 0
+  - Respond with an ICMP type 3, Code 1
+  - Respond with an ICMP type 3, Code 2
+  - Respond with an ICMP type 3, Code 3
+  - The router will send no response
+  hash: $2b$11$k/q324DH/Y29K9iY5pzr6eTYY1Qs1nPqjZ.qyNEcTDHTnXyFPmy72
+  text: A ping packet is traversing the network on its way to the destination. It
+    reaches a router that has no knowledge of the destination network. What would
+    the router do?
+  type: MC

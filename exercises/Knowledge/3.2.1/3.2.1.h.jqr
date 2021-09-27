@@ -1,0 +1,24 @@
+- choices:
+  - position
+  - key
+  - hierarchy
+  - reference
+  hash: $2b$11$cLKKwbl8y5HbuUSXK2z.V.kPEYElTgX4y25PyhXgOvQmgOm2T5dBy
+  text: Items in dictionaries can be referenced by what?
+  type: MC
+- choices: null
+  hash: $2b$11$XmTi.sHEncmz3zozKDPB7eUXNYcGSPrrWeh.9vg1A0WMeeTr9UGjm
+  text: Dictionaries are mutable.
+  type: TF
+- choices:
+  - integers
+  - text
+  - dictionaries
+  - any type
+  hash: $2b$11$lO1adNr7lKzmwEUiOJjL.epr49Ttd3anQroR75hdQb6ws3ll1zPie
+  text: Dictionaries may contain which data type?
+  type: MC
+- choices: null
+  hash: $2b$11$YyA0HYJdSOYGD2dkD64AKuso..u4BWmRzAA03T3pirfCxelpeLQ3K
+  text: Dictionary data is automatically sorted.
+  type: TF

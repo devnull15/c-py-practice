@@ -1,0 +1,29 @@
+- choices:
+  - string
+  - list
+  - float
+  - tuple
+  hash: $2b$11$.YGhKKZ8puwM2lYJXQzcC..UBvPoPsxfQwbacP6dmGM2aBV6Vcze6
+  text: Which is not a sequence type?
+  type: MC
+- choices: null
+  hash: $2b$11$Xm35wVyQ75PtoslJ16w/weV7z1erYVh6Rgx1FpPJJxeW8e3W2iMM6
+  text: Only mutable objects like lists, dictionaries, and sets may be changed in
+    place.
+  type: TF
+- choices:
+  - dictionary
+  - floating point
+  - boolean
+  - bytes
+  hash: $2b$11$.4wYYIu3Q/JH.UJGzhcDTuNgZnA/tD3j2G9SoUOsjRDRz1sd3CCg6
+  text: Which compound type can hold any kind of object?
+  type: MC
+- choices: null
+  hash: $2b$11$Xo/61GfU.6PpUNPAvFTfVO0DmzuO/Yh1Ndosz0ipJ2TqbIfyGEWhm
+  text: Python determines types automatically at run time.
+  type: TF
+- choices: null
+  hash: $2b$11$N8WCHGzDGqESXVkyU21/buszgK8d5AnbO3Zk6GzLQuTxdcOWu74VC
+  text: Python is a statically typed language.
+  type: TF

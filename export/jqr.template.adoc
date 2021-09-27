@@ -1,0 +1,208 @@
+= Job Qualification Record (JQR) 
+
+include::jqr_info.adoc[]
+
+<%!
+    import re
+    adoc_block_re = re.compile('^(----)', re.MULTILINE)
+    adoc_include_re = re.compile('^(include::)', re.MULTILINE)
+    adoc_table_col_re = re.compile('(\|)', re.MULTILINE)
+    def adoc_block_escape(text):
+      return adoc_block_re.sub('&#45;&#45;&#45;&#45;', text)
+
+    def adoc_table_escape(text):
+      return adoc_table_col_re.sub('&#124;',text)
+
+
+%>
+
+For +
+
+Cyberspace Capability Developer (CCD) +
+Basic Level +
+{empty} + 
+{empty} +
+
+:toc: macro
+
+
+Trainee Name: {trainee_name}
+
+Assign Date: {assign_date}
+
+Completion Date: 
+
+
+This JQR is required to be completed within 6 calendar months of receipt. 
+
+<<<
+
+toc::[]
+
+<<<
+
+== Prerequisites and Requirements
+
+*JQR Requirements:*
+
+To qualify as a Basic CCD, an individual must:
+
+* Successfully complete 100% of each section of this JQR
+* Complete the JQR within the time allotted
+* Successfully complete the Basic Skill Level Exam (BSLE)
+* Receive a Basic Certification recommendation from a BSLE validation panel.
+
+== Conditions and Standards
+
+=== Conditions
+.Conditions
+[cols="20,80"]
+|====
+| Code | Condition Scale for JQR
+| A | The individual will complete the JQR tasks without references or resources
+| B | The individual will complete the JQR tasks with open-source and personal references and resources in both a written and digital medium
+| C | The individual will complete the JQR tasks with open-source and personal references and resources, both written and digital, as well as a workstation with access to necessary tools and software
+|====
+
+
+
+=== Standards
+
+
+.Standard A
+[cols="5*"]
+|====
+s|A 
+4+s| In accordance with the below scale, demonstrate knowledge related to the associated task
+3+| Needs Retraining | Meets | Exceeds
+
+| 0 | 1 | 2 | 3 | 4
+
+| Trainee has no familiarity with the term or task 
+| Trainee has some familiarity with the term or task but cannot accurately define the term 
+| Trainee is able to define term or task but is unable to describe its use 
+| Trainee is able to accurately define the term or task and describe its use 
+| Trainee is able to accurately define the term or task, describe its use,  and shows advanced comprehension in the cognitive domain
+|====
+
+.Standard B
+[cols="5*"]
+|====
+s|B 
+4+s| In accordance with the scale below, demonstrate the ability to complete the specified task with compiled C code
+
+3+| Needs Retraining | Meets | Exceeds
+
+| 0 | 1 | 2 | 3 | 4
+
+| Trainee's code does not compile or does not address the problem defined in the task
+| Trainee writes code that compiles but does not address the task. 
+| Trainee writes code that compiles and is related to the task but it contains errors.
+| Trainee writes compiled code that completes the task.
+| Trainee writes compiled code that completes the task and includes
+ additional functionality, improved efficiency, or accounts for edge cases
+|====
+
+
+.Standard C
+[cols="5*"]
+|====
+s| C 
+4+s| In accordance with the scale below, demonstrate the ability to complete the specified task with python code
+
+3+| Needs Retraining | Meets | Exceeds
+
+| 0 | 1 | 2 | 3 | 4
+
+| Trainee writes code that causes syntax errors or does not address the 
+problem defined in the task.
+| Trainee writes code that executes without syntax errors but the code does 
+not address the task.
+| Trainee writes code that executes without syntax errors and is related to the task but contains runtime errors
+| Trainee writes code that executes without errors and completes the task 
+| Trainee writes code that executes without errors, completes the task and includes additional functionality, improved efficiency, or accounts for edge cases. 
+
+|====
+
+
+<<<
+
+== Modules A/B
+
+Modules A and B of this Job Qualification Record are captured in the US
+Army Cyber School Basic Officer Leadership Course Module, "Operations 
+in the Information Environment 101."
+
+The digital signature affirms that the undersigned 
+Senior CCD has verified that a trainee has the knowledge 
+and skills required in Modules A and B of the Basic CCD JQR.
+
+Accordingly, this JQR packet should include one of the three below items as
+an attachment:
+
+* an attached DA Form 1059 for 17D Basic Officer Leadership Course (BOLC)
+* an individual module completion certificate for OIE 101, signed by the OIE 101 module course manager or their representative. 
+* a complete, manual, paper module A and B, signed off by a Senior CCD
+
+
+Senior Signature:
+
+<<<
+
+== Module C
+
+Technical Knowledge, Skill and Ability for CCD JQR Module C is captured and 
+validated in a Git-based version control system. Each JQR item is graded by an
+automated Continuous Integration pipeline and manually validated in a code 
+review by a senior instructor. 
+
+The Trainee Record is archived for reference in digital version control
+and validated via digital signature in this pdf 
+
+%for top_item_key in jqr_items.keys():
+<% top_item = jqr_items[top_item_key] %>
+.${top_item_key} - ${top_item["topic"]}
+[cols="10,70,5,5,10"]
+|=====
+| Item # | Knowledge, Skill, or Ability | Condition | Standard | Complete
+% for item_key in top_item["items"].keys():
+<% item = top_item["items"][item_key] %>
+|
+%  if item["complete"]:
+{set:cellbgcolor:#96ff96}
+%  else: 
+{set:cellbgcolor:#ff7878}
+%  endif
+${item_key} | ${item["title"] | adoc_table_escape } | ${item["condition"]} | ${item["standard"]} | ${item["complete"]}
+
+%  for sub_item_key in item["sub_items"].keys():
+
+<% sub_item = item["sub_items"][sub_item_key] %>
+%  if sub_item["complete"]:
+{set:cellbgcolor:#96ff96}
+%  else: 
+{set:cellbgcolor:#ff7878}
+%  endif
+|
+ ${sub_item_key} | {nbsp}{empty}{nbsp}{empty}{nbsp}{empty}{nbsp}${sub_item["title"] | adoc_table_escape} | | | ${sub_item["complete"]}
+%  endfor
+| {set:cellbgcolor!} |  | | | 
+% endfor
+
+|=====
+
+<<<
+
+%endfor 
+
+
+
+The digital signature affirms that the undersigned 
+Senior CCD has verified that a trainee has the knowledge 
+and skills required in Module C of the Basic CCD JQR. 
+All JQR items were manually reviewed and verified
+by a senior CCD via digital, GitLab-based merge request
+approval and are available for review upon request.
+
+
+Senior Signature:

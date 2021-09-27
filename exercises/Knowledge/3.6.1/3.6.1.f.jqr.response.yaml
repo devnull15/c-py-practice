@@ -1,0 +1,39 @@
+- type: MA
+  resp:
+    - 1
+    - 2
+    - 4
+  text: What are some characteristics of use-after-free?
+  choices:
+    - >-
+      A local variable is declared and its contents are accessed after the
+      variable is no longer needed by the program.
+    - >-
+      Memory is allocated on the heap and a pointer to that memory is accessed
+      after the memory is freed.
+    - It can be used to access previously written items in memory.
+    - >-
+      Since the memory was freed, it is not possible to write to those sections
+      of memory that are not allocated.
+    - >-
+      Writes to previously freed memory can cause alterations to data, code path
+      changes, or code injection.
+- type: MA
+  resp:
+    - 0
+    - 2
+  text: What are some use-after-free mitigations?
+  choices:
+    - >-
+      Utilize a reference count that increments/decrements each time an object
+      on the heap is referenced/dereferenced. When it becomes zero, this
+      indicates that the object is no longer needed, then free the memory and
+      clear the reference.
+    - Pop items off the stack when they are no longer required.
+    - >-
+      When allocated memory is released, then set the pointer to said memory to
+      NULL.
+    - >-
+      If the item was declared in this fashion&#58; "int x = 1; int *ptr = &x;",
+      then clear it by "x = NULL; int *ptr = NULL;".
+    - Allocate everything in main memory and avoid using the stack.

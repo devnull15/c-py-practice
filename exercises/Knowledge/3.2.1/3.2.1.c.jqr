@@ -1,0 +1,24 @@
+- choices:
+  - multi-threading
+  - redundancy
+  - security
+  - encapsulation
+  hash: $2b$11$qJxetsjASR3CHmpcrNPr0uzQp7oh8A9UrwpJ6T1oValtusqlnWID2
+  text: Methods are used to impliment which software design concept?
+  type: MC
+- choices: null
+  hash: $2b$11$ZujFP8AAOJMeeKk3UzUkyO5LpjKn9uqVDHI3bBNFIMK48WlNrS5GC
+  text: Methods can be used to modify the properties of an object.
+  type: TF
+- choices:
+  - the same name as the parent class with '_init_' appended
+  - the attribute name with 'get_' appended
+  - the same name as the parent method
+  - the class name with the attribute prepended
+  hash: $2b$11$VpBSeZQFmVcqOdUNyjbYCuYI2boo4DKwk0AIXSh8N.8e5.XwbSYey
+  text: What method name is used to override a method from a parent class?
+  type: MC
+- choices: null
+  hash: $2b$11$0EHxsWTiAO0Ejlumlc7Z3.lc3uAU7dRTPEd88tSpwyG8AQBXn6cV6
+  text: Methods are associated with classes and their objects.
+  type: TF

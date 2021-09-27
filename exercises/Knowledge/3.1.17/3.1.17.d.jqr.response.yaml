@@ -1,0 +1,49 @@
+- type: MC
+  resp: 1
+  text: Can be executed directly.
+  choices:
+    - shared object
+    - executable
+    - dynamically-linked library
+- type: MC
+  resp: 2
+  text: >-
+    A windows implementation of the shared library, which is loaded by
+    dlopen/dlsym.
+  choices:
+    - shared object
+    - executable
+    - dynamically-linked library
+- type: MC
+  resp: 0
+  text: A shared library which must be present at runtime and compile time.
+  choices:
+    - shared object
+    - executable
+    - dynamically-linked library
+- type: FIB
+  resp: rundll32
+  text: The windows program _____ can execute functions within a DLL.
+  choices: []
+- type: FIB
+  resp: compiled
+  text: >-
+    The biggest difference between a DLL and a static library is that DLL is
+    linked during runtime, whereas the static library is _____ with the program.
+  choices: []
+- type: FIB
+  resp: dynamically
+  text: A ____ linked executable links to shared objects at run time.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: A library can also be called an object file.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: A DLL does not need to be present at load time.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: Both an executable and a library can be executed directly.
+  choices: []

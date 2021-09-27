@@ -1,0 +1,35 @@
+- type: MA
+  resp:
+    - 2
+    - 3
+  text: >-
+    Which of the following are commonly used representations for associations
+    within a graph?
+  choices:
+    - adjacency stack
+    - neighbor sub-graph
+    - adjacency list
+    - adjacency matrix
+    - adjacency tree
+- type: TF
+  resp: 'false'
+  text: A weighted graph is always directional
+  choices: []
+- type: FIB
+  resp: directed
+  text: >-
+    In a ____ graph, node A might be able to reach node B without node B being
+    able to reach node
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    A weighted graph where each edge has the same weight is equivalent to an
+    unweighted graph
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    In an unweighted graph, all shortest paths between the same two nodes will
+    traverse the same number of edges
+  choices: []

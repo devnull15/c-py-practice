@@ -1,0 +1,14 @@
+- type: FIB
+  resp: four
+  text: pthread_create() takes how many numbers of arguments.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: pthread_create() will return the a thread ID on success.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    Detached thread can be created with appropriate flags to the
+    pthread_create() function.
+  choices: []

@@ -1,0 +1,23 @@
+- choices: []
+  hash: $2b$11$U8eT5yKFbT9nFi8EAeLN5eXBbuF/10dkRDIju.qPQqHvG75du7zTu
+  text: Dijkstra's algorithm tracks the overall shortest path weight from source node
+    s to all other nodes in the graph
+  type: TF
+- choices:
+  - linked-list
+  - array
+  - dictionary
+  - set
+  hash: $2b$11$8eadnlj3Gmu4RLiKew.XHe5pj1cLoFO2wWa4d2ugN9yKCarFDAPHq
+  text: What data structure is most commonly used to track unexplored nodes in Dijkstra's
+    algorithm?
+  type: MC
+- choices:
+  - n2 has not been visited
+  - n2 is a neighbor to n1
+  - Edge (n1,n2) is the lowest weight amongst neighbors to n1
+  - n2 has shortest path to source node s
+  hash: $2b$11$wO4Hso8j/Ta6Lda4lAIMH.whcGncdzPUUAjpjmZ7p.dd6FWWErgeu
+  text: Assuming the previously explored node is n1, Dijkstra's algorithm determines
+    the next node, n2, to explore according to what criteria (mark all that apply)?
+  type: MA

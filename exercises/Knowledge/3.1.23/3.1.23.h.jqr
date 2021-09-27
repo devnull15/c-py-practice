@@ -1,0 +1,24 @@
+- choices:
+  - program counter
+  - process state
+  - process number
+  - process identifier
+  hash: $2b$11$xcO1JtriL0DHeQFeIEf6EeL6wrbbo1KUXCCqfOdfbI2caUBkroGli
+  text: Most operating systems identify processes according to a unique ________ .
+  type: MC
+- choices:
+  - int
+  - tid
+  - pid
+  - pthread_t
+  hash: $2b$11$MKe28xjA9T9d/Y7CARPiFeYK4BeECBYP1J.YsU5PMaL1Ak6c5who6
+  text: What is the return type for the function pthread_self()?
+  type: MC
+- choices:
+  - pthread_join()
+  - pthread_cond_wait()
+  - pthread_cancel()
+  - pthread_self()
+  hash: $2b$11$90iV1KAPyInTwCPjtqNaguozjqR6I/OrKO/FoiPlxn/jkEo.26qL6
+  text: Function that will never return an ERRORS?
+  type: MC

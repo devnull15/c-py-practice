@@ -1,0 +1,34 @@
+- type: TF
+  resp: 'true'
+  text: Some examples of objects in Python are the Integer, List, and Dictionary.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: Objects are not instantiated classes.
+  choices: []
+- type: MC
+  resp: 2
+  text: What is the correct way of instantiating of a class in Python?
+  choices:
+    - <object-name> = <class-name>(self, <arguments>)
+    - <object-name> = new <class-name>(<arguments>)
+    - <object-name> = <class-name>(<arguments>)
+    - <class-name> <object-name> = <class-name>(<arguments>)
+- type: TF
+  resp: 'false'
+  text: A class constructor must always be explicitly defined by the programmer
+  choices: []
+- type: MA
+  resp:
+    - 0
+    - 2
+  text: What is the purpose of a class constructor?
+  choices:
+    - Initiate attributes within the new object
+    - To free memory on the stack before the class is created
+    - Initiate attributes within the new objects parent
+    - All of the above
+- type: TF
+  resp: 'true'
+  text: Each object must be uniquely named.
+  choices: []

@@ -1,0 +1,12 @@
+- choices:
+  - global
+  - inheritance
+  - casting
+  - type hints
+  hash: $2b$11$0cSUmmiju5HbNR4fY/PBDuD1LhibeJkEwe9dLWvLI.huNrlQ95otC
+  text: What mechanism may indicate a function's return type?
+  type: MC
+- choices: null
+  hash: $2b$11$d8WsuOrxxqXXnkP1RnpRf.ZIJQLpCFgB1Iq9BHfgyMpkJMPBUvw5C
+  text: Python does not pass arguments or return values by reference.
+  type: TF

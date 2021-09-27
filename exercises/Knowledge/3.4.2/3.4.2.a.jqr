@@ -1,0 +1,43 @@
+- choices: []
+  hash: $2b$11$x.2.atQdyr3SUNr6NBBl6.v6KPhEbCVfDHzGoYiXbWNqFmk5DNTdm
+  text: Depth-first search (DFS) is an algorithm for searching a graph or tree data
+    structure. The algorithm starts at the root (top) node of a tree and goes as far
+    as it can down a given branch (path), then backtracks until it finds an unexplored
+    path, and then explores it.
+  type: TF
+- choices:
+  - O(|V||E|)
+  - O(|V|+|E|)
+  - O(|V|+2|E|)
+  - O(2(|V|+|E|))
+  hash: $2b$11$WT/NGg6nXilh5zDCoAfZN.UO/Nmr4QXjdJ.15ISS19TR6ul7gUxBO
+  text: Assuming an adjacency list graph representation and given that V represents
+    the set of vertices and E represents the set of edges, what is the time complexity
+    of a DFS search of a connected graph
+  type: MC
+- choices:
+  - - 5
+    - 3
+    - 1
+    - 4
+    - 2
+  - - 5
+    - 3
+    - 1
+    - 2
+    - 4
+  - - 5
+    - 3
+    - 4
+    - 1
+    - 2
+  - - 5
+    - 3
+    - 2
+    - 4
+    - 1
+  hash: $2b$11$EfRwU/2P9gu36DByY3LLm.9qmAfl6wrWd.iVhV1MeR8QpAoYOOy.i
+  text: Given a binary tree where the following items are inserted from left to right&#58;
+    [5,3,1,4,2], what order will DFS traverse the nodes assuming preorder traversal
+    and assuming smaller items go to the left node and larger items to the right?
+  type: MC

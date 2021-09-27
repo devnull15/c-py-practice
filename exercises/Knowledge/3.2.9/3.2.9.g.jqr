@@ -1,0 +1,39 @@
+- choices:
+  - Start a program
+  - Class destructor
+  - Class constructor
+  - Initial decleration of a class
+  hash: $2b$11$1ABLKvlUYoYIKJmhy8M7d.V3iv/B6cYwZ6/QKWa2Zm0WdhQwLZB3W
+  text: __init__ is a reserved method in Python, what does it do?
+  type: MC
+- choices:
+  - Start a program
+  - Class destructor
+  - Class constructor
+  - Initial decleration of a class
+  hash: $2b$11$MVqakjz8LixIYJba5zKwbOzqF7Nc/HXTADU0hPgexoyTgfHmZZpIi
+  text: __del__ is a reserved method in Python, what does it do?
+  type: MC
+- choices: []
+  hash: $2b$11$8FNlmI0u6IVGZnoxD5bjy.yffMHh8YHY4aW4xCe2v6LQH6h2qQ/Pq
+  text: Python creats a default constructor for every class, it is prefered to one
+    the programmer writes.
+  type: TF
+- choices:
+  - To initialize class variables
+  - To modify a child class object
+  - To determine if the serial port works properly before allowing the serial object
+    to instantiate
+  - To modify an inherited object
+  hash: $2b$11$6B4ZjMnaAZQNvteD94L0lujYBpgy2JISbuTy5DsDfwll4xI1f3inC
+  text: Select possible reasons for a programmer to use the class constructor in Python
+  type: MA
+- choices: []
+  hash: $2b$11$I19.1Bpg0tgQHRS.hCRYDO99FgeFF/cNMBNcstntsnw6yrJaf/8.S
+  text: Python has native memory management, therefore a programmer does not need
+    to manage garbage collection manually.
+  type: TF
+- choices: []
+  hash: $2b$11$njcMmROHnv44Xqn72fLXi.WDi9WUfz147aDE5jb0l7si3kjb.7HWK
+  text: A classes parent constructor can be called from inside the current constructor.
+  type: TF

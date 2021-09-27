@@ -1,0 +1,21 @@
+- type: TF
+  resp: 'false'
+  text: A linked list is a data structure that occupies a contiguous block of memory
+  choices: []
+- type: FIB
+  resp: 'null'
+  text: The last item in a linked list contains a pointer to ______.
+  choices: []
+- type: MA
+  resp:
+    - 0
+    - 1
+    - 2
+    - 3
+  text: Which of the following can be represented using a linked list?
+  choices:
+    - binary search tree
+    - graph
+    - stack
+    - queue
+    - array

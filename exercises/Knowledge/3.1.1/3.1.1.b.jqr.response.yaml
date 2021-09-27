@@ -1,0 +1,34 @@
+- type: MC
+  resp: 3
+  text: What is true in regards to main() function return codes?
+  choices:
+    - Main() must always return a 0.
+    - Main() cannot be defined to return an integer.
+    - >-
+      Returning an integer other than 0 in an int main() will cause a program
+      crash.
+    - >-
+      If main() is defined to return an integer, it can return any valid
+      integer.
+- type: TF
+  resp: 'true'
+  text: >-
+    Using the return keyword in main() ends the program, and all lines in main()
+    after the return statement will be ignored.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: >-
+    The return statement can only return error codes. Actual data is always
+    returned using a different method.
+  choices: []
+- type: MC
+  resp: 3
+  text: What is NOT a reason that we return 0?
+  choices:
+    - It is required to return an int value in an int main()
+    - >-
+      It is good programming practice to return 0 to mark a successful
+      completion
+    - It allows outside sources to know that the program completed successfully
+    - It is required to specifically return a 0 to mark a successful completion

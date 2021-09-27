@@ -1,0 +1,94 @@
+- type: MC
+  resp: 2
+  text: Which portion of a Portable Executable (PE) is first?
+  choices:
+    - COFF Header
+    - Section Table
+    - MSDOS Stub
+    - Optional Headers
+- type: MC
+  resp: 0
+  text: Which portion of a PE contains the machine type?
+  choices:
+    - COFF Header
+    - Section Table
+    - MSDOS Stub
+    - Optional Headers
+- type: MC
+  resp: 3
+  text: Which section is meant mostly for image files?
+  choices:
+    - COFF Header
+    - Section Table
+    - MSDOS Stub
+    - Optional Headers
+- type: MC
+  resp: 1
+  text: >-
+    This section comes directly after the optional headers, and it's offset is
+    not stored in the file header.
+  choices:
+    - COFF Header
+    - Section Table
+    - MSDOS Stub
+    - Optional Headers
+- type: MC
+  resp: 1
+  text: Which is not a predefined section for an application built for Windows NT?
+  choices:
+    - .text
+    - .meta
+    - .idata
+    - .debug
+- type: MC
+  resp: 0
+  text: The executable code of a PE is located in this section.
+  choices:
+    - .text
+    - .meta
+    - .idata
+    - .debug
+- type: FIB
+  resp: bss
+  text: >-
+    The _____ section houses things such as static variables and other
+    uninitialized variables.
+  choices: []
+- type: FIB
+  resp: rdata
+  text: The _____ section houses things such as string literals and constants.
+  choices: []
+- type: FIB
+  resp: MZ
+  text: A PE has a two-letter magic signature of _____
+  choices: []
+- type: FIB
+  resp: '64'
+  text: The MS-DOS header takes up _____ bytes of the PE.
+  choices: []
+- type: FIB
+  resp: data
+  text: >-
+    All variables not stored in the bss or rdata section are stored in the _____
+    section.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: The real-mode stub program is an actual MS-DOS program.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: There are four types of image file signatures defined in winnt.h
+  choices: []
+- type: TF
+  resp: 'false'
+  text: In PE executables, the optional header is optional.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: The edata section defines what functions can be exported from the PE.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: Each section header is 40 bytes in length.
+  choices: []

@@ -1,0 +1,24 @@
+- choices:
+  - by offset
+  - by value
+  - by get and set
+  - by names
+  hash: $2b$11$3oscejxfz.jqu18XqbicEOQ/KIfzGB987tE/w9q7AV/ZdScutZs32
+  text: How are tuple items accessed?
+  type: MC
+- choices: null
+  hash: $2b$11$he3iP1VnzxhMgWCkPMFXWuyzP5HR3DyqOBq5WAV0HvEpDRMffj6ce
+  text: Tuples are immutable.
+  type: TF
+- choices: null
+  hash: $2b$11$2JZ3MFfU.LHvmZjvhjvUWe857b20BNGsqFiyK2XZ1h9WxsLO4opd6
+  text: Tuples can grow and shrink.
+  type: TF
+- choices:
+  - strings
+  - dictionaries
+  - tuples
+  - any types
+  hash: $2b$11$C1ickMl.mm4rwccJ02I4XOj70LeLXxbl7xRxRlOKYrqVPywS2AkZK
+  text: What types of objects may a tuple contain?
+  type: MC

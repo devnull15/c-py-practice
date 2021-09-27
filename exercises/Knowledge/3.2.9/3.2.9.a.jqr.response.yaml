@@ -1,0 +1,87 @@
+- type: MA
+  resp:
+    - 0
+    - 1
+    - 2
+    - 3
+  text: What are the four pillars of object-oriented development?
+  choices:
+    - Abstraction
+    - Encapsulation
+    - Inheritance
+    - Polymorphism
+    - Initialized Data
+    - Text (Code)
+- type: MC
+  resp: 2
+  text: Define Inheritance?
+  choices:
+    - >-
+      The process of hiding the working style of an object and showing only the
+      required information of the object in an understandable manner.
+    - >-
+      Refers to wrapping up data and member function (Method) together into a
+      single unit i.e. class
+    - >-
+      The ability of creating a new class from an existing class. When an object
+      acquires the property of another object.
+    - >-
+      Refers to the ability to use the same name for what may be different
+      actions on derived objects of base classes.
+    - Initialized Data
+    - Text (Code)
+- type: MC
+  resp: 3
+  text: Define Polymorphism?
+  choices:
+    - >-
+      The process of hiding the working style of an object and showing only the
+      required information of the object in an understandable manner.
+    - >-
+      Refers to wrapping up data and member function (Method) together into a
+      single unit i.e. class
+    - >-
+      The ability of creating a new class from an existing class. When an object
+      acquires the property of another object.
+    - >-
+      Refers to the ability to use the same name for what may be different
+      actions on derived objects of base classes.
+    - Initialized Data
+    - Text (Code)
+- type: TF
+  resp: 'true'
+  text: >-
+    Abstraction is about hiding unwanted details while giving out most essential
+    details, while Encapsulation means hiding the code and data into a single
+    unit, a class.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: Classes provide a means of bundling data and functionality together.
+  choices: []
+- type: MA
+  resp:
+    - 0
+    - 3
+  text: What are the two generic parts of a class?
+  choices:
+    - Methods
+    - Heap
+    - Inheritance
+    - Attributes
+    - Initialized Data
+    - Text (Code)
+- type: TF
+  resp: 'false'
+  text: The class keyword isn't required to define a class.
+  choices: []
+- type: MC
+  resp: 2
+  text: What class constructor is properly defined?
+  choices:
+    - _init_(self, attr1_val, attr2_val)
+    - __init__(attr1_val, attr2_val, attr3_val)
+    - __init__(self, attr1_val, attr2_val, attr3_val)
+    - init(self, attr1_val, attr2_val)
+    - Initialized Data
+    - Text (Code)

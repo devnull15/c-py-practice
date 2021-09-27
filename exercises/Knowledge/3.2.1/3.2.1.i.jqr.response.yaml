@@ -1,0 +1,24 @@
+- type: MC
+  resp: 2
+  text: Which is not a list method?
+  choices:
+    - append
+    - sort
+    - values
+    - insert
+- type: TF
+  resp: 'false'
+  text: Lists are immutable.
+  choices: null
+- type: MC
+  resp: 3
+  text: What types of objects may a list contain?
+  choices:
+    - strings
+    - dictionaries
+    - lists
+    - any types
+- type: TF
+  resp: 'true'
+  text: List items are ordered by their positions.
+  choices: null

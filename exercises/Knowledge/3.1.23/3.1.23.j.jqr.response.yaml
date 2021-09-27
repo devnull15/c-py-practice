@@ -1,0 +1,44 @@
+- type: MA
+  resp:
+    - 0
+    - 3
+  text: >-
+    What are the two atomic operations permissible on semaphores? (Select all
+    that apply)
+  choices:
+    - wait
+    - hold
+    - stop
+    - post
+- type: MC
+  resp: 1
+  text: What is the main disadvantage of spinlocks?
+  choices:
+    - Not sufficient for many threads
+    - Require busy waiting
+    - Unreliable output
+    - They are too complex to program
+- type: MC
+  resp: 2
+  text: A semaphore _____________________ .
+  choices:
+    - Is a binary mutex
+    - Can be accessed from only one thread
+    - Can be accessed from multiple threads
+    - Cannot be accessed by main threads
+- type: MC
+  resp: 1
+  text: A mutex _____________________ .
+  choices:
+    - Is a binary semaphore
+    - Can be accessed from only one thread
+    - Can be accessed from multiple threads
+    - Cannot be accessed by main threads
+- type: MC
+  resp: 0
+  text: A binary semaphore is a semaphore with integer values of 0 and _______.
+  choices:
+    - 1
+    - '-1'
+    - 0.5
+    - 2

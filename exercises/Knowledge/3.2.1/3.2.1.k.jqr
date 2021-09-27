@@ -1,0 +1,12 @@
+- choices:
+  - enables the '->' operator
+  - creates and extracts packed binary data
+  - defines lists of lists
+  - enables mixed type structures
+  hash: $2b$11$zkRWU9vjy.TOaZQOz6EqbOZpkE.B6bszh0xNx.7tdwiedWzelZlWa
+  text: The struct module enables what?
+  type: MC
+- choices: null
+  hash: $2b$11$2I/.6eAJVcNlMWHS3CCpFOcTmXJ5oHNdrPZqHeEeapJBVnp.Zc65O
+  text: Packed binary data is useful when reading binary files.
+  type: TF

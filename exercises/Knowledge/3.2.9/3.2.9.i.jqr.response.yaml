@@ -1,0 +1,35 @@
+- type: TF
+  resp: 'false'
+  text: >-
+    Python has the ability to make variables private like there is in Java and
+    C#.
+  choices: []
+- type: MC
+  resp: 3
+  text: What is the purpose of the built-in function property()?
+  choices:
+    - Sets and gets program attributes
+    - Provide computer properties to the program
+    - Provide computer and OS properties to the program
+    - Force access of class attributes through a getter and setter.
+- type: MA
+  resp:
+    - 0
+    - 1
+    - 2
+  text: Why are class attribute getters and setters important?
+  choices:
+    - Protect an attribute from be set to an invalid value
+    - >-
+      Perform processing on an attribute before returning it to the calling
+      method
+    - Protect the objects integrity
+    - To Instantiate and garbage collect an object
+- type: MC
+  resp: 1
+  text: What is the purpose of the decorator @property?
+  choices:
+    - Provide computer properties to the program
+    - Force access of class attributes through a getter and setter.
+    - Provide computer and OS properties to the program
+    - Sets and gets program attributes

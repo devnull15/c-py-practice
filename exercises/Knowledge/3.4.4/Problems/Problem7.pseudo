@@ -1,0 +1,33 @@
+# We want to sort Array in ascending order.
+# Suppose A is an array of N Values, 
+# digits <- maximum number of digits in the largest element (also know as k)
+
+
+FUNTION RadixSort(A, digits)
+    set digitPlace = 1;    
+
+    for i = 1 to digits                         
+        set count[10] = {0}
+        for k = 1 to 10                         
+            count[k] = count[k] + count[k-1]
+        END for
+
+        for j = 1 to length(A)                  
+            temporary = (A[j]/digitPlace)%10
+            count[temporary]  = count[temporary] + 1
+        END for
+
+        for j = length(A) downto 1              
+            temporary = (A[j]/digitPlace)%10
+            result[count[temporary]-1] = A[j]
+            count[temporary]  = count[temporary] - 1
+        END for
+
+        for j = 1 to length(A)                  
+            a[j] = result[j]
+        END for
+        digitplace = digitplace * 10
+    END for
+END
+
+

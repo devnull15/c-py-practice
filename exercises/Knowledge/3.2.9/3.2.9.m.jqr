@@ -1,0 +1,17 @@
+- choices: []
+  hash: $2b$11$ydg8c2o6XqCqvvf0xpDz5Of96slhxfbsVYJEuildTmyE.MGrr6mF6
+  text: The adapter design pattern is used to wrap incompatible objects so that they
+    can interface.
+  type: TF
+- choices:
+  - To use a class that doesn't have a required interface
+  - To make incompatible interface work together
+  - To provide alternative interfaces for use in a factory object
+  - To ensure only one instance of the object is created
+  hash: $2b$11$g/pP3pOPlzmCIWvpAW7LkOPCs8t8Yhjbo3hOOoks0rO1bzFS2srQy
+  text: Reasons to use the adapter design pattern.
+  type: MA
+- choices: []
+  hash: $2b$11$yWbbfztYaKHj2WQtKot4zedPOLuAqGpJOsJoFZ32.aLcq0oBWLNC2
+  text: The adapter design pattern is relatable to inheritance.
+  type: TF

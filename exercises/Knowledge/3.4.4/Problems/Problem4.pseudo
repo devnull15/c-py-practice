@@ -1,0 +1,16 @@
+# We want to sort Array in ascending order.
+# Suppose A is an array of N Values, 
+
+
+FUNCTION InsertionSort(array A)
+    for i = 1 to length(A) - 1                      
+        set value = A[i]
+        set position = i - 1
+        while position >= 0 and A[position] > value  
+                A[position + 1] = A[position]
+                position = position - 1
+        END while
+        A[position + 1] = value 
+    END for
+END
+

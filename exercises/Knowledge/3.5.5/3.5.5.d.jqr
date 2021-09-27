@@ -1,0 +1,42 @@
+- choices:
+  - Power applied, BIOS loaded, POST, System Config, OS Load, System Utilities are
+    loaded, User Authenticated
+  - Power applied, POST, BIOS loaded, OS Load, System Utilities are loaded, System
+    Config, User Authenticated
+  - Power applied, POST, BIOS loaded, OS Load, System Utilities are loaded, System
+    Config, User Authenticated
+  - Power applied, BIOS loaded, POST, OS Load, System Config, System Utilities are
+    loaded, User Authenticated
+  hash: $2b$11$qh6MITPLC3c9dYPnnnkb7uhyfA6yfyhWPW6xRprH.XzMxh47UerPm
+  text: What is the correct order of the boot process?
+  type: MC
+- choices:
+  - Main Memory
+  - I/O Devices
+  - Disk Drives
+  - All of the above
+  - None of the above
+  hash: $2b$11$siFhhFPVXv70K7lLbNEYW.nqDuYgVf5A7ZlxBGdv8aWqL7g29lb4K
+  text: What systems does POST check?
+  type: MC
+- choices:
+  - RAM
+  - POST
+  - BIOS
+  - Hard Disk
+  hash: $2b$11$JaF5klHFGQFaKJCsZI0F/u6aA/89OXcT/n6oPzjMIPnfVX7Ov3QHS
+  text: What part of the computer looks for and loads the OS?
+  type: MC
+- choices:
+  - POST
+  - OS Loads
+  - System Configuration
+  - System Utility Loads
+  hash: $2b$11$J3XSksR1u/y95cUJDxiwweuvFPjOBd9wyranTEW7srQCJyDsA7KNq
+  text: What step includes the loading of system drivers into RAM?
+  type: MC
+- choices: []
+  hash: $2b$11$OhwlOhmkJGaazexSV5Bxjum0.m7ZrZEt3.ic0xMe4KZdR7wwwv9TC
+  text: The kernel is the most important part of the operating system that manages
+    memory and devices, maintains computer clock, starts applications.
+  type: TF

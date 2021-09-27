@@ -1,0 +1,58 @@
+- type: MA
+  resp:
+    - 0
+    - 3
+  text: Which of these are a scheduling policy?
+  choices:
+    - Round Robin
+    - Largest-Value-First
+    - Priority Schedule
+    - First-Come, First-Served
+- type: MC
+  resp: 0
+  text: What effect does first-come-first-served have on processes?
+  choices:
+    - processes with heavy I/O suffer
+    - processes with a large number of threads suffer
+    - none
+    - FCFS is not a scheduling policy
+- type: MA
+  resp:
+    - 0
+    - 2
+    - 3
+  text: What are three types of scheduling? (Choose three).
+  choices:
+    - Medium-term
+    - Near-term
+    - Long-term
+    - Short-term
+    - Immediate
+- type: FIB
+  resp: selection
+  text: The _____ function determines which process is selected for execution.
+  choices: []
+- type: FIB
+  resp: longest
+  text: First-come-first-serve selections the process with the _____ wait time.
+  choices: []
+- type: FIB
+  resp: preemptive
+  text: Round-robin is a _____ scheduling policy.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    Round robin allows each process a certain amount of time, then interrupts
+    and executs a FCFS algorithm.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    FCFS has a bias towards long processes, which is solved by the Shortest
+    Process Next scheduling policy.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: Round robin does not have a process-length bias.
+  choices: []

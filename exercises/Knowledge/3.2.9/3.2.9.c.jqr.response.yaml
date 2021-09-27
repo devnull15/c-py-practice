@@ -1,0 +1,30 @@
+- type: TF
+  resp: 'true'
+  text: >-
+    A class doesn't consume any memory, however an object takes memory when one
+    is created.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: A class is used to bind data as well as methods together as a single unit.
+  choices: []
+- type: MA
+  resp:
+    - 0
+    - 3
+  text: A static method?
+  choices:
+    - Belongs to a class
+    - Belongs to an object
+    - Isn't available in Python
+    - Can’t access or modify class state
+- type: TF
+  resp: 'false'
+  text: Object names from the same class are not required to have unique names.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    Every class should have its own constructor to properly initialise the newly
+    created object.
+  choices: []

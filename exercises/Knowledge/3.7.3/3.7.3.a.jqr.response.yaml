@@ -1,0 +1,199 @@
+- type: FIB
+  resp: '4'
+  text: An IPv4 address is a total of ___ bytes. Response should be in digits (0-9)
+  choices: []
+- type: FIB
+  resp: '32'
+  text: An IPv4 address is a total of ___ bits. Response should be in digits (0-9)
+  choices: []
+- type: FIB
+  resp: unicast
+  text: In this mode, data is sent only to one destined host.
+  choices: []
+- type: FIB
+  resp: broadcast
+  text: In this mode, a packet is address to all of the host in a network segment.
+  choices: []
+- type: FIB
+  resp: multicast
+  text: >-
+    In this mode, a packet is sent to neither a single host, nor all hosts, in a
+    segment.
+  choices: []
+- type: FIB
+  resp: mask
+  text: >-
+    This 32bit address is ANDed with the IP address to determine the network
+    address. It distinguishes the bits in a network address that are allocated
+    to the network.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: 'This is a valid IPv4 address: 192.168.250.99'
+  choices: []
+- type: TF
+  resp: 'false'
+  text: 'This is a valid IPv4 address: 10.270.181.321'
+  choices: []
+- type: MA
+  resp:
+    - 1
+    - 3
+    - 6
+  text: Select the valid IPV4 class A addresses
+  choices:
+    - 10.70.280.1
+    - 171080569
+    - 192.168.23.1
+    - 2046820353
+    - 3232237313
+    - 172.30.250.8
+    - 2131035397
+    - 172.0.0.1
+- type: MA
+  resp:
+    - 5
+    - 7
+  text: Select the valid IPV4 class B addresses
+  choices:
+    - 10.70.280.1
+    - 171080569
+    - 192.168.23.1
+    - 2046820353
+    - 3232237313
+    - 172.30.250.8
+    - 2131035397
+    - 172.0.0.1
+- type: MA
+  resp:
+    - 2
+    - 4
+  text: Select the valid IPV4 class C addresses
+  choices:
+    - 10.70.280.1
+    - 171080569
+    - 192.168.23.1
+    - 2046820353
+    - 3232237313
+    - 172.30.250.8
+    - 2131035397
+    - 172.0.0.1
+- type: MA
+  resp:
+    - 6
+  text: Select the valid loopback addresses
+  choices:
+    - 10.70.280.1
+    - 171080569
+    - 192.168.23.1
+    - 2046820353
+    - 3232237313
+    - 172.30.250.8
+    - 2131035397
+    - 172.0.0.1
+- type: MA
+  resp:
+    - 1
+    - 2
+    - 4
+    - 5
+  text: Select the valid private addresses (not including loopback)
+  choices:
+    - 10.70.280.1
+    - 171080569
+    - 192.168.23.1
+    - 2046820353
+    - 3232237313
+    - 172.30.250.8
+    - 2131035397
+    - 172.0.0.1
+- type: SA
+  resp: 255.255.255.0
+  text: >-
+    Given this IP address, 192.168.200.54/24, identify the network mask in
+    dot-decimal notation.
+  choices: []
+- type: SA
+  resp: 192.168.200.0
+  text: >-
+    Given this IP address, 192.168.200.54/24, identify the network address in
+    dot-decimal notation.
+  choices: []
+- type: SA
+  resp: 192.168.200.255
+  text: >-
+    Given this IP address, 192.168.200.54/24, identify the broadcast address in
+    dot-decimal notation.
+  choices: []
+- type: SA
+  resp: 192.168.200.254
+  text: >-
+    Given this IP address, 192.168.200.54/24, identify the host maximum address
+    in dot-decimal notation.
+  choices: []
+- type: SA
+  resp: 192.168.200.1
+  text: >-
+    Given this IP address, 192.168.200.54/24, identify the host minimum address
+    in dot-decimal notation.
+  choices: []
+- type: SA
+  resp: 255.255.255.224
+  text: >-
+    Given this IP address, 192.168.100.32/27, identify the network mask in
+    dot-decimal notation.
+  choices: []
+- type: SA
+  resp: 192.168.100.32
+  text: >-
+    Given this IP address, 192.168.100.32/27, identify the network address in
+    dot-decimal notation.
+  choices: []
+- type: SA
+  resp: 192.168.100.63
+  text: >-
+    Given this IP address, 192.168.100.32/27, identify the broadcast address in
+    dot-decimal notation.
+  choices: []
+- type: SA
+  resp: 192.168.100.62
+  text: >-
+    Given this IP address, 192.168.100.32/27, identify the host maximum address
+    in dot-decimal notation.
+  choices: []
+- type: SA
+  resp: 192.168.100.33
+  text: >-
+    Given this IP address, 192.168.100.32/27, identify the host minimum address
+    in dot-decimal notation.
+  choices: []
+- type: SA
+  resp: 172.19.64.0
+  text: >-
+    Given this IP address, 172.19.123.17/18, identify the network address in
+    dot-decimal notation.
+  choices: []
+- type: SA
+  resp: 255.255.192.0
+  text: >-
+    Given this IP address, 172.19.123.17/18, identify the network mask in
+    dot-decimal notation.
+  choices: []
+- type: SA
+  resp: 172.19.127.255
+  text: >-
+    Given this IP address, 172.19.123.17/18, identify the broadcast address in
+    dot-decimal notation.
+  choices: []
+- type: SA
+  resp: 172.19.127.254
+  text: >-
+    Given this IP address, 172.19.123.17/18, identify the host maximum address
+    in dot-decimal notation.
+  choices: []
+- type: SA
+  resp: 172.19.64.1
+  text: >-
+    Given this IP address, 172.19.123.17/18, identify the host minimum address
+    in dot-decimal notation.
+  choices: []

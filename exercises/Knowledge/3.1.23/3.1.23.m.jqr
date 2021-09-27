@@ -1,0 +1,18 @@
+- choices:
+  - Serialized
+  - Barriers
+  - Semaphores
+  - Thread-safe
+  hash: $2b$11$hrA/Xx0Pk2.vbB0dKkcP7OspJzYg3dG76.xHr1f8z89kkP6gkAHOS
+  text: A ________ program protects shared data, possibly through the use of mutual
+    exclusion.
+  type: MC
+- choices: []
+  hash: $2b$11$8FLWisMFlzji9vxafwIrmOItc8osik/UXYKauVMrmmyRVBp.rzgkq
+  text: A thread-safe function will deliver the same results regardless of whether
+    it is called from multiple threads at the same time.
+  type: TF
+- choices: []
+  hash: $2b$11$8V.Am7KxVAe6xnfsZeGj/.En2pEhXTn6b.1yEx2t.lt/hCFMnmpKu
+  text: pthread_create() is a thread-safe function?
+  type: TF

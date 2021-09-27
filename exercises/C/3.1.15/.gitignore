@@ -1,0 +1,11 @@
+/CMakeFiles
+CMakeCache.txt
+*.so
+*.cmake
+Makefile
+3.1.15_exe
+3.1.15_exe-Listing.xml
+3.1.15_exe-Results.xml
+tags
+build
+

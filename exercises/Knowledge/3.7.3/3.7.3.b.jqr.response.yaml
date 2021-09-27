@@ -1,0 +1,112 @@
+- type: FIB
+  resp: '16'
+  text: An IPv6 address is a total of ___ bytes. Response should be in digits (0-9)
+  choices: []
+- type: FIB
+  resp: '128'
+  text: An IPv6 address is a total of ___ bits. Response should be in digits (0-9)
+  choices: []
+- type: FIB
+  resp: prefix
+  text: >-
+    IPv6 defines subnets in a different way from IPv4. What is used to define
+    the network on which an IP address exists?
+  choices: []
+- type: FIB
+  resp: '32'
+  text: How many bits define the group ID in an IPv6 multicast address?
+  choices: []
+- type: FIB
+  resp: '64'
+  text: >-
+    For a unicast or anycast IPv6 address, the first __ bits are for the network
+    prefix.
+  choices: null
+- type: FIB
+  resp: subnet
+  text: The network prefix contains two parts; the routing prefix and the __.
+  choices: null
+- type: MC
+  resp: 1
+  text: >-
+    Which IPv6 address properly embeds the IPv4 address 192.168.0.1 for a device
+    that is IPv6-capable?
+  choices:
+    - c0a8&#58;1&#58;ffff&#58;&#58;
+    - '&#58;&#58;ffff&#58;c0a8&#58;1'
+    - '&#58;&#58;c0a8&#58;1'
+    - c0a8&#58;1&#58;&#58;
+    - c0a8&#58;1&#58;ffff&#58;ffff&#58;ffff&#58;ffff&#58;ffff&#58;ffff
+- type: MA
+  resp:
+    - 2
+  text: Select the valid loopback addresses
+  choices:
+    - 100&#58;&#58;/64
+    - ff00&#58;&#58;/8
+    - '&#58;&#58;1/128'
+    - '&#58;&#58;'
+- type: MA
+  resp:
+    - 0
+    - 3
+  text: Select the valid ULA or private addresses (not including loopback)
+  choices:
+    - fdbf&#58;9326&#58;b53b&#58;ffff&#58;&#58;
+    - jdbf&#58;9326&#58;b53b&#58;ffff&#58;&#58;
+    - '&#58;&#58;'
+    - fd3e&#58;8928&#58;9d49&#58;0&#58;&#58;
+- type: MA
+  resp:
+    - 2
+    - 3
+  text: Select the valid link-local addresses.
+  choices:
+    - fdbf&#58;9326&#58;b53b&#58;ffff&#58;&#58;
+    - feff&#58;23fa&#58;&#58;
+    - febf&#58;ffff&#58;&#58;4faf
+    - fe80&#58;&#58;5534&#58;aff4&#58;0
+- type: MA
+  resp:
+    - 0
+    - 1
+    - 2
+    - 3
+  text: Select the valid public address
+  choices:
+    - 2001&#58;&#58;2ac6&#58;&#58;c563&#58;531a&#58;
+    - 2001&#58;9326&#58;b53b&#58;ffff&#58;&#58;
+    - 2000&#58;&#58;1
+    - 2001&#58;8928&#58;9d49&#58;0&#58;&#58;
+- type: MC
+  resp: 1
+  text: >-
+    Given this IP address, 2601:4543:ad3f:454a::ad23:23df/64, identify the host
+    maximum address.
+  choices:
+    - 2601&#58;4543&#58;ad3f&#58;454a&#58;&#58;ffff&#58;
+    - 2601&#58;4543&#58;ad3f&#58;454a&#58;ffff&#58;ffff&#58;ffff&#58;ffff&#58;
+    - 2601&#58;4543&#58;ad3f&#58;454a&#58;7fff&#58;ffff&#58;ffff&#58;ffff&#58;
+    - 26ff&#58;ffff&#58;ffff&#58;ffff&#58;ffff&#58;&#58;
+- type: SA
+  resp: '::'
+  text: For an unspecified address, identify the default in reduced form.
+  choices: []
+- type: SA
+  resp: '2601:4543:ad3f:454a::'
+  text: >-
+    Given this IP address, 2601:4543:ad3f:454a::ad23:23df/64, identify the host
+    minimum address in reduced form.
+  choices: []
+- type: SA
+  resp: '2601:4543:ad3f:454a::'
+  text: >-
+    Given this IP address, 2601:4543:ad3f:454a::ad23:23df/64, identify the
+    network address in reduced form.
+  choices: []
+- type: SA
+  resp: 172.19.123.17
+  text: >-
+    Given this IPv6 address, ::ac13:7b11, identify the mapped IPv4 address in
+    dot-decimal notation.
+  choices: []

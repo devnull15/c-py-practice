@@ -1,0 +1,87 @@
+- choices:
+  - alloc
+  - malloc
+  - calloc
+  - map
+  - assign
+  hash: $2b$11$hmQ3h8/MtyEWDwyL7qZzK.ewq3IZdqk9Kau.T4hh7GVbc/mD2Q6bq
+  text: In the C calling convention, what functions are commonly used to allocate
+    memory on the heap?
+  type: MA
+- choices:
+  - memory leak
+  - over allocation
+  - buffer overflow
+  - use-after-free
+  hash: $2b$11$wcy8DtNG/Gmue4pAYlkpDudMo0sAFk5C1WzCMBL6dep9FA9whtRfe
+  text: What are two heap-specific vulnerabilities or bugs to be aware of when using
+    the heap?
+  type: MA
+- choices:
+  - free
+  - release
+  - dealloc
+  - unset
+  hash: $2b$11$HhZuqQzWZRdGzTx9oaGFIuuzNE1GQPe3aVJv8puz2E5kia6RgyktG
+  text: What function is used to deallocate memory on the heap?
+  type: MC
+- choices:
+  - immediately next to each other
+  - on opposite ends of the heap
+  - it depends on the current state of memory management in the process
+  - 4096 bytes apart
+  hash: $2b$11$esG72KrE7Po31sJiSWDLL.x9eEukLEDTOyk6RuGeW0MhHhTO2CyOS
+  text: If malloc is called twice consecutively, where will the two address spaces
+    be, relative to one-another?
+  type: MC
+- choices:
+  - memmap
+  - map
+  - mmap
+  - meme
+  hash: $2b$11$P/BIhQbx4hjt5Pko3Fbnq.CksZaZJ9ASwQA5aB70lA3AnPRa0M7W6
+  text: What underlying function is used to allocate more space for the heap?
+  type: MC
+- choices: []
+  hash: $2b$11$MfSFt.OBU94f5lQvWazNOuIgUbZoEZ27Lv.U7TGbEvcz3HBJ02BG2
+  text: What tool is most commonly used to detect memory leaks?
+  type: FIB
+- choices: []
+  hash: $2b$11$a3ANjAwPa4czR1trPYf8ZOIoWeYdvoN3SlZGmcx8mnxL3aIePZI72
+  text: The heap uses _____ allocation.
+  type: FIB
+- choices: []
+  hash: $2b$11$n7LMSknbhiw39MtI9CwTNO19WyLfxz9FYQvJw4g8uRqhGXm42NpVS
+  text: The heap starts at the uninitialized data segment and grows to _____ addresses.
+  type: FIB
+- choices: []
+  hash: $2b$11$pqifhB0PsjnujuVGJ1QCkup9FIgvrtwrbaYcwAvK.Sc56wWO1bLlW
+  text: The _____ function allocates and zeroes out memory for an array of elements
+    of a given size and returns a pointer to the allocated memory.
+  type: FIB
+- choices: []
+  hash: $2b$11$1OXs6U9bgmRIHPwnfZH4PeS7X6.HcD1vbZ8p6MRaNpeZ.zKTNnZne
+  text: The _____ function changes the size of the memory block pointed to by a pointer
+    to a given size.
+  type: FIB
+- choices: []
+  hash: $2b$11$3mY6/87lD1L27Igx2wzh2.wPWuKYNCTe8Oqe14mfvDkp8oyZvoXVW
+  text: In the C programming language, the programmer is responsible for allocating
+    and deallocating data on the heap.
+  type: TF
+- choices: []
+  hash: $2b$11$Aq.Bci3zUwNrR.m85VqKie5ow0u6ddlCkPIeAkKcxagDLTNwKzQ6K
+  text: The heap is limited to 4096 bytes of memory per thread.
+  type: TF
+- choices: []
+  hash: $2b$11$R6tuMgp9RcXs8a2mXhlCieDpQweKRnmZEzUMc1LwH.Zz84pP6yyBC
+  text: Data on the heap is globally accessible by the program.
+  type: TF
+- choices: []
+  hash: $2b$11$xHzo8sLwOFgYqL9Svdq57.9IpdjD6TQlrSS7v7YTp9WrZoyaDRloa
+  text: Once data is deallocated on the heap, the data no longer exists
+  type: TF
+- choices: []
+  hash: $2b$11$aZ52Vvy6svVzb3gNkcfA8eVJ5MqVmf6zKt1BuAAFp/qbwfb3mvqGa
+  text: The heap is named after the corresponding data structure.
+  type: TF

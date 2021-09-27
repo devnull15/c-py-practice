@@ -1,0 +1,18 @@
+- choices: []
+  hash: $2b$11$j3mNbumCAvAW.cilQq3jkeevSgmxDhX4YD7.//hi7CXNpINKAcvlq
+  text: What is the output following code snippet?\n\nint x = 255;\nchar y = x;\n\nprintf("x
+    is %d, y is %d\n", x, y);
+  type: FIB
+- choices: []
+  hash: $2b$11$uhzQK3OZO1mvyIRZD8JtY.epmuKd.WbtLn4IW.ikFGmYBh9XCmB0C
+  text: What is the output following code snippet?\n\nint x = 65536;\nunsigned short
+    y = x;\n\nif (y < 100)\n{\n    printf("x is %d, y is %d\n", x, y);\n}\nelse\n{\n    puts("x
+    must be less than 100");\n}
+  type: FIB
+- choices: []
+  hash: $2b$11$mG9/8h2Tw.2Y6xRh/xCWCuJTUpw1BlTQCjVzkJIUAU1ovSdgWzgxa
+  text: Reference the code snippet, how much memory would a 64 bit system attempt
+    to allocate if -1 is enterered at the prompt?\n\nint x;\n\nprintf("Enter amount
+    of memory to allocate&#58;\ ");\nscanf("%d", &x);\nchar *mymem = (char *)getmem(x);\n\nvoid
+    *getmem(int size)\n{\n    return malloc(size);\n}
+  type: FIB

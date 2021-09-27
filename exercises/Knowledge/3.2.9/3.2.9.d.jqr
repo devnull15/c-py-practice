@@ -1,0 +1,37 @@
+- choices:
+  - Modular
+  - Scaleable
+  - Maintainable
+  - Extensible
+  - Reusable
+  hash: $2b$11$BnK9QhenVJsUrja0r5rvWONrWk1uU7wChweQWOFXmzs92QvE9xbYi
+  text: Select the advantages to object-oriented programming
+  type: MA
+- choices:
+  - decreases the testing time
+  - lowers the maintenance cost
+  - reduces the compilation time
+  - increases reliability
+  hash: $2b$11$eAhTgWroGxtelYZwHrHs5.M6I4rQ5LGAYuuxLHZTIqgPF/Myt4tBm
+  text: Reusability is a desirable feature of a language because?
+  type: MA
+- choices: []
+  hash: $2b$11$b6o8x4ig8/oSO4AzeqwUn.zvw4DIS3M9jk7KYlPzwCCZVU8nrJ3lq
+  text: Object Oriented development provides a clear modular structure for programs
+    which makes it good for defining abstract datatypes where implementation details
+    are hidden and the unit has a clearly defined interface
+  type: TF
+- choices:
+  - reduces the compilation time
+  - decreases the developers on any given project
+  - makes adding developers easier
+  - developers don't need to understand the entire code base
+  hash: $2b$11$nBZ7mvgxhkHmmmdWm1wXl.G0YhShYj6P5TUKAuMqnYF/A7Uyllgmu
+  text: Modularity is a desirable feature of a language because?
+  type: MA
+- choices: []
+  hash: $2b$11$OdF5l4CeJEx0JxWUWqZB/eaX0AECEOS2LbYK56uxje4z9qUyhXBau
+  text: Object oriented development makes adding developers to a project easier because
+    they don't have to understand the entire code base, just the section they're working
+    on
+  type: TF

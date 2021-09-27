@@ -1,0 +1,29 @@
+- type: MC
+  resp: 2
+  text: >-
+    When a piece of code is shared between 2 threads and when output of the code
+    is different depending on the order in which that 2 threads execute that
+    code is called _______.
+  choices:
+    - Deadlock
+    - Condition variable
+    - Race condition
+    - Spinlocks
+- type: MC
+  resp: 1
+  text: An operation on ________ variable is un-interruptible.
+  choices:
+    - single
+    - atomic
+    - static
+    - None of the above
+- type: MC
+  resp: 2
+  text: >-
+    To avoid the race condition, the number of threads that may be
+    simultaneously inside their critical section is ____ .
+  choices:
+    - Many as CPU core
+    - No more than 4
+    - 1
+    - 0

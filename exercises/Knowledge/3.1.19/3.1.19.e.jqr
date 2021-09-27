@@ -1,0 +1,29 @@
+- choices:
+  - 10100110
+  - 10100000
+  - 1
+  - 10101001
+  hash: $2b$11$SrHcxd0IfKPAgSatWwX9xuBRKR8SfLqKjWY0TzgTR4p4lh3mnbpyu
+  text: 00110101 << 5 =
+  type: MC
+- choices: []
+  hash: $2b$11$qqccSTNRvG/ghlZX8iAU5ubAhlOiPbp/lkydSth9740Y5JRc9LcLy
+  text: Bitwise operations like << and >> can be more efficient than operations like
+    * and /.
+  type: TF
+- choices:
+  - the maximum value for the type of a
+  - the minimum value for the type of a
+  - 0
+  - undefined
+  hash: $2b$11$oIaEjMbENK0oVRLOUGfa6ePaJwORQnwCTo9gLw37EX6tI8D5bKfou
+  text: In C, given int a, a << (sizeof(a)*8 + 1) =
+  type: MC
+- choices:
+  - a * 2
+  - a * 10
+  - a / 2
+  - a / 10
+  hash: $2b$11$zzM40BX1BtCE6ygulgroouB3dMDFzPWma5n67iF8A3TolWN95mQHy
+  text: a << 1 is equivalent to&#58;
+  type: MC

@@ -1,0 +1,24 @@
+- type: MC
+  resp: 0
+  text: How are tuple items accessed?
+  choices:
+    - by offset
+    - by value
+    - by get and set
+    - by names
+- type: TF
+  resp: 'true'
+  text: Tuples are immutable.
+  choices: null
+- type: TF
+  resp: 'false'
+  text: Tuples can grow and shrink.
+  choices: null
+- type: MC
+  resp: 3
+  text: What types of objects may a tuple contain?
+  choices:
+    - strings
+    - dictionaries
+    - tuples
+    - any types

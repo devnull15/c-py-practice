@@ -1,0 +1,29 @@
+- choices:
+  - function call
+  - order of operations
+  - function definition
+  - string literal
+  hash: $2b$11$D41arxV7CDgvon2fe8Hci.BrbnA2hWTjL78yLa6JAKn0tahk53NyG
+  text: A parameter is the variable listed inside the parentheses of what?
+  type: MC
+- choices: null
+  hash: $2b$11$dT13XorJZxSyNGSY6KG0ZO0Vje4jThVf4cbRuBBSCM/k9YzL012ay
+  text: A parameter may define a default value if none is supplied by the argument.
+  type: TF
+- choices: null
+  hash: $2b$11$XXA3c8daQ0pTWCu1FcfqueFZom3WBZfFyhloYBP/tSHw3RuQXqJZm
+  text: A single parameter may accept multiple values.
+  type: TF
+- choices:
+  - parameter names
+  - buffer lengths
+  - input values
+  - parameter positions
+  hash: $2b$11$GyomRv6JOYVuD9fi/6f/R.lraaUJP5d/hBz9IvkYFFd4.OR0GDUAO
+  text: Keyword arguments in a function call must match what?
+  type: MC
+- choices: null
+  hash: $2b$11$T32nfsGC86zCJcsbG2kvS.baIrUIyCXGVEPtJ0W5bWiZWNOE4nQCq
+  text: Parameters with default values must be listed before those without default
+    values.
+  type: TF

@@ -1,0 +1,30 @@
+- type: MC
+  resp: 2
+  text: Which is not a sequence type?
+  choices:
+    - string
+    - list
+    - float
+    - tuple
+- type: TF
+  resp: 'true'
+  text: >-
+    Only mutable objects like lists, dictionaries, and sets may be changed in
+    place.
+  choices: null
+- type: MC
+  resp: 0
+  text: Which compound type can hold any kind of object?
+  choices:
+    - dictionary
+    - floating point
+    - boolean
+    - bytes
+- type: TF
+  resp: 'true'
+  text: Python determines types automatically at run time.
+  choices: null
+- type: TF
+  resp: 'false'
+  text: Python is a statically typed language.
+  choices: null

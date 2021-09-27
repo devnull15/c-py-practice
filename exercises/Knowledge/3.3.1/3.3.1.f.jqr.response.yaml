@@ -1,0 +1,28 @@
+- type: FIB
+  resp: dynamic
+  text: >-
+    Linked lists create a higher risk of memory leaks because they require the
+    use of ______ memory allocation.
+  choices: []
+- type: MA
+  resp:
+    - 1
+    - 2
+    - 3
+  text: Which of the following are shortcomings of linked lists?
+  choices:
+    - >-
+      Inefficient memory usage due to the use of continuous block memory
+      allocation
+    - Must iterate over all previous items in the list to access a specific item
+    - Higher risk for memory leaks
+    - Each item stores a pointer
+- type: MA
+  resp:
+    - 3
+  text: Which of the following are shortcomings of binary search trees?
+  choices:
+    - BST keys are unsorted which leads to inefficient searches
+    - Higher risk for segmentation faults
+    - Higher risk for memory leaks
+    - Slower than using hash table

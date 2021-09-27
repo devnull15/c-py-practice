@@ -1,0 +1,41 @@
+- choices:
+  - wait
+  - hold
+  - stop
+  - post
+  hash: $2b$11$J9Y9.5oZem4pr4PYaBcC/.2QDPbwKTMNNJbhRTFCAtKpYvKCZgqxe
+  text: What are the two atomic operations permissible on semaphores? (Select all
+    that apply)
+  type: MA
+- choices:
+  - Not sufficient for many threads
+  - Require busy waiting
+  - Unreliable output
+  - They are too complex to program
+  hash: $2b$11$j3C7URAtCVDhh6CQHwaWgO0FE3V/syjO/U98V92GKqYBnV3B01SpO
+  text: What is the main disadvantage of spinlocks?
+  type: MC
+- choices:
+  - Is a binary mutex
+  - Can be accessed from only one thread
+  - Can be accessed from multiple threads
+  - Cannot be accessed by main threads
+  hash: $2b$11$F2hjavn9JD.qG/SBaXMONuR/XrnPgFWO9IpQF.8.MvsWkZi41NidK
+  text: A semaphore _____________________ .
+  type: MC
+- choices:
+  - Is a binary semaphore
+  - Can be accessed from only one thread
+  - Can be accessed from multiple threads
+  - Cannot be accessed by main threads
+  hash: $2b$11$tIWLR2k7j8NjTyaXFtf4MO2HTXdi9IL.xCjxYU45yLWTudwHjFk0K
+  text: A mutex _____________________ .
+  type: MC
+- choices:
+  - 1
+  - '-1'
+  - 0.5
+  - 2
+  hash: $2b$11$/n1tWw9TJoWmPklfoXyiAugJIt7cPIUvQwqtnvSUwgNhkzQr/q1zy
+  text: A binary semaphore is a semaphore with integer values of 0 and _______.
+  type: MC

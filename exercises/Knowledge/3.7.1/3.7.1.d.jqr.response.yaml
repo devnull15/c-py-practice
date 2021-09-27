@@ -1,0 +1,63 @@
+- type: MA
+  resp:
+    - 0
+    - 1
+    - 2
+    - 3
+  text: Which of the following describe Berkeley sockets?
+  choices:
+    - >-
+      It is an application programming interface (API) for Internet and Unix
+      domain sockets.
+    - Sockets are represented by a handle.
+    - BSD and POSIX API sockets for the most part are the same.
+    - The are also know as BSD sockets.
+- type: MA
+  resp:
+    - 0
+    - 2
+    - 3
+    - 5
+  text: >-
+    You are creating a program that will communicate with another process.
+    Although you can use AF_INET, you decide to use AF_UNIX? What are the
+    advanates/limitations?
+  choices:
+    - >-
+      By using AF_UNIX, then the communicating processes must be on the same
+      host.
+    - >-
+      By using AF_UNIX, then the communicating processes can be on different
+      hosts providing full client/server communications.
+    - You are losing portability as Windows doesn't support this.
+    - Sockets created with AF_UNIX are faster than those created with AF_INET.
+    - Sockets created with AF_UNIX are always connectionless
+    - Sockets created with AF_UNIX do not use TCP or UDP ports.
+    - >-
+      Sockets created with AF_UNIX are RAW sockets and it is up to the
+      programmer to write the protocol stack.
+- type: TF
+  resp: 'false'
+  text: Berkeley Domain Sockets are limited to IPv4 and IPv6 communications?
+  choices:
+    - >-
+      By using AF_UNIX, then the communicating processes must be on the same
+      host.
+    - >-
+      By using AF_UNIX, then the communicating processes can be on different
+      hosts providing full client/server communications.
+    - You are losing portability as Windows doesn't support this.
+    - Sockets created with AF_UNIX are faster than those created with AF_INET.
+    - Sockets created with AF_UNIX are connectionless
+    - Sockets created with AF_UNIX do not use TCP or UDP ports.
+    - >-
+      Sockets created with AF_UNIX are RAW sockets and it is up to the
+      programmer to write the protocol stack.
+- type: MC
+  resp: 1
+  text: What is another way to describe the fuction gethostbyaddr()?
+  choices:
+    - Forward lookup.
+    - Reverse lookup.
+    - Retrieve data from a host/protocol/port.
+    - Create connection to a host/protocol/port.

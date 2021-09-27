@@ -1,0 +1,5 @@
+- overall: 3.1.7
+  test_files: [./build/3.1.7_exe-Results.xml]    # parsed relative to the location of this file
+  sub_items:
+  - name: file_io_tests                # name of the test suite to load from in the xml
+    test_count: 7                    # number of tests to find in the test suite 

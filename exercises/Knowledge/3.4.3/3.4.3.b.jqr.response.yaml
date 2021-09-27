@@ -1,0 +1,55 @@
+- type: MA
+  resp:
+    - 0
+    - 1
+    - 2
+    - 3
+  text: Choosing and writing an efficient hash fuction algorithm requires?
+  choices:
+    - Minimize collisions
+    - Uniform Distribution of hash values
+    - Easy to calculate
+    - Resolve any collisions
+    - Minimize array size
+- type: TF
+  resp: 'true'
+  text: >-
+    In a hash function algorithm, calculations are applied to a key to transform
+    it to an address of an array
+  choices: null
+- type: MC
+  resp: 2
+  text: How is key defined in a hash function?
+  choices:
+    - Size of an element in array
+    - Address of an element in array
+    - Data of an element in array
+- type: MC
+  resp: 3
+  text: >-
+    What are the methods used to calculate the key address in a hash function
+    algorithm?
+  choices:
+    - Numeric method
+    - Alphanumeric method
+    - Folding method
+    - All of the above
+- type: TF
+  resp: 'true'
+  text: >-
+    In alphanumeric method, the address of key is determined by dividing the sum
+    of key ASCII codes with size of array, and taking the remainder.
+  choices: null
+- type: MC
+  resp: 0
+  text: Access to a location of an hash array is?
+  choices:
+    - 1 iteration
+    - 1.5 iteration
+    - 2 iteration
+- type: TF
+  resp: 'true'
+  text: >-
+    If all the keys are known in advance, it is possible to come up with a
+    perfect hash function.
+  choices: null

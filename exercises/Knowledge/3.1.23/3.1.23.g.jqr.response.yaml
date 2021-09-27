@@ -1,0 +1,22 @@
+- type: MC
+  resp: 2
+  text: >-
+    What function should you use when you want to have a thread that just does
+    its own thing without joining back with its creator.
+  choices:
+    - fork()
+    - pthread_cancel()
+    - pthread_detach()
+    - pthread_unjoin()
+- type: FIB
+  resp: pthread_self
+  text: >-
+    Finish the function call: where a calling thread itself get detached from
+    its creator. 
+
+    >>  pthread_detach( _______ );
+  choices: []
+- type: TF
+  resp: 'true'
+  text: Detached threads cannot be reaped or killed by other threads?
+  choices: []

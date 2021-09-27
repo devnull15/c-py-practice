@@ -1,0 +1,56 @@
+- type: MC
+  resp: 1
+  text: |2-
+     main()
+     {
+     if(fork()>0)
+     sleep(100);
+     }
+     The following program results in the creation of?
+  choices:
+    - An orphan process
+    - A zombie process
+    - A process that executes forever
+    - None of the above
+- type: MC
+  resp: 1
+  text: If a thread invokes the exec system call ____________ .
+  choices:
+    - Only the exec executes as a separate process
+    - >-
+      The program specified in the parameter to exec will replace the entire
+      process
+    - The exec is ignored as it is invoked by a thread
+    - None of the above
+- type: TF
+  resp: 'false'
+  text: >-
+    A fork() system call will fail if the previously executed statement is also
+    a fork() call?
+  choices: []
+- type: FIB
+  resp: zero
+  text: >-
+    Upon successful completion, fork() will return ______ (code) to the child
+    process.
+  choices: []
+- type: FIB
+  resp: fork
+  text: Which UNIX system call will create a separate process?
+  choices: []
+- type: FIB
+  resp: exec
+  text: >-
+    Which UNIX system call will replace the process's memory space with a new
+    program?
+  choices: []
+- type: MC
+  resp: 1
+  text: >-
+    When a thread finishes executing its final statement, it can request the
+    operating system to delete itself by calling ______.
+  choices:
+    - wait()
+    - exit()
+    - fork()
+    - exec()

@@ -1,0 +1,18 @@
+# We want to sort Array in ascending order.
+# Suppose A is an array of N Values, 
+
+
+FUNCTION SelectionSort(A)
+    for i = 0 to length(A)-2       
+        min = i
+        for j = i+1 to length(A)-1 
+            if A[j] < A[min]
+                min = j
+            END
+        END for
+        Swap(A[j], A[min])
+    END for
+END
+
+
+

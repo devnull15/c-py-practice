@@ -1,0 +1,61 @@
+- type: FIB
+  resp: pthread.h
+  text: _______ header file needs to be used for pthread programming.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: Multi-threaded programming is not useful in single core systems?
+  choices: []
+- type: MC
+  resp: 3
+  text: >-
+    In pthread library, following APIs can be used for synchronization between
+    threads?
+  choices:
+    - pthread_exit()
+    - pthread_cancel()
+    - pthread_self()
+    - pthread_join()
+- type: FIB
+  resp: pthread_t
+  text: The data type used for storing the thread Id is _______ .
+  choices: []
+- type: MC
+  resp: 2
+  text: >-
+    What are the flags that are pass while compiling a pthread program using
+    gcc?
+  choices:
+    - '-thread'
+    - '-lthread'
+    - '-lpthread'
+    - '-threads'
+- type: MA
+  resp:
+    - 0
+    - 1
+    - 2
+    - 3
+  text: >-
+    In following function call pthread_create() what are all the arguments?
+    (Select all that apply)
+  choices:
+    - pthread_t* (pointer)
+    - attributes
+    - start routine
+    - argument
+- type: MC
+  resp: 2
+  text: |2-
+     int main(int argc, char *argv[]) {
+     pthread_t p1, p2;
+     pthread_create(&p1, NULL, mythread, “A”);
+     pthread_create(&p2, NULL, mythread, “B”);
+     ...
+     }
+     How many total threads are part of this process?
+  choices:
+    - 1
+    - 2
+    - 3
+    - 4

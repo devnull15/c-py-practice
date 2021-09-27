@@ -1,0 +1,18 @@
+- choices:
+  - Hash tables can have their total size dynamically increased to account for new
+    entries.
+  - Hash tables can directly insert and find entries instead of having to search the
+    table.
+  - It is much easier to combine two hash tables and merge the data in them.
+  - Searching functions are significantly more efficient in a hash table.
+  hash: $2b$11$N2aS0l9n9MPuA5Ytz.FMd.2kDSNeGW2GX4X4vKEy8e.kIWMCbI/6e
+  text: What is the main advantage of a hash table over a normal table?
+  type: MC
+- choices:
+  - When a hash function places a value outside the bounds of a table.
+  - When a unison operation is performed on two different hash tables.
+  - When a hash table operation causes a stack overflow.
+  - When a hash function produces the same value from two different keys.
+  hash: $2b$11$BO20mGcpBkj.8V7V1piz0.06ZLsh4Zg3wpVZNdTcp.0U72sz5ppVy
+  text: In a hash table, what is a collision?
+  type: MC

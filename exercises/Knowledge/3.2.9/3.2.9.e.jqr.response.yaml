@@ -1,0 +1,45 @@
+- type: MA
+  resp:
+    - 1
+    - 2
+    - 3
+  text: Define inheritance?
+  choices:
+    - >-
+      The process of hiding the working style of an object and showing only the
+      required information of the object in an understandable manner
+    - The ability of creating a new class from an existing class
+    - When an object acquires the property of another object
+    - >-
+      Provides reusability of a code. We don’t have to write the same code again
+      and again. Also, it allows us to add more features to a class without
+      modifying it.
+- type: MC
+  resp: 2
+  text: How to properly define a derived class from a base class in Python?
+  choices:
+    - class DerivedClassName &#58; BaseClassName&#58;
+    - class DerivedClassName extends BaseClassName&#58;
+    - class DerivedClassName(BaseClassName)&#58;
+    - class derived-class&#58; access-specifier base-class
+- type: MC
+  resp: 0
+  text: How to determin if an objects base class is BaseClassX in Python.
+  choices:
+    - isinstance(object, BaseClassX)
+    - object instanceof BaseClassX
+    - object.GetType() == typeof(BaseClassX)
+    - object in BaseClassX'Class
+- type: TF
+  resp: 'true'
+  text: >-
+    class DerivedClassName(BaseClassName1, BaseClassName2, BaseClassName3): is
+    how to inherit from multiple classes?
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    Inheritance is transitive in nature, which means that if class B inherits
+    from another class A, then all the subclasses of B would automatically
+    inherit from class A.
+  choices: []

@@ -1,0 +1,17 @@
+- choices: []
+  hash: $2b$11$WaXkqEs9fEOuzehqK8HqOeplqlk1NdChxKR8KuKEl1E7DEuyIFZ0.
+  text: The programmer must unlock the mutex as many number times as it was locked?
+  type: TF
+- choices: []
+  hash: $2b$11$0dpkEIlsD72wmF42bRDeP.BrbVbsL4VYZm4O7GGRUOYOtVMgNV4qi
+  text: A mutex is a lock. Only one state (locked/unlocked) is associated with it.
+    However, a recursive mutex can be locked more than once?
+  type: TF
+- choices: []
+  hash: $2b$11$XM2PyMy153PidBISNKlNkOWtaVIxpe/dH/idaKdYcpYqNTljD312W
+  text: Binary semaphore and mutex are same?
+  type: TF
+- choices: []
+  hash: $2b$11$00LcVn0xbZis9NH4mcbrIuvpU8//kvkjFQMiKABtkf9114mL0xsd6
+  text: Use _________ function call to initialize a mutex in POSIX Threads.
+  type: FIB

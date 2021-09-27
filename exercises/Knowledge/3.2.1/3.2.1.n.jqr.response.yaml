@@ -1,0 +1,20 @@
+- type: MC
+  resp: 1
+  text: What is one way to grow a mutable object?
+  choices:
+    - copy the object
+    - use the append method
+    - use the split method
+    - convert it to immutable
+- type: TF
+  resp: 'false'
+  text: Mutable objects cannot be changed.
+  choices: null
+- type: TF
+  resp: 'true'
+  text: Every Python object is either mutable or not
+  choices: null
+- type: TF
+  resp: 'true'
+  text: Mutable arguments are passed by reference
+  choices: null

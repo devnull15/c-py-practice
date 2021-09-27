@@ -1,0 +1,30 @@
+- choices: []
+  hash: $2b$11$Jv.9Ncaz8YDqPjXtxvgJ9eV4wuy1SjJP.k1mAjDvDTDt3uBmrUgG6
+  text: An instance attribute is defined inside the constructor.
+  type: TF
+- choices: []
+  hash: $2b$11$iZHrXydP.f.5MQlvVyxyTO5XAmtzuLLvXBpkSqVMwWtz76fky1Yl.
+  text: A class attribute is defined outside the constructor.
+  type: TF
+- choices:
+  - Belong to the class itself and will be shared by all the instances
+  - Defined inside the constructor
+  - Accessible from the scope of an object
+  - Every object instance will see the same value.
+  hash: $2b$11$wN8SnK9G7EBD3G5cfzOVquSyKvMYkeadI5qvYhXldFtXUcq9SrdSq
+  text: Select instance attribute rules.
+  type: MA
+- choices:
+  - Belong to the class itself and will be shared by all the instances
+  - Class attribute tireSize is set to 17 by object1, object2 and object1 will see
+    the same value of 17 for tireSize.
+  - Class attributes cannot have getters and setters
+  - Class attribute tireSize is set to 17 by object1 and set to 14 by object2. Object1
+    tireSize retains the value of 17.
+  hash: $2b$11$7ZLktY70k/8Y/N4RODSjP.2xSx3FxOLWi4ajOlzNGgICZWI.msE/O
+  text: Select class attribute rules.
+  type: MA
+- choices: []
+  hash: $2b$11$7ApmlmvOmX0fSdntFqDbKeQDTFOfx.NBxMUvAmo6izkDNV0ekJCRK
+  text: Instance and class attributes act the same after instantiation into an object.
+  type: TF

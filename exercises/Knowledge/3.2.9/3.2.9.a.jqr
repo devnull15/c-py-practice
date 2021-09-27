@@ -1,0 +1,72 @@
+- choices:
+  - Abstraction
+  - Encapsulation
+  - Inheritance
+  - Polymorphism
+  - Initialized Data
+  - Text (Code)
+  hash: $2b$11$sEVzPMwZqOjaI6lLBbJOCO7PWsaD2koCdfTKgkrPBNjawsu4S.Ueq
+  text: What are the four pillars of object-oriented development?
+  type: MA
+- choices:
+  - The process of hiding the working style of an object and showing only the required
+    information of the object in an understandable manner.
+  - Refers to wrapping up data and member function (Method) together into a single
+    unit i.e. class
+  - The ability of creating a new class from an existing class. When an object acquires
+    the property of another object.
+  - Refers to the ability to use the same name for what may be different actions on
+    derived objects of base classes.
+  - Initialized Data
+  - Text (Code)
+  hash: $2b$11$YnO2hVmzws6go41HzZerMevv/IeME7BSa.TwB1w9eVIZ7bYeyxUK2
+  text: Define Inheritance?
+  type: MC
+- choices:
+  - The process of hiding the working style of an object and showing only the required
+    information of the object in an understandable manner.
+  - Refers to wrapping up data and member function (Method) together into a single
+    unit i.e. class
+  - The ability of creating a new class from an existing class. When an object acquires
+    the property of another object.
+  - Refers to the ability to use the same name for what may be different actions on
+    derived objects of base classes.
+  - Initialized Data
+  - Text (Code)
+  hash: $2b$11$Ub559/WYmDjMCHQAy8XB3OSLzrzGjoeM3DjUze/YoAsg2NwKadQUS
+  text: Define Polymorphism?
+  type: MC
+- choices: []
+  hash: $2b$11$uI0AKe0.UqCuCVR0J2uJgOMpE4kqaZlIPxiD4ipao0Q.YzsCxRQ72
+  text: Abstraction is about hiding unwanted details while giving out most essential
+    details, while Encapsulation means hiding the code and data into a single unit,
+    a class.
+  type: TF
+- choices: []
+  hash: $2b$11$gGDI5nBGLdWCJoQZNmbA6.vlA/nm934LTfF66Zc5Q7YYc4CIMmXIC
+  text: Classes provide a means of bundling data and functionality together.
+  type: TF
+- choices:
+  - Methods
+  - Heap
+  - Inheritance
+  - Attributes
+  - Initialized Data
+  - Text (Code)
+  hash: $2b$11$6u.6E3a8Lj5haU5jXCrZeuWEH6qZZOYmH/MqM392wbuLykE1pQcV6
+  text: What are the two generic parts of a class?
+  type: MA
+- choices: []
+  hash: $2b$11$GH0z7CBaZmNI6Pz.n1aN1u9uZUxFEAFih/fBZ8PMe8LuBAKGc5fM.
+  text: The class keyword isn't required to define a class.
+  type: TF
+- choices:
+  - _init_(self, attr1_val, attr2_val)
+  - __init__(attr1_val, attr2_val, attr3_val)
+  - __init__(self, attr1_val, attr2_val, attr3_val)
+  - init(self, attr1_val, attr2_val)
+  - Initialized Data
+  - Text (Code)
+  hash: $2b$11$BMGxcIZybPVx/LzuA9OF7eT1rMhRGjQsnRKAQ65aRb9q2rxL3jkSi
+  text: What class constructor is properly defined?
+  type: MC

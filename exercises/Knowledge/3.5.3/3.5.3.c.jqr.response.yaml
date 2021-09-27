@@ -1,0 +1,56 @@
+- type: MC
+  resp: 2
+  text: A race condition depends directly on the following.
+  choices:
+    - memory in use
+    - processor speed
+    - order of execution
+    - file size
+- type: MC
+  resp: 3
+  text: >-
+    Two threads, A and B, are running concurrently. A writes 1 to variable X,
+    and B writes 0 to X. Thread A prints the value of X. What is it?
+  choices:
+    - 1
+    - 0
+    - null
+    - whichever updated X last
+- type: MA
+  resp:
+    - 0
+    - 2
+  text: A race condition can be avoided by the following.
+  choices:
+    - semaphores
+    - zeroing out variables
+    - mutexes
+    - input sanitization
+- type: FIB
+  resp: shared
+  text: A race condition can occur when there is _____ access to a resource.
+  choices: []
+- type: FIB
+  resp: critical
+  text: A _____ race condition will effect the final state of the program.
+  choices: []
+- type: FIB
+  resp: access
+  text: >-
+    In order to solve a race condition, one must control _____ to the shared
+    resource.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: Race conditions lead to unpredictable behaviour.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: >-
+    Race conditions cannot be avoided with a signalling mechanism such as a
+    semaphore.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: A non-critical race condition wont effect the final state of the program.
+  choices: []

@@ -1,0 +1,23 @@
+- type: TF
+  resp: 'false'
+  text: >-
+    Given a connected graph G = (V,E), and two points s and p, the Minimum
+    Spanning Tree (MST) of G will contain the shortest path from s to p.
+  choices: []
+- type: MA
+  resp:
+    - 0
+    - 4
+  text: 'Dijkstra''s algorithm can produce the following (mark all that apply):'
+  choices:
+    - Shortest-path tree from source node to all other nodes
+    - Longest-path tree from source node to all other nodes
+    - Set of all possible cycles in graph
+    - Set of strongly connected components in graph
+    - Shortest path from source node s to destination node t
+- type: TF
+  resp: 'false'
+  text: >-
+    In Dijkstra's algorithm, the distance from the source node to itself is
+    marked as infinity to denote it as the first node to explore
+  choices: []

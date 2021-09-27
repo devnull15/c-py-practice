@@ -1,0 +1,60 @@
+- type: MC
+  resp: 3
+  text: What is cache memory?
+  choices:
+    - A fast simulated storage area located near CPU
+    - A small and fast permanent storage area located near CPU
+    - A small and fast temporary storage area located in main memory
+    - A small and fast temporary storage area located near CPU
+- type: MC
+  resp: 0
+  text: Caching is often implemented by using___
+  choices:
+    - Random Access Memory (RAM)
+    - Read Only Memory (ROM)
+    - I/O Memory
+    - Flash Memory
+- type: MC
+  resp: 3
+  text: Some of the main benefits for caching are.
+  choices:
+    - Increase Read and Write data throughput
+    - Predictable performance
+    - Implove application performance
+    - All of the Above
+- type: FIB
+  resp: cache manager
+  text: >-
+    The _____ is responsible for caching file reads and writes to enhance
+    overall performance.
+  choices: []
+- type: FIB
+  resp: l1
+  text: >-
+    _____ cache is relatively faster, smaller in memory, and embedded in the
+    processor.
+  choices: []
+- type: FIB
+  resp: less
+  text: >-
+    If each processor is equipped with a local cache, caching
+    becomes_____efficient.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    Caching is a short-term memory which has limited space, is faster and
+    usually contains most recently accessed data
+  choices: []
+- type: TF
+  resp: 'false'
+  text: >-
+    Cache is generally cheaper than the primary storage components like hard
+    disk or other I/O devices
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    Caching is the technique to provide high speed access to data that can be
+    retrieved frequently
+  choices: []

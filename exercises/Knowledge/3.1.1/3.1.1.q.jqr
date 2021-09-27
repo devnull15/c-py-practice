@@ -1,0 +1,18 @@
+- choices:
+  - Unicode has letters such as 'l' and 'W' take up the same amount of space, unlike
+    variable-width.
+  - Variable-width character sets are always multi-byte, while Unicode is not.
+  - Variable-width character sets have characters that take up different amounts of
+    memory.
+  hash: $2b$11$nOQ5LedMftT825MQXDRXMeHX3PRQCZL5CR.VcCTJ2rCCkYoAPp6I.
+  text: What is the difference between Unicode and variable-width character sets?
+  type: MC
+- choices:
+  - It is encompasses the 128 characters of the ASCII table within a single byte of
+    code.
+  - All characters are the same size in memory.
+  - It allows the character sets of every readable language to be included in a single
+    character set.
+  hash: $2b$11$rPYNTbxqGxbcKyDZ5pBOr.e2lEKczvUDFA1nw8Dne18uc6pMUMCYu
+  text: Which of the following are primary features of the Unicode character set?
+  type: MA

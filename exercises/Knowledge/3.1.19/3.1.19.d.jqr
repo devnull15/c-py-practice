@@ -1,0 +1,20 @@
+- choices:
+  - 11001010
+  - 10100111
+  - 4096
+  - 10110111
+  hash: $2b$11$tnKpLPOYNN7E0ZjVB46Jr.f768fyWkcyyff.pRteBGXFkhlMYpK1.
+  text: ~00110101 =
+  type: MC
+- choices: []
+  hash: $2b$11$iAADO1bNTJdJUUBVvIrZlu9IXK7RagH45UJYVrp3dudTKmagff6kK
+  text: The bitwise operator ~ is equivalent to the 'not' keyword in Python.
+  type: TF
+- choices:
+  - ones' complement
+  - two's complement - 1
+  - additive inverse
+  - multiplicative inverse
+  hash: $2b$11$hodC1ujlq/EJG9XTX16bgur6eOHHVpEjzyzxhVgugoiGUUOtK3UgK
+  text: The bitwise complement of a value is the same as its&#58;
+  type: MA

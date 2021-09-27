@@ -1,0 +1,30 @@
+- type: MC
+  resp: 1
+  text: 00110101 << 5 =
+  choices:
+    - 10100110
+    - 10100000
+    - 1
+    - 10101001
+- type: TF
+  resp: 'true'
+  text: >-
+    Bitwise operations like << and >> can be more efficient than operations like
+    * and /.
+  choices: []
+- type: MC
+  resp: 3
+  text: In C, given int a, a << (sizeof(a)*8 + 1) =
+  choices:
+    - the maximum value for the type of a
+    - the minimum value for the type of a
+    - 0
+    - undefined
+- type: MC
+  resp: 0
+  text: 'a << 1 is equivalent to:'
+  choices:
+    - a * 2
+    - a * 10
+    - a / 2
+    - a / 10

@@ -1,0 +1,53 @@
+- type: MC
+  resp: 1
+  text: >-
+    If a hash function is applied to different keys and it generates the same
+    address for those keys, it is known as?
+  choices:
+    - Conflict
+    - Collision
+    - Accident
+- type: TF
+  resp: 'true'
+  text: Collisions are resolved with open addressing and closed addressing.
+  choices: null
+- type: MC
+  resp: 0
+  text: The ratio between the key stored and the size of its data array is known as?
+  choices:
+    - Load Factor
+    - Collision Factor
+    - Maturity Factor
+    - All of the above
+- type: MA
+  resp:
+    - 0
+    - 1
+    - 2
+    - 4
+  text: Open addressing is defined by?
+  choices:
+    - Linear probing
+    - Plus 3 rehash
+    - Quadratic probing
+    - Clustering
+    - Double hashing
+- type: TF
+  resp: 'true'
+  text: >-
+    In alphanumeric method, the address of key is determined by dividing the sum
+    of key ASCII codes with size of array, and taking the remainder.
+  choices: null
+- type: MC
+  resp: 0
+  text: Frequency to access an address location of an hash array is?
+  choices:
+    - 1 iteration
+    - 1.5 iteration
+    - 2 iteration
+- type: TF
+  resp: 'true'
+  text: >-
+    Closed addressing envolves chaining items that have collided in a linked
+    list.
+  choices: null

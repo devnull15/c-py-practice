@@ -1,0 +1,26 @@
+- type: TF
+  resp: 'false'
+  text: >-
+    The thread ID of the initial (main) thread and subsequently created threads
+    has the same process ID as the entire process.
+  choices: []
+- type: MC
+  resp: 3
+  text: >-
+    If initial (main) thread calls the pthread_self() function, what would be
+    return value?
+  choices:
+    - Process ID
+    - Thread ID
+    - Same as getpid()
+    - All of the above (All values will be same.)
+- type: MC
+  resp: 0
+  text: >-
+    Which function should not be utilized while creating platform independent
+    programs?
+  choices:
+    - getpid()
+    - pthread_self()
+    - goto
+    - system()

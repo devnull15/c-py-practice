@@ -1,0 +1,14 @@
+- type: TF
+  resp: 'true'
+  text: The python word self represents the instance of the class.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    When used with dunder init, the word self could be replaced with the name of
+    another class.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: Static methods (@staticmethod) requires the use of the word self.
+  choices: []

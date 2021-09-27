@@ -1,0 +1,22 @@
+- type: MC
+  resp: 2
+  text: 00110101 >> 5 =
+  choices:
+    - 10100110
+    - 10100000
+    - 1
+    - 10101001
+- type: TF
+  resp: 'true'
+  text: >-
+    The value of an unsigned int variable cannot increase if it is shifted right
+    by less than the width of its type.
+  choices: []
+- type: MA
+  resp:
+    - 2
+  text: 'The >> operator in C is a(n):'
+  choices:
+    - arithmetic shift
+    - circular shift
+    - logical shift

@@ -1,0 +1,20 @@
+- choices: []
+  hash: $2b$11$XJjSOoxVwch1S0dBtLlr1ezlmui86ThKrBPKUIojuGnGN9ylC2T4e
+  text: The prepend operation is faster than append if the linked list tracks the
+    head of the list but not the tail
+  type: TF
+- choices:
+  - Forward
+  - Backwards
+  - Both directions
+  hash: $2b$11$5l0nNHSxzXmHp5mJiI3Rj.NfPQ4iDoH26bHRx5dPXYnX0OkV4QZuy
+  text: Which direction can a doubly linked list be navigated?
+  type: MC
+- choices:
+  - previous pointer
+  - next pointer
+  - middle pointer
+  - present pointer
+  hash: $2b$11$OrAd7nLOdBw1S4jaiOrfLOtdZpd76PxwakOCi.3voNDINXGT9Q1Zy
+  text: Select all of the pointers that an item in a doubly linked list contains.
+  type: MA

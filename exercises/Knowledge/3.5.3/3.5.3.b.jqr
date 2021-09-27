@@ -1,0 +1,50 @@
+- choices:
+  - timer
+  - lock
+  - instruction pointer
+  - thread context
+  hash: $2b$11$IYzd.sUaRHjyu5dffXd5aesGfFtshEL6uo9PaWK1aMLIp1OEMdAZ.
+  text: A variable that represents a status of a resource, with respect what operations
+    are possible.
+  type: MC
+- choices:
+  - shared
+  - concurrent
+  - exclusive
+  - transparent
+  hash: $2b$11$mDdWXLQX.x6CchjMuqtW1eWIJ0Esch4U.IIdLRrQuM3BPjLMWh6H6
+  text: What are two common types of locks?
+  type: MA
+- choices:
+  - buffer overflows
+  - deadlocks
+  - race conditions
+  - starvation
+  hash: $2b$11$O5VfDsmOlzOiUSLcQNOIj.0Yw9iGStdr8/Uhh7Qiul9VvQUCk.UIu
+  text: What is one of the main things locks avoid?
+  type: MC
+- choices: []
+  hash: $2b$11$ryKIhjHrG1bCxy6Gx/0MWO2m8hm7qDwi67AsoCZ76vxieluvhg8/.
+  text: A shared lock is also known as a _____ lock
+  type: FIB
+- choices: []
+  hash: $2b$11$fqhaoOEcXu8Ouk9AtLE90eFsOr3ekxqoA5B6tAVTD1mwi6X0yx22O
+  text: With an exclusive lock, a thread holds the lock for both read and _____
+  type: FIB
+- choices: []
+  hash: $2b$11$RVtyia.dAzl88oTR.RY3RuL2bHo8Uqh6Q7FNbnCHTllcY9AgjRG.m
+  text: What function from the pthread library can lock a mutex?
+  type: FIB
+- choices: []
+  hash: $2b$11$gcWwmuDZgbBE0Qp79lxsNOIBRecZ61zhr7O/8AnSseCyhLN1wMDlq
+  text: A mutex can be used as a signalling mechanism, just like a semaphore.
+  type: TF
+- choices: []
+  hash: $2b$11$T1UVkRjl2169RfV3kfIeEu5oko93E1rIMNCue9XobHTCQ.8kUBShu
+  text: A shared lock allows for multiple threads to hold a lock for reading a resource.
+  type: TF
+- choices: []
+  hash: $2b$11$/YOiFmh9wxA9NTNCfHreSuZUeA/P9CgHZDUqXXYxPMj0x029tsHPu
+  text: A lock should only be held for the critical section of code that accesses
+    the shared data.
+  type: TF

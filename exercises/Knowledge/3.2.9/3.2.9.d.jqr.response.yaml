@@ -1,0 +1,49 @@
+- type: MA
+  resp:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+  text: Select the advantages to object-oriented programming
+  choices:
+    - Modular
+    - Scaleable
+    - Maintainable
+    - Extensible
+    - Reusable
+- type: MA
+  resp:
+    - 0
+    - 1
+    - 3
+  text: Reusability is a desirable feature of a language because?
+  choices:
+    - decreases the testing time
+    - lowers the maintenance cost
+    - reduces the compilation time
+    - increases reliability
+- type: TF
+  resp: 'true'
+  text: >-
+    Object Oriented development provides a clear modular structure for programs
+    which makes it good for defining abstract datatypes where implementation
+    details are hidden and the unit has a clearly defined interface
+  choices: []
+- type: MA
+  resp:
+    - 2
+    - 3
+  text: Modularity is a desirable feature of a language because?
+  choices:
+    - reduces the compilation time
+    - decreases the developers on any given project
+    - makes adding developers easier
+    - developers don't need to understand the entire code base
+- type: TF
+  resp: 'true'
+  text: >-
+    Object oriented development makes adding developers to a project easier
+    because they don't have to understand the entire code base, just the section
+    they're working on
+  choices: []

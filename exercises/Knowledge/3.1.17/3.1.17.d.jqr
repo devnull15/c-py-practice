@@ -1,0 +1,46 @@
+- choices:
+  - shared object
+  - executable
+  - dynamically-linked library
+  hash: $2b$11$NP.nUvZMydDkkSGSSrdLLOMIckmQUdd2SX6CKxnzrmpoKZZ59Pcnm
+  text: Can be executed directly.
+  type: MC
+- choices:
+  - shared object
+  - executable
+  - dynamically-linked library
+  hash: $2b$11$xycNQtnpXAgCjTUrKX35EOPaEpxPbB2emnou.Ss4VB6/P9kYgVHxG
+  text: A windows implementation of the shared library, which is loaded by dlopen/dlsym.
+  type: MC
+- choices:
+  - shared object
+  - executable
+  - dynamically-linked library
+  hash: $2b$11$oqk09my/BTZI3CP1wxfqtOrHc1ETl0C5lrmA5Tw6EQgjZBWU6KnGq
+  text: A shared library which must be present at runtime and compile time.
+  type: MC
+- choices: []
+  hash: $2b$11$ALLfbIgPMUEqKWcrcbELyuMMhQty9RP4GB5zhIPuegpwrTiUraCeq
+  text: The windows program _____ can execute functions within a DLL.
+  type: FIB
+- choices: []
+  hash: $2b$11$W1HpH2ZJQSfpV1lZsiB9xuR3Q9/3HMjoVGtJWRXWq8ZmYLoK2NQ5u
+  text: The biggest difference between a DLL and a static library is that DLL is linked
+    during runtime, whereas the static library is _____ with the program.
+  type: FIB
+- choices: []
+  hash: $2b$11$9uDPQzQQe2S8VYWRnt87ve1UCt/WgyGBlcwMVuBfxOuQgeHdgrc36
+  text: A ____ linked executable links to shared objects at run time.
+  type: FIB
+- choices: []
+  hash: $2b$11$YGxRyAGZI5/r4rhahhUxl.fRkTzYjLiJO2ND4kwi2PnYEpjlLPnOy
+  text: A library can also be called an object file.
+  type: TF
+- choices: []
+  hash: $2b$11$iegAfFh1FvqF8SNU4a3Z3.fcCe7zysZx/HLb8b4s2D3ppqiv3wvBu
+  text: A DLL does not need to be present at load time.
+  type: TF
+- choices: []
+  hash: $2b$11$E6VyO/rN7ZsmdKIAMvDOY.gwPwDNduFsZuBn3hBOcAV6eUiEuUBA.
+  text: Both an executable and a library can be executed directly.
+  type: TF

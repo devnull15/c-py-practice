@@ -1,0 +1,23 @@
+# We want to sort Array in ascending order.
+# Suppose A is an array of N Values, 
+# h <- step size, or gap
+
+
+FUNCTION ShellSort(A);
+    set h = length(A)/2
+
+    while h > 0                   
+        for i = h to length(n)-1  
+            set temp = A[i]
+            j = i
+            while j >= h AND A[j-h] > temp  
+                A[j] = A[j-h]
+                j = j-h
+            END while
+            A[j] = temp
+        END for
+        h = h / 2                
+    END while
+END
+
+

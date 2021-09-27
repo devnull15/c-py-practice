@@ -1,0 +1,26 @@
+- type: MC
+  resp: 0
+  text: What happens if a non-recursive mutex is locked more than once?
+  choices:
+    - Deadlock
+    - Error
+    - Race condition
+    - Force termination
+- type: MC
+  resp: 3
+  text: Deadlock occurs when ________.
+  choices:
+    - If there are more than two threads competing for the same resource
+    - If there are exactly two threads competing for the same resource
+    - If there is a single thread competing for a resource
+    - None of the above
+- type: MC
+  resp: 2
+  text: >-
+    A process said to be in ___________ state if it is permanently waiting for a
+    resource.
+  choices:
+    - Safe
+    - Unsafe
+    - Starvation
+    - Deadlock

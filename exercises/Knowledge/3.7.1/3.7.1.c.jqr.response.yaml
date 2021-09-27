@@ -1,0 +1,236 @@
+- type: MC
+  resp: 3
+  text: How many layers are there in the OSI model?
+  choices:
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+- type: MC
+  resp: 1
+  text: Which layer is responsible for physical addressing?
+  choices:
+    - 1
+    - 2
+    - 3
+    - 4
+- type: MC
+  resp: 2
+  text: Which layer is responsible for logical addressing?
+  choices:
+    - 1
+    - 2
+    - 3
+    - 4
+- type: MA
+  resp:
+    - 0
+    - 3
+  text: Which of the following are layer 2 addresses?
+  choices:
+    - MAC
+    - PPP
+    - SLIP
+    - DLCI
+    - HDLC
+    - FDDI
+- type: MC
+  resp: 0
+  text: What is the Protocol Data Unit (PDU) of layer 1?
+  choices:
+    - Bit
+    - Frame
+    - Packet
+    - Segment
+    - Datagram
+    - Data
+- type: MC
+  resp: 1
+  text: What is the Protocol Data Unit (PDU) of layer 2?
+  choices:
+    - Bit
+    - Frame
+    - Packet
+    - Segment
+    - Datagram
+    - Data
+- type: MC
+  resp: 2
+  text: What is the Protocol Data Unit (PDU) of layer 3?
+  choices:
+    - Bit
+    - Frame
+    - Packet
+    - Segment
+    - Datagram
+    - Data
+- type: MA
+  resp:
+    - 3
+    - 4
+  text: What is the Protocol Data Unit (PDU) of layer 4?
+  choices:
+    - Bit
+    - Frame
+    - Packet
+    - Segment
+    - Datagram
+    - Data
+- type: MC
+  resp: 5
+  text: What is the Protocol Data Unit (PDU) of layer 5?
+  choices:
+    - Bit
+    - Frame
+    - Packet
+    - Segment
+    - Datagram
+    - Data
+- type: MC
+  resp: 5
+  text: What is the Protocol Data Unit (PDU) of layer 6?
+  choices:
+    - Bit
+    - Frame
+    - Packet
+    - Segment
+    - Datagram
+    - Data
+- type: MC
+  resp: 5
+  text: What is the Protocol Data Unit (PDU) of layer 7?
+  choices:
+    - Bit
+    - Frame
+    - Packet
+    - Segment
+    - Datagram
+    - Data
+- type: MC
+  resp: 0
+  text: What layer of the osi model would best fit this item:\ 1000Mbps?
+  choices:
+    - physical
+    - data link
+    - network
+    - transport
+    - session
+    - presentation
+    - application
+- type: MC
+  resp: 0
+  text: What layer of the osi model would best fit this item:\ +5 volts?
+  choices:
+    - physical
+    - data link
+    - network
+    - transport
+    - session
+    - presentation
+    - application
+- type: MC
+  resp: 1
+  text: What layer of the osi model would best fit this item:\ 7e:f5:e9:78:dc:ad?
+  choices:
+    - physical
+    - data link
+    - network
+    - transport
+    - session
+    - presentation
+    - application
+- type: MC
+  resp: 2
+  text: What layer of the OSI model would best fit this item:\ 192.168.1.23?
+  choices:
+    - physical
+    - data link
+    - network
+    - transport
+    - session
+    - presentation
+    - application
+- type: MC
+  resp: 6
+  text: What layer of the OSI model would best fit this item:\ HTTP?
+  choices:
+    - physical
+    - data link
+    - network
+    - transport
+    - session
+    - presentation
+    - application
+- type: MC
+  resp: 3
+  text: >-
+    What layer of the OSI model segments and reassembles data into a data
+    stream?
+  choices:
+    - physical
+    - data link
+    - network
+    - transport
+    - session
+    - presentation
+    - application
+- type: MC
+  resp: 2
+  text: >-
+    What layer of the OSI model would best fit this attribute:\
+    fe80::c33f:33a2:2f72:8fe6?
+  choices:
+    - physical
+    - data link
+    - network
+    - transport
+    - session
+    - presentation
+    - application
+- type: MC
+  resp: 2
+  text: What layer of the OSI model is responsible for path determination?
+  choices:
+    - physical
+    - data link
+    - network
+    - transport
+    - session
+    - presentation
+    - application
+- type: MC
+  resp: 5
+  text: >-
+    What layer of the OSI model performs formatting, compression, and
+    encryption?
+  choices:
+    - physical
+    - data link
+    - network
+    - transport
+    - session
+    - presentation
+    - application
+- type: TF
+  resp: 'false'
+  text: GIF to JPEG conversion is performed by the presentation layer.
+  choices: null
+- type: MC
+  resp: 2
+  text: >-
+    What is the proper order of the OSI model layers from Physical to
+    Application?
+  choices:
+    - >-
+      Physical > Network > Data Link > Transport > Session > Presentation >
+      Application
+    - >-
+      Physical > Network > Session > Transport > Data Link > Presentation >
+      Application
+    - >-
+      Physical > Data Link > Network > Transport > Session > Presentation >
+      Application
+    - >-
+      Physical > Data Link > Network > Transport > Presentation > Session >
+      Application

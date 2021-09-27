@@ -1,0 +1,49 @@
+- choices:
+  - memory in use
+  - processor speed
+  - order of execution
+  - file size
+  hash: $2b$11$0fTuuE2uoT4IX5BaeYLeKerawld2KvnY3qiz2upZEjY6ZRbYeRNay
+  text: A race condition depends directly on the following.
+  type: MC
+- choices:
+  - 1
+  - 0
+  - null
+  - whichever updated X last
+  hash: $2b$11$PNZrKamrKYDwf.IVQ/.G7uNiEst6f/ghwB6zcT4E/L51tN.zZmXJS
+  text: Two threads, A and B, are running concurrently. A writes 1 to variable X,
+    and B writes 0 to X. Thread A prints the value of X. What is it?
+  type: MC
+- choices:
+  - semaphores
+  - zeroing out variables
+  - mutexes
+  - input sanitization
+  hash: $2b$11$fp6tKLN6tBOA68wW94jZoOifal3x.LfejXA2ewLIwe9R0Yf7lXFeW
+  text: A race condition can be avoided by the following.
+  type: MA
+- choices: []
+  hash: $2b$11$tKz8EgrcSp3bpZ84cP9KbOfOI/AmxKPfjtk/Obe5XIkUlrji0o4RO
+  text: A race condition can occur when there is _____ access to a resource.
+  type: FIB
+- choices: []
+  hash: $2b$11$A81ndbx5in02Ir.SA3nX/.c25T88D.KPNTRmfe40VA9LoZHl56DIq
+  text: A _____ race condition will effect the final state of the program.
+  type: FIB
+- choices: []
+  hash: $2b$11$iHKoXr3besFevAOgn4Z4Ju8CcHjS2uCfadOCtqXRMLYkHg1YH87dq
+  text: In order to solve a race condition, one must control _____ to the shared resource.
+  type: FIB
+- choices: []
+  hash: $2b$11$kHq0b8cu5Ndd1ReVVUI9SOn5RD3AXvA.hIGtrRQW5UmMl06EYeHSO
+  text: Race conditions lead to unpredictable behaviour.
+  type: TF
+- choices: []
+  hash: $2b$11$5Az78mDYVEITp/F11UlEaO8NPDNSvO9Z41ZjgE5oc7lK3MgEaToTe
+  text: Race conditions cannot be avoided with a signalling mechanism such as a semaphore.
+  type: TF
+- choices: []
+  hash: $2b$11$MilrFfYjwRRTKd5yuwsF4ON3qYz1L0.ijOgyg.2ZfTMDKUyh10YKC
+  text: A non-critical race condition wont effect the final state of the program.
+  type: TF

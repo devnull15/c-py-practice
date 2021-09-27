@@ -1,0 +1,49 @@
+- type: MC
+  resp: 2
+  text: __init__ is a reserved method in Python, what does it do?
+  choices:
+    - Start a program
+    - Class destructor
+    - Class constructor
+    - Initial decleration of a class
+- type: MC
+  resp: 1
+  text: __del__ is a reserved method in Python, what does it do?
+  choices:
+    - Start a program
+    - Class destructor
+    - Class constructor
+    - Initial decleration of a class
+- type: TF
+  resp: 'false'
+  text: >-
+    Python creats a default constructor for every class, it is prefered to one
+    the programmer writes.
+  choices: []
+- type: MA
+  resp:
+    - 0
+    - 2
+    - 3
+  text: >-
+    Select possible reasons for a programmer to use the class constructor in
+    Python
+  choices:
+    - To initialize class variables
+    - To modify a child class object
+    - >-
+      To determine if the serial port works properly before allowing the serial
+      object to instantiate
+    - To modify an inherited object
+- type: TF
+  resp: 'true'
+  text: >-
+    Python has native memory management, therefore a programmer does not need to
+    manage garbage collection manually.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    A classes parent constructor can be called from inside the current
+    constructor.
+  choices: []

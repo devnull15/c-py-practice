@@ -1,0 +1,86 @@
+- type: MC
+  resp: 0
+  text: How is the memory on the stack deallocated?
+  choices:
+    - automatically
+    - by the programmer
+    - carefully
+    - randomly
+- type: MC
+  resp: 0
+  text: How is memory allocated on the stack?
+  choices:
+    - contiguous
+    - random
+- type: MC
+  resp: 1
+  text: What are the two operations for the stack data structure?
+  choices:
+    - push / pull
+    - push / pop
+    - put / get
+    - put / pull
+- type: MC
+  resp: 1
+  text: What class of data structure is the stack?
+  choices:
+    - FIFO
+    - LIFO
+    - PIPE
+    - CATS
+- type: MC
+  resp: 2
+  text: What address does a function point to after finishing execution?
+  choices:
+    - Base pointer
+    - Stack pointer
+    - Return address
+    - Standard pointer
+- type: FIB
+  resp: ebp
+  text: From what (x86) register are variables referenced?
+  choices: []
+- type: FIB
+  resp: esp
+  text: >-
+    What (x86) register is the base pointer typically set to when a function is
+    called?
+  choices: []
+- type: FIB
+  resp: return
+  text: The minimum content of a stack frame is a ____ address
+  choices: []
+- type: FIB
+  resp: compile
+  text: The amount of stack memory to allocate is known at ____ time
+  choices: []
+- type: FIB
+  resp: architecture
+  text: The direction the stack grows is ____ dependent.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: The stack in fact uses the queue data structure.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    Variables on the stack are vulnerable to buffer overflows and require
+    checking user input.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: The stack should be used for complex and large data structures.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: >-
+    The stack frame for a given function is globally accessible in the program
+    space.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    A stack frame is the data that is pushed to the stack when a function is
+    called.
+  choices: []

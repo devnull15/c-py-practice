@@ -1,0 +1,28 @@
+- choices:
+  - duplicate file names
+  - code reuse
+  - name collisions
+  - class refactoring
+  hash: $2b$11$.51HtA7HROVVDESwa.AKjeRD/PKrL49xYYIbs4qDggwOT0fUw4EU6
+  text: Using import's 'from' statement may cause what problem?
+  type: MC
+- choices: null
+  hash: $2b$11$bI8WNe61GDH5oNW5yM6keOUrsBf7DiTpUu05j1JKBLdZEvjkTxRxG
+  text: Each module includes a unique namespace.
+  type: TF
+- choices:
+  - .
+  - '&'
+  - '@'
+  - ->
+  hash: $2b$11$hmOBEi/q/nNq.hDkDAVZYewwadiHw3iDanv9xXSdH0a7yqBR6fEDe
+  text: Which operator references attributes within a module?
+  type: MC
+- choices:
+  - scope collisions
+  - overloading
+  - code reuse
+  - multi-threading
+  hash: $2b$11$LQjnmhcdp4xwJeYT8SAQz.JOODAze2TRjVonzMSK7.K8OGUAQxODC
+  text: Modules are a good exmple of what?
+  type: MC

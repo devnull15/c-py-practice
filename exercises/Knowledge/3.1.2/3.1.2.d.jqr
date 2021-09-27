@@ -1,0 +1,84 @@
+- choices:
+  - stack
+  - heap
+  - both
+  hash: $2b$11$fPTQA6oTXeqEJ6AbgLxTE.kcWos78R1lmYlK/qmOGjJKCnOn7JrKq
+  text: Does the stack or the heap allocate the memory for one specific variable contiguously?
+  type: MC
+- choices:
+  - stack
+  - heap
+  - both
+  hash: $2b$11$60BVcB0hscl/cjtorg/7bu0kKlOrO5mpKgTm3IPbeKRjnIB6Spqze
+  text: Does the stack or the heap implement dynamic allocation?
+  type: MC
+- choices:
+  - a local variable
+  - a global variable
+  - a pointer to a data structure manipulated by multiple functions
+  - a temporary data structure
+  hash: $2b$11$DPrMP3s4IUY6jJudFjrQ6OzzV75r9MSup4cEZ1evl4ZqepHq4RGgi
+  text: Select data better suited for the stack.
+  type: MA
+- choices:
+  - stack
+  - heap
+  - both
+  hash: $2b$11$RdG86fBXgKAIYL0I.6/BGe.8e5gDlzGe1EGT3r9ldsjUFFnA9uHEy
+  text: Does the stack or the heap automatically deallocate after the function returns?
+  type: MC
+- choices:
+  - an unknown number of data structures
+  - a global variable
+  - a pointer to data manipulated by multiple functions
+  - a temporary data structure
+  hash: $2b$11$CLETrSEsth1GJwbiiwEd8.ZKl3FT0oZq8IHZiDdz9tQoMPs.p8NMi
+  text: Select data better suited for the heap.
+  type: MA
+- choices:
+  - stack
+  - heap
+  - both
+  hash: $2b$11$CDhPp/KVSsHgrwpC6cSos.4YD9XU177EgQ.a37ZkwoUPCCJJBwLBi
+  text: Is the stack or the heap able to be resized during runtime?
+  type: MC
+- choices: []
+  hash: $2b$11$4bQPnYWo9S44ySVjBJzmD.0KDFpCdXktFwpHqcECT1wISZmDxncBi
+  text: The stack frame is local to the function, whereas memory on the heap is _____.
+  type: FIB
+- choices: []
+  hash: $2b$11$d5I1gH9GUu8NUVTUiqL1M.U5PNzuKwUg2VcDpa3lT3ic2v1nimY2O
+  text: Shared libraries can only access data on the _____.
+  type: FIB
+- choices: []
+  hash: $2b$11$1aJplU2WtsoCW20eMZhHU.DAPsdoujrLzE9lsJYkS.Zfh9UJmzQmi
+  text: Allocation for the _____ is known at compile time.
+  type: FIB
+- choices: []
+  hash: $2b$11$kcZEz6FRdmOapwMYk4GoTuSXyhxLclJpJflhUcdi9jlB9DQXngdk.
+  text: The _____ is better for large amounts of data.
+  type: FIB
+- choices: []
+  hash: $2b$11$azXPsBeh2Vv7ngNFnJxpueNUVN2DD.ReuF4MPP46rJ4m/KEV5PBuO
+  text: The _____ is better for variables only used locally.
+  type: FIB
+- choices: []
+  hash: $2b$11$RP.xVqDbt2tjnaP1pdd.Pe25E5zKIpbS7qNToByj5oFLjrS4gmrK6
+  text: Memory is more limited in the stack.
+  type: TF
+- choices: []
+  hash: $2b$11$bLs/Fl.X6cVaOgvE.x2SlOmdxOJDWPhDccI2VPNBLN9yj0iuP4fEa
+  text: Stack allocation is more costly than heap allocation.
+  type: TF
+- choices: []
+  hash: $2b$11$.WENbUP6sY57Roapq5NzDewS9PLtW/pu8q1ekX.m5IN1GNRWZgDiq
+  text: Stacks have a faster access time than the heap.
+  type: TF
+- choices: []
+  hash: $2b$11$9I7RYNmKeapT.JlBa/ELe.WpejoZcdoxi8Q9qiO5c2cAf1Iiz4Wn2
+  text: Memory allocated on the stack is fixed, but on the heap can be changed.
+  type: TF
+- choices: []
+  hash: $2b$11$Hwgmz9PLVQSlXt5P2FYAoeFt1ozRHu3am/u0o8NX5IT/bRXEFe2kO
+  text: The heap, unlike the stack, automatically deallocates memory.
+  type: TF

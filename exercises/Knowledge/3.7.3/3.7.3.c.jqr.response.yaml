@@ -1,0 +1,128 @@
+- type: FIB
+  resp: '6'
+  text: >-
+    A MAC or ethernet address is a total of ___ bytes. Response should be in
+    digits (0-9)
+  choices: []
+- type: FIB
+  resp: '48'
+  text: >-
+    A MAC or ethernet address is a total of ___ bits. Response should be in
+    digits (0-9)
+  choices: []
+- type: TF
+  resp: 'false'
+  text: >-
+    For a MAC address that is local and used for unicast, the last two bits of
+    the first byte must be 'XXXXXX10'
+  choices: []
+- type: MA
+  resp:
+    - 1
+    - 3
+    - 5
+    - 7
+  text: Select the valid local MAC addresses.
+  choices:
+    - fg-0d-5j-f7-2d-0h
+    - 0f-69-61-cb-ef-dc
+    - c8-8f-52-06-f5-e1
+    - 56-79-50-5a-4a-28
+    - 64-b6-23-27-e3-3e
+    - 1e-63-21-24-e5-38
+    - c9-af-11-96-c0-83
+    - df-5d-66-fa-5f-65
+- type: MA
+  resp:
+    - 2
+    - 4
+    - 6
+  text: Select the valid global MAC addresses.
+  choices:
+    - fg-0d-5j-f7-2d-0h
+    - 0f-69-61-cb-ef-dc
+    - c8-8f-52-06-f5-e1
+    - 56-79-50-5a-4a-28
+    - 64-b6-23-27-e3-3e
+    - 1e-63-21-24-e5-38
+    - c9-af-11-96-c0-83
+    - df-5d-66-fa-5f-65
+- type: MA
+  resp:
+    - 2
+    - 3
+    - 4
+    - 5
+  text: Select the valid unicast MAC addresses.
+  choices:
+    - fg-0d-5j-f7-2d-0h
+    - 0f-69-61-cb-ef-dc
+    - c8-8f-52-06-f5-e1
+    - 56-79-50-5a-4a-28
+    - 64-b6-23-27-e3-3e
+    - 1e-63-21-24-e5-38
+    - c9-af-11-96-c0-83
+    - df-5d-66-fa-5f-65
+- type: MA
+  resp:
+    - 1
+    - 6
+    - 7
+  text: Select the valid multicast MAC addresses.
+  choices:
+    - fg-0d-5j-f7-2d-0h
+    - 0f-69-61-cb-ef-dc
+    - c8-8f-52-06-f5-e1
+    - 56-79-50-5a-4a-28
+    - 64-b6-23-27-e3-3e
+    - 1e-63-21-24-e5-38
+    - c9-af-11-96-c0-83
+    - df-5d-66-fa-5f-65
+- type: SA
+  resp: fe80::2503:38ff:fe45:b307
+  text: >-
+    Given this MAC address, 27-03-38-45-b3-07, identify the converted IPv6
+    link-local address (use reduced form).
+  choices: []
+- type: SA
+  resp: fe80::e0a1:ebff:fec1:7bc6
+  text: >-
+    Given this MAC address, e2-a1-eb-c1-7b-c6, identify the converted IPv6
+    link-local address (use reduced form).
+  choices: []
+- type: SA
+  resp: fe80::f02d:2eff:fe8b:abbc
+  text: >-
+    Given this MAC address, f2-2d-2e-8b-ab-bc, identify the converted IPv6
+    link-local address (use reduced form).
+  choices: []
+- type: SA
+  resp: fe80::fd12:38ff:fe82:08af
+  text: >-
+    Given this MAC address, ff-12-38-82-08-af, identify the converted IPv6
+    link-local address (use reduced form).
+  choices: []
+- type: SA
+  resp: 03-84-7d-e9-fb-00
+  text: >-
+    Given this IPv6 address, fe80::184:7dff:fee9:fb00, identify the original MAC
+    address (use format XX-XX-XX-XX-XX-XX).
+  choices: []
+- type: SA
+  resp: 25-41-07-ea-c6-02
+  text: >-
+    Given this IPv6 address, fe80::2741:07ff:feea:c602, identify the original
+    MAC address (use format XX-XX-XX-XX-XX-XX).
+  choices: []
+- type: SA
+  resp: 5e-61-5f-c5-83-69
+  text: >-
+    Given this IPv6 address, fe80::5c61:5fff:fec5:8369, identify the original
+    MAC address (use format XX-XX-XX-XX-XX-XX).
+  choices: []
+- type: SA
+  resp: e1-0a-ad-be-71-82
+  text: >-
+    Given this IPv6 address, fe80::e30a:adff:febe:7182, identify the original
+    MAC address (use format XX-XX-XX-XX-XX-XX).
+  choices: []

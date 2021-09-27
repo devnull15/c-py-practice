@@ -1,0 +1,34 @@
+- choices:
+  - stack
+  - queue
+  - linked list
+  - binary search tree
+  hash: $2b$11$NfpfHjZjtOdpVc6C7EbVQeNYo8yxm8rAAL5FjWyDTICKuZS7rM72G
+  text: Which data structure ensures a first-in-first-out (FIFO) order?
+  type: MC
+- choices:
+  - stack
+  - queue
+  - linked list
+  - binary search tree
+  hash: $2b$11$SrfCfQRWH1rBG4rvqRMzeu2nZROHBCHGxLIQuAO/fwPoqg/GMvQ/i
+  text: Which data structure ensures a last-in-first-out (LIFO) order?
+  type: MC
+- choices:
+  - a
+  - b
+  - c
+  - d
+  hash: $2b$11$zcU28oBHqinSDZMyu5zIa.L3lvRISQZUPAwfw/NYh5uzC2e4mq3gW
+  text: Which item entered into a queue in this order "a,b,c,d" would be retrieved
+    first?
+  type: MC
+- choices:
+  - a
+  - b
+  - c
+  - d
+  hash: $2b$11$pYQxQLO23OrTmgE0Z2d4u.oKSCi99xz514ITuQgeaw9ZZDPcyxB82
+  text: Which item entered onto a stack in this order "a,b,c,d" would be retrieved
+    first?
+  type: MC

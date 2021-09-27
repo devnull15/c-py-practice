@@ -1,0 +1,27 @@
+- choices:
+  - Deadlock
+  - Condition variable
+  - Race condition
+  - Spinlocks
+  hash: $2b$11$WICp/31oA.qk4e9WhE5ICOEIS1JD.kBeHXn09iMIliyX6P0jAyBxy
+  text: When a piece of code is shared between 2 threads and when output of the code
+    is different depending on the order in which that 2 threads execute that code
+    is called _______.
+  type: MC
+- choices:
+  - single
+  - atomic
+  - static
+  - None of the above
+  hash: $2b$11$QInxFmrskrcpdqLX8k1mLOoD1zMfgdguoovRFC2vZ9trnUD7JMuei
+  text: An operation on ________ variable is un-interruptible.
+  type: MC
+- choices:
+  - Many as CPU core
+  - No more than 4
+  - 1
+  - 0
+  hash: $2b$11$vtiK1edCKMjqLgODLq3veenos5Rmdx/Gzr5IPPmapyWpmOwXvk8Pi
+  text: To avoid the race condition, the number of threads that may be simultaneously
+    inside their critical section is ____ .
+  type: MC

@@ -1,0 +1,72 @@
+- type: MC
+  resp: 2
+  text: What is the worst-case time analysis for problem 1?
+  choices:
+    - O(n)
+    - O(n log n)
+    - O(n^2)
+    - O(nk)
+- type: MC
+  resp: 2
+  text: What is the worst-case time analysis for problem 2?
+  choices:
+    - O(n)
+    - O(n log n)
+    - O(n^2)
+    - O(nk)
+- type: MC
+  resp: 1
+  text: What is the worst-case time analysis for problem 3?
+  choices:
+    - O(n)
+    - O(n log n)
+    - O(n^2)
+    - O(nk)
+- type: MC
+  resp: 2
+  text: What is the worst-case time analysis for problem 4?
+  choices:
+    - O(n)
+    - O(n log n)
+    - O(n^2)
+    - O(nk)
+- type: MC
+  resp: 1
+  text: What is the worst-case time analysis for problem 5?
+  choices:
+    - O(n)
+    - O(n log n)
+    - O(n^2)
+    - O(nk)
+- type: MC
+  resp: 2
+  text: What is the worst-case time analysis for problem 6?
+  choices:
+    - O(n)
+    - O(n log n)
+    - O(n^2)
+    - O(nk)
+- type: MC
+  resp: 3
+  text: What is the worst-case time analysis for problem 7?
+  choices:
+    - O(n)
+    - O(n log n)
+    - O(n^2)
+    - O(nk)
+- type: MC
+  resp: 2
+  text: What is the worst-case time analysis for problem 8?
+  choices:
+    - O(n)
+    - O(n log n)
+    - O(n^2)
+    - O(nk)
+- type: MC
+  resp: 2
+  text: What is the worst-case time analysis for problem 9?
+  choices:
+    - O(n)
+    - O(n log n)
+    - O(n^2)
+    - O(nk)

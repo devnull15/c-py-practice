@@ -1,0 +1,57 @@
+- type: MA
+  resp:
+    - 0
+    - 1
+    - 3
+  text: >-
+    Kernel is a software program executing within an operating system that has
+    direct access to____?
+  choices:
+    - Software applications
+    - Processors
+    - User process execution
+    - Memory
+- type: MA
+  resp:
+    - 0
+    - 1
+    - 2
+  text: ' When the kernel has executed all its functions, it can do the following as part of the dispatcher routine:.'
+  choices:
+    - >-
+      Return control to user mode at the point of the fork call of the parent
+      process.
+    - Transfer control to the child process at the return from the fork call.
+    - >-
+      Transfer control to another process. Both parent and child are left in the
+      Ready to Run state.
+- type: FIB
+  resp: user mode
+  text: >-
+    A user program executes in _____, where some areas of memory are protected
+    from the user’s use and certain instructions are not executed.
+  choices: []
+- type: FIB
+  resp: kernel mode
+  text: >-
+    In _____ privileged instructions may be executed and protected areas of
+    memory may be accessed.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    The main objective of kernel is to manage communication between hardware and
+    software.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    Kernel routines need to be reentrant to allow several processors to execute
+    the same kernel code simultaneously.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: >-
+    Monolithic kernel includes all of the OS functionality in one large code
+    block that runs as multiple processes with multiple address spaces.
+  choices: []

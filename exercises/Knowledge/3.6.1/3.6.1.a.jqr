@@ -1,0 +1,107 @@
+- choices:
+  - Single dimentional array of characters
+  - Multi dimentional array of characters
+  - Minimum size is 0 characters
+  - Terminated by a character literal '\0'
+  - First byte indicates the length of the string
+  - Minimum size is 1 character
+  hash: $2b$11$1txMn.Bmk9rst4/mj5fa2eGLsNAURU1iUSedhs/71l2QUpWOP5zSq
+  text: Which of the following describe strings in C coding?
+  type: MA
+- choices:
+  - '0'
+  - '1'
+  - '-1'
+  - '256'
+  hash: $2b$11$HseS4gmdfVd3mGM3w8113uD0/8GpK.unVnEkRFetraNZrz3vn4/LG
+  text: What would be the return value of the function "strncmp("aaa", "aab", 3)"?
+  type: MC
+- choices:
+  - token = strtok(token, " ");
+  - token = strtok(str, " ");
+  - token = strtok(NULL, " ");
+  - token = strtok(str, NULL);
+  - token = strtok(token, NULL);
+  hash: $2b$11$VvbR4UCpM7nMr5UwMMn51.M0Nyt0eJ3.pgmf1XGuYh9xdQmxuq29i
+  text: You are using the strtok() fuction to separate a string where a space occurs&#58;\
+    'token = strtok(str, " ")'. After the first token is obtained, what command would
+    you use to obtain the second token?
+  type: MC
+- choices: null
+  hash: $2b$11$l.BAxKx94Vf2Wukh5QYFvuwsOuv/NTJ2/vDeHxxDcGfHSZbYJDepO
+  text: After the execution of the command int length = strlen("A string"); The variable
+    length will contain the value 9 as the total length of the string includes the
+    literal '\0' that terminates the string.
+  type: TF
+- choices: null
+  hash: $2b$11$pLwYRurdq2Q.Q3qtTHmQSOpY8Zr9kPZYFlEW.kmYkHB.2R6sv2E9a
+  text: You defined a string using&#58;\ char *mystring = "This is a string";  You
+    can modify the first character in the string using&#58;\ mystring[0] = 'X';
+  type: TF
+- choices:
+  - printf("%c", mystring);
+  - printf("%c", mystring[0]);
+  - printf("%c", mystring[1]);
+  - printf("%c", *mystring);
+  - printf("%c", *(mystring + 0));
+  - printf("%c", *(mystring + 1));
+  - printf("%c", 0[mystring]);
+  - printf("%c", 1[mystring]);
+  hash: $2b$11$SkuOS25m6vw9T66b5Ni3zuayOF2bWFK.r9UPss3Bmp8onAtdYM29m
+  text: You have a string defined as\n\nchar mystring[] = "This is a string";\n\nWhich
+    of the following are ways to display the first character in this string?
+  type: MA
+- choices: null
+  hash: $2b$11$7zFuc/vYOQQ45zG8V9T5suP8p2aEs.fpzNx7ThVJjwOzFvTaMgvau
+  text: You defined a string using&#58;\ char mystring[6] = "One "; This command would
+    be safe from buffer overflows since the size is the same as the defined character
+    array&#58;\n\nstrncat(mystring, "Two", 6);
+  type: TF
+- choices:
+  - s is a string
+  - Thi
+  - This
+  - tring
+  - string
+  hash: $2b$11$nArjeGZo8WBvuvVb.zvnQeNojkttPH/vqjUMUwXFJ/ZNKhT1aU6YS
+  text: What would be displayed by this function&#58;\ printf("%s", strrchr("This
+    is a string", 's'); ?
+  type: MC
+- choices:
+  - s is a string
+  - Thi
+  - This
+  - tring
+  - string
+  hash: $2b$11$tLCo3cbcPhjIgTqeiZcB0uySoOfknGyOe4YsanTaWOdeZQP.VPyVe
+  text: What would be displayed by this function&#58;\ printf("%s", strchr("This is
+    a string", 's'); ?
+  type: MC
+- choices:
+  - It creates a duplicate of the string provided as a parameter to the strdup() function.
+  - The syntax is incorrect as it must be provided a character array as a second argument
+    where it will duplicate the string.
+  - The return value is a pointer to allocated memory which can be released with the
+    free() function.
+  - If there is not sufficient space left in the destination memory, then a buffer
+    overrun can occur.
+  hash: $2b$11$G6tDBh4RJ0QL3c7Se0PPvOMojbK9MDnSU6ZfgoZfqP3a6vjEP.LHq
+  text: You used this function in your code&#58;\ char *buffer = strdup("My string");  What
+    is true of this function?
+  type: MA
+- choices: null
+  hash: $2b$11$nHDfJGmaJYL3tOEzl/PJ/.TrB3l5XlhE/PDQZ1/aoP0vZuY7lNKra
+  text: The memcpy() function is defined in the string.h header. It is an alias to
+    strcpy().
+  type: TF
+- choices:
+  - The getline function guarantees a NULL terminated string
+  - The behavior will be undefined and likely fail because variable line is pointing
+    to unallocated memory.
+  - If you type "hey" and press enter at an interactive console prompt calling getline,
+    then the return value of the getline function will be 3.
+  - The getline function will return the newline character if typed.
+  hash: $2b$11$d.RoziV7nMXMJ6VGsho2wu3znDv4YVl6Ew/ubl/Ajh09I.CxJ6bt.
+  text: What is true about this code snippet&#58;\n\nchar *line = NULL;\nsize_t len
+    = 0;\n\ngetline(&line, &len, stdin));\n
+  type: MA

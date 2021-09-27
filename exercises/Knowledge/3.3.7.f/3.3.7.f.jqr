@@ -1,0 +1,31 @@
+- choices:
+  - a value greater than the root value is inserted into the tree.
+  - the heights of left and right subtrees of any node differ by more than 1.
+  - the height of the tree exceeds n/2.
+  - any node is removed from the tree.
+  hash: $2b$11$byfGl1APBGL0kUU.oBUsPOMhFWJ36XGxFdW1mkBGfdg7s6LXgxcgG
+  text: In one common implementation of a balanced binary search tree containing n
+    nodes, transformations are performed on the tree when&#58;
+  type: MC
+- choices:
+  - insertion
+  - ordered enumeration
+  - removal
+  - lookup
+  - find_min
+  hash: $2b$11$vtNFvvKQUqY0fBvf7ysByeOG4TonMWkq0X4r5dKM0yYgM47/wzLV2
+  text: Balanced binary search trees allow which operations to be conducted in O(log
+    n) worst-case time?
+  type: MA
+- choices: []
+  hash: $2b$11$QKGLgKrp8s6eT0FDs/xUMeDhabX2S6jMMSp.BJSxW/ncVLaNMzwkW
+  text: Balanced binary search trees do not require any additional overhead to implement.
+  type: TF
+- choices:
+  - are a type of balanced binary search tree.
+  - have the same number of black nodes in each path from root to leaf.
+  - do not allow black nodes to have black child nodes.
+  - do not offer guarantees for worst-case time for removal.
+  hash: $2b$11$OTBJ/etbBtDjvQWSfSwzZ.i7CwWQzqzlw3TDqo9xg6o08c.FNxIZW
+  text: Red-black trees&#58;
+  type: MA

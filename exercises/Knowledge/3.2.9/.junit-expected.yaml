@@ -1,0 +1,43 @@
+- overall: 3.2.9-knowledge
+  test_files: [suite_results.xml]    # parsed relative to the location of this file
+  sub_items:
+  - name: 3.2.9.a.jqr                # name of the test suite to load from in the xml
+    test_count: 8                   # number of test questions to find in the test suite 
+  - name: 3.2.9.b.jqr
+    test_count: 6
+  - name: 3.2.9.c.jqr
+    test_count: 5
+  - name: 3.2.9.d.jqr
+    test_count: 5
+  - name: 3.2.9.e.jqr
+    test_count: 5
+  - name: 3.2.9.f.jqr
+    test_count: 3
+  - name: 3.2.9.g.jqr
+    test_count: 6
+  - name: 3.2.9.h.jqr
+    test_count: 3
+  - name: 3.2.9.i.jqr
+    test_count: 4
+  - name: 3.2.9.j.jqr
+    test_count: 5
+  - name: 3.2.9.k.jqr
+    test_count: 4
+  - name: 3.2.9.l.jqr
+    test_count: 4
+  - name: 3.2.9.m.jqr
+    test_count: 3
+  - name: 3.2.9.n.jqr
+    test_count: 3
+  - name: 3.2.9.i.jqr
+    test_count: 4
+  - name: 3.2.9.j.jqr
+    test_count: 5
+  - name: 3.2.9.k.jqr
+    test_count: 4
+  - name: 3.2.9.l.jqr
+    test_count: 4
+  - name: 3.2.9.m.jqr
+    test_count: 3
+  - name: 3.2.9.n.jqr
+    test_count: 3

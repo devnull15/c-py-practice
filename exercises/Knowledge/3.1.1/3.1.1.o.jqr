@@ -1,0 +1,24 @@
+- choices: []
+  hash: $2b$11$9uy/8IWVHvyT3IUjaaP/pOZVLaMiJdX4rvCCXbvm4tpaTjwqVlh3C
+  text: If a control flow statement is inside of another control flow statement, the
+    inner control flow statement will control flow until it finishes, without additional
+    input from the outer control flow statement.
+  type: TF
+- choices:
+  - for loops
+  - if-else statements
+  - while loops
+  - switch statements
+  hash: $2b$11$pZIsXx39THBs1h5C2E51fO3KuMBCtGR8TmA6k3UONfaq0ECw7j8uy
+  text: Which of the following are control flow statements?
+  type: MA
+- choices:
+  - The while loop can be ended at any time by changing values so that is condition
+    evaluates to false, but the for loop cannot be exited in this way.
+  - If-else statements cannot be included in a for loop, but can be included in a
+    while loop
+  - The for loop executes a definite number of times, but a while loop executes an
+    indefinite number.
+  hash: $2b$11$P349oaZlCepcij3ZAnA9De9amDLkphmwx2F5s9DBz53M/pWIl9NJi
+  text: What is the fundamental difference between the for loop and the while loop?
+  type: MC

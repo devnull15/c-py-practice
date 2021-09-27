@@ -1,0 +1,23 @@
+- choices: []
+  hash: $2b$11$oeWMWHcCEHXvR.89JwNlduQyGiuoPUxooff93o1AaU56BpqKhKXWy
+  text: The thread ID of the initial (main) thread and subsequently created threads
+    has the same process ID as the entire process.
+  type: TF
+- choices:
+  - Process ID
+  - Thread ID
+  - Same as getpid()
+  - All of the above (All values will be same.)
+  hash: $2b$11$qc839s8vpUAYvsuyLCSFveflry.dl/RgPYe7Y1jRDzAZukOgHCm.W
+  text: If initial (main) thread calls the pthread_self() function, what would be
+    return value?
+  type: MC
+- choices:
+  - getpid()
+  - pthread_self()
+  - goto
+  - system()
+  hash: $2b$11$kbOgP0aNmtOg7zy8of6CJe5z.GqFrLwvS/b5CpbnczkgJNtwMHA.2
+  text: Which function should not be utilized while creating platform independent
+    programs?
+  type: MC

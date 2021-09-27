@@ -1,0 +1,216 @@
+- choices:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  hash: $2b$11$xtqThk1L6TmD8wg0rHf9auSwyxtXHMNt.9VqCzvqYB0vvx81L39bK
+  text: How many layers are there in the OSI model?
+  type: MC
+- choices:
+  - 1
+  - 2
+  - 3
+  - 4
+  hash: $2b$11$75gYWRRbyn0vCEHBbdoXt.gtzO2ptm7fwVu/ede39nzVerQehskxG
+  text: Which layer is responsible for physical addressing?
+  type: MC
+- choices:
+  - 1
+  - 2
+  - 3
+  - 4
+  hash: $2b$11$RNlqX4tdMKgOAnn8vkCmKu7Mp6IVrDeUMXvKVnyfiTQKSd319Ovzq
+  text: Which layer is responsible for logical addressing?
+  type: MC
+- choices:
+  - MAC
+  - PPP
+  - SLIP
+  - DLCI
+  - HDLC
+  - FDDI
+  hash: $2b$11$ze4sMcsuG/Of8gf0LzEraedVPrvtteEp1DG0hgjIZpzWf2.GhsEVm
+  text: Which of the following are layer 2 addresses?
+  type: MA
+- choices:
+  - Bit
+  - Frame
+  - Packet
+  - Segment
+  - Datagram
+  - Data
+  hash: $2b$11$hvFc3FSCfORRdS8C0vTbZOUBRLUthNw5zrh.S7JAdf9TvYvu9DSVi
+  text: What is the Protocol Data Unit (PDU) of layer 1?
+  type: MC
+- choices:
+  - Bit
+  - Frame
+  - Packet
+  - Segment
+  - Datagram
+  - Data
+  hash: $2b$11$9MBvx3j/.oxA/DzskXAf2.WsJbTV0f8wfpw94xV888wzPQ6u7BQX2
+  text: What is the Protocol Data Unit (PDU) of layer 2?
+  type: MC
+- choices:
+  - Bit
+  - Frame
+  - Packet
+  - Segment
+  - Datagram
+  - Data
+  hash: $2b$11$rL/LR5/Vm5iJsdVXPpsbQeXNu099rWigOD9COlAdGJ.0WuSz.0hAK
+  text: What is the Protocol Data Unit (PDU) of layer 3?
+  type: MC
+- choices:
+  - Bit
+  - Frame
+  - Packet
+  - Segment
+  - Datagram
+  - Data
+  hash: $2b$11$ZJkt/hYfj9s71Rlxa9bSo.L4VedUEH0yEY438XL/pmIZX0V2PM0CG
+  text: What is the Protocol Data Unit (PDU) of layer 4?
+  type: MA
+- choices:
+  - Bit
+  - Frame
+  - Packet
+  - Segment
+  - Datagram
+  - Data
+  hash: $2b$11$ZCypWLmEEDdxLSjFqt2BceJr.jiJFAS1n3qSCUAjuT8Zgd..C3bdS
+  text: What is the Protocol Data Unit (PDU) of layer 5?
+  type: MC
+- choices:
+  - Bit
+  - Frame
+  - Packet
+  - Segment
+  - Datagram
+  - Data
+  hash: $2b$11$sgqxrQdg7ezldur6MkqPLu2V0cAdGoa/q75TxEuJ95XX6hnbSVahu
+  text: What is the Protocol Data Unit (PDU) of layer 6?
+  type: MC
+- choices:
+  - Bit
+  - Frame
+  - Packet
+  - Segment
+  - Datagram
+  - Data
+  hash: $2b$11$l1W78gC.V4TnsSjtvrzideOGOYhjhbqha3meJb0Teuybm898thgDu
+  text: What is the Protocol Data Unit (PDU) of layer 7?
+  type: MC
+- choices:
+  - physical
+  - data link
+  - network
+  - transport
+  - session
+  - presentation
+  - application
+  hash: $2b$11$7/MFnOvowrPa51l05VAWw.QPbBfInKladyWhCsj0aRt21NV27Kr0i
+  text: What layer of the osi model would best fit this item&#58;\ 1000Mbps?
+  type: MC
+- choices:
+  - physical
+  - data link
+  - network
+  - transport
+  - session
+  - presentation
+  - application
+  hash: $2b$11$wUlzncprHWo3Y6.fY9n/a.RMPCnqZfnB/iOSa/osJRSS5Gv0jK6IK
+  text: What layer of the osi model would best fit this item&#58;\ +5 volts?
+  type: MC
+- choices:
+  - physical
+  - data link
+  - network
+  - transport
+  - session
+  - presentation
+  - application
+  hash: $2b$11$J0eIGj5sXqu2fbX3rrc/cOQmXUVO2X80grLAAaKydpWktPH.cNRBm
+  text: What layer of the osi model would best fit this item&#58;\ 7e&#58;f5&#58;e9&#58;78&#58;dc&#58;ad?
+  type: MC
+- choices:
+  - physical
+  - data link
+  - network
+  - transport
+  - session
+  - presentation
+  - application
+  hash: $2b$11$DKCiuRmw5OpV8C.Y.jBQ/uRSk1NyleYrtgT0S51Yx2go9Pp2/kgkS
+  text: What layer of the OSI model would best fit this item&#58;\ 192.168.1.23?
+  type: MC
+- choices:
+  - physical
+  - data link
+  - network
+  - transport
+  - session
+  - presentation
+  - application
+  hash: $2b$11$msVq82ALOnrj/BRzyYDfSeh6z6s.24v4uomV6g5gfdeY0sz4AE6T2
+  text: What layer of the OSI model would best fit this item&#58;\ HTTP?
+  type: MC
+- choices:
+  - physical
+  - data link
+  - network
+  - transport
+  - session
+  - presentation
+  - application
+  hash: $2b$11$9Ua/dXPZ5l0mUjlnz1l3cu4tSr6PFMWK16efgTP/YtdYhuJr/HfB.
+  text: What layer of the OSI model segments and reassembles data into a data stream?
+  type: MC
+- choices:
+  - physical
+  - data link
+  - network
+  - transport
+  - session
+  - presentation
+  - application
+  hash: $2b$11$HmqwfHSHCrDrFVVwte7Lt.6DGBY23j7E1MHEGHDI0BdYMYsJeD09C
+  text: What layer of the OSI model would best fit this attribute&#58;\ fe80&#58;&#58;c33f&#58;33a2&#58;2f72&#58;8fe6?
+  type: MC
+- choices:
+  - physical
+  - data link
+  - network
+  - transport
+  - session
+  - presentation
+  - application
+  hash: $2b$11$uz4WNH63tyVDGW.BnRbu3eEsUnHuvvvl39jww2XWBemhbMQzIpDPq
+  text: What layer of the OSI model is responsible for path determination?
+  type: MC
+- choices:
+  - physical
+  - data link
+  - network
+  - transport
+  - session
+  - presentation
+  - application
+  hash: $2b$11$BG24SriJ6HxM3Zk/rXxyNetMvgkaw75iWnDBILisj/81N3G8zv3Ta
+  text: What layer of the OSI model performs formatting, compression, and encryption?
+  type: MC
+- choices: null
+  hash: $2b$11$ZsBYMBn2hmF7xqZR/P7oIO73XGwDALxvNl1rHiKLGJXxa5mBSKzoO
+  text: GIF to JPEG conversion is performed by the presentation layer.
+  type: TF
+- choices:
+  - Physical > Network > Data Link > Transport > Session > Presentation > Application
+  - Physical > Network > Session > Transport > Data Link > Presentation > Application
+  - Physical > Data Link > Network > Transport > Session > Presentation > Application
+  - Physical > Data Link > Network > Transport > Presentation > Session > Application
+  hash: $2b$11$M3x2Z.JI72IeS4Hs7m6cYuTbTX0Ny5luU/.nDWoCdzfhi3vLNWGMa
+  text: What is the proper order of the OSI model layers from Physical to Application?
+  type: MC

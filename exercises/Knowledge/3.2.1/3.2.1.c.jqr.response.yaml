@@ -1,0 +1,24 @@
+- type: MC
+  resp: 3
+  text: Methods are used to impliment which software design concept?
+  choices:
+    - multi-threading
+    - redundancy
+    - security
+    - encapsulation
+- type: TF
+  resp: 'true'
+  text: Methods can be used to modify the properties of an object.
+  choices: null
+- type: MC
+  resp: 2
+  text: What method name is used to override a method from a parent class?
+  choices:
+    - the same name as the parent class with '_init_' appended
+    - the attribute name with 'get_' appended
+    - the same name as the parent method
+    - the class name with the attribute prepended
+- type: TF
+  resp: 'true'
+  text: Methods are associated with classes and their objects.
+  choices: null

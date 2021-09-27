@@ -1,0 +1,147 @@
+- type: TF
+  resp: 'true'
+  text: >-
+    The DHCP server must reside on each subnet that requires DHCP since DHCP is
+    a broadcast oriented protocol.
+  choices: []
+- type: MC
+  resp: 2
+  text: >-
+    What is the proper order of a client requesting DHCP information assuming
+    that all works as planned?
+  choices:
+    - DHCP Discover, DHCP Request, DHCP Offer, DHCP Acknowledge
+    - DHCP Request, DHCP Offer, DHCP Acknowledge, DHCP Discover
+    - DHCP Discover, DHCP Offer, DHCP Request, DHCP Acknowledge
+    - DHCP Request, DHCP Offer, DHCP Acknowledge
+    - DHCP Discover, DHCP Request, DHCP Acknowledge
+- type: MC
+  resp: 2
+  text: What are the MAC addresses of a DHCP Discover message?
+  choices:
+    - >-
+      Source MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF, destination MAC
+      FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF
+    - >-
+      Source MAC is the MAC address assigned to the NIC of the client,
+      destination MAC is the MAC address of the DHCP server
+    - >-
+      Source MAC is the MAC address assigned to the NIC of the client,
+      destination MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF
+    - >-
+      Source MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF, destination MAC is the
+      MAC address of the DHCP server
+    - >-
+      Source MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF, destination MAC is the
+      MAC address of the default gatewary/router
+    - >-
+      Source MAC is the MAC address assigned to the NIC of the client,
+      destination MAC is the MAC address of the default gatewary/router
+- type: MC
+  resp: 1
+  text: What are the MAC addresses of a DHCP Offer message?
+  choices:
+    - >-
+      Source MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF, destination MAC
+      FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF
+    - >-
+      Source MAC is the MAC address assigned to the NIC of the server,
+      destination MAC is the MAC address of the client
+    - >-
+      Source MAC is the MAC address assigned to the NIC of the server,
+      destination MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF
+    - >-
+      Source MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF, destination MAC is the
+      MAC address of the DHCP client
+    - >-
+      Source MAC is the MAC address of the default gatewary/router, destination
+      MAC is FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF
+    - >-
+      Source MAC is the MAC address of the default gateway/router, destination
+      MAC is the MAC address of the client
+- type: MC
+  resp: 2
+  text: >-
+    What are the MAC addresses of a DHCP Request message and the reason they are
+    set this way?
+  choices:
+    - >-
+      Source MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF, destination MAC
+      FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF. Since DHCP is a broadcast oriented
+      protocol, broadcast MAC addresses are used.
+    - >-
+      Source MAC is the MAC address assigned to the NIC of the client,
+      destination MAC is the MAC address of the DHCP server. Because both
+      devices have learned each others MAC address from the DHCP Request and
+      Offer, then unicast MAC addresses can be used.
+    - >-
+      Source MAC is the MAC address assigned to the NIC of the client,
+      destination MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF. Broadcasts are
+      typically only required when the MAC address of the destination is
+      unknown, but in this case the client does have the MAC address of the DHCP
+      server learned via the DHCP offer message, but since it is possible that
+      multiple DHCP servers provided an offer, the destination MAC is set as 
+      broadcast so that other DHCP servers are notified that the client didn't
+      accept their offer.
+    - >-
+      Source MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF, destination MAC is the
+      MAC address of the DHCP server. Since DHCP is a broadcast oriented
+      protocol, the client uses the broadcast MAC addresses and since it has
+      learned the MAC address of the server from the DHCP Offer, then it can
+      send the DHCP Request via unicast.
+    - >-
+      Source MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF, destination MAC is the
+      MAC address of the default gatewary/router. Since DHCP is a broadcast
+      oriented protocol, the client uses a broadcast MAC addresses, but since it
+      is likely that the server is not on the local network segment, the default
+      gateway/router is used to tranfer the DHCP Request message.
+    - >-
+      Source MAC is the MAC address assigned to the NIC of the client,
+      destination MAC is the MAC address of the default gatewary/router. Because
+      it is likely that the server is not on the local network segment, the
+      default gateway/router is used to tranfer the DHCP Request message.
+- type: MC
+  resp: 1
+  text: What are the MAC addresses of a DHCP Acknowledge message?
+  choices:
+    - >-
+      Source MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF, destination MAC
+      FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF
+    - >-
+      Source MAC is the MAC address assigned to the NIC of the server,
+      destination MAC is the MAC address of the client
+    - >-
+      Source MAC is the MAC address assigned to the NIC of the server,
+      destination MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF
+    - >-
+      Source MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF, destination MAC is the
+      MAC address of the DHCP client
+    - >-
+      Source MAC is the MAC address of the default gatewary/router, destination
+      MAC is FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF
+    - >-
+      Source MAC is the MAC address of the default gateway/router, destination
+      MAC is the MAC address of the client
+- type: MA
+  resp:
+    - 3
+    - 4
+  text: >-
+    You know that the DHCP address you typically get is 172.16.2.19/16. Today,
+    you power on your computer and the address you receive is 169.254.3.22/16. 
+    Why is this?
+  choices:
+    - >-
+      Your previous address was  flushed from the DHCP pool and you received
+      another address that is part of the same network.
+    - >-
+      Another client likely received your address since it wasn't in use due to
+      you having the computer turned on, so the server assigned another address
+      in the same pool.
+    - >-
+      The lease on the address you had expired and in the process of requesting
+      a new lease, the DHCP server gave you a different address.
+    - The DHCP server has crashed.
+    - >-
+      Your DHCP server is on a different segment and the relay agent was
+      unresponsive.

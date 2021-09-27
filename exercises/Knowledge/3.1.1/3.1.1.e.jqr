@@ -1,0 +1,18 @@
+- choices: []
+  hash: $2b$11$56eLiSFJqztejunCuYM/X.koEqeke8f3yujFWU0IHr1EpLSQfwzFu
+  text: For most data types, the return value of a function must match the data type
+    of that function.
+  type: TF
+- choices: []
+  hash: $2b$11$dBltYMCc0rJIym/OJAKzeuaAj1ZtHsqU7UkebXDISV4Rs1WU6brcq
+  text: Functions that return a value must be assigned to a variable, i.e. int someVar
+    = someFunction();
+  type: TF
+- choices:
+  - float
+  - char
+  - int
+  - void
+  hash: $2b$11$5IYLbAX099.dg5UwyqrA2erMVk1dy0OaJLE5v5J0x.CNLejAMeJKO
+  text: List all valid function return types.
+  type: MA

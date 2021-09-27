@@ -1,0 +1,12 @@
+- type: MC
+  resp: 3
+  text: What mechanism may indicate a function's return type?
+  choices:
+    - global
+    - inheritance
+    - casting
+    - type hints
+- type: TF
+  resp: 'false'
+  text: Python does not pass arguments or return values by reference.
+  choices: null

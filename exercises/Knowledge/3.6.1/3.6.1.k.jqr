@@ -1,0 +1,274 @@
+- choices:
+  - It is faster than symetric key cryptography.
+  - Whatever is encrypted with the public key can be decrypted by the private key.
+  - Whatever is encrypted with the private key can be decrypted by the private key.
+  - Whatever is encrypted with the public key can be decrypted by the public key.
+  - Whatever is encrypted with the private key can be decrypted by the public key.
+  - Used for bulk encyption.
+  hash: $2b$11$mBrkeQdbktuYWlP1.Pi2qeqctMTs/zt/g9u2uIVlZmrSKuOWjcCF.
+  text: What is true about public key cryptography?
+  type: MA
+- choices:
+  - It is faster than public key cryptography.
+  - Whatever is encrypted with the public key can be decrypted by the private key.
+  - Whatever is encrypted with the private key can be decrypted by the private key.
+  - Whatever is encrypted with the public key can be decrypted by the public key.
+  - Whatever is encrypted with the private key can be decrypted by the public key.
+  - Used for bulk encyption.
+  - Sometimes called private key cryptography.
+  - Sometimes called same key cryptography.
+  hash: $2b$11$1iS5kOEfRRqteySxZyIBg.fiAHm0atF8tW8uQyN1XhO6hipnfM8BK
+  text: What is true about symmetric key cryptography?
+  type: MA
+- choices:
+  - It is slow to encrypt and decrypt.
+  - It is only an algorythm and requires no key.
+  - The transfer of the key is in plain text.
+  - It is relatively simple to identify by using techniques such as letter frequency.
+  hash: $2b$11$lg/ujnJBhdbuaNrH5Ag2mOtYgrYksehlcgkpBb3Eoj/1ULBhFmSQK
+  text: What are weaknesses of ROT13?
+  type: MA
+- choices:
+  - It is slower than public key cryptography.
+  - If one key is compromised, then they are all compromised.
+  - Secure key storage.
+  - Secure key distribution.
+  hash: $2b$11$WkL.VbIAwN//YFivurlq2uYoO6/QRtarDWD9d78LqML1T.0d/xGVe
+  text: What are weaknesses of symmetric key cryptography?
+  type: MA
+- choices:
+  - Bulk encryption.
+  - An arbitrary person encrypts a message with your public key and only your private
+    key is able to decrypt it.
+  - Transmission of a shared secret key over an insecure channel.
+  - You use your private key to encrypt a message. Your public key is able to decrypt
+    it, so the receiver knows that you were the one that sent it.
+  hash: $2b$11$sHa0D0C8hUiWDN7FfvKeSeKftFpOkAsvZ14YyIa4r5.j8YJlrU1.K
+  text: What are typical uses of public key cryptography?
+  type: MA
+- choices:
+  - Used for bulk encryption.
+  - Obtaining a session key involves using public key cryptography.
+  - A session key is a symmetric key.
+  - Will always be the same between the same two entities.
+  - Used to secure communications between two applications.
+  hash: $2b$11$P/Ds9b71hhpoeiyuCnZ.se2AdSXA7JBDcb1x0TDcWXHGFMox/Q8Yi
+  text: What is a session key?
+  type: MA
+- choices:
+  - AES
+  - RSA
+  - ECB
+  - DES
+  - 3DES
+  hash: $2b$11$q01rtvxfVV3XAAYlI/InCe9ShUp1uKPxCxJYUhy.DRaqlu6exvQqe
+  text: Which of the following are block ciphers?
+  type: MA
+- choices: []
+  hash: $2b$11$yyKL7uKhDGwEsEhREpofBOLN7dB18ofOqfPP.4SikfEMstdRYqBqS
+  text: _________ means that each bit of ciphertext should depend on several parts
+    of the key, while _________ means that if we change a single bit of plaintext,
+    then statistically half of the bits of ciphertext should change. [Enter two words
+    separated by a space.]
+  type: FIB
+- choices: null
+  hash: $2b$11$1kZCEkB3FCIIjpRP9U79BOUdu1Qc0S5QQW/wWx.dE9L.70ubEs/AO
+  text: In stream ciphers, the encoding of a given bit depends on the value of the
+    previous bit.
+  type: TF
+- choices:
+  - In multiple encryption implementations, which in practice are significantly stronger
+    than single encryption.
+  - Stream ciphers are used to encode the initialization vector for a block cipher.
+  - The key stream for a stream cipher implementation is calculated using a block
+    cipher.
+  - In practice, block ciphers and stream ciphers are rarely combined.
+  hash: $2b$11$Q7XGMLidCJxZYKcrXw4zlOrK1auaPZiV4aal.qggq1sy0T1uHj.Ou
+  text: How can block ciphers and stream ciphers be combined to encrypt multiple blocks
+    of data?
+  type: MC
+- choices: null
+  hash: $2b$11$T6BAcI/V/DH0Hxv8oneon.R.CBheY/9fqi20RgYeEvse8G8y.uMFi
+  text: Keys generated using Diffie-Helman key exchange should be used for asymmetric
+    encryption, not symmetric encryption.
+  type: TF
+- choices:
+  - Integer factorization
+  - Discrete logarithm
+  - Cryptographically secure hash function
+  - The knapsack problem
+  hash: $2b$11$ejVw7sN0MzeLfuTahuRNfedO92yqziVFe8GIyh1iJW0piic0fH99u
+  text: Which one-way function is Diffie-Hellman key exchange based on?
+  type: MC
+- choices: []
+  hash: $2b$11$IT9qhht83W43enqqAjD.6.cPm4Q9alIwXn9kyFxPWddZQRrv2ChiK
+  text: Alice and Bob decide to use Diffie-Hellman key exchange to calculate a shared
+    key. They share a prime number 11, and a primitive root 2. Alice selects 4 as
+    her private key, and Bob selects 7. What is their shared secret key?
+  type: FIB
+- choices:
+  - A protocol comprised of three sub-protocols that runs on top of TCP and allows
+    for secure network communications.
+  - A protocol that allows processes on a client's computer to be securely controlled
+    by a trusted remote server.
+  - A file transfer service that uses asymmetric encryption to share information between
+    client and server.
+  - A secure remote login scheme that replaced TELNET and does not support additional
+    network functions.
+  hash: $2b$11$0Xi8khVSM.nHnRULSw46eOUyJFeDICi7CE7C/jiJ7Hn6HUUy98FwK
+  text: SSH is&#58;
+  type: MC
+- choices: []
+  hash: $2b$11$vJYGdF0QbSTiVdgt/26lE.WJlHJyGraZz4PPj48zQ6ybDvNG4Jkxu
+  text: A secure authentication connection, or tunnel, may multiplex a number of logical
+    _______ that support different types of communication between client and server.
+  type: FIB
+- choices:
+  - -D, -L, -R
+  - -D, -R, -L
+  - -L, -D, -R
+  - -L, -R, -D
+  - -R, -D, -L
+  - -R, -L, -D
+  hash: $2b$11$i8iobyqpWcdoHAzCj5aCEu2pQMmeaD9aSYOrwQc6BO5ykpM4d3ZBu
+  text: The __ flag accepts connections on a specific client port and forwards them
+    to a specific server port, and the __ flag accepts connections on a specific client
+    port and forwards them to an unspecified server port (local forwarding). The __
+    flag, on the other hand, forwards connections on a server port to the client (remote
+    forwarding).
+  type: MC
+- choices:
+  - Integer factorization
+  - Discrete logarithm
+  - Cryptographically secure hash function
+  - The knapsack problem
+  hash: $2b$11$qK0fIQyEdQ4LMfmcK4GP9ObnDjasc0ebxXWjRHPrrRHQybD61Rjpa
+  text: Which one-way function is elliptic curve cryptography based on?
+  type: MC
+- choices: null
+  hash: $2b$11$RslQ1O1hSFV9KZ/aN95YZ.lVK3hp1wLf3XnRswgRXzJEPpT9aBbX6
+  text: The elliptic curve cryptography is more computationally intensive than RSA,
+    but is more resistant to quantum attacks.
+  type: TF
+- choices:
+  - shorter key lengths
+  - longer key lengths
+  - similar key lengths
+  - more research to be conducted
+  hash: $2b$11$aZ40Jf2TZCUmtzajKOf8senswqUuNrLO80vdE6Xm2v2OiqB5syxoG
+  text: Compared with RSA, elliptic curve cryptography requires __________ to achieve
+    similar security.
+  type: MC
+- choices:
+  - C = M^n mod de
+  - C = (M^e)^d mod n
+  - C = M^d mod n
+  - C = M^e mod n
+  hash: $2b$11$2KIqHl5fkIMB8zYkxluxZeDHz5stTIjhrNxtdx4r6tbqk9kk.GTWW
+  text: Given a private key d, a public key e, a plaintext message M, and a modulus
+    n, how is RSA used to calculate the ciphertext C?
+  type: MC
+- choices:
+  - M = C^n mod de
+  - M = (C^e)^d mod n
+  - M = C^d mod n
+  - M = C^e mod n
+  hash: $2b$11$xPQNMKt9QIfGWp7lDGeYv.9WtFkasnk8TxtrgTRA7KcJ9Bzns5OP.
+  text: Given a private key d, a public key e, a ciphertext message C, and a modulus
+    n, how is RSA used to calculate the plaintext M?
+  type: MC
+- choices:
+  - e and d are very large primes selected randomly
+  - e and d are prime factors of the modulus n
+  - e and d are prime factors of Euler's totient function of n
+  - e and d are multiplicative inverses modulo n
+  - e and d are multiplicative inverses modulo Euler's totient function of n
+  hash: $2b$11$ITtqsCncrFUn7/QlHc4cSevGy0PwakgVuE21HwMH.8P7dvxm5lsH.
+  text: What is the relationship between the public key (e) and private key (d) in
+    an RSA key pair?
+  type: MC
+- choices:
+  - n is prime
+  - n is the product of two very large primes, p and q
+  - n is known to the sender and receiver
+  - n is kept secret
+  - the factorization of n is known to the sender and receiver
+  - the factorization of n is kept secret
+  hash: $2b$11$ies1Ohq4qI7TzjL2SYhIwOaXa./DhAud7Ju8KOcbBl8hS6EoKKQZu
+  text: Which are important characteristics of the modulus n?
+  type: MA
+- choices:
+  - To verify the client's, and optionally the servers, certificate during key exchange.
+  - To verify the server's, and optionally the client's, certificate during key exchange.
+  - To verify that each application_data message from the server is associated with
+    a valid certificate.
+  - To verify that each application_data message from the client is associated with
+    a valid certificate.
+  hash: $2b$11$TSK/YJpFtiy77mR1CJnRoO69I0BYgsXZZG0o4smjphr0DDT3LnMyK
+  text: What is the role of the certificate authority in TLS?
+  type: MC
+- choices:
+  - client_hello
+  - certificate
+  - server_key_exchange
+  - certificate_verify
+  - heartbeat_request
+  - finished
+  hash: $2b$11$fOp5fZela.kCUUcEzIqiKejrdihYx4bT1USi55Qu3K2nt0FrFqROS
+  text: Which of the following are message types included in the TLS handshake protocol?
+  type: MA
+- choices: null
+  hash: $2b$11$ZZslQoIgg1.9jyt6Cr7UlOwIYpuRI0ID.aMGVPnh/jpKuUHPQU.d.
+  text: The TLS record protocol can provide confidentiality, integrity, and authentication.
+  type: TF
+- choices: []
+  hash: $2b$11$npAcG5rHUkC6eNHb/LqNK.FV6hjD0Z6JTPUybMO5jXewmiiCS5foa
+  text: TLS can associate multiple connections with a single _______.
+  type: FIB
+- choices: null
+  hash: $2b$11$.zGX.8GfL/PxcCcnA5keE.RmIFnKg0qVfQXIezcV/a3OHbGHLt5wq
+  text: Digital signatures are useful for both the sender and the receiver of a message
+    because they prove both who sent the message and what was sent.
+  type: TF
+- choices: null
+  hash: $2b$11$wWleG7gpKji7R7jDVSeZ.O7e3y2exXi42jC4nkOw55fZqT.X6td3a
+  text: A digital signature is the message being sent, encrypted using the sender's
+    private key, then hashed using one of several algorithms.
+  type: TF
+- choices:
+  - NIST DSA
+  - ElGamal Digital Signature Scheme
+  - SHA-3
+  - ECDSA
+  - RSA-PSS
+  - HMAC
+  hash: $2b$11$FYlvJwMFHD1VB/MCE7PnvuRXfOiI2LbRSzrq/3YOUJi0aHBEPROru
+  text: Which of the following are prominent digital signature schemes?
+  type: MA
+- choices:
+  - TCP connections to 172.16.1.1 on port 8080 will be tunneled to 192.168.1.1. From
+    the perspective of 192.168.1.1, the connection will originate from 172.16.1.1.
+  - TCP connections to 172.16.1.1 on port 8080 will be tunneled to 192.168.1.1. From
+    the perspective of 192.168.1.1, the connection will originate from 192.168.1.42.
+  - From the local machine where the commands have been run, a user can configure
+    their web browser to connect to a SOCKSv5 proxy running on localhost at port 7777.
+    All traffic using that proxy will be tunneled over SSH and appear to originate
+    from 172.16.1.1 from the perspective of the destination.
+  - A netstat on 10.8.0.1 will see a connection to the host 192.168.1.42 as a result
+    of these ssh commands
+  - A netstat on 10.8.0.1 will see a connection to the host 172.16.1.1 as a result
+    of these ssh commands
+  - It is possible to modify tunnels in each of the ssh sessions after the sessions
+    are started. The menu can be accessed by using the input&#58; "<newline>~C"
+  - Connections through the dynamic tunnel on port 7777 will always be encrypted after
+    they leave 172.16.1.1
+  - Connections within the tunneled channels are encrypted in transit.
+  - A netstat on 172.16.1.1 will see connections to 192.168.1.1 as a result of these
+    ssh commands.
+  hash: $2b$11$E/7U4P75IsgUs6HOv/tZn.YzHXG0FzfMgK3Rl7qEEC8PbbP5N5/22
+  text: The following SSH commands are run from a device with a single network interface
+    and an IP of 192.168.1.42. The commands execute without error, the user authenticates,
+    and all tunnels are configured successfully. Which statements are true?\n\n ssh
+    user@192.168.1.23 -L9999&#58;10.8.0.1&#58;22\nssh -p 9999 user@localhost -L5555&#58;172.16.1.1&#58;22\nssh
+    -p 5555 root@localhost -R0.0.0.0&#58;8080&#58;192.168.1.1&#58;80 -D 7777
+  type: MA

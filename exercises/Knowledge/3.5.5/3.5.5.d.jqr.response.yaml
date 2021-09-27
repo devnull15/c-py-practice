@@ -1,0 +1,47 @@
+- type: MC
+  resp: 3
+  text: What is the correct order of the boot process?
+  choices:
+    - >-
+      Power applied, BIOS loaded, POST, System Config, OS Load, System Utilities
+      are loaded, User Authenticated
+    - >-
+      Power applied, POST, BIOS loaded, OS Load, System Utilities are loaded,
+      System Config, User Authenticated
+    - >-
+      Power applied, POST, BIOS loaded, OS Load, System Utilities are loaded,
+      System Config, User Authenticated
+    - >-
+      Power applied, BIOS loaded, POST, OS Load, System Config, System Utilities
+      are loaded, User Authenticated
+- type: MC
+  resp: 3
+  text: What systems does POST check?
+  choices:
+    - Main Memory
+    - I/O Devices
+    - Disk Drives
+    - All of the above
+    - None of the above
+- type: MC
+  resp: 2
+  text: What part of the computer looks for and loads the OS?
+  choices:
+    - RAM
+    - POST
+    - BIOS
+    - Hard Disk
+- type: MC
+  resp: 2
+  text: What step includes the loading of system drivers into RAM?
+  choices:
+    - POST
+    - OS Loads
+    - System Configuration
+    - System Utility Loads
+- type: TF
+  resp: 'true'
+  text: >-
+    The kernel is the most important part of the operating system that manages
+    memory and devices, maintains computer clock, starts applications.
+  choices: []

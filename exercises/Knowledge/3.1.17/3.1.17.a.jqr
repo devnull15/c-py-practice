@@ -1,0 +1,86 @@
+- choices:
+  - Portable Executable (PE)
+  - Executable and Linkable Format (ELF)
+  - Neither
+  - Both
+  hash: $2b$11$QEW1AFds0OjW/PbJTSmPeuYAr4oer18ZNjnz9Z4PsJSl9AKjhRBBm
+  text: Which is capable of being used on 32-bit and 64-bit operating systems?
+  type: MC
+- choices:
+  - Portable Executable (PE)
+  - Executable and Linkable Format (ELF)
+  - Neither
+  - Both
+  hash: $2b$11$EqxpHvKHL/q.tlk6S7aNS.HWbyhho7k920Nfkecm4DNnkBoVpWApu
+  text: Which file format is made for Windows?
+  type: MC
+- choices:
+  - Portable Executable (PE)
+  - Executable and Linkable Format (ELF)
+  - Neither
+  - Both
+  hash: $2b$11$wiWyOcPJANKBbNdOHJQkquQB19wpvh1vrfobOxYHthn1Pp1drCs82
+  text: Which format contains the format name in the file magic number?
+  type: MC
+- choices:
+  - Portable Executable (PE)
+  - Executable and Linkable Format (ELF)
+  - Neither
+  - Both
+  hash: $2b$11$2URb8vo440zryYwqhi7au.EistoT9VT/LlO05YJaUO1WMPTS5rLgC
+  text: Which file format contains metadata in the file header?
+  type: MC
+- choices:
+  - Portable Executable (PE)
+  - Executable and Linkable Format (ELF)
+  - Neither
+  - Both
+  hash: $2b$11$nr462ELP3J.nPV/RVctjxOXyw4CtI51nZ9UDZZ8EaxtObvZ17mTmK
+  text: Which has a text section that houses code?
+  type: MC
+- choices: []
+  hash: $2b$11$QH2eLmhifdbRg3xUWAwpK.U6uwMPfAA5An/zaPY6DBaBEIFeaNIZC
+  text: A Global Offset Table (GOT) is used only by the _____ file format (use the
+    abbreviation).
+  type: FIB
+- choices: []
+  hash: $2b$11$fA0MqRyhCOPgidwFr4bCRe0ovl/EyoklZcuL7o.jLFVMwp9dg/QXy
+  text: The Import Address Table (IAT) is used only by the _____ file format (use
+    the abbreviation).
+  type: FIB
+- choices: []
+  hash: $2b$11$9xdc0ULHlWusBs8.9hFyBunQFU.VwfCJmqIlg6axEHOqHdv33KGXe
+  text: A Procedure Linkage Table (PLT) is used only by the _____ file format (use
+    the abbreviation).
+  type: FIB
+- choices: []
+  hash: $2b$11$3n68Y0a6IspsP2RQjLcVUOeQWAMGP5K6X8rb1ODqWvoG7usJlGG8C
+  text: The Machine field is used only in the _____ file format (use the abbreviation)
+    to specify CPU type.
+  type: FIB
+- choices: []
+  hash: $2b$11$iiZaT3RTVadnF9Qd265DeujH5zFt8LLy1DPxdNe4A45gal3739HX6
+  text: The _____ file format (use the abbreviation) has a built in stub program for
+    legacy systems.
+  type: FIB
+- choices: []
+  hash: $2b$11$feCCTkCTThfG.J55BIk9iuPnbW3SFm894ZlWpEPBOMm0BDjtsylcW
+  text: Both the ELF and PE formats are only page aligned as they are loaded into
+    memory.
+  type: TF
+- choices: []
+  hash: $2b$11$CzvdUzpa5uHalZkCZrBDHOO/RcY2evt2AJFtmjsWspz6QcQlD8mO.
+  text: Relocation should be avoided in both PE and ELF file formats
+  type: TF
+- choices: []
+  hash: $2b$11$7zmg/AELOkmb1jO.jj0pbe4JIg/IsgjKp0DKmDt9detn7dM.xW2Ne
+  text: Only the PE file format is capable of dynamic linking.
+  type: TF
+- choices: []
+  hash: $2b$11$0djK46migoIue.IEP0BElufGrPiL7cshG81bWjj5f/Nc26Iv22yqO
+  text: Only the ELF file format has a header.
+  type: TF
+- choices: []
+  hash: $2b$11$9.KtTxygw12yyqaMDa6HJeli.sEvehCkPqUuljNeLrJvp8rzpbJHi
+  text: Only the ELF file format has a flag in the header specifically for endianess.
+  type: TF

@@ -1,0 +1,100 @@
+- type: MC
+  resp: 4
+  text: >-
+    An IPv6 packet protocol field contains the number 17 (0x11). What does this
+    mean?
+  choices:
+    - This packet can propagate trough 17 more routers before it is dropped.
+    - This packet can propagate trough 16 more routers before it is dropped.
+    - This packet is the seventeenth in the series of multiple packets.
+    - This packet is carrying a TCP segment which is using the quote protcol.
+    - This packet is encapsulating a UDP datagram.
+- type: MA
+  resp:
+    - 1
+    - 2
+    - 6
+    - 7
+  text: What are some attributes of IPv6?
+  choices:
+    - >-
+      The source and destination addresses are 128 bit or less if compression is
+      used.
+    - The source and destination addresses are 128 bit.
+    - The IPv6 header has fewer fields than an IPv4 header.
+    - The IPv6 header is longer than an IPv4 header.
+    - IPv6 does not support fragmentation.
+    - >-
+      IPv6 eliminated the need of the funtionality provided by Time to Live
+      (TTL).
+    - IPv6 does not use broadcasts.
+    - >-
+      A system that utilizes IPv6 will likely have more than one IPv6 address
+      assigned to it.
+    - >-
+      When setting up a system you must decided whether to use IPv4 or IPv6 as
+      they are mutually exclusive.
+- type: FIB
+  resp: '6'
+  text: The version field on an IPv6 packet will contain the value ____.
+  choices: []
+- type: MC
+  resp: 2
+  text: >-
+    You are configuring the IPv6 rules on your host based firewalls and set it
+    up to only allow packets that match the addresses you have assigned to your
+    systems, but your systems have lost complete connectivity to each other.
+    What would cause this?
+  choices:
+    - >-
+      You must also configure matching rules for IPv4 as IPv6 relies on IPv4
+      connectivity.
+    - You fat fingered the configuration on all your systems.
+    - >-
+      The addresses you assigned are likely global addresses. Link-local address
+      are typically auto-generated and are the addresses typically used for
+      neighbor communication. You will have to adjust your rules to include
+      these.
+    - >-
+      You must configure the host firewalls to allow the broadcast addresses
+      that are needed to perform Address Resolution Protocol (ARP).
+- type: FIB
+  resp: '::1'
+  text: The shortest form of the IPv6 loopback address is ____.
+  choices: []
+- type: FIB
+  resp: /127
+  text: >-
+    You are subnetting IPv6. What would be the CIDR notation for the smallest
+    subnet that would support a point-to-point connection?
+  choices: []
+- type: FIB
+  resp: 2001:db8:cab::1:0
+  text: >-
+    Convert the IPv6 address 2001:0db8:0cab:0000:0000:0000:0001:0000 to its most
+    compressed format, using the RFC 5952 standard for multiple strings of
+    all-0s hextets and use all lower case characters.
+  choices: []
+- type: MA
+  resp:
+    - 1
+    - 2
+  text: The first digit in a globally routable IPv6 address must start with ____.
+  choices:
+    - 0
+    - 2
+    - 3
+    - 8
+    - F
+- type: FIB
+  resp: DAD
+  text: >-
+    IPv6 uses a technique to ensure unique addresses on the network. What is the
+    acronym in upper case?
+  choices: []
+- type: FIB
+  resp: SLAAC
+  text: >-
+    IPv6 contains a built in mechanism for address assignment, what is the
+    acronym in upper case?
+  choices: []

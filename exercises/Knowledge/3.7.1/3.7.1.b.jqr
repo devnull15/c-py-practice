@@ -1,0 +1,30 @@
+- choices:
+  - Connectionless
+  - Connection
+  - Unreliable
+  - Reliable
+  - Uses three way handshake
+  - Uses one way handshake
+  - Header contains port numbers
+  - Header contains IP addresses
+  hash: $2b$11$NMWq6Jw9IBaKBQWtwhG9jO3KATxwvcmuGw.WJb1jVYWuvMtJ1NVxm
+  text: Which of the following describes UDP?
+  type: MA
+- choices:
+  - The bit rate for UDP is increased as UDP acknowledgements are not required.
+  - The UDP header is smaller than the TCP header so there is less overhead.
+  - UDP datagrams can be sent one after another immediately without having to wait
+    as it has no capacity for reliable communications.
+  - TCP and UDP use the same header, but the flags are ignored so the "three way handshake"
+    is bypassed and acknowledgements are disabled.
+  hash: $2b$11$NXAYMu4JD5HM40Z9e7nuM.zKkchmKGTC6zm/GA4Zd/NVe2jVZKvOq
+  text: Which of the following potentially makes UDP faster than TCP?
+  type: MA
+- choices: null
+  hash: $2b$11$a73XdaecNeOUxrLiY7ciB.LXTN/MQB/gZxakdZblGr1G8MEyAiRRy
+  text: UDP and TCP ports of the same number can't be used simultaneously.
+  type: TF
+- choices: null
+  hash: $2b$11$VqxJ1lKluaegciPjKUgNDeOrGxV9Ud0OGKxookJjhDwIuCCPeUHZ2
+  text: UDP datagrams can be multicasted.
+  type: TF

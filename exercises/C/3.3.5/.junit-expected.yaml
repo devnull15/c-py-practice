@@ -1,0 +1,7 @@
+- overall: 3.3.5
+  test_files: [./build/3.3.5_exe-Results.xml]    # parsed relative to the location of this file
+  sub_items:
+  - name: queues_tests               # name of the test suite to load from in the xml
+    test_count: 6                    # number of tests to find in the test suite 
+  - name: priority_queues_tests      # name of the test suite to load from in the xml
+    test_count: 5                    # number of tests to find in the test suite 

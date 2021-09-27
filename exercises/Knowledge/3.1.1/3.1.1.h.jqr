@@ -1,0 +1,17 @@
+- choices: []
+  hash: $2b$11$Jb5pBYs54gb.gRZzG9DEIe9nzqDlWhbD.wFLrEpmLw9FP6eCmD1Ia
+  text: An int function can return two int variables in the return statement.
+  type: TF
+- choices: []
+  hash: $2b$11$Hzp92aQ7LwyulDz7e6vF5O5V5w4pdU.UDnSkhrlsycwF2xnx7X8yu
+  text: If the return type matches the function\'s type, there are no restrictions
+    on the specific values that can be returned.
+  type: TF
+- choices:
+  - The return statement is used as output for a function.
+  - It is required to return an int value in an int main()
+  - Functions must return a variable of a type matching the function\'s type, or a
+    very similar type, such as a float function returning a double.
+  hash: $2b$11$LX.GSYJcqW2oo4Cd46nKDezppDLh5of3uI5OD1TYVbRkcaOCdTev6
+  text: Which of the following statements about return values are true?
+  type: MA

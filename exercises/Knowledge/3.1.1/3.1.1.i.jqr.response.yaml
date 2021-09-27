@@ -1,0 +1,25 @@
+- type: TF
+  resp: 'true'
+  text: >-
+    Header files often contain function prototypes, declaring those functions
+    and telling the compiler that they exist and will be defined later during
+    compilation.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: >-
+    If a header file may be /#included in another file, all files /#included in
+    that header file must also be explicitly /#included in that other file.
+  choices: []
+- type: MA
+  resp:
+    - 0
+    - 1
+    - 2
+  text: What are header files used for?
+  choices:
+    - Hiding sensitive code that poses security risks if publicly known
+    - Making code more readable and concise
+    - >-
+      Separating code that is not part of the core functionality, such as macro
+      guards and other /#include statements

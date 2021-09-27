@@ -1,0 +1,59 @@
+- type: MC
+  resp: 2
+  text: >-
+    The operating system assigns resource A to process X, and resource B to
+    process Y. Process X now needs B, and Y needs A. What is this called?
+  choices:
+    - mutual exclusion
+    - race condition
+    - deadlock
+    - starvation
+- type: MC
+  resp: 3
+  text: >-
+    Process X and Y are waiting for Z to release resource A. When it does, X
+    grabs the lock. Z then needs it agains, and grabs it instead of Y. What is
+    this called?
+  choices:
+    - mutual exclusion
+    - race condition
+    - deadlock
+    - starvation
+- type: MC
+  resp: 0
+  text: >-
+    When processes that are sharing a resource are unaware of each other, what
+    type of interaction are they undergoing?
+  choices:
+    - competiton
+    - cooperation
+    - collusion
+    - cancellation
+- type: FIB
+  resp: operating
+  text: The _____ system takes care of handling competing processes.
+  choices: []
+- type: FIB
+  resp: control
+  text: A deadlock is a type of _____ problem, one of two.
+  choices: []
+- type: FIB
+  resp: critical
+  text: >-
+    A _____ section is a section of code that competes for unshareable access to
+    a _____ resource.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: Deadlocks occur as a result of using a locking mechanism such as a mutex.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    A deadlock can cause a process to halt execution due to all threads
+    blocking.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: If there is no deadlock, there can be no other control problems.
+  choices: []

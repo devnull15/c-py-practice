@@ -1,0 +1,40 @@
+- type: MC
+  resp: 3
+  text: What is true about threads?
+  choices:
+    - Thread switching does not need to interact with an operating system.
+    - All threads can share the same set of open files as child processes.
+    - Multiple threaded processes use fewer resources.
+    - All of the above
+- type: MC
+  resp: 1
+  text: A thread is also called ______ ?
+  choices:
+    - Heavyweight process
+    - Lightweight process
+    - Data segment process
+    - Overhead process
+- type: MC
+  resp: 1
+  text: Which of the following is true about the kernel level thread?
+  choices:
+    - Implementation is by a thread library at the user level.
+    - Kernel-level threads are slower to create and manage
+    - Multi-threaded applications cannot take advantage of multiprocessing.
+    - Both B and C
+- type: MC
+  resp: 1
+  text: Multithreading program on a multi CPU machine _________ concurrency.
+  choices:
+    - Decreases
+    - Increases
+    - Does not affect
+    - Can increase or decrease
+- type: MC
+  resp: 0
+  text: What will happen when a process creates a new process?
+  choices:
+    - The parent continues to execute concurrently with its children
+    - The parent stop to execute, and only children will continue to execute
+    - The parent will wait until all of its child processes have terminated
+    - None of the above

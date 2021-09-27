@@ -1,0 +1,45 @@
+- type: TF
+  resp: 'false'
+  text: >-
+    Breadth-first search (BFS) is an algorithm for searching a graph or tree
+    data structure. The algorithm starts at the bottom left leaf node of a tree
+    and goes as far as it can up its given branch (path), then backtracks until
+    it finds an unexplored path, and then explores it.
+  choices: []
+- type: MC
+  resp: 1
+  text: >-
+    Assuming an adjacency list graph representation and given that V represents
+    the set of vertices and E represents the set of edges, what is the time
+    complexity of a BFS search of a connected graph
+  choices:
+    - O(|V||E|)
+    - O(|V|+|E|)
+    - O(|V|+2|E|)
+    - O(2(|V|+|E|))
+- type: MC
+  resp: 0
+  text: >-
+    Given a binary tree where the following items are inserted from left to
+    right: [5,3,1,4,2], what order will BFS traverse the nodes?
+  choices:
+    - '[5,3,1,4,2]'
+    - '[5,3,1,2,4]'
+    - '[5,3,4,1,2]'
+    - '[5,3,2,4,1]'
+- type: TF
+  resp: 'true'
+  text: >-
+    Let T be a BFS tree of G = (V,E), and let (x,y) be an edge of G.  The level
+    of x and y must differ by at most 1.
+  choices: []
+- type: MC
+  resp: 2
+  text: >-
+    Given an undirected/unweighted graph, if there are N levels in the BFS level
+    graph, what is longest possible path between two points?
+  choices:
+    - 'N'
+    - N^2
+    - 2N
+    - None of the above

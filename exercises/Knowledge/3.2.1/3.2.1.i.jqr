@@ -1,0 +1,24 @@
+- choices:
+  - append
+  - sort
+  - values
+  - insert
+  hash: $2b$11$SZnKYve4X7PY2..mY2Z3B.XFmAiwMi8O8QCRj2eQ0wF1mtkFOxB5C
+  text: Which is not a list method?
+  type: MC
+- choices: null
+  hash: $2b$11$Z8Nb33UlK78SRNoIOOdQi.iFiPGqGCtSojoj7sv4W/s6sGz/AkYUu
+  text: Lists are immutable.
+  type: TF
+- choices:
+  - strings
+  - dictionaries
+  - lists
+  - any types
+  hash: $2b$11$q.au77UacLo6BqroD0Fk4.vjuKhAWmdTqqU0Gx9StFYmA5LofKOsy
+  text: What types of objects may a list contain?
+  type: MC
+- choices: null
+  hash: $2b$11$q.Y2DlgR7V1wsTsrJxKUK.oSRwCbdNU.jXyTv9Ir/twdhNJnbl6Li
+  text: List items are ordered by their positions.
+  type: TF

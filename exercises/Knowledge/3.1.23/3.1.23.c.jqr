@@ -1,0 +1,45 @@
+- choices:
+  - An orphan process
+  - A zombie process
+  - A process that executes forever
+  - None of the above
+  hash: $2b$11$DKWBzDBl3R.QgRUtoglx.efD6Z0Lj81G.kjJwD1M3EFDahIRsH3Ya
+  text: " main()\n {\n if(fork()>0)\n sleep(100);\n }\n The following program results\
+    \ in the creation of?"
+  type: MC
+- choices:
+  - Only the exec executes as a separate process
+  - The program specified in the parameter to exec will replace the entire process
+  - The exec is ignored as it is invoked by a thread
+  - None of the above
+  hash: $2b$11$B9HbGdAvYgP3K8b1X.rNfeFUNG3uNEjk/YnxUSvwEE2Qc2ziNNW/.
+  text: If a thread invokes the exec system call ____________ .
+  type: MC
+- choices: []
+  hash: $2b$11$my0M2ZISxKlhMddXXZtwH.fLqkVGZhXhf6MJKkadnhDvDlX0IRXNa
+  text: A fork() system call will fail if the previously executed statement is also
+    a fork() call?
+  type: TF
+- choices: []
+  hash: $2b$11$4ecnicIce1AnzFil1t.bzOvfoBIqUOTzlkInYZrWfok09uLbiHnrS
+  text: Upon successful completion, fork() will return ______ (code) to the child
+    process.
+  type: FIB
+- choices: []
+  hash: $2b$11$XKwH9Slm/dXrzNCtqNAsVuadnMBZWvamPAscYGgOI2JgnLwMCJwku
+  text: Which UNIX system call will create a separate process?
+  type: FIB
+- choices: []
+  hash: $2b$11$0kchkoC7hjDjwxijJM12NePxJ0VK7VkA2fcvYVLoVGlI95PeTY0Fi
+  text: Which UNIX system call will replace the process's memory space with a new
+    program?
+  type: FIB
+- choices:
+  - wait()
+  - exit()
+  - fork()
+  - exec()
+  hash: $2b$11$fLyKXzYkEfVAeqpyegyqTeihMm9Yj9UnedLugbiqlGXs53zY545fO
+  text: When a thread finishes executing its final statement, it can request the operating
+    system to delete itself by calling ______.
+  type: MC

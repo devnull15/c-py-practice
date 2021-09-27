@@ -1,0 +1,12 @@
+- choices: []
+  hash: $2b$11$vMgbLv83KFZxG2GDLD9R0.eqglNBrTsoUF8bV5OyvTI7Z8gPCzE12
+  text: Bridge design pattern splits the abstraction from the implementation.
+  type: TF
+- choices: []
+  hash: $2b$11$DyTGDoDDNYnuKwDpnVPSg.zLvGYrFV15QAG3S.Uao1zkPVcoNznl2
+  text: Bridge design pattern enables cartesian product complexity explosion.
+  type: TF
+- choices: []
+  hash: $2b$11$Df41y/BTO4aKHnVFfA7GIOok5qWx8X5qCIPkO8f6iP1fOn/kD/d4S
+  text: Bridge design pattern prefers composition over inheritance
+  type: TF

@@ -1,0 +1,81 @@
+- choices:
+  - Modify the input so that it meets the requirements of that data before allowing
+    any processing with said data.
+  - Check to ensure that the data type is correct&#58; Integer, string, etc.
+  - Remove dashes '-' from a Social Security Number (SSN) as the dash character could
+    potenially be used in an SQL injection attack.
+  - Check the length of the data&#58; Zip Code should be exactly five characters long.
+  - Transposing dashes to a benign character as the dash character could potenially
+    be used in an SQL injection attack.
+  - Check for format&#58; Date should be in a format like XX/XX/XXXX.
+  - Check for resonability&#58; If asking someone their age and they enter 2.
+  - Escape values so they are taken literally.
+  - Check for proper range&#58; Month should be a value from and including 1 through
+    12.
+  - Check for values that would cause program crashing such as divide by zero.
+  hash: $2b$11$CxCXbW1C40QiCOTIc5pTkOb0gK.zjxcPvJw3ec2UrJAzNuQDUwoV2
+  text: Which of the following are attibutes of input validation?
+  type: MA
+- choices:
+  - Log the success or failure of the input validation.
+  - Accept the input.
+  - Drop the input.
+  - Notify the user that the input failed.
+  - Perform sanitization on the failed input.
+  hash: $2b$11$CaKhLDey97Cx54N7gbXeZ.3u1044QSeWu6lcXMeeIm5lKEgx61wL2
+  text: Input validation has been performed. What are potential next steps?
+  type: MA
+- choices:
+  - Modify the input so that it meets the requirements of that data before allowing
+    any processing with said data.
+  - Check to ensure that the data type is correct&#58; Integer, string, etc.
+  - Remove dashes '-' from a Social Security Number (SSN) as the dash character could
+    potenially be used in an SQL injection attack.
+  - Check the length of the data&#58; Zip Code should be exactly five characters long.
+  - Transposing dashes to a benign character as the dash character could potenially
+    be used in an SQL injection attack.
+  - Check for format&#58; Date should be in a format like XX/XX/XXXX.
+  - Check for resonability&#58; If asking someone their age and they enter 2.
+  - Escape values so they are taken literally.
+  - Check for proper range&#58; Month should be a value from and including 1 through
+    12.
+  - Check for values that would cause program crashing such as divide by zero.
+  hash: $2b$11$gbUsoMcGGU5SPkBiiPq7FOeEGUpggDqyR8JGXbyv5Wjnq8xrjtsjW
+  text: Which of the following are attibutes of input sanitization?
+  type: MA
+- choices:
+  - SQL injection.
+  - Application instability.
+  - Directory traversal.
+  - Data corruption.
+  - Buffer overflow.
+  - Cross-site scripting.
+  - Null byte injection.
+  - Uncontrolled format string.
+  hash: $2b$11$b0UYWk4hY2eLdKWHnQcPt.lyaOfIr.WLshRw4fgoZ35vmr1Uu2at.
+  text: Failure to perform input validation can result in?
+  type: MA
+- choices:
+  - SQL injection.
+  - Application instability.
+  - Directory traversal.
+  - Data corruption.
+  - Buffer overflow.
+  - Cross-site scripting.
+  - Null byte injection.
+  - Uncontrolled format string.
+  hash: $2b$11$g4y5m02Kh1U3HUPQeAVySeBWrysOTm86BMdCwslmqy92WQcjJLDlG
+  text: Failure to perform input sanitization can result in?
+  type: MA
+- choices:
+  - Client side javascript to check the input before sending to the server.
+  - Remove the need for input validation such as drop down boxes that force the user
+    into selection of only authorized items.
+  - Create a custom front end for the client that performs all checks before sending
+    to the backend; thus offloading resources from the server.
+  - Client side javascript to check the input before sending to the server in conjunction
+    with code on the server to ensure that the transmitted input is valid.
+  - Validation checks only on the server.
+  hash: $2b$11$nabCU3f.kLDyrhNb8ht45.QyItXMqHfdU3gptzaPzlhhpXwt.4w4e
+  text: What are good techniques to perform data validation?
+  type: MA

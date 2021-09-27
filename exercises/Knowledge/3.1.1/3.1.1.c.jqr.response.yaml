@@ -1,0 +1,27 @@
+- type: MC
+  resp: 0
+  text: Which is the true purpose of macro guards in relation to the C programming?
+  choices:
+    - >-
+      Macro guards are used to solve the issue of accidentally including the
+      same file multiple times.
+    - Macro guards prevent malicious exploitation of macro enabled documents.
+    - >-
+      Macro guards allow programmers to open the same file multiple times to
+      increase writing speed to the file.
+- type: TF
+  resp: 'true'
+  text: >-
+    Macro guards are typically only used in header files as they are not part of
+    the actual code.
+  choices: []
+- type: MC
+  resp: 2
+  text: >-
+    When using a macro guard in a file, which of the following is NOT used as
+    part of the macro guard?
+  choices:
+    - /#ifndef
+    - /#define
+    - /#include
+    - /#endif

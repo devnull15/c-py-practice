@@ -1,0 +1,70 @@
+- choices:
+  - Connectionless
+  - Connection
+  - Unreliable
+  - Reliable
+  - Uses three way handshake
+  - Uses one way handshake
+  - Header contains port numbers
+  - Header contains IP addresses
+  hash: $2b$11$tcidjA0mlbhBc.EO.25cl.UFP07KKCQi/mAWAlGDctli59hK.HDre
+  text: Which of the following describes TCP?
+  type: MA
+- choices:
+  - ack -> syn -> syn/ack
+  - syn -> syn/ack -> syn
+  - syn/ack -> syn -> ack
+  - syn -> syn/ack -> ack
+  hash: $2b$11$EJJ1tatOWwNI8.n6hF4NLuzM8EZ5NqN0/XDk2egLw8qX98ejNtkXe
+  text: What is the proper order of a TCP three way handshake?
+  type: MC
+- choices:
+  - It resynchronizes the communication channel if data gets out of sync during the
+    session.
+  - It is a request to start communications.
+  - It is used to as a verification that data has been sent.
+  - The author of TCP added a bit of humor and it is a "play on words". It is a derivitive
+    of the word "sin" to indicate that something "bad" happended (i.e. "ERROR") during
+    the session.
+  hash: $2b$11$Vv0bhS8OaZUkB3OPG.MJI.Qz/sBb/uHXL6/5RnBfUZz9wOLK4os86
+  text: What best describes the purpose of the syn flag?
+  type: MC
+- choices:
+  - It is used to acknowledge the receipt of information and in the process of session
+    establishment and termination.
+  - It is used to acknowledge the receipt of information and in the process of session
+    establishment.
+  - It is used to acknowledge the receipt of information.
+  - It is used in the process of session establishment.
+  hash: $2b$11$KrfhBH/lM692B.GEsFB4X.bXaU4//tqGSZ6rVQo203dOgwAmKsbOO
+  text: What best describes the purpose of the ack flag?
+  type: MC
+- choices:
+  - ack
+  - syn/ack
+  - rst
+  - fin/ack
+  hash: $2b$11$tR68EFcF3NCNkPB.aW3XWeiIVm.Run7v73EkaKKrHIgOajkpWQP0O
+  text: If a TCP syn segment is sent to an open port, what is the expected response?
+  type: MC
+- choices:
+  - ack
+  - syn/ack
+  - rst
+  - fin/ack
+  hash: $2b$11$T7616KZOZH.N0ZsWreWL/ejydnbnrD.NxZjx8QgnFNsSVDWylIkEy
+  text: If a TCP syn segment is sent to a closed port, what is the expected response?
+  type: MC
+- choices:
+  - Host A
+  - Host B
+  - Neither Host A or Host B
+  - Both Host A and Host B
+  hash: $2b$11$BfTP9A.3WpVy8y4wcRIu1./CAIO/klZj4EPptth9sldR5nlHai4Ei
+  text: If host A wants to start a TCP connection to host B, which system uses sequence
+    numbers?
+  type: MC
+- choices: null
+  hash: $2b$11$b2feQJK9gv7LpK13p29jPeouKeUaRD0swqk2PEEs6aDEj2u5JLama
+  text: TCP segments can be multicasted.
+  type: TF

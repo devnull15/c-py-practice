@@ -1,0 +1,20 @@
+- choices:
+  - copy the object
+  - use the append method
+  - use the split method
+  - convert it to mutable
+  hash: $2b$11$0hUfz65rgzXY4h/Sda1rsePX.nIwoeJJSzbWj0Ok/3Z8s1DgN/ASu
+  text: What is the first step to grow an immutable object.
+  type: MC
+- choices: null
+  hash: $2b$11$e7kzIVtjhLQFfyiK1O2hFuWCaTjK8o.tG0Dxm1TTze8WjlpQX2bLK
+  text: A Python string may be changed by assigning a new value to one of its positions.
+  type: TF
+- choices: null
+  hash: $2b$11$K3EWUb2lRYXw7wti4B.t4OiKOJYKi4u3s6io/SAxYTAITNoWTDOVW
+  text: An immutable object may not be changed.
+  type: TF
+- choices: null
+  hash: $2b$11$xt8RrxOGIynDPvfDY7WQy./UoMQy.TbgA6BZ2PdBl/y1wz0gMMXUy
+  text: A set can only contain immutable objects.
+  type: TF

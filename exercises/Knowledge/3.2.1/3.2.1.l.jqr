@@ -1,0 +1,13 @@
+- choices:
+  - Duplicates from all sets
+  - An area of memory accessible as multiple types
+  - All items in all sets with no duplicates
+  - Largest set on the left, smallest set on the right
+  hash: $2b$11$Smx2O8uPc.q/BU5TmWC6kuscQHvsZx2Tzj5kOZnSbxHmJRbhNeNCC
+  text: What does the Python set 'union' method return?
+  type: MC
+- choices: null
+  hash: $2b$11$Dy3c/m8jcMHOl4k9KQoIKOt46OSoz2wZFZyhktz3ux.rmiGcBhAvi
+  text: The Python set 'union' method usually returns a set larger than each of its
+    argument contain.
+  type: TF

@@ -1,0 +1,14 @@
+- choices: []
+  hash: $2b$11$TAPL615CVZ.0N95JsayAyOgmHDGA1sZSO9FKYX8AdZVWHDt3vGsvS
+  text: If a processor executes an action that is particularly lengthy or causes an
+    infinite loop, multi-threading will prevent that action from taking up all available
+    resources.
+  type: TF
+- choices:
+  - It allows multiple threads to be run concurrently on a single processor.
+  - It allows multiple threads to be split across multiple processors.
+  - It allows two different processes to share threads.
+  - It stops two or more threads from accessing the same resource at the same time.
+  hash: $2b$11$cvKvqXVVYC9sjgwhSTPNqe7Yzy8x0tdueO1Z.Giz1g3.gG0EFz0R6
+  text: When running multiple threads, what is the purpose of a mutex?
+  type: MC

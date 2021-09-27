@@ -1,0 +1,24 @@
+- type: MC
+  resp: 1
+  text: Items in dictionaries can be referenced by what?
+  choices:
+    - position
+    - key
+    - hierarchy
+    - reference
+- type: TF
+  resp: 'true'
+  text: Dictionaries are mutable.
+  choices: null
+- type: MC
+  resp: 3
+  text: Dictionaries may contain which data type?
+  choices:
+    - integers
+    - text
+    - dictionaries
+    - any type
+- type: TF
+  resp: 'false'
+  text: Dictionary data is automatically sorted.
+  choices: null

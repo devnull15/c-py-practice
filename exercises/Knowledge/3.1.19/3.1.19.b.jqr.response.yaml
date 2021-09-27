@@ -1,0 +1,20 @@
+- type: MC
+  resp: 3
+  text: 00110101 | 10010010 =
+  choices:
+    - 11001010
+    - 10100111
+    - 4096
+    - 10110111
+- type: TF
+  resp: 'false'
+  text: The bitwise operator | is equivalent to the 'or' keyword in Python.
+  choices: []
+- type: MC
+  resp: 3
+  text: 11 & 01 | 11 & 10
+  choices:
+    - 0
+    - 1
+    - 10
+    - 11

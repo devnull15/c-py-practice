@@ -1,0 +1,30 @@
+- type: MC
+  resp: 2
+  text: A parameter is the variable listed inside the parentheses of what?
+  choices:
+    - function call
+    - order of operations
+    - function definition
+    - string literal
+- type: TF
+  resp: 'true'
+  text: A parameter may define a default value if none is supplied by the argument.
+  choices: null
+- type: TF
+  resp: 'false'
+  text: A single parameter may accept multiple values.
+  choices: null
+- type: MC
+  resp: 0
+  text: Keyword arguments in a function call must match what?
+  choices:
+    - parameter names
+    - buffer lengths
+    - input values
+    - parameter positions
+- type: TF
+  resp: 'false'
+  text: >-
+    Parameters with default values must be listed before those without default
+    values.
+  choices: null

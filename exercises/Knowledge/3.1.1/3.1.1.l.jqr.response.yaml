@@ -1,0 +1,24 @@
+- type: TF
+  resp: 'false'
+  text: >-
+    If I want to return multiple int values in the main function, instead of int
+    main(), I can declare int[] main() and return an int array of those values.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    In C, Arrays are treated as pointers with memory automatically allocated. If
+    int someArray[5] is declared, the ptr will be someArray and any value can be
+    accessed with someArray[X] where X is the index number.
+  choices: []
+- type: MC
+  resp: 1
+  text: >-
+    This type of error will be thrown if the programmer attempts to access
+    memory that has not been granted, such as an index number outside the bounds
+    of an array.
+  choices:
+    - infinite loop
+    - segmentation fault
+    - out of memory error
+    - syntax error

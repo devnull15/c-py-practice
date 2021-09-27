@@ -1,0 +1,21 @@
+- choices: []
+  hash: $2b$11$x0uHPQT3EnScPwEoQtvggOwrumaGaAQrqKMkfntSPiYnFu1WGoCCm
+  text: Factory pattern should be used in every situation where an application depends
+    on an interface to perform a task and there are multiple concrete implementations
+    of that interface.
+  type: TF
+- choices: []
+  hash: $2b$11$bHWWFxA5i.HtaOaiwPQz7ekWnhMoePMSRcNpa4dGy3izkV0xEw6g2
+  text: In Factory pattern, we create object without exposing the creation logic to
+    client and the client uses the same common interface to create new types of objects.
+  type: TF
+- choices: []
+  hash: $2b$11$zlVeMumIY7Fw0RBKVKbd2OCN4NEdwZVkImsbWGkqYF9vr0mobSvN6
+  text: To disallow direct access to the classes, you can nest the classes within
+    the factory method.
+  type: TF
+- choices: []
+  hash: $2b$11$0zeAC19vzbBFhkH4fWQK/elc.TErhyb0YouEGvqO9N.TSwdTXk/Kq
+  text: Complex logical structures in the format if/elif/else would never be candidates
+    for factory design pattern.
+  type: TF

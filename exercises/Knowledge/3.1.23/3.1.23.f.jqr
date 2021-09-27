@@ -1,0 +1,21 @@
+- choices: []
+  hash: $2b$11$Ca1BBJw1PyuyaqYRuotQvuuYRb2ubz.xjsnwEndg3wcif5FpRlp/a
+  text: The call to pthread_exit() causes the current thread to exit and free any
+    thread-specific resources it is taking.
+  type: TF
+- choices:
+  - All threads in the same process terminate
+  - Nothing, multithreaded programs must use pthread_exit()
+  - All threads are terminated except those that are waiting for a signal
+  - Only the calling thread terminates
+  hash: $2b$11$nEhPh9zQX7CWBwI.IcmZROD3hQW5CbPVWb7JcLYoLAU33eIdPEPy2
+  text: What happens when a POSIX thread calls exit()?
+  type: MC
+- choices:
+  - pthread_join()
+  - pthread_exit()
+  - pthread_cancel()
+  - None of the above
+  hash: $2b$11$ZdWpJnDUzxf7bwQYomyDe.zXkS3rxPm7mJJW9nwXLT3g9cJW4oQ5u
+  text: This function always succeeds?
+  type: MC

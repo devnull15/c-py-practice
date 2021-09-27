@@ -1,0 +1,24 @@
+- type: TF
+  resp: 'true'
+  text: >-
+    For most data types, the return value of a function must match the data type
+    of that function.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: >-
+    Functions that return a value must be assigned to a variable, i.e. int
+    someVar = someFunction();
+  choices: []
+- type: MA
+  resp:
+    - 0
+    - 1
+    - 2
+    - 3
+  text: List all valid function return types.
+  choices:
+    - float
+    - char
+    - int
+    - void

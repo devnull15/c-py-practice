@@ -1,0 +1,81 @@
+- choices:
+  - automatically
+  - by the programmer
+  - carefully
+  - randomly
+  hash: $2b$11$3YsIlRoyx13dHNkpKP/Gn.lYtYDbFErf3VCYJwyNU60O7p887fPDO
+  text: How is the memory on the stack deallocated?
+  type: MC
+- choices:
+  - contiguous
+  - random
+  hash: $2b$11$G5wtOxSoDntCrBydFIPZpekwKOoeHtMD5ka73MPTxl9MkqsSNKLTe
+  text: How is memory allocated on the stack?
+  type: MC
+- choices:
+  - push / pull
+  - push / pop
+  - put / get
+  - put / pull
+  hash: $2b$11$BA9h0igMPOCiq8zF/boewe6o.4HFmieD703zfil/d6NKVNNHhW4P.
+  text: What are the two operations for the stack data structure?
+  type: MC
+- choices:
+  - FIFO
+  - LIFO
+  - PIPE
+  - CATS
+  hash: $2b$11$b3fEVFhf43ayp/Oq7r.VsOxJUPIFfZbqo2YM0dzgxYrRUyffHaXp6
+  text: What class of data structure is the stack?
+  type: MC
+- choices:
+  - Base pointer
+  - Stack pointer
+  - Return address
+  - Standard pointer
+  hash: $2b$11$GcLGHQVQaTkNCSA3W.QYFeZUj/TuEwprDl37tAasXc02U9g9ZJ7uq
+  text: What address does a function point to after finishing execution?
+  type: MC
+- choices: []
+  hash: $2b$11$GNoBfM1foF9Vu9HPbk271.1TNdTuhpiKSbFxz6dqiNkFXDrf/DAkm
+  text: From what (x86) register are variables referenced?
+  type: FIB
+- choices: []
+  hash: $2b$11$b9sMmFcGn17Zt.C92Lvo1.y70Ryu/72RgPdZrJMinW8dKM4JG7hlq
+  text: What (x86) register is the base pointer typically set to when a function is
+    called?
+  type: FIB
+- choices: []
+  hash: $2b$11$cRleidkRthDvFIjmlfFjJOJ5l8BxwInn1iva4GJ08jea0hsDw4wsu
+  text: The minimum content of a stack frame is a ____ address
+  type: FIB
+- choices: []
+  hash: $2b$11$5Hp7RziQ72QeAbIasmynZuPI8RFjOHsDpb9mwKjSn5uiJYKSsh19W
+  text: The amount of stack memory to allocate is known at ____ time
+  type: FIB
+- choices: []
+  hash: $2b$11$aqUCvEG5JEbBtUaHpWkgO.O3xgOaLruWUxDfhltdaNQsMYhT4Jv.y
+  text: The direction the stack grows is ____ dependent.
+  type: FIB
+- choices: []
+  hash: $2b$11$B6Gs47rU4nmFOgCSUTPtJ.qpEg/DKfMXjE.MURN7a1GgEevLYhrP.
+  text: The stack in fact uses the queue data structure.
+  type: TF
+- choices: []
+  hash: $2b$11$/Gp9pF9lyVcaqeLHWUvkAOiNwgS.7kQy7A8xrn8e7jGd5mhMxF9da
+  text: Variables on the stack are vulnerable to buffer overflows and require checking
+    user input.
+  type: TF
+- choices: []
+  hash: $2b$11$sjeZta2m7rbKI9Fkxj8PFed8zL39ity0xWmcX4D0pEje4JT.MlffO
+  text: The stack should be used for complex and large data structures.
+  type: TF
+- choices: []
+  hash: $2b$11$a7v3w0K4iivyuWdHQrVrGuIm0N7AjynqNKh1tOqjeD7zXIK7rPtVG
+  text: The stack frame for a given function is globally accessible in the program
+    space.
+  type: TF
+- choices: []
+  hash: $2b$11$faatC3zKr.1RHlUpnUSuEuOWyiqmdOunu0P7cqOGta56rrwC5drSW
+  text: A stack frame is the data that is pushed to the stack when a function is called.
+  type: TF

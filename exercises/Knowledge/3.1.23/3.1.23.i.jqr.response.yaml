@@ -1,0 +1,18 @@
+- type: TF
+  resp: 'true'
+  text: The programmer must unlock the mutex as many number times as it was locked?
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    A mutex is a lock. Only one state (locked/unlocked) is associated with it.
+    However, a recursive mutex can be locked more than once?
+  choices: []
+- type: TF
+  resp: 'false'
+  text: Binary semaphore and mutex are same?
+  choices: []
+- type: FIB
+  resp: pthread_mutex_init
+  text: Use _________ function call to initialize a mutex in POSIX Threads.
+  choices: []

@@ -1,0 +1,88 @@
+- choices:
+  - execution
+  - resource ownership
+  - independence
+  - protection
+  hash: $2b$11$8ag1kwBJ9V4uWnHvVuAJ9exPJWtVcTPyCb.OSbmZBVhT6dSXUD5cS
+  text: A thread is a unit of the following.
+  type: MC
+- choices:
+  - Running
+  - Block
+  - Ready
+  - Suspended
+  hash: $2b$11$l.BMHl9gcRshkcyqvhEsM.2Rf5/5a5/1zJLFbYJn.j93jaXGI6aHy
+  text: What thread state would occur after requesting an I/O resource?
+  type: MC
+- choices:
+  - the heap of the current process
+  - process with a different PID than the current process
+  - other threads
+  - the current thread context
+  hash: $2b$11$sL0Ly1QgBrrqFcNe0M0XE.on88b1arjEj8KU3aCBRYJDcXvZXMr9q
+  text: What memory space does a thread have access to? Select two.
+  type: MA
+- choices:
+  - Process Control Block
+  - User Stack
+  - Thread Control Block
+  - Kernel Stack
+  hash: $2b$11$TPt9NbTXRaeuixjz6b//9OVS7kF9tr.uOwxqKJaIIJo7odARv1VkW
+  text: Where is thread-related state information stored?
+  type: MC
+- choices:
+  - faster termination time
+  - context switching
+  - faster creation time
+  - more memory available
+  hash: $2b$11$SgcdafSg3rgiA4LWfMqKrO/0pg4xGMkN7XQb7uOzkWTldLbyJeI3a
+  text: What are some reasons for using multiple threads instead of multiple processes?
+  type: MA
+- choices:
+  - foreground and background work
+  - asynchronous processing
+  - simple, single-use programs
+  - modular programming
+  hash: $2b$11$j2ghfOzojea.Vp6heKXTT.mF4GBF3l6SvQOynhBdftwyc00gkNEAW
+  text: What are some good use cases for threads?
+  type: MA
+- choices: []
+  hash: $2b$11$Kyl.jIHzz8D0oPg8umtEDOduq/H5bwhuMRibWKXo5e51EpWozlxse
+  text: A thread lives within a _____, which is managed by the kernel.
+  type: FIB
+- choices: []
+  hash: $2b$11$My0fqVRUIYnBMR8RhH7oKe.PJoheBZK9lh8FzN7GFXdjmBD/53v0S
+  text: The data structure that holds ready threads is most often a _____
+  type: FIB
+- choices: []
+  hash: $2b$11$plohatO2WZ9VDA1AfMge5.Dcc4rc8H/RzTiEzWmcQnJXhliwz35XK
+  text: When a thread is waiting on an event, it will _____
+  type: FIB
+- choices: []
+  hash: $2b$11$fc4zzdFjyKFN4Kx1slUgr.emIOER4.Eh8IQRKSxBMoQoXPMDGk2..
+  text: Kernel-level threads are also known as _____ processes.
+  type: FIB
+- choices: []
+  hash: $2b$11$3ogTzlsCvrfPvg8ypoAKJOx0En0ubIng5lT5dh8Acy3yAlec5rEMq
+  text: The thread _____ is restored when control is passed to the thread.
+  type: FIB
+- choices: []
+  hash: $2b$11$UPx.701rFzINljqt1sIQXuF.ufoDrKrjU3Q6v1wkZz6rg7DQOBIAm
+  text: Termination of a process by the OS terminates all the related threads.
+  type: TF
+- choices: []
+  hash: $2b$11$KTYhfI6SM8uqG7Z0uYPV0ew0p4RnKaH.KeQbe9jZp8QZ5AbeOKEFe
+  text: A new thread uses the register context and stack space of all the other threads.
+  type: TF
+- choices: []
+  hash: $2b$11$l/uDXwqQ4uGPYhnrjG7kseRU/8/8Cc0GvaIlP2hm7MhXdjD.Qsl8W
+  text: One thread blocking can cause the whole process to block.
+  type: TF
+- choices: []
+  hash: $2b$11$itOq34r7pNeVfCwVNc6dT.6KRvd9ozbOmjtCj06S8ownD.Tn4uH6K
+  text: The kernel handles scheduling of threads.
+  type: TF
+- choices: []
+  hash: $2b$11$9j4LgR/DevG0iF2zEy207OeWCcwl54N2tKBxby7k2AX/3aa.YMfk.
+  text: The application uses a threads library to manage threads within the process.
+  type: TF

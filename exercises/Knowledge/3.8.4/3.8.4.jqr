@@ -1,0 +1,25 @@
+- choices:
+  - Pickle
+  - Protobuf
+  - repr
+  - yaml
+  hash: $2b$11$/1HH13kzpM93DjrwgTOqjusgu2iBc8DYkJG9sKH03.FI6gokwEnjW
+  text: Which of the following are common data serialization libraries for Python?
+  type: MA
+- choices:
+  - Protobuf
+  - FlatBuffers
+  - Wheaties
+  hash: $2b$11$jCvogD3.kt8n./LXoUFQh.AuN2cd1WHBaZl/rU7/ouY8gA2SZrJyW
+  text: Which of the following are common data serialization libraries for C programming?
+  type: MA
+- choices: []
+  hash: $2b$11$SDtITp9tvIaJImg5hFuzuuajkr820QOqbKhyMniE.5eSbE37wTIXO
+  text: The two types of data serialization are flat and nested.
+  type: TF
+- choices: []
+  hash: $2b$11$c1MfsmENdYL29V.evufqOeEgHLEzzjh75TmmOzDhqFXUfWPTAG0Fi
+  text: FlatBuffers was designed by google and s an efficient cross platform serialization
+    library for C++, C#, C, Go, Java, Kotlin, JavaScript, Lobster, Lua, TypeScript,
+    PHP, Python, Rust and Swift.
+  type: TF

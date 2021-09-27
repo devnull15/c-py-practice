@@ -1,0 +1,33 @@
+- type: TF
+  resp: 'true'
+  text: >-
+    The operating system does not allow a child to continue if its parent
+    terminates.
+  choices: []
+- type: MC
+  resp: 3
+  text: >-
+    Sometimes it is desired for a thread to wait for the end of execution of
+    another thread. This can be done using the______.
+  choices:
+    - pthread_stop()
+    - pthread_wait()
+    - pthread_exit()
+    - pthread_join()
+- type: MC
+  resp: 3
+  text: >-
+    The __________ function suspends the execution of the calling thread until
+    the joined thread is terminated.
+  choices:
+    - pthread_sleep()
+    - pthread_wait()
+    - pthread_exit()
+    - pthread_join()
+- type: TF
+  resp: 'true'
+  text: >-
+    If we have a thread that we wish would exit whenever it wants without the
+    need to join it, we should put it in the detached state by using the
+    pthread_detach() function.
+  choices: []

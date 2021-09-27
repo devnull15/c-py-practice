@@ -1,0 +1,73 @@
+- type: MA
+  resp:
+    - 0
+    - 1
+    - 2
+  text: >-
+    Which of the following regular expressions will match only patterns of IPv4
+    addresses?
+  choices:
+    - '[0-9]?[0-9]?[0-9]\.[0-9]?[0-9]?[0-9]\.[0-9]?[0-9]?[0-9]\.[0-9]?[0-9]?[0-9]'
+    - '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
+    - ([0-9]{1,3}\.){3}[0-9]{1,3}
+    - ([0-9]{1,3}.?){4}
+- type: MA
+  resp:
+    - 1
+    - 2
+  text: What would this regular expression match?  '^https?://.*'
+  choices:
+    - '"https&#58;//ssl." &#58; "http&#58;//www.");'
+    - http&#58;//stores.lulu.com/owasp" rel="nofollow">Books</a></li>
+    - >-
+      https&#58;//www.owasp.org/index.php/Marketing/Resources"
+      rel="nofollow">Brand Resources</a></li>
+    - <a href="http&#58;//creativecommons.org/licenses/by-sa/3.0/">
+- type: MA
+  resp:
+    - 1
+    - 2
+    - 3
+  text: What are disadvantages of regular expressions?
+  choices:
+    - Training resources are limited on their use.
+    - There is no one standard for regular expressions.
+    - They are not suited for very complex, recursive data formats.
+    - Syntax can be complex.
+    - Not mature.
+- type: MA
+  resp:
+    - 2
+    - 3
+  text: What are advantages of context free grammar?
+  choices:
+    - >-
+      Context free grammar is suitable in all instances where regular
+      expressions are used.
+    - >-
+      Most tools on Linux/Windows that use regular expressions have been updated
+      to support context free grammar.
+    - >-
+      It is possible to use context free grammar to write a computer program
+      which can determine if sentences are grammatical or not.
+    - They provide a visual notation for the structure of sentences.
+- type: MC
+  resp: 3
+  text: >-
+    What context free grammar would be valid for this regular expression?
+    '[0-9a-f]{2}:[0-9a-f]{2}'
+  choices:
+    - S → AB&#58;AB\nA → 0|1|2|3|4|5|6|7|8|9\nB → a|b|c|d|e|f
+    - S → A&#58;A\nA → A0|A1|A2|A3|A4|A5|A6|A7|A8|A9|Aa|Ab|Ac|Ad|Ae|Af
+    - S → A&#58;A\nA → 0|1|2|3|4|5|6|7|8|9|a|b|c|d|e|f
+    - S → AA&#58;AA\nA → 0|1|2|3|4|5|6|7|8|9|a|b|c|d|e|f
+- type: MA
+  resp:
+    - 0
+    - 2
+  text: Which of the following context free grammer rules would match 00100100?
+  choices:
+    - S → A1A1A\nA → A1|A0|ε
+    - S → A1A1A\nA → 1|0|ε
+    - S → A0A0A\nA → A1|A0|ε
+    - S → A1A1A\nA → A1|A0

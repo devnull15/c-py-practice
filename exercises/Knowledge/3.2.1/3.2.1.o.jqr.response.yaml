@@ -1,0 +1,22 @@
+- type: MC
+  resp: 0
+  text: What is the first step to grow an immutable object.
+  choices:
+    - copy the object
+    - use the append method
+    - use the split method
+    - convert it to mutable
+- type: TF
+  resp: 'false'
+  text: >-
+    A Python string may be changed by assigning a new value to one of its
+    positions.
+  choices: null
+- type: TF
+  resp: 'true'
+  text: An immutable object may not be changed.
+  choices: null
+- type: TF
+  resp: 'true'
+  text: A set can only contain immutable objects.
+  choices: null

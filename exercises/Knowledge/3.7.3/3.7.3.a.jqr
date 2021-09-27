@@ -1,0 +1,169 @@
+- choices: []
+  hash: $2b$11$WV41PbQ4TEFsIjP/q0NA6.Qo8ehH4MUANJ1VX91TLDtMM2T0a.nwu
+  text: An IPv4 address is a total of ___ bytes. Response should be in digits (0-9)
+  type: FIB
+- choices: []
+  hash: $2b$11$L8BaXcTG/UlmN/rIOy7Vv.b4LxEZjhJSgLNjXwURu5ey1E9k3Hpne
+  text: An IPv4 address is a total of ___ bits. Response should be in digits (0-9)
+  type: FIB
+- choices: []
+  hash: $2b$11$23hSysE/8ohHEEjRNQZCseM2ezJ9vr9fr9WtjDEpc8kdJaXv.nitG
+  text: In this mode, data is sent only to one destined host.
+  type: FIB
+- choices: []
+  hash: $2b$11$T73jTo8gsIqATQuk/3.wUO4p2U.2KGUYNec1WpPjudyqaCfijFe12
+  text: In this mode, a packet is address to all of the host in a network segment.
+  type: FIB
+- choices: []
+  hash: $2b$11$Vvua6Kb6ih3bncv5Pl6QJ.Wwyj5QbaCDjwlnkV4o3dq6CdnHb5GWq
+  text: In this mode, a packet is sent to neither a single host, nor all hosts, in
+    a segment.
+  type: FIB
+- choices: []
+  hash: $2b$11$KO14E69/XBNp/rlS1rZtOubU9.S2Yyho0thUhEAO/1o9eQ8A5NwZC
+  text: This 32bit address is ANDed with the IP address to determine the network address.
+    It distinguishes the bits in a network address that are allocated to the network.
+  type: FIB
+- choices: []
+  hash: $2b$11$jQ4xYQGxV4xybU/W.JKPa.9kIbKwd0OeI0pwUKA8PU5eh/7XMYski
+  text: This is a valid IPv4 address&#58; 192.168.250.99
+  type: TF
+- choices: []
+  hash: $2b$11$Q5D4F0j5GruAEYgaV/cbSOGoJk83dP5fBuuUijhlDsAg2Gc7MO/mC
+  text: This is a valid IPv4 address&#58; 10.270.181.321
+  type: TF
+- choices:
+  - 10.70.280.1
+  - 171080569
+  - 192.168.23.1
+  - 2046820353
+  - 3232237313
+  - 172.30.250.8
+  - 2131035397
+  - 172.0.0.1
+  hash: $2b$11$dzaAhYwNb.dS/gOF24/zCO5oIbU5GGyo9uR1CreThBmIL5kkjgSze
+  text: Select the valid IPV4 class A addresses
+  type: MA
+- choices:
+  - 10.70.280.1
+  - 171080569
+  - 192.168.23.1
+  - 2046820353
+  - 3232237313
+  - 172.30.250.8
+  - 2131035397
+  - 172.0.0.1
+  hash: $2b$11$vXD15AteVTTSfvAAHEBMnOtc/1drnkoDWXyLKtI7HcDn9TztwMQ0u
+  text: Select the valid IPV4 class B addresses
+  type: MA
+- choices:
+  - 10.70.280.1
+  - 171080569
+  - 192.168.23.1
+  - 2046820353
+  - 3232237313
+  - 172.30.250.8
+  - 2131035397
+  - 172.0.0.1
+  hash: $2b$11$MaTYm3ce39v8ap3G1ZXuOOsC2lVVhTqFwqSh1HaLTZGxwHblhnQS6
+  text: Select the valid IPV4 class C addresses
+  type: MA
+- choices:
+  - 10.70.280.1
+  - 171080569
+  - 192.168.23.1
+  - 2046820353
+  - 3232237313
+  - 172.30.250.8
+  - 2131035397
+  - 172.0.0.1
+  hash: $2b$11$zpv4kBa/uWgNdUTv1tPKg.0FGWEZDHD/XM5ZWCo9sn4aan.69Q/4u
+  text: Select the valid loopback addresses
+  type: MA
+- choices:
+  - 10.70.280.1
+  - 171080569
+  - 192.168.23.1
+  - 2046820353
+  - 3232237313
+  - 172.30.250.8
+  - 2131035397
+  - 172.0.0.1
+  hash: $2b$11$VKJeP2vwivqt5I9Ss7NDH.zTkaDa5kuUtSUt5xmAg4x8UAcc8fAbK
+  text: Select the valid private addresses (not including loopback)
+  type: MA
+- choices: []
+  hash: $2b$11$X/H1F1o8m93xR5TiR48nS.c6Vu6ok5kcfnDo0fY5H0ZYthPbdGj1u
+  text: Given this IP address, 192.168.200.54/24, identify the network mask in dot-decimal
+    notation.
+  type: SA
+- choices: []
+  hash: $2b$11$zd9lyFt/d3jsBAyG8VdTU.BdNBDZSGEKKOvgk7b21fwW84L9J9jUK
+  text: Given this IP address, 192.168.200.54/24, identify the network address in
+    dot-decimal notation.
+  type: SA
+- choices: []
+  hash: $2b$11$i0rLZxzcsr0MENjCYQgvbeBd6OGF6kL4lm5vT4zRs/p8jxMipoED2
+  text: Given this IP address, 192.168.200.54/24, identify the broadcast address in
+    dot-decimal notation.
+  type: SA
+- choices: []
+  hash: $2b$11$Yr4mqvZr9BzNlplNhYp3Y.aceV8E3V8OAiKwlFYm8NRFOrIi13Lhy
+  text: Given this IP address, 192.168.200.54/24, identify the host maximum address
+    in dot-decimal notation.
+  type: SA
+- choices: []
+  hash: $2b$11$jBNxINvBRJfc1z6SqTldH.m9hC70rZnFCqmbWko4isqcnmy1F8OLS
+  text: Given this IP address, 192.168.200.54/24, identify the host minimum address
+    in dot-decimal notation.
+  type: SA
+- choices: []
+  hash: $2b$11$MXlyQeR3VkolEML8KQQZNOU.QdO6aq.dpeZFGaIl5VxjeK8tZ1KDe
+  text: Given this IP address, 192.168.100.32/27, identify the network mask in dot-decimal
+    notation.
+  type: SA
+- choices: []
+  hash: $2b$11$1wKmINyIZfGTDNz9IWdC6OCjN1qj39B28jXmQMqD/sClAUa9voarO
+  text: Given this IP address, 192.168.100.32/27, identify the network address in
+    dot-decimal notation.
+  type: SA
+- choices: []
+  hash: $2b$11$cUoaUD2FjXgX0SkiHnoEVetqxvu0PEHQ.Umc8po6U6e9wTenqXDie
+  text: Given this IP address, 192.168.100.32/27, identify the broadcast address in
+    dot-decimal notation.
+  type: SA
+- choices: []
+  hash: $2b$11$xfnBExxqOeaEq0PoFFwlpOSkuXe3C32lIL0Qra1eQRfiTiAm6evYS
+  text: Given this IP address, 192.168.100.32/27, identify the host maximum address
+    in dot-decimal notation.
+  type: SA
+- choices: []
+  hash: $2b$11$aPLeJgKaK1wDFWomolLSe.DYB96Nu.BilZYhTDABONJrZUDHqM13C
+  text: Given this IP address, 192.168.100.32/27, identify the host minimum address
+    in dot-decimal notation.
+  type: SA
+- choices: []
+  hash: $2b$11$Y7ItUzd2ZZe9Eu6QFummJewMI2qvXzrzqDSsfLQfsS0B7pr4iQyd2
+  text: Given this IP address, 172.19.123.17/18, identify the network address in dot-decimal
+    notation.
+  type: SA
+- choices: []
+  hash: $2b$11$bPdFf.VmUx9uj5N0YOljQuUlldr1dPmPp/OHr0UqQfkfVkkB/Ykim
+  text: Given this IP address, 172.19.123.17/18, identify the network mask in dot-decimal
+    notation.
+  type: SA
+- choices: []
+  hash: $2b$11$Q3PFmtpyeU8OkV5uYVNbeeT9QqQRr34c94679Q9UNV9XlUoS5daeu
+  text: Given this IP address, 172.19.123.17/18, identify the broadcast address in
+    dot-decimal notation.
+  type: SA
+- choices: []
+  hash: $2b$11$Lm/rSzTsu/pmh3aN3i2d0Oi1MUAZAodiWGDtUw5a2bn63o/9vx/hK
+  text: Given this IP address, 172.19.123.17/18, identify the host maximum address
+    in dot-decimal notation.
+  type: SA
+- choices: []
+  hash: $2b$11$8Q1q4.ptwkZc6DI6BTUWpuY./ZN1hqycWUzcjF6TOU6NWUkJSuFQG
+  text: Given this IP address, 172.19.123.17/18, identify the host minimum address
+    in dot-decimal notation.
+  type: SA

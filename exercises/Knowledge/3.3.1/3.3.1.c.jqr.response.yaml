@@ -1,0 +1,23 @@
+- type: TF
+  resp: 'true'
+  text: >-
+    The prepend operation is faster than append if the linked list tracks the
+    head of the list but not the tail
+  choices: []
+- type: MC
+  resp: 2
+  text: Which direction can a doubly linked list be navigated?
+  choices:
+    - Forward
+    - Backwards
+    - Both directions
+- type: MA
+  resp:
+    - 0
+    - 1
+  text: Select all of the pointers that an item in a doubly linked list contains.
+  choices:
+    - previous pointer
+    - next pointer
+    - middle pointer
+    - present pointer

@@ -1,0 +1,23 @@
+- choices:
+  - Only accepts one parameter and returns a single parameter.
+  - Always returns the same output when provided the same input.
+  - Does not modify anything external to the function.
+  - Can not be statically linked.
+  hash: $2b$11$y5LwrGBSqu6uFSD468RPsu6QxaftB.5MSYm/On8yJgUukuk/fWOkC
+  text: What are attributes of a pure function?
+  type: MA
+- choices: null
+  hash: $2b$11$t4hInCOoEEA3v88mf77ghufR4cKDmi71bNF8BG.Vzitn9YJ6KX9My
+  text: Is this a pure function?&#58;\ int myfunc(int x, int y)\n{\n    return x +
+    y;\n}\n
+  type: TF
+- choices: null
+  hash: $2b$11$WnRHhUlL128rXTJCKZs26ePKpazLDH5GlmEwEj5KUoOn94pQvVCDK
+  text: Is this a pure function?&#58;\ int myfunc(int x, int y)\n{\n    z = x;\nreturn
+    y;\n}\n
+  type: TF
+- choices: null
+  hash: $2b$11$/UePM8DBFnikPXyEKKnn5.E1NvxwWiYpmzuoOHc8/BZDZRcjhGvWq
+  text: Is this a pure function?&#58;\ int myfunc(int x, int y)\n{\n    return x +
+    y + rand();\n}\n
+  type: TF

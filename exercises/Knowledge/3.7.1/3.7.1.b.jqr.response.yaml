@@ -1,0 +1,39 @@
+- type: MA
+  resp:
+    - 0
+    - 2
+    - 6
+  text: Which of the following describes UDP?
+  choices:
+    - Connectionless
+    - Connection
+    - Unreliable
+    - Reliable
+    - Uses three way handshake
+    - Uses one way handshake
+    - Header contains port numbers
+    - Header contains IP addresses
+- type: MA
+  resp:
+    - 1
+    - 2
+  text: Which of the following potentially makes UDP faster than TCP?
+  choices:
+    - >-
+      The bit rate for UDP is increased as UDP acknowledgements are not
+      required.
+    - The UDP header is smaller than the TCP header so there is less overhead.
+    - >-
+      UDP datagrams can be sent one after another immediately without having to
+      wait as it has no capacity for reliable communications.
+    - >-
+      TCP and UDP use the same header, but the flags are ignored so the "three
+      way handshake" is bypassed and acknowledgements are disabled.
+- type: TF
+  resp: 'false'
+  text: UDP and TCP ports of the same number can't be used simultaneously.
+  choices: null
+- type: TF
+  resp: 'true'
+  text: UDP datagrams can be multicasted.
+  choices: null

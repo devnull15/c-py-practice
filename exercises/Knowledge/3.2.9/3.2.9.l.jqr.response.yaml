@@ -1,0 +1,23 @@
+- type: TF
+  resp: 'true'
+  text: >-
+    The singleton design pattern allows only one instantion of a class per
+    instance of the application.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    the __new__() method was added to Python 2.4 to support the singleton design
+    pattern.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    Would the line: raise RuntimeError('Call instance() instead') in the
+    __init__ method cause an error forcing users to use the instance() method
+    instead?
+  choices: []
+- type: TF
+  resp: 'false'
+  text: Instance of singleton class shouldn't be globally accessible ?
+  choices: []

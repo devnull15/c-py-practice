@@ -1,0 +1,103 @@
+- choices: []
+  hash: $2b$11$g.uk0YeFvT0DWlnZWPNqP.wwXcj.JJdpEXH4v65x6Ztdwxh8TyWdW
+  text: A MAC or ethernet address is a total of ___ bytes. Response should be in digits
+    (0-9)
+  type: FIB
+- choices: []
+  hash: $2b$11$dTjZ4i5/j24xKoPddwIS7OBKSohzVIRwlgy7QERKRxARJjVFfd9aa
+  text: A MAC or ethernet address is a total of ___ bits. Response should be in digits
+    (0-9)
+  type: FIB
+- choices: []
+  hash: $2b$11$FQDc5rEjUIzTF3t4gswWQuk9C2Xug6YhI6Cb34oSDSFeCcsmf.3AK
+  text: For a MAC address that is local and used for unicast, the last two bits of
+    the first byte must be 'XXXXXX10'
+  type: TF
+- choices:
+  - fg-0d-5j-f7-2d-0h
+  - 0f-69-61-cb-ef-dc
+  - c8-8f-52-06-f5-e1
+  - 56-79-50-5a-4a-28
+  - 64-b6-23-27-e3-3e
+  - 1e-63-21-24-e5-38
+  - c9-af-11-96-c0-83
+  - df-5d-66-fa-5f-65
+  hash: $2b$11$03QLJKffpzRltBMgeBpLM.AgAKuWKQDkWEDkPcyWSGOEt2OR3p6Aa
+  text: Select the valid local MAC addresses.
+  type: MA
+- choices:
+  - fg-0d-5j-f7-2d-0h
+  - 0f-69-61-cb-ef-dc
+  - c8-8f-52-06-f5-e1
+  - 56-79-50-5a-4a-28
+  - 64-b6-23-27-e3-3e
+  - 1e-63-21-24-e5-38
+  - c9-af-11-96-c0-83
+  - df-5d-66-fa-5f-65
+  hash: $2b$11$VQbD3cT66n2K9FZ35tNTR.WOcBnlC5n5MzA6xMMAW7K8ceXokBcKK
+  text: Select the valid global MAC addresses.
+  type: MA
+- choices:
+  - fg-0d-5j-f7-2d-0h
+  - 0f-69-61-cb-ef-dc
+  - c8-8f-52-06-f5-e1
+  - 56-79-50-5a-4a-28
+  - 64-b6-23-27-e3-3e
+  - 1e-63-21-24-e5-38
+  - c9-af-11-96-c0-83
+  - df-5d-66-fa-5f-65
+  hash: $2b$11$Au6Eag2U8wnu9TEVCrF3Ne8vKQK7Y9sBaeKou6ObcTPaw2NmKiHNq
+  text: Select the valid unicast MAC addresses.
+  type: MA
+- choices:
+  - fg-0d-5j-f7-2d-0h
+  - 0f-69-61-cb-ef-dc
+  - c8-8f-52-06-f5-e1
+  - 56-79-50-5a-4a-28
+  - 64-b6-23-27-e3-3e
+  - 1e-63-21-24-e5-38
+  - c9-af-11-96-c0-83
+  - df-5d-66-fa-5f-65
+  hash: $2b$11$QohJU36qcWjZfUo2DBDejOcLuWsCcrfLGGGtPSQ0pc8JZzu/2x1Fu
+  text: Select the valid multicast MAC addresses.
+  type: MA
+- choices: []
+  hash: $2b$11$Jj3V9XH8GnLpfHVJfHRGjewCWUTqfyoYb98e9BoXp.MSa.XLPl5uy
+  text: Given this MAC address, 27-03-38-45-b3-07, identify the converted IPv6 link-local
+    address (use reduced form).
+  type: SA
+- choices: []
+  hash: $2b$11$2tay7hhgJnWoWJQUDTiiRurIIygQmkUby/pVJlyN796vhHN3N5.LW
+  text: Given this MAC address, e2-a1-eb-c1-7b-c6, identify the converted IPv6 link-local
+    address (use reduced form).
+  type: SA
+- choices: []
+  hash: $2b$11$.qV9xe8WEKdKBl8kGm/KVe7VwYf/sKNj6Tz1XsRzCLZyYjy5GjAmG
+  text: Given this MAC address, f2-2d-2e-8b-ab-bc, identify the converted IPv6 link-local
+    address (use reduced form).
+  type: SA
+- choices: []
+  hash: $2b$11$X4J4fRZQSKBEJVVRngZ8oeAezDhFWaV9vmmzBPIjgbDv6LkR0dO0e
+  text: Given this MAC address, ff-12-38-82-08-af, identify the converted IPv6 link-local
+    address (use reduced form).
+  type: SA
+- choices: []
+  hash: $2b$11$mlKD8lRZmNU1l9/ve5zvLe6Uuo9DJhR12/.z4hKTUVLAHrchtLMgy
+  text: Given this IPv6 address, fe80&#58;&#58;184&#58;7dff&#58;fee9&#58;fb00, identify
+    the original MAC address (use format XX-XX-XX-XX-XX-XX).
+  type: SA
+- choices: []
+  hash: $2b$11$BJFgr46Nb3AYC72P3KEHn.DtCbtVuspBPe.bY6pCrzMPR.oPXm1yC
+  text: Given this IPv6 address, fe80&#58;&#58;2741&#58;07ff&#58;feea&#58;c602, identify
+    the original MAC address (use format XX-XX-XX-XX-XX-XX).
+  type: SA
+- choices: []
+  hash: $2b$11$XAp73pQWc7zMiWiTKeZJuusR2s76LQ3acf9DWG5qvkf9R.L5.w79q
+  text: Given this IPv6 address, fe80&#58;&#58;5c61&#58;5fff&#58;fec5&#58;8369, identify
+    the original MAC address (use format XX-XX-XX-XX-XX-XX).
+  type: SA
+- choices: []
+  hash: $2b$11$ODklQ1RGXxfE5jhma0b/ZeYX9JdlLx9wkG31xyho/SvoDIKpkJyd6
+  text: Given this IPv6 address, fe80&#58;&#58;e30a&#58;adff&#58;febe&#58;7182, identify
+    the original MAC address (use format XX-XX-XX-XX-XX-XX).
+  type: SA

@@ -1,0 +1,36 @@
+- type: MA
+  resp:
+    - 0
+    - 1
+  text: A page table contains the following information for each of the process.
+  choices:
+    - frame location for each page in the process
+    - Memory address of a page number and offset within the page
+    - Order of execution within the page
+    - Dynamic addressing containing segment number and offset
+- type: FIB
+  resp: frame
+  text: A _____ is a fixed-length of block in the main memory.
+  choices: []
+- type: FIB
+  resp: page
+  text: >-
+    A _____ is a fixed-length block of data that resides in secondary memory
+    (such as disk).
+  choices: []
+- type: FIB
+  resp: segment
+  text: A _____ is a variable-length block of data that resides in secondary memory.
+  choices: []
+- type: MC
+  resp: 0
+  text: In paging, the logical-to-physical address translation is done by?
+  choices:
+    - Processor hardware
+    - Operating System residing on the hard disk
+    - Application software
+    - Processor Programmable Registers
+- type: TF
+  resp: 'true'
+  text: The operating system maintains a page table for each process.
+  choices: []

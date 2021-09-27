@@ -1,0 +1,105 @@
+- type: MC
+  resp: 2
+  text: What section of memory is at the top (the highest address space)?
+  choices:
+    - Stack
+    - Uninitialized Data (BSS)
+    - Command-Line Args / Environment Variables
+    - Heap
+    - Initialized Data
+    - Text (Code)
+- type: MC
+  resp: 0
+  text: >-
+    What section of memory is the second to the top (the second highest address
+    space)?
+  choices:
+    - Stack
+    - Uninitialized Data (BSS)
+    - Command-Line Args / Environment Variables
+    - Heap
+    - Initialized Data
+    - Text (Code)
+- type: MC
+  resp: 3
+  text: >-
+    What section of memory is the third to the top (the third highest address
+    space)?
+  choices:
+    - Stack
+    - Uninitialized Data (BSS)
+    - Command-Line Args / Environment Variables
+    - Heap
+    - Initialized Data
+    - Text (Code)
+- type: MA
+  resp:
+    - 0
+    - 3
+  text: What two sections grow towards each other?
+  choices:
+    - Stack
+    - Uninitialized Data (BSS)
+    - Command-Line Args / Environment Variables
+    - Heap
+    - Initialized Data
+    - Text (Code)
+- type: MC
+  resp: 1
+  text: >-
+    What section of memory is the third to the bottom (the third lowest address
+    space)?
+  choices:
+    - Stack
+    - Uninitialized Data (BSS)
+    - Command-Line Args / Environment Variables
+    - Heap
+    - Initialized Data
+    - Text (Code)
+- type: FIB
+  resp: prior
+  text: >-
+    Statically allocated variables that have been declared but have not been
+    assigned a value in the BSS segment are initialized to 0 by the kernel _____
+    program execution.
+  choices: []
+- type: FIB
+  resp: text
+  text: >-
+    The _____ section is at the bottom of the memory layout (the lowest address
+    space).
+  choices: []
+- type: FIB
+  resp: initialized data
+  text: >-
+    The _____ section of memory is the second to the bottom (the second lowest
+    address space)
+  choices: []
+- type: FIB
+  resp: text
+  text: The _____ segment contains the code to be executed by the program.
+  choices: []
+- type: FIB
+  resp: lower
+  text: The stack grows towards _____ addresses.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: The text (code) segment is often writeable
+  choices: []
+- type: TF
+  resp: 'true'
+  text: Global and static variables are found in the data segment.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: The data segment is read only.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: Environment variables are not stored in the programs memory space.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: The heap can utilize syscalls to ask the kernel for more memory space.
+  choices: []

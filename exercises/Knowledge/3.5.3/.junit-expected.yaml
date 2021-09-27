@@ -1,0 +1,13 @@
+- overall: 3.5.3
+  test_files: [suite_results.xml]    # parsed relative to the location of this file
+  sub_items:
+  - name: 3.5.3.a.jqr                # name of the test suite to load from in the xml
+    test_count: 16                   # number of tests to find in the test suite 
+  - name: 3.5.3.b.jqr
+    test_count: 9
+  - name: 3.5.3.c.jqr
+    test_count: 9
+  - name: 3.5.3.d.jqr
+    test_count: 9
+  - name: 3.5.3.e.jqr
+    test_count: 9

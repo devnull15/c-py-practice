@@ -1,0 +1,22 @@
+- choices:
+  - the number 5, without putting FIVE into memory or declaring it as a variable.
+  - the number 5, while putting FIVE into memory but without declaring it as a variable.
+  - the variable int FIVE, defined with a value of 5
+  - the variable char FIVE, defined with a value of '5'
+  hash: $2b$11$dbnS9Sv/guwHZab16zgMIeOPnrDbtDyol5qi1p4AGM1tUPqkcxqiu
+  text: The line\n\#define FIVE 5\nwould tell the preprocessor to replace any instance
+    of the word FIVE in the actual code with
+  type: MC
+- choices: []
+  hash: $2b$11$G0rQKeFwzsZIFt/FKIBtk.N/c.rcx3YmLZga5COyKJ5AZlxMwO442
+  text: The preprocessor is responsible for including libraries, putting them into
+    the actual code so they can be compiled properly.
+  type: TF
+- choices:
+  - It executes its function as part of compilation.
+  - It modifies the code so that the compiler can compile the code properly.
+  - It executes its function before compilation.
+  - It converts the program into assembly so that the computer can read it.
+  hash: $2b$11$Ijg8fOQjIkWTrToctaz8FeltE975OvnwLywdULp.AWULPWUrNZgY.
+  text: Which of the following is true about the preprocessor?
+  type: MA

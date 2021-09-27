@@ -1,0 +1,24 @@
+- choices:
+  - 11001010
+  - 10100111
+  - 4096
+  - 10110111
+  hash: $2b$11$4RkGZzMsYcI15Xl2nqXsQOCyTNB9eVParlUE/hg.7EzGvWeDSHPoy
+  text: 00110101 ^ 10010010 =
+  type: MC
+- choices:
+  - 0
+  - the integer itself
+  - the maximum value of the integer type
+  - the ones' complement of the integer
+  hash: $2b$11$DbA4ZoZiT9aMidB7/opxAez9eRJ6QPw91R.Q2fpMU2pT1I4h5BAUe
+  text: XORing an integer with the same value twice (ie (a ^ b) ^ b) returns&#58;
+  type: MC
+- choices:
+  - 0
+  - the integer itself
+  - the maximum value of the integer type
+  - the ones' complement of the integer
+  hash: $2b$11$8Iv/Y.cbwRivNKrJuDHABeAPLuecQeadRnIs4DH/Cr7hXW9eETadK
+  text: Performing an XOR of an integer and itself always yields&#58;
+  type: MC

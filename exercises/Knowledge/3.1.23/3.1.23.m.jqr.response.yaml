@@ -1,0 +1,20 @@
+- type: MC
+  resp: 3
+  text: >-
+    A ________ program protects shared data, possibly through the use of mutual
+    exclusion.
+  choices:
+    - Serialized
+    - Barriers
+    - Semaphores
+    - Thread-safe
+- type: TF
+  resp: 'true'
+  text: >-
+    A thread-safe function will deliver the same results regardless of whether
+    it is called from multiple threads at the same time.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: pthread_create() is a thread-safe function?
+  choices: []

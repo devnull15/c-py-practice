@@ -1,0 +1,45 @@
+- choices:
+  - Conflict
+  - Collision
+  - Accident
+  hash: $2b$11$RJf3gBH/CR5c9PtG/.TAZ.IdVBbtJQFRArj7ZmZ/KEWR4H3nfvXcK
+  text: If a hash function is applied to different keys and it generates the same
+    address for those keys, it is known as?
+  type: MC
+- choices: null
+  hash: $2b$11$AoNEjgCTQsJdIO4KM4Q0s.hpOyrR0FTLUkh.OjGL37Yk5zTFA.0W6
+  text: Collisions are resolved with open addressing and closed addressing.
+  type: TF
+- choices:
+  - Load Factor
+  - Collision Factor
+  - Maturity Factor
+  - All of the above
+  hash: $2b$11$o6aw.EctddHwrnXMZ8kL2eG6dUZERA5.VD9NcCakUXxhY4GCZhrd.
+  text: The ratio between the key stored and the size of its data array is known as?
+  type: MC
+- choices:
+  - Linear probing
+  - Plus 3 rehash
+  - Quadratic probing
+  - Clustering
+  - Double hashing
+  hash: $2b$11$lTlr.IQaSRjAO5RQnuwlhumMqWqKTQdbR..cVK4w91yW4DhQkyDay
+  text: Open addressing is defined by?
+  type: MA
+- choices: null
+  hash: $2b$11$omLYwUXd5pKv8UtsSup9TuN8opV6Q5rjx4ttXS6F7uLK0uIccR3.i
+  text: In alphanumeric method, the address of key is determined by dividing the sum
+    of key ASCII codes with size of array, and taking the remainder.
+  type: TF
+- choices:
+  - 1 iteration
+  - 1.5 iteration
+  - 2 iteration
+  hash: $2b$11$ETO7M4f4cIxlPPTqeDI86OZ.73h9KdsP9.EhEkqbCMvjezxvY0Mim
+  text: Frequency to access an address location of an hash array is?
+  type: MC
+- choices: null
+  hash: $2b$11$7MGd1sFNMqUBjSp1/dBDDOM/7/.vv.lKK1zowINcD506cFzxvEG5C
+  text: Closed addressing envolves chaining items that have collided in a linked list.
+  type: TF

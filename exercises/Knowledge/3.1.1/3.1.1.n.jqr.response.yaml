@@ -1,0 +1,28 @@
+- type: TF
+  resp: 'false'
+  text: >-
+    In C, all typecasts are explicit, meaning that C never converts types
+    without the user explicitly telling it to do so.
+  choices: []
+- type: MC
+  resp: 0
+  text: >-
+    When casting a variable from __ type to __ type, an explicit type cast
+    should be used so the compiler does not throw an error or warning.
+  choices:
+    - a larger, a smaller
+    - a smaller, a larger
+    - any, any other
+- type: MC
+  resp: 1
+  text: What should be typecast when dividing two integers, and why?
+  choices:
+    - >-
+      Nothing. As long as the return type can hold a decimal, it does not matter
+      if the two integers cannot hold decimals.
+    - >-
+      The first integer only. If C performs division on an integer, only an
+      integer can be produced, even if the answer has a decimal.
+    - >-
+      Both integers. C cannot produce a number with a decimal through division
+      unless both numbers can hold decimals.

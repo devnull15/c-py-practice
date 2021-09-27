@@ -1,0 +1,23 @@
+- choices: []
+  hash: $2b$11$sR0fxUdxohcO3QHjXNOdle7IssLwzYZLKHuvmmEn18YlXnP5pDhva
+  text: Because of the way little endian stores data, it is possible that the same
+    value can be read from the same address in memory, regardless of the length of
+    the data the computer is attempting to read.
+  type: TF
+- choices:
+  - 1 bit
+  - 4 bits
+  - 1 byte
+  - 4 bytes
+  hash: $2b$11$AiTvfNlfgrmcBkNbEnZXOOGjXSpL43IZhcv.04ZuvQH6Vxs.UHWM6
+  text: When organizing data using big or little endian, into what units is the data
+    divided up?
+  type: MC
+- choices:
+  - Big
+  - Little
+  - Neither
+  hash: $2b$11$Rh3U/neY2JAcUdeCh5nHaupQBzqv0ItIXb1LaIXEBLXl5wN104sre
+  text: int is 4 bytes. If an int is stored with the most significant (or largest)
+    byte at the smallest address in memory, this is ___ endian.
+  type: MC

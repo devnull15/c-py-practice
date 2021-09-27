@@ -1,0 +1,17 @@
+- type: TF
+  resp: 'true'
+  text: The primary purpose of parameters is to allow a function to receive input.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: >-
+    When calling a function, the passed arguments must be variables. They cannot
+    be hardcoded values (such as 1 or 'a').
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    The parameters of a function are treated by that function as variables, and
+    act no differently than any other variable outside of where they are defined
+    and how their values are set.
+  choices: []

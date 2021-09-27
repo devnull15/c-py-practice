@@ -1,0 +1,22 @@
+- choices: []
+  hash: $2b$11$6TLNMPqYOIRBGZyYAZEjU.WgVkHqYlnNium6Q.muRiobbLRSWFC6K
+  text: Assume function1() has an int pointer pointing to a value of 1. It passes
+    the pointer to function2(int* pointer), which modifies the value at that pointer
+    to 2, but does not return that value. The value at the pointer in function1()
+    is now 2.
+  type: TF
+- choices: []
+  hash: $2b$11$EJuunC8aKJV7Yk9oSfy9I.AQV3T3m8EaPg2lgKvam/EMateWzsxuq
+  text: Like a normal variable, a pointer automatically allocates memory for the value(s)
+    it points to.
+  type: TF
+- choices:
+  - asterisk (*), ampersand(&)
+  - percent (&), asterisk (*)
+  - asterisk (*), percent (%)
+  - exclamation (!), asterisk(*)
+  hash: $2b$11$QhM1Zcr8iPpbhYXMm6LMFuhzOdncD/MtWAClJVo/umfssdoCRNC.u
+  text: Placing a _ before referencing a ptr instead references the value at that
+    pointer, whereas placing a _ before referencing a normal variable instead references
+    the address of where that variable is stored in memory.
+  type: MC

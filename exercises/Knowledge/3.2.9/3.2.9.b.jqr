@@ -1,0 +1,32 @@
+- choices: []
+  hash: $2b$11$pl/e60R7XZTsh9hvMhCPtOU2EzDcs8bOURj6kVjicdxY7oGTNx4YG
+  text: Some examples of objects in Python are the Integer, List, and Dictionary.
+  type: TF
+- choices: []
+  hash: $2b$11$UKipaxRGDb45DVje8JrKG.YZZIaVpPi78YhsV8qa3uCkMga7lTOGq
+  text: Objects are not instantiated classes.
+  type: TF
+- choices:
+  - <object-name> = <class-name>(self, <arguments>)
+  - <object-name> = new <class-name>(<arguments>)
+  - <object-name> = <class-name>(<arguments>)
+  - <class-name> <object-name> = <class-name>(<arguments>)
+  hash: $2b$11$BLz2fPfIwbPoi8S7TBvtfOKSYXCCAzeiUQ3l7qQfgr1M7GN2cZEhC
+  text: What is the correct way of instantiating of a class in Python?
+  type: MC
+- choices: []
+  hash: $2b$11$zZYOse4gX4PJWLXhMhS72OEvTR5HJOVAa4p8f6kRrogsqMrRkXN2O
+  text: A class constructor must always be explicitly defined by the programmer
+  type: TF
+- choices:
+  - Initiate attributes within the new object
+  - To free memory on the stack before the class is created
+  - Initiate attributes within the new objects parent
+  - All of the above
+  hash: $2b$11$.KuUxwa.lHds2zPkUA43JuAkLSOIh3uyg3BgSkUcBdXJvSar7d6mi
+  text: What is the purpose of a class constructor?
+  type: MA
+- choices: []
+  hash: $2b$11$6qh0IRJFPBUVx3VyER7hd.z2drUBntdPds5CGAfMyGEHMYjAzZeOK
+  text: Each object must be uniquely named.
+  type: TF

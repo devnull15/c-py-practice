@@ -1,0 +1,48 @@
+- choices: []
+  hash: $2b$11$V8VbICOSsKKLouCZRSQ43OI251atNPRZ949cDer4S8b75HjIxHpRO
+  text: _______ header file needs to be used for pthread programming.
+  type: FIB
+- choices: []
+  hash: $2b$11$BbI7PDPXZ2/uxY9Tt/YBEeM2X1BUsDN1EYxQcjqIiar/ZLMpiTIF2
+  text: Multi-threaded programming is not useful in single core systems?
+  type: TF
+- choices:
+  - pthread_exit()
+  - pthread_cancel()
+  - pthread_self()
+  - pthread_join()
+  hash: $2b$11$AW64AOxqEjDzZIoL5vuLtep2DGKInEuR5GG/xkzujFxQCx1EYpQCS
+  text: In pthread library, following APIs can be used for synchronization between
+    threads?
+  type: MC
+- choices: []
+  hash: $2b$11$4KLMwpLgGNMcEdN0XBNgb./RYL8vWHztVBpQfXvO2Y7tn9avZukYO
+  text: The data type used for storing the thread Id is _______ .
+  type: FIB
+- choices:
+  - -thread
+  - -lthread
+  - -lpthread
+  - -threads
+  hash: $2b$11$uo8/nUj0vZ8BF/Dj5os4z.vPaO/0PCntpfR9/yr199UoxIWBqUpuK
+  text: What are the flags that are pass while compiling a pthread program using gcc?
+  type: MC
+- choices:
+  - pthread_t* (pointer)
+  - attributes
+  - start routine
+  - argument
+  hash: $2b$11$uTG4SeyLWU6O.goYg4gT4.uqSjXF0ZsJhbFeZ3WKqrO1u/mRDxx3G
+  text: In following function call pthread_create() what are all the arguments? (Select
+    all that apply)
+  type: MA
+- choices:
+  - 1
+  - 2
+  - 3
+  - 4
+  hash: $2b$11$GUY3pEFGd8632k6sZzkhZuugZ8p103Yzx1aw77nyrDahc.wDfs6cO
+  text: " int main(int argc, char *argv[]) {\n pthread_t p1, p2;\n pthread_create(&p1,\
+    \ NULL, mythread, \u201CA\u201D);\n pthread_create(&p2, NULL, mythread, \u201C\
+    B\u201D);\n ...\n }\n How many total threads are part of this process?"
+  type: MC

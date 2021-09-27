@@ -1,0 +1,17 @@
+- choices: []
+  hash: $2b$11$mZ1c..7Tvjq2h27brPVIwO6KZtDSiOdmunUhJbBupEl7zKPQWj9/O
+  text: A linked list is a data structure that occupies a contiguous block of memory
+  type: TF
+- choices: []
+  hash: $2b$11$oyy0iGiBPzE7god2e.mxN.rwM6HIp4L93KOCPqDV45EEIU/nmq8We
+  text: The last item in a linked list contains a pointer to ______.
+  type: FIB
+- choices:
+  - binary search tree
+  - graph
+  - stack
+  - queue
+  - array
+  hash: $2b$11$JeoiUKH4KWaY03jSLlROsey/WIhs.VKXGE6uIr3gwPPe5T45bg7d6
+  text: Which of the following can be represented using a linked list?
+  type: MA

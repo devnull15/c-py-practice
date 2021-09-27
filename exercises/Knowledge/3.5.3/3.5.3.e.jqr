@@ -1,0 +1,51 @@
+- choices:
+  - Round Robin
+  - Largest-Value-First
+  - Priority Schedule
+  - First-Come, First-Served
+  hash: $2b$11$.0Le3wZ54kKk7bSVVxH4k./a/FqZCUqFw9WHebEUS4g/ITJssPwz6
+  text: Which of these are a scheduling policy?
+  type: MA
+- choices:
+  - processes with heavy I/O suffer
+  - processes with a large number of threads suffer
+  - none
+  - FCFS is not a scheduling policy
+  hash: $2b$11$i1EdgczlAxIe4PGNLwOf7uJZUN1eE6Qe7mriZUXF3XcLH3gtdLF/e
+  text: What effect does first-come-first-served have on processes?
+  type: MC
+- choices:
+  - Medium-term
+  - Near-term
+  - Long-term
+  - Short-term
+  - Immediate
+  hash: $2b$11$IbcGWTmiaqarZAqG8ffJ1O36zb4gwhEaIVspYQnw1Wvv/AdJiokWq
+  text: What are three types of scheduling? (Choose three).
+  type: MA
+- choices: []
+  hash: $2b$11$QlVB7a2F/ss.nVhf7ACMzeJdW90RmHJGROzOpIgttayswznmYZiWa
+  text: The _____ function determines which process is selected for execution.
+  type: FIB
+- choices: []
+  hash: $2b$11$/QCsTuH/I38sRBV175t8duEwZsD12c8cLxmUYjV/V/gS9DFmobesi
+  text: First-come-first-serve selections the process with the _____ wait time.
+  type: FIB
+- choices: []
+  hash: $2b$11$MGcNXjk8Rz60/wwncJas9eb4iIB6iOb8pCK.d.IxrreAi7kQfnqpy
+  text: Round-robin is a _____ scheduling policy.
+  type: FIB
+- choices: []
+  hash: $2b$11$kiA5bcOhFFxbBXXSzm3EC.sy0trL5Tu7/ylxX65WsZMcq4eaSMvOK
+  text: Round robin allows each process a certain amount of time, then interrupts
+    and executs a FCFS algorithm.
+  type: TF
+- choices: []
+  hash: $2b$11$hYiiYx6Ezr/xyxFmiUtOkePIiK9ZZWELRd28rP3vU.AdJntfaKKpm
+  text: FCFS has a bias towards long processes, which is solved by the Shortest Process
+    Next scheduling policy.
+  type: TF
+- choices: []
+  hash: $2b$11$ZvagpdqZxe8ltaG.8xHhA.DGnTEVCJ6u.IQfeLNeMNfnR8wDkqDJu
+  text: Round robin does not have a process-length bias.
+  type: TF

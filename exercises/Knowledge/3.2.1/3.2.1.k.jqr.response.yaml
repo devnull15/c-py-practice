@@ -1,0 +1,12 @@
+- type: MC
+  resp: 1
+  text: The struct module enables what?
+  choices:
+    - enables the '->' operator
+    - creates and extracts packed binary data
+    - defines lists of lists
+    - enables mixed type structures
+- type: TF
+  resp: 'true'
+  text: Packed binary data is useful when reading binary files.
+  choices: null

@@ -1,0 +1,20 @@
+- choices:
+  - narrows the scope to one namespace
+  - applies one attribute to an instance
+  - limits a class to one instance
+  - provides multiple objects from a single instantiation
+  - decorate a mesh
+  - intercept instance creation calls
+  - ensure proper indentation
+  - finds memory leaks
+  hash: $2b$11$OTX6968zMLKY5XcVjnSDjuz22fkkgLd8RDW9tlLd9zt9LZWHJty1C
+  text: What does the singleton coding pattern do?
+  type: MA
+- choices: null
+  hash: $2b$11$DgdLVb1E/AECQIqFL55Uj.Tg9Uh9Lgbo.nsSmPmLK2d/26AiXA2QO
+  text: '@singleton is a decorator'
+  type: TF
+- choices: null
+  hash: $2b$11$4A0Y/LEU3EgJJ3TSyFwhFOqO3DkJwk.nHAji3.nbtyQwPg9eY2Isa
+  text: Singleton is a method to remove unused objects
+  type: TF

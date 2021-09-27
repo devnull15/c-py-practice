@@ -1,0 +1,9 @@
+/CMakeFiles
+CMakeCache.txt
+*.so
+*.cmake
+Makefile
+3.1.7_exe
+3.1.7_exe-Listing.xml
+3.1.7_exe-Results.xml
+tmp.txt

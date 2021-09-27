@@ -1,0 +1,22 @@
+- choices: []
+  hash: $2b$11$9WIwGQrIP5WHk0RzeKzsbONlZOPYZOszR234bTHg9vtm4VWv8R/8S
+  text: Super keyword provides access to those methods of the super-class (parent
+    class) which have been overridden in a sub-class (child class) that inherits from
+    it.
+  type: TF
+- choices:
+  - super()
+  - super(MyClass, self)
+  - both
+  - neither
+  hash: $2b$11$YNjaECdUTg.yKGLMpdTKzubiqVM6Y/epwQpwk/cW/ikjPxQECnv3y
+  text: The super() keyword used inside a class named MyClass would look like&#58;
+  type: MC
+- choices:
+  - Return the value from the method area() run on the parent class SquarePrism
+  - Cause an invalid syntax error
+  - Return the value from the method area() run on the current class
+  hash: $2b$11$IW8NU/.ijoMYRaj4fzak1OvvjwP/9i0WSvoJG/pT5u/69zW5GEnJK
+  text: what does the following code snipet do&#58;  return super(SquarePrism, self).area()
+    ?
+  type: MC

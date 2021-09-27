@@ -1,0 +1,15 @@
+- choices: []
+  hash: $2b$11$erKwq.Ot8pNcvlwlQxh69.XhkhcsXcUb6NWBgl5JXMI1cPfsDMpza
+  text: The primary purpose of parameters is to allow a function to receive input.
+  type: TF
+- choices: []
+  hash: $2b$11$4mkGzh9nkDId8dbJZ9epA.AVtu8.AYIJ95QlKuAA7lppUspIUrKFG
+  text: When calling a function, the passed arguments must be variables. They cannot
+    be hardcoded values (such as 1 or 'a').
+  type: TF
+- choices: []
+  hash: $2b$11$ziLUdY2.w.R2vBLlJ0DJue2Vn6z7OWMOWqpKKFCtTz5jbbIrFY.8O
+  text: The parameters of a function are treated by that function as variables, and
+    act no differently than any other variable outside of where they are defined and
+    how their values are set.
+  type: TF

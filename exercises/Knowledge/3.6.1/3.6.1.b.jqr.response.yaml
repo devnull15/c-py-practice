@@ -1,0 +1,71 @@
+- type: TF
+  resp: 'false'
+  text: >-
+    The strncpy() function requires an argument of the length of string to copy
+    so it will copy only up to that amount of characters to ensure a buffer
+    overrun doesn't occur. If it doesn't encounter the end of the string within
+    the specified length, then the final character is replaced with a NULL byte.
+  choices: null
+- type: MA
+  resp:
+    - 2
+    - 3
+    - 4
+  text: >-
+    Which function(s) will copy a string and ensures the resultant string is
+    NULL terminated assuming correct implementation?
+  choices:
+    - strcpy()
+    - strncpy()
+    - strlcpy()
+    - strdup()
+    - strcpy_s()
+- type: MA
+  resp:
+    - 2
+    - 3
+  text: >-
+    Which function(s) will concatenate a string and ensures the resultant string
+    is NULL terminated assuming correct implementation?
+  choices:
+    - strcat()
+    - strncat()
+    - strlcat()
+    - strcat_s()
+- type: MC
+  resp: 4
+  text: >-
+    You need a function to read characters from a file into a buffer to include
+    white space and ensures that the line read is NULL terminated. What do you
+    use?
+  choices:
+    - gets()
+    - fread()
+    - scanf()
+    - fgets()
+    - getline()
+- type: MC
+  resp: 2
+  text: >-
+    You need a function to read characters from standard input and terminates
+    reading at the first whitespace character and ensures that the characters
+    read are NULL terminated. What do you use?
+  choices:
+    - gets()
+    - fread()
+    - scanf()
+    - fgets()
+    - getline()
+- type: MA
+  resp:
+    - 0
+    - 3
+  text: >-
+    Which of the following will guarantee a NULL terminated string saved to a
+    buffer defined as:\ char input[20];?
+  choices:
+    - fgets(input, 20, stdin);
+    - fgets(input, 21, stdin);
+    - scanf("%s", input);
+    - scanf("%19s", input);
+    - scanf("%20s", input);

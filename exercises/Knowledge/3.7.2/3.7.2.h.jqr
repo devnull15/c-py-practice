@@ -1,0 +1,77 @@
+- choices:
+  - This packet can propagate trough 17 more routers before it is dropped.
+  - This packet can propagate trough 16 more routers before it is dropped.
+  - This packet is the seventeenth in the series of multiple packets.
+  - This packet is carrying a TCP segment which is using the quote protcol.
+  - This packet is encapsulating a UDP datagram.
+  hash: $2b$11$FU1pQuVKOW9pK8O.QubeM.IYWKIMo2N0MLTBzgcn1G3/2DbokeCka
+  text: An IPv6 packet protocol field contains the number 17 (0x11). What does this
+    mean?
+  type: MC
+- choices:
+  - The source and destination addresses are 128 bit or less if compression is used.
+  - The source and destination addresses are 128 bit.
+  - The IPv6 header has fewer fields than an IPv4 header.
+  - The IPv6 header is longer than an IPv4 header.
+  - IPv6 does not support fragmentation.
+  - IPv6 eliminated the need of the funtionality provided by Time to Live (TTL).
+  - IPv6 does not use broadcasts.
+  - A system that utilizes IPv6 will likely have more than one IPv6 address assigned
+    to it.
+  - When setting up a system you must decided whether to use IPv4 or IPv6 as they
+    are mutually exclusive.
+  hash: $2b$11$ktk9bXVrRCnjKbBcQkNOJuFPPfMJexxosdrnuhG.JDHd8XShSxsLO
+  text: What are some attributes of IPv6?
+  type: MA
+- choices: []
+  hash: $2b$11$fDQBzGpHWVUK48/oYYfR4eg4yQQ6Ck/NHgsy1SMrk22thtNFbknOq
+  text: The version field on an IPv6 packet will contain the value ____.
+  type: FIB
+- choices:
+  - You must also configure matching rules for IPv4 as IPv6 relies on IPv4 connectivity.
+  - You fat fingered the configuration on all your systems.
+  - The addresses you assigned are likely global addresses. Link-local address are
+    typically auto-generated and are the addresses typically used for neighbor communication.
+    You will have to adjust your rules to include these.
+  - You must configure the host firewalls to allow the broadcast addresses that are
+    needed to perform Address Resolution Protocol (ARP).
+  hash: $2b$11$TNOuOgu2EwAWM1L1gdsIceQHNFejGjRhlZk0NWSeNr.3gstgMa8Ji
+  text: You are configuring the IPv6 rules on your host based firewalls and set it
+    up to only allow packets that match the addresses you have assigned to your systems,
+    but your systems have lost complete connectivity to each other. What would cause
+    this?
+  type: MC
+- choices: []
+  hash: $2b$11$yGgn49smNRnyc/mrugYjXenwTkLfkg4Yt8m/sDi5hazYRhI3DOzMC
+  text: The shortest form of the IPv6 loopback address is ____.
+  type: FIB
+- choices: []
+  hash: $2b$11$X.5V9P0XXBRSzjItH8Erz.EXJfRWDFOtmJVDqgXl4K6xEcFzY.lzm
+  text: You are subnetting IPv6. What would be the CIDR notation for the smallest
+    subnet that would support a point-to-point connection?
+  type: FIB
+- choices: []
+  hash: $2b$11$gpWDHjByg3ziUND21FkSEukpOsGONWEGNJ/KbeTbkkvg2FZf0lFxm
+  text: Convert the IPv6 address 2001&#58;0db8&#58;0cab&#58;0000&#58;0000&#58;0000&#58;0001&#58;0000
+    to its most compressed format, using the RFC 5952 standard for multiple strings
+    of all-0s hextets and use all lower case characters.
+  type: FIB
+- choices:
+  - 0
+  - 2
+  - 3
+  - 8
+  - F
+  hash: $2b$11$1jBaSWXA5nIgZnrwoUtsp.ZcIYqJk90bNoBOA84QLE/VqMTFeSfIS
+  text: The first digit in a globally routable IPv6 address must start with ____.
+  type: MA
+- choices: []
+  hash: $2b$11$vw4N5AuJMFVaF8Xf7GF1jud2NgpzqAQ5srMCP.esWaNTt6Jtunp2.
+  text: IPv6 uses a technique to ensure unique addresses on the network. What is the
+    acronym in upper case?
+  type: FIB
+- choices: []
+  hash: $2b$11$VnuoH/LOc4UelRvg1imeeejEre7ruH3Hp9YFckpj5EJJb2DcVTsMG
+  text: IPv6 contains a built in mechanism for address assignment, what is the acronym
+    in upper case?
+  type: FIB

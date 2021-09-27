@@ -1,0 +1,29 @@
+- choices: []
+  hash: $2b$11$QBWQOr95G6Z4A/48MsLdCuyXKvAkovySbp1QxCZjbv5/f5BSx613W
+  text: Python has the ability to make variables private like there is in Java and
+    C#.
+  type: TF
+- choices:
+  - Sets and gets program attributes
+  - Provide computer properties to the program
+  - Provide computer and OS properties to the program
+  - Force access of class attributes through a getter and setter.
+  hash: $2b$11$lZxTsQQfGWl69ePh.SLGhu9QWFmh.sen6RFinjARvtf.iKdkbRpRm
+  text: What is the purpose of the built-in function property()?
+  type: MC
+- choices:
+  - Protect an attribute from be set to an invalid value
+  - Perform processing on an attribute before returning it to the calling method
+  - Protect the objects integrity
+  - To Instantiate and garbage collect an object
+  hash: $2b$11$A61g4UD2XymdfYKo/Hir0.UyK7Mh6lqq01inT33277cRkyITgozYy
+  text: Why are class attribute getters and setters important?
+  type: MA
+- choices:
+  - Provide computer properties to the program
+  - Force access of class attributes through a getter and setter.
+  - Provide computer and OS properties to the program
+  - Sets and gets program attributes
+  hash: $2b$11$DkQgID8lsbXkB9EhEWXUNOLXK6p.CLJNglqma13hSFod.9zBDIw2m
+  text: What is the purpose of the decorator @property?
+  type: MC

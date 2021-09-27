@@ -1,0 +1,12 @@
+- type: TF
+  resp: 'true'
+  text: Bridge design pattern splits the abstraction from the implementation.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: Bridge design pattern enables cartesian product complexity explosion.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: Bridge design pattern prefers composition over inheritance
+  choices: []

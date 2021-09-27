@@ -1,0 +1,28 @@
+- type: MA
+  resp:
+    - 1
+    - 2
+  text: What are attributes of a pure function?
+  choices:
+    - Only accepts one parameter and returns a single parameter.
+    - Always returns the same output when provided the same input.
+    - Does not modify anything external to the function.
+    - Can not be statically linked.
+- type: TF
+  resp: 'true'
+  text: >-
+    Is this a pure function?:\ int myfunc(int x, int y)\n{\n    return x +
+    y;\n}\n
+  choices: null
+- type: TF
+  resp: 'false'
+  text: >-
+    Is this a pure function?:\ int myfunc(int x, int y)\n{\n    z = x;\nreturn
+    y;\n}\n
+  choices: null
+- type: TF
+  resp: 'false'
+  text: >-
+    Is this a pure function?:\ int myfunc(int x, int y)\n{\n    return x + y +
+    rand();\n}\n
+  choices: null

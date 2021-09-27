@@ -1,0 +1,22 @@
+- type: MA
+  resp:
+    - 2
+    - 5
+  text: What does the singleton coding pattern do?
+  choices:
+    - narrows the scope to one namespace
+    - applies one attribute to an instance
+    - limits a class to one instance
+    - provides multiple objects from a single instantiation
+    - decorate a mesh
+    - intercept instance creation calls
+    - ensure proper indentation
+    - finds memory leaks
+- type: TF
+  resp: 'true'
+  text: '@singleton is a decorator'
+  choices: null
+- type: TF
+  resp: 'false'
+  text: Singleton is a method to remove unused objects
+  choices: null

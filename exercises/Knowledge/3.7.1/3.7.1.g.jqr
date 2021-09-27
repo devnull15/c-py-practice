@@ -1,0 +1,45 @@
+- choices:
+  - Increase the amount of available IP addresses.
+  - Reduce the amount of available IP addresses.
+  - Create additional networks so that each may be delegated for further subnetting
+    or management by a network administrator.
+  - Increase the size of the broadcast domain.
+  hash: $2b$11$c3AOirvddoZbwumh8CxccuNmwScLqBCD1p6BhfWvBpZiCXQbS94zW
+  text: Which of the following is a valid reason to subnet a network?
+  type: MC
+- choices:
+  - It is easier and more effective to apply, manage, and monitor security to a subnet
+    than it is to indidual addresses.
+  - You can only apply a security policy to a subnet.
+  - If your organization is comprised of multiple systems (i.e. Windows/Linux/Mac),
+    subnets must be created for each type of system as security to a subnet must be
+    uniform.
+  - Subnets are synonymous with security domains.
+  hash: $2b$11$Y1k8ARlkW7HOkzh4fBw4y.9eTw7nTIXiXM6rer33zUjMjLKcNPDE.
+  text: Which of the following is a valid reason to subnet a network with respect
+    to security?
+  type: MC
+- choices:
+  - If the size of the subnet is larger than the amount of devices in that subnet,
+    then broadcasts are eliminated increasing the performance of the network.
+  - If the size of the subnet is smaller than the amount of devices in that subnet,
+    then broadcasts are eliminated increasing the performance of the network.
+  - Subnetting reduces the size of a network ensures fewer devices per network which
+    isolates the impact of a broadcast frame to that subnet.
+  - Subnetting has no effect on broadcasts as broadcasts are still sent to all devices
+    in the original network that was subnetted.
+  hash: $2b$11$YYNyQprcDzR9IKF0Ix7XL.955z4khibpYB/tvyep819Nv7w7yYtt.
+  text: What is the impact of subnetting on broadcasts?
+  type: MC
+- choices:
+  - As long as a device is communicating via unicast with a device in other subnet,
+    then only those two devices are impacted.
+  - Because communcation between device would take place whether they are on the same
+    or different subnets, then congestion is not impacted.
+  - Because a layer 3 device such as a router is required to allow two subnets to
+    communicate, congestion is reduced as layer 3 devices are required to reduce congestion.
+  - As long as the communicating devices are in the same subnet, then only the devices
+    in that subnet are impacted.
+  hash: $2b$11$4HfjIHzCL3n0d1UXZ6Vml.3mPVIC58fTzba/wojqxAIWBAUUypqxO
+  text: What is the impact of subnetting on congestion?
+  type: MC

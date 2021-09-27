@@ -1,0 +1,26 @@
+- type: TF
+  resp: 'true'
+  text: >-
+    Factory pattern should be used in every situation where an application
+    depends on an interface to perform a task and there are multiple concrete
+    implementations of that interface.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    In Factory pattern, we create object without exposing the creation logic to
+    client and the client uses the same common interface to create new types of
+    objects.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    To disallow direct access to the classes, you can nest the classes within
+    the factory method.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: >-
+    Complex logical structures in the format if/elif/else would never be
+    candidates for factory design pattern.
+  choices: []

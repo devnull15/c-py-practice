@@ -1,0 +1,81 @@
+- choices:
+  - Program Header
+  - Section Header
+  - ELF Header
+  - Section Footer
+  hash: $2b$11$3pIQtEj9Y5FxwOcTqsxor.nHHsjEPkA0eChyeQd6hiEPxGWx1rWNi
+  text: Which portion of the Executable and Linkable Format (ELF) is first?
+  type: MC
+- choices:
+  - Program Header
+  - Section Header
+  - ELF Header
+  - Section Footer
+  hash: $2b$11$2fu4sYZE9fTurfhU.wS7Wuiq/kst7Eo5QjaZBjwbvxCrI9WLZt2qO
+  text: Which portion of the Executable and Linkable Format (ELF) is second?
+  type: MC
+- choices:
+  - text
+  - idata
+  - bss
+  - data
+  hash: $2b$11$iDWKKAiNtFeSXMouWfuOGu8QuuD0BV1DzetJx8XN78ayDe9RnsmbC
+  text: Which is not a section of an ELF?
+  type: MC
+- choices:
+  - text
+  - idata
+  - bss
+  - data
+  hash: $2b$11$ue6pxy5GIgrMGI10xs0WR.RU9OD3FrV/wnpUWVRX8AZ0Smi2lDToy
+  text: Which section contains the executable code?
+  type: MC
+- choices:
+  - text
+  - idata
+  - bss
+  - data
+  hash: $2b$11$.UAy50CKS7bGIFvDXhiJ..lvuoyK2a3kHBzvoPi.TYhz035coQYqO
+  text: Which section contains initialized variables?
+  type: MC
+- choices: []
+  hash: $2b$11$uhqW6pXYcNt1h6gMwpsNEu.dWtF/TKZLepuSq5mwAgnvxiqnf8Cv6
+  text: Uninitialized variables are in the _____ section.
+  type: FIB
+- choices: []
+  hash: $2b$11$F/kXlnx.7BszoiyBnTcT2eCtslV.sqQUIo/l0GkzH1khpZ8QL4cwG
+  text: Strings are often in the _____ section.
+  type: FIB
+- choices: []
+  hash: $2b$11$4sMPasC5LN3J7WY1igbdJ.vwKz2ofVLrYOV0lYjOksxLmgtr8TyAG
+  text: The ELF file begins with the byte 0x_____ followed by "ELF".
+  type: FIB
+- choices: []
+  hash: $2b$11$jc/8kHyityq0QG.8VLodheqdKywW4nnZTP8RYOYoMfBZMFpHL3bfi
+  text: The two bytes at offset 0x12 specify the instruction set _____
+  type: FIB
+- choices: []
+  hash: $2b$11$k7Ej6Ucpy9/pAxZXp3Kvze6.EsgBK4UQDiOyng8SPdOrXq/K8fVxG
+  text: A 32-bit ELF Header is 52 bytes and a 64-bit is _____ bytes.
+  type: FIB
+- choices: []
+  hash: $2b$11$Cco95tVuZXk8ycgK88ZOBOxgUcMuNPE3IWXb2pBmh1XwerIBhz7B.
+  text: The entry point address is at a 0x18 byte offset.
+  type: TF
+- choices: []
+  hash: $2b$11$BZ60yzwlv8YCFDfLv0V9du4bZWCsQY49U48WrBjXQHiHsdscKWPUO
+  text: The x86 processor is the only family of CPUs supported by ELF.
+  type: TF
+- choices: []
+  hash: $2b$11$0cd8G2.jl8gk3GewHtH5eubD9TiziykusgUYkXyKOCwEthPoLEJ1K
+  text: The stack is built off the text section once the ELF data is loaded in memory.
+  type: TF
+- choices: []
+  hash: $2b$11$s6z8/7/kxK7pyXzHkkvKeut2pX75sNmf26JlZXcmUEg7jOnQYADGe
+  text: The instruction set architecture value for x86-64 is 0x3e.
+  type: TF
+- choices: []
+  hash: $2b$11$OCEwFMH5uCUqAle2BpMQ2OceOqzsAOC1Mk3buUhhGpHVttvnYAmYy
+  text: Dynamic linking allows shared libraries to be added to the program during
+    runtime instead of before the program is run.
+  type: TF

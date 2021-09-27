@@ -1,0 +1,47 @@
+- choices:
+  - IMAP
+  - POP3
+  - SMTP
+  - eSMTP
+  hash: $2b$11$LNpHgCH.kYuxD.8xk0tBdOxYujFFAw75MIdYJ4DxKHMqKKNf1yXaW
+  text: Which of the following protocols are used to transfer MAIL from a server to
+    another server?
+  type: MA
+- choices:
+  - RCPT TO
+  - RCPT FROM
+  - MAIL TO
+  - MAIL FROM
+  hash: $2b$11$CvaAQSnK7TjCAHBiTLlbMenLXfPVhUHTlaLno.uvi/OTiNcdlNEnS
+  text: You are spoofing an email. What command will you use to spoof the source email
+    address?
+  type: MC
+- choices:
+  - MAIL FROM&#58;<email address>
+  - RCPT TO&#58;<email address>
+  - VRFY <username>
+  - EXPN <username>
+  - HELO <hostname>
+  - EHLO <hostname>
+  hash: $2b$11$EzOsJvBXX3nSjkgObd18k.bQAaR45fslT4LRGHWK5dBYMfy2eNZkq
+  text: You are spoofing an email. What command will you use to initiate an SMTP converstation?
+  type: MA
+- choices:
+  - IMAP
+  - POP3
+  - SMTP
+  - eSMTP
+  hash: $2b$11$q3L1TAgpSvoFBzlqAwep6.gmsME0bKfbBf/4JpHuQp9q3GaZMOmKS
+  text: Which of the following protocols are used to transfer MAIL from a server to
+    a client?
+  type: MA
+- choices:
+  - Change the protocol from SMTP to IMAP
+  - Change the protocol from SMTP to POP3
+  - Specify which domains or IP addresses you will relay mail for
+  - Switch to connectionless SMTP (SMTPc)
+  - Configure the server perform a reverse lookup on the IP of the source connection
+    and verify that the domain matches that what was provided in the initiation.
+  hash: $2b$11$QrZptDSe5l/8o2UDOqlvwO.thCsoXOKyxRSl.uSlvSqkUvmAeduMC
+  text: What are some techniques to secure SMTP?
+  type: MA

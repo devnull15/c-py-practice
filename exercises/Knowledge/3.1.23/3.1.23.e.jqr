@@ -1,0 +1,13 @@
+- choices: []
+  hash: $2b$11$mwyRn7JN6cZUIAHXzJ3cWe5H5vtB0kSF40F.T0gXdEDQBLrUBIU6q
+  text: pthread_create() takes how many numbers of arguments.
+  type: FIB
+- choices: []
+  hash: $2b$11$PMin3P.GCIeuNwI82Xd4P.qiNdzgsPXzR9Eaj2FksqQc9FBM4GeVO
+  text: pthread_create() will return the a thread ID on success.
+  type: TF
+- choices: []
+  hash: $2b$11$hFbjYjgLu1PU8vU45HbYgezv4wVik8K2TyMyMxGAyXCGi3nb68S8q
+  text: Detached thread can be created with appropriate flags to the pthread_create()
+    function.
+  type: TF

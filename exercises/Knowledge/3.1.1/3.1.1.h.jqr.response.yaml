@@ -1,0 +1,21 @@
+- type: TF
+  resp: 'false'
+  text: An int function can return two int variables in the return statement.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    If the return type matches the function\'s type, there are no restrictions
+    on the specific values that can be returned.
+  choices: []
+- type: MA
+  resp:
+    - 0
+    - 2
+  text: Which of the following statements about return values are true?
+  choices:
+    - The return statement is used as output for a function.
+    - It is required to return an int value in an int main()
+    - >-
+      Functions must return a variable of a type matching the function\'s type,
+      or a very similar type, such as a float function returning a double.

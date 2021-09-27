@@ -1,0 +1,94 @@
+- type: MC
+  resp: 3
+  text: Which is capable of being used on 32-bit and 64-bit operating systems?
+  choices:
+    - Portable Executable (PE)
+    - Executable and Linkable Format (ELF)
+    - Neither
+    - Both
+- type: MC
+  resp: 0
+  text: Which file format is made for Windows?
+  choices:
+    - Portable Executable (PE)
+    - Executable and Linkable Format (ELF)
+    - Neither
+    - Both
+- type: MC
+  resp: 1
+  text: Which format contains the format name in the file magic number?
+  choices:
+    - Portable Executable (PE)
+    - Executable and Linkable Format (ELF)
+    - Neither
+    - Both
+- type: MC
+  resp: 3
+  text: Which file format contains metadata in the file header?
+  choices:
+    - Portable Executable (PE)
+    - Executable and Linkable Format (ELF)
+    - Neither
+    - Both
+- type: MC
+  resp: 3
+  text: Which has a text section that houses code?
+  choices:
+    - Portable Executable (PE)
+    - Executable and Linkable Format (ELF)
+    - Neither
+    - Both
+- type: FIB
+  resp: ELF
+  text: >-
+    A Global Offset Table (GOT) is used only by the _____ file format (use the
+    abbreviation).
+  choices: []
+- type: FIB
+  resp: PE
+  text: >-
+    The Import Address Table (IAT) is used only by the _____ file format (use
+    the abbreviation).
+  choices: []
+- type: FIB
+  resp: ELF
+  text: >-
+    A Procedure Linkage Table (PLT) is used only by the _____ file format (use
+    the abbreviation).
+  choices: []
+- type: FIB
+  resp: PE
+  text: >-
+    The Machine field is used only in the _____ file format (use the
+    abbreviation) to specify CPU type.
+  choices: []
+- type: FIB
+  resp: PE
+  text: >-
+    The _____ file format (use the abbreviation) has a built in stub program for
+    legacy systems.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    Both the ELF and PE formats are only page aligned as they are loaded into
+    memory.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: Relocation should be avoided in both PE and ELF file formats
+  choices: []
+- type: TF
+  resp: 'false'
+  text: Only the PE file format is capable of dynamic linking.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: Only the ELF file format has a header.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    Only the ELF file format has a flag in the header specifically for
+    endianess.
+  choices: []

@@ -1,0 +1,47 @@
+- type: TF
+  resp: 'true'
+  text: >-
+    A file system is the methods and data structures that an operating system
+    uses to keep track of files on a disk or partition.
+  choices: []
+- type: MA
+  resp:
+    - 0
+    - 2
+    - 3
+    - 4
+  text: Select examples of places file systems are used?
+  choices:
+    - Automobile
+    - Dogs electronic fence collar
+    - PC
+    - ATM
+    - Smart phone
+    - Analog watch
+- type: MC
+  resp: 4
+  text: >-
+    File systems don't just store the files but also information about them,
+    like:
+  choices:
+    - sector block size
+    - fragment information
+    - file size
+    - file name
+    - all of the above
+- type: TF
+  resp: 'false'
+  text: >-
+    Most programs are file system independent and can work on Linux or MS
+    Windows.
+  choices: []
+- type: MA
+  resp:
+    - 0
+    - 2
+  text: 'File systems types include:'
+  choices:
+    - NTFS
+    - MVS
+    - HPFS
+    - all of the above

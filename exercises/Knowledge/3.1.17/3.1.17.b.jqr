@@ -1,0 +1,91 @@
+- choices:
+  - COFF Header
+  - Section Table
+  - MSDOS Stub
+  - Optional Headers
+  hash: $2b$11$SicRMt4FGpcmmcV18KDnp.z1xSf9SPYgUr0dAzEyaa8.0X9Yntf8W
+  text: Which portion of a Portable Executable (PE) is first?
+  type: MC
+- choices:
+  - COFF Header
+  - Section Table
+  - MSDOS Stub
+  - Optional Headers
+  hash: $2b$11$s4NqPQqaVaH0Qp8wPoJhm.XIcnMadsge4lpayqpotXuR9avDP.N8e
+  text: Which portion of a PE contains the machine type?
+  type: MC
+- choices:
+  - COFF Header
+  - Section Table
+  - MSDOS Stub
+  - Optional Headers
+  hash: $2b$11$SawN4lFMmcbPjAgzSj5W3erRAMW1GPjTAhPntsuqnboEim/lAt1DK
+  text: Which section is meant mostly for image files?
+  type: MC
+- choices:
+  - COFF Header
+  - Section Table
+  - MSDOS Stub
+  - Optional Headers
+  hash: $2b$11$WcbUDGQ4GdOl8zZvtTSE8.PT1f4KXTd9oSKxG86VN98r6kYY5fsAi
+  text: This section comes directly after the optional headers, and it's offset is
+    not stored in the file header.
+  type: MC
+- choices:
+  - .text
+  - .meta
+  - .idata
+  - .debug
+  hash: $2b$11$225cE7w5antl0JHvYjY/4eprq3t5kF3ywZbgMpI1CRTmwg30a3t2y
+  text: Which is not a predefined section for an application built for Windows NT?
+  type: MC
+- choices:
+  - .text
+  - .meta
+  - .idata
+  - .debug
+  hash: $2b$11$qGS2PKIEA/gO.GV50RZrP.8mSrIkPElNcWST3I20KT9OdLJzAxWV6
+  text: The executable code of a PE is located in this section.
+  type: MC
+- choices: []
+  hash: $2b$11$8Zz60IM8Lt3C3Xj8ObCoj.JtZ3KbU05pF/MxvYBbqVqzYxoQWmx/G
+  text: The _____ section houses things such as static variables and other uninitialized
+    variables.
+  type: FIB
+- choices: []
+  hash: $2b$11$LV//IajMJBo40.D5BIs6G.0yzwIX2/9MRezTQWIBWhgdrZPkDjXam
+  text: The _____ section houses things such as string literals and constants.
+  type: FIB
+- choices: []
+  hash: $2b$11$KzW0rFg.2pr90ED2dE5YKupj2O9gn.MN9lGX3MMDlhmZWzvAnb2LC
+  text: A PE has a two-letter magic signature of _____
+  type: FIB
+- choices: []
+  hash: $2b$11$gTbEXlzThij80ZGs0SYYUeRwXPMFDADNrfLIjcJlxckQluxqSjqqC
+  text: The MS-DOS header takes up _____ bytes of the PE.
+  type: FIB
+- choices: []
+  hash: $2b$11$AoIfua.4J1y6JuV4mbISqOjFr13SYwFzPlCwyQQ.ngOjC3z4z6m62
+  text: All variables not stored in the bss or rdata section are stored in the _____
+    section.
+  type: FIB
+- choices: []
+  hash: $2b$11$Y3oUSJxwHAXNrONkIr4OROPJjjiags8ux1GRoHuTAxlu3FN/wkVo6
+  text: The real-mode stub program is an actual MS-DOS program.
+  type: TF
+- choices: []
+  hash: $2b$11$sN3GOaPrChO/qjZOMxT6mOf0YMmXJgJzoLrfBzmASg.Rwqbr1QV9i
+  text: There are four types of image file signatures defined in winnt.h
+  type: TF
+- choices: []
+  hash: $2b$11$8QNuPd1us1/Lpoz0wSjFv.IZ9hPy/qJgct4GJGjuIunAIitkiAbGK
+  text: In PE executables, the optional header is optional.
+  type: TF
+- choices: []
+  hash: $2b$11$yPAA9nC3mPVH5d3a4FlPyeAipLGjjiVOEpuXO0u1IuXa6dxlTTCsi
+  text: The edata section defines what functions can be exported from the PE.
+  type: TF
+- choices: []
+  hash: $2b$11$HKdrW.4XH8Yg7Dvlgp1kvuqKm1qA63po4sqggZ4c6FNq1y/wtBM6i
+  text: Each section header is 40 bytes in length.
+  type: TF

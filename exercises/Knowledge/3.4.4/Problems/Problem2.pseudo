@@ -1,0 +1,31 @@
+# We want to sort Array in ascending order.
+# Suppose A is an array of N Values, 
+# num_of_bucket <- max Number of bucket you want to create,
+# for this problem:  "num_of_bucket = length(A)"
+
+
+FUNCTION BucketSort(A, num_of_bucket)
+    set max = Max(A)
+    set buckets[num_of_bucket]
+    set j = 0
+
+    for i = 0 to num_of_bucket -1           
+        buckets[i] = 0
+    END for
+
+    for i = 0 to length(A)-1                
+        buckets[floor(num_of_bucket * A[i]/max)] = A[i];
+    END for
+
+    for i = 0 to num_of_bucket -1           
+        InsertionSort(buckets[i])           
+    END for
+    
+    set index = 0
+    for i = 0 to num_of_bucket -1           
+        for j = 0 to length(buckets[i])     
+            out[inext++] = buckets[i][j]    
+        END for
+    END for
+    RETURN out;
+END

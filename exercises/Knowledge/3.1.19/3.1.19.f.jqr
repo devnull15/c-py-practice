@@ -1,0 +1,20 @@
+- choices:
+  - 10100110
+  - 10100000
+  - 1
+  - 10101001
+  hash: $2b$11$MAey49/4jI7GJJ/QXPtzwO.29ZTyoRf0sP8CmYzayBRZd67GoGJfC
+  text: 00110101 >> 5 =
+  type: MC
+- choices: []
+  hash: $2b$11$LTF.OMLKtrYmtEmchpm80.nOm.Z4K02e34yHcBkvXLEWgIfsLK5PG
+  text: The value of an unsigned int variable cannot increase if it is shifted right
+    by less than the width of its type.
+  type: TF
+- choices:
+  - arithmetic shift
+  - circular shift
+  - logical shift
+  hash: $2b$11$Hiyhhh9Fxc6YZtYKpxAlv.lCSQxYkmCjgsz9UKWQnZ5zBJx87SjMa
+  text: The >> operator in C is a(n)&#58;
+  type: MA

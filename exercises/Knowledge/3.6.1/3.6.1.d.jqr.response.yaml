@@ -1,0 +1,21 @@
+- type: FIB
+  resp: x is 255, y is -1
+  text: >-
+    What is the output following code snippet?\n\nint x = 255;\nchar y =
+    x;\n\nprintf("x is %d, y is %d\n", x, y);
+  choices: []
+- type: FIB
+  resp: x is 65536, y is 0
+  text: >-
+    What is the output following code snippet?\n\nint x = 65536;\nunsigned short
+    y = x;\n\nif (y < 100)\n{\n    printf("x is %d, y is %d\n", x,
+    y);\n}\nelse\n{\n    puts("x must be less than 100");\n}
+  choices: []
+- type: FIB
+  resp: '18446744073709551615'
+  text: >-
+    Reference the code snippet, how much memory would a 64 bit system attempt to
+    allocate if -1 is enterered at the prompt?\n\nint x;\n\nprintf("Enter amount
+    of memory to allocate:\ ");\nscanf("%d", &x);\nchar *mymem = (char
+    *)getmem(x);\n\nvoid *getmem(int size)\n{\n    return malloc(size);\n}
+  choices: []

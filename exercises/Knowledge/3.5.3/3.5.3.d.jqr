@@ -1,0 +1,52 @@
+- choices:
+  - mutual exclusion
+  - race condition
+  - deadlock
+  - starvation
+  hash: $2b$11$OdPVUxUmOfB7dQRW7jglVuGkGEjdo7wmVpcQuzV0spWUzyigkqhEy
+  text: The operating system assigns resource A to process X, and resource B to process
+    Y. Process X now needs B, and Y needs A. What is this called?
+  type: MC
+- choices:
+  - mutual exclusion
+  - race condition
+  - deadlock
+  - starvation
+  hash: $2b$11$NtMfjnVSL0xwqDoux/Jpu.OtNbnAc55NGzEteIMn84eWUr1gDXO.6
+  text: Process X and Y are waiting for Z to release resource A. When it does, X grabs
+    the lock. Z then needs it agains, and grabs it instead of Y. What is this called?
+  type: MC
+- choices:
+  - competiton
+  - cooperation
+  - collusion
+  - cancellation
+  hash: $2b$11$2D3Um5d0VBgFaWbr0eeCVeTj.ivVeqhvSia6q83oV0RSVRfYULvEy
+  text: When processes that are sharing a resource are unaware of each other, what
+    type of interaction are they undergoing?
+  type: MC
+- choices: []
+  hash: $2b$11$fa7MvYH8JbPWwXvJnjkNM.DQ7S2iMVeIUVEXxKu.xjP1w1T5v1D2O
+  text: The _____ system takes care of handling competing processes.
+  type: FIB
+- choices: []
+  hash: $2b$11$jfACv2y7tPSAdJaNDp6KMeqGiZZZ5jX5dKSOr/AaTwJuQ/gNkjh8u
+  text: A deadlock is a type of _____ problem, one of two.
+  type: FIB
+- choices: []
+  hash: $2b$11$8JKNGxsS9NUTQ6uQemSA8eUEwa8QJqZYSn9Qa4M406TPE9ISHu6w6
+  text: A _____ section is a section of code that competes for unshareable access
+    to a _____ resource.
+  type: FIB
+- choices: []
+  hash: $2b$11$Ek4wCFFbnFqTEuKqMiar1OjmYs9K.xpLt2IO3CISKS.9KxS9zDLpS
+  text: Deadlocks occur as a result of using a locking mechanism such as a mutex.
+  type: TF
+- choices: []
+  hash: $2b$11$R.H2EwrYr.GO92AgOa9CsuQFOzN2qqWJo5psz8H9UfZtA.rIT8GTi
+  text: A deadlock can cause a process to halt execution due to all threads blocking.
+  type: TF
+- choices: []
+  hash: $2b$11$6tVyqnb2NjYiwqmVq7r/K.bNqRicjKTVfTGCLxR12LDX6FQ8Bj.S6
+  text: If there is no deadlock, there can be no other control problems.
+  type: TF

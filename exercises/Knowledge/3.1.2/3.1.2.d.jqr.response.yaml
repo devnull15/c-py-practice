@@ -1,0 +1,95 @@
+- type: MC
+  resp: 2
+  text: >-
+    Does the stack or the heap allocate the memory for one specific variable
+    contiguously?
+  choices:
+    - stack
+    - heap
+    - both
+- type: MC
+  resp: 1
+  text: Does the stack or the heap implement dynamic allocation?
+  choices:
+    - stack
+    - heap
+    - both
+- type: MA
+  resp:
+    - 0
+    - 3
+  text: Select data better suited for the stack.
+  choices:
+    - a local variable
+    - a global variable
+    - a pointer to a data structure manipulated by multiple functions
+    - a temporary data structure
+- type: MC
+  resp: 0
+  text: >-
+    Does the stack or the heap automatically deallocate after the function
+    returns?
+  choices:
+    - stack
+    - heap
+    - both
+- type: MA
+  resp:
+    - 0
+    - 1
+    - 2
+  text: Select data better suited for the heap.
+  choices:
+    - an unknown number of data structures
+    - a global variable
+    - a pointer to data manipulated by multiple functions
+    - a temporary data structure
+- type: MC
+  resp: 1
+  text: Is the stack or the heap able to be resized during runtime?
+  choices:
+    - stack
+    - heap
+    - both
+- type: FIB
+  resp: global
+  text: >-
+    The stack frame is local to the function, whereas memory on the heap is
+    _____.
+  choices: []
+- type: FIB
+  resp: heap
+  text: Shared libraries can only access data on the _____.
+  choices: []
+- type: FIB
+  resp: stack
+  text: Allocation for the _____ is known at compile time.
+  choices: []
+- type: FIB
+  resp: heap
+  text: The _____ is better for large amounts of data.
+  choices: []
+- type: FIB
+  resp: stack
+  text: The _____ is better for variables only used locally.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: Memory is more limited in the stack.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: Stack allocation is more costly than heap allocation.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: Stacks have a faster access time than the heap.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: Memory allocated on the stack is fixed, but on the heap can be changed.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: The heap, unlike the stack, automatically deallocates memory.
+  choices: []

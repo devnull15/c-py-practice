@@ -1,0 +1,29 @@
+- type: TF
+  resp: 'true'
+  text: >-
+    Assume a function contains the following line of code&#58;\n static int
+    someNum = 0\;\n If that function is called multiple times in a program, the
+    variable someNum will only be defined the first call, and its previous value
+    on subsequent calls will be kept instead of being set to 0.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    Variables declared as extern are not defined. Memory must be allocated for
+    them later so they can be used.
+  choices: []
+- type: MC
+  resp: 1
+  text: >-
+    Which of the following statements about the static and extern keywords is
+    NOT true?
+  choices:
+    - >-
+      Functions not explicitly declared as static or extern are treated by the
+      compiler as extern.
+    - >-
+      Variables not explicitly declared as static or extern are treated by the
+      compiler as extern.
+    - >-
+      Global variables and functions that do not need to be accessed outside of
+      the file they are defined in should be declared as static.

@@ -1,0 +1,746 @@
+'3.1':
+  topic: C Programming
+  items:
+    3.1.1:
+      title: 'Describe the purpose and use of:'
+      condition: A
+      standard: A
+      sub_items:
+        3.1.1.a: the main function
+        3.1.1.b: the return statement
+        3.1.1.c: macro guards
+        3.1.1.d: data types
+        3.1.1.e: functions and procedures
+        3.1.1.f: parameters
+        3.1.1.g: scope
+        3.1.1.h: return values (return type and reference)
+        3.1.1.i: header files
+        3.1.1.j: keywords (static and extern)
+        3.1.1.k: pointers
+        3.1.1.l: an array
+        3.1.1.m: c preprocessor
+        3.1.1.n: casting
+        3.1.1.o: control flow
+        3.1.1.p: endianness
+        3.1.1.q: multi-byte vs. unicode character sets
+        3.1.1.r: multi-threading
+        3.1.1.s: hashing
+    3.1.2:
+      title: 'Describe the C programming concepts in regards to:'
+      condition: A
+      standard: A
+      sub_items:
+        3.1.2.a: Memory map of a C program
+        3.1.2.b: stack
+        3.1.2.c: heap
+        3.1.2.d: stack vs. heap
+    3.1.3:
+      title: 'Demonstrate the proper declaration, understanding, and use of C data
+        types and underlying structures:'
+      condition: C
+      standard: B
+      sub_items:
+        3.1.3.a: WORD
+        3.1.3.b: DWORD
+        3.1.3.c: QUADWORD
+        3.1.3.d: short
+        3.1.3.e: integer (int)
+        3.1.3.f: float (float)
+        3.1.3.g: character (char)
+        3.1.3.h: double (double)
+        3.1.3.i: long (long)
+    3.1.4:
+      title: 'Demonstrate the ability to create and implement a function that uses
+        different arrays:'
+      condition: C
+      standard: B
+      sub_items:
+        3.1.4.a: an array
+        3.1.4.b: a multi-dimensional array
+    3.1.5:
+      title: Demonstrate the ability to perform basic arithmetic operations using
+        appropriate C operators while ensuring proper order of operations (PEMDAS)
+      condition: C
+      standard: B
+      sub_items:
+        3.1.5.a: Addition (+)
+        3.1.5.b: Subtraction (-)
+        3.1.5.c: Multiplication (*)
+        3.1.5.d: Division (/)
+        3.1.5.e: Modulus (%)
+        3.1.5.f: Increment (++)
+        3.1.5.g: Decrement (--)
+    3.1.6:
+      title: 'Demonstrate the ability to properly use the standard main() entry arguments:'
+      condition: C
+      standard: B
+      sub_items:
+        3.1.6.a: int argc
+        3.1.6.b: char ** argv
+        3.1.6.c: char ** envp
+    3.1.7:
+      title: 'Demonstrate the ability to perform file management operations in C:'
+      condition: C
+      standard: B
+      sub_items:
+        3.1.7.a: Open an existing file
+        3.1.7.b: Read data from a file
+        3.1.7.c: Write data to a file
+        3.1.7.d: Modify data to a file
+        3.1.7.e: Close an open file
+        3.1.7.f: Print file information to the console
+        3.1.7.g: Create a new file
+        3.1.7.h: Append data to an existing file
+        3.1.7.i: Delete a file
+        3.1.7.j: Determine the size of a file
+        3.1.7.k: Determine the location within a file
+        3.1.7.l: Insert data into an existing file
+    3.1.8:
+      title: 'Demonstrate the ability to create and implement functions to meet a
+        requirement:'
+      condition: C
+      standard: B
+      sub_items:
+        3.1.8.a: Proper declarations for created functions
+        3.1.8.b: A function that returns a void
+        3.1.8.c: A function that is passed an argument by value
+        3.1.8.d: A function that is passed an argument by reference
+        3.1.8.e: A function that is passed a value by reference
+        3.1.8.f: A function that receives input from a user
+        3.1.8.g: A function pointer
+        3.1.8.h: A recursive function
+    3.1.9:
+      title: Demonstrate the ability to perform data validation in which validated
+        input matches expected input
+      condition: C
+      standard: B
+      sub_items: {}
+    3.1.10:
+      title: 'Demonstrate the following skills using pointers:'
+      condition: C
+      standard: B
+      sub_items:
+        3.1.10.a: declaring an integer pointer
+        3.1.10.b: de-referencing a variable to get its value
+        3.1.10.c: printing the address of a variable
+        3.1.10.d: assigning a value to a pointer
+        3.1.10.e: make use of a function pointer to call another function
+        3.1.10.f: make effective use of a pointer arithmetic to traverse an array
+    3.1.11:
+      title: 'Demonstrate skill in creating and implementing conditional statements,
+        expressions, and constructs:'
+      condition: C
+      standard: B
+      sub_items:
+        3.1.11.a: for loop
+        3.1.11.b: while loop
+        3.1.11.c: do while loop
+        3.1.11.d: if statement
+        3.1.11.e: if->else statement
+        3.1.11.f: if->else if->else statement
+        3.1.11.g: switch statement
+        3.1.11.h: effective use of goto labels to construct a single exit point within
+          a function
+    3.1.12:
+      title: 'Demonstrate skill in using networking functions, accounting for endianness '
+      condition: C
+      standard: B
+      sub_items:
+        3.1.12.a: socket()
+        3.1.12.b: send()
+        3.1.12.c: recv()
+        3.1.12.d: sendto()
+        3.1.12.e: recvfrom()
+        3.1.12.f: bind()
+        3.1.12.g: connect()
+        3.1.12.h: accept()
+        3.1.12.i: getsockopt()
+        3.1.12.j: setsockopt()
+        3.1.12.k: getaddrinfo()
+        3.1.12.l: gethostname
+        3.1.12.m: sethostname
+        3.1.12.n: struct sockaddr{}
+        3.1.12.o: struct sockaddr_in{}
+        3.1.12.p: struct sockaddr_un{}
+    3.1.13:
+      title: demonstrate skill in creating and implementing a hash function
+      condition: C
+      standard: B
+      sub_items: {}
+    3.1.14:
+      title: demonstrate skill in creating and implementing a sort routine
+      condition: C
+      standard: B
+      sub_items: {}
+    3.1.15:
+      title: demonstrate skill in creating and implementing a state machine
+      condition: C
+      standard: B
+      sub_items: {}
+    3.1.16:
+      title: demonstrate skill in implementing Dijkstra's Algorithm to find the optimal
+        path in a weighted graph.
+      condition: C
+      standard: B
+      sub_items: {}
+    3.1.17:
+      title: 'Describe terms associated with compiling, linking, debugging and executables:'
+      condition: B
+      standard: A
+      sub_items:
+        3.1.17.a: difference between PE and ELF
+        3.1.17.b: portable executable (PE)
+        3.1.17.c: executable and linkable format (ELF)
+        3.1.17.d: difference between a library (shared object /dll) and a regular
+          executable program
+        3.1.17.e: calling convention /application binary interface (ABII)
+    3.1.18:
+      title: Demonstrate skill in compiling, linking, and debugging
+      condition: C
+      standard: B
+      sub_items:
+        3.1.18.a: execute a program in a debugger to perform general debugging actions
+        3.1.18.b: create a program using the compilation and linking process
+        3.1.18.c: compile position-independent code using a cross-compiler
+    3.1.19:
+      title: Describe how and when bitwise operators are used
+      condition: A
+      standard: B
+      sub_items:
+        3.1.19.a: and (&)
+        3.1.19.b: or (|)
+        3.1.19.c: xor (^)
+        3.1.19.d: bitwise complement (~)
+        3.1.19.e: shift left (<<)
+        3.1.19.f: shift right (>>)
+    3.1.20:
+      title: Demonstrate skill in using bitwise operators
+      condition: C
+      standard: B
+      sub_items:
+        3.1.20.a: and (&)
+        3.1.20.b: or (|)
+        3.1.20.c: xor (^)
+        3.1.20.d: bitwise complement (~)
+        3.1.20.e: shift left (<<)
+        3.1.20.f: shift right (>>)
+    3.1.21:
+      title: Demonstrate skill in using the C preprocessor
+      condition: C
+      standard: B
+      sub_items: {}
+    3.1.22:
+      title: 'Demonstrate skill in controlling memory:'
+      condition: B
+      standard: B
+      sub_items:
+        3.1.22.a: identify memory leaks
+        3.1.22.b: remove identified memory leaks
+        3.1.22.c: make effective use of valgrind with --leak-check=full to identify
+          and correct memory leaks and context errors
+    3.1.23:
+      title: 'Describe the concepts and terminology associated with multi-threaded
+        programs:'
+      condition: B
+      standard: B
+      sub_items:
+        3.1.23.a: thread
+        3.1.23.b: pthread
+        3.1.23.c: fork
+        3.1.23.d: join
+        3.1.23.e: create
+        3.1.23.f: exit
+        3.1.23.g: detach
+        3.1.23.h: self
+        3.1.23.i: mutex
+        3.1.23.j: semaphore
+        3.1.23.k: race condition
+        3.1.23.l: deadlock
+        3.1.23.m: thread safe
+        3.1.23.n: thread id
+    3.1.24:
+      title: 'Demonstrate the ability to manage memory in multi-threaded programs
+        that make effective uses of constructs including:'
+      condition: C
+      standard: B
+      sub_items:
+        3.1.24.a: threads
+        3.1.24.b: semaphores
+        3.1.24.c: mutexes
+'3.2':
+  topic: Python Programming
+  items:
+    3.2.1:
+      title: 'Describe the purpose and use of:'
+      condition: B
+      standard: C
+      sub_items:
+        3.2.1.a: the return statement
+        3.2.1.b: data types
+        3.2.1.c: a method
+        3.2.1.d: parameters
+        3.2.1.e: scope
+        3.2.1.f: return values (type and reference)
+        3.2.1.g: import files
+        3.2.1.h: dictionaries
+        3.2.1.i: list
+        3.2.1.j: tuple
+        3.2.1.k: structs
+        3.2.1.l: unions
+        3.2.1.m: singleton
+        3.2.1.n: the term mutable
+        3.2.1.o: the term immutable
+    3.2.2:
+      title: 'Demonstrate the proper declaration and use of Python data types and
+        object-oriented constructs:'
+      condition: C
+      standard: C
+      sub_items:
+        3.2.2.a: Integer (int)
+        3.2.2.b: Float (float)
+        3.2.2.c: String (str)
+        3.2.2.d: List (list)
+        3.2.2.e: Multi-dimensional list
+        3.2.2.f: Dictionary (dict)
+        3.2.2.g: Tuple (tuple)
+        3.2.2.h: Singleton
+    3.2.3:
+      title: 'Demonstrate the ability to perform basic arithmetic operations using
+        appropriate Python operators while ensuring proper order of operations (PEMDAS):'
+      condition: C
+      standard: C
+      sub_items:
+        3.2.3.a: Addition (+)
+        3.2.3.b: Subtraction (-)
+        3.2.3.c: Multiplication (*)
+        3.2.3.d: Division (/)
+        3.2.3.e: Modulus (%)
+    3.2.4:
+      title: Demonstrate the ability to perform file management operations in Python
+      condition: C
+      standard: C
+      sub_items:
+        3.2.4.a: open an existing file
+        3.2.4.b: read data from a file
+        3.2.4.c: parse data from a file
+        3.2.4.d: write data to a file
+        3.2.4.e: modify data in a file
+        3.2.4.f: close an open file
+        3.2.4.g: print file information to the console
+        3.2.4.h: create a new file
+        3.2.4.i: append data to an existing file
+        3.2.4.j: delete a file
+        3.2.4.k: determine the size of a file
+        3.2.4.l: determine location within a file
+        3.2.4.m: insert data into an existing file
+    3.2.5:
+      title: 'Demonstrate the ability to create and implement functions to meet a
+        requirement:'
+      condition: C
+      standard: C
+      sub_items:
+        3.2.5.a: a function that returns multiple values
+        3.2.5.b: a function that receives input from a user
+        3.2.5.c: a recursive function
+    3.2.6:
+      title: Demonstrate the ability to perform data validation
+      condition: C
+      standard: C
+      sub_items:
+        3.2.6.a: validate that received input matches expected input
+        3.2.6.b: create a method for exception handling
+        3.2.6.c: implement a method for exception handling.
+    3.2.7:
+      title: 'Demonstrate skill in creating and implementing conditional statements,
+        expressions, and constructs:'
+      condition: C
+      standard: C
+      sub_items:
+        3.2.7.a: for loop
+        3.2.7.b: while loop
+        3.2.7.c: if statement
+        3.2.7.d: if->else statement
+        3.2.7.e: if->elif->else statement
+    3.2.8:
+      title: Demonstrate skill in using networking methods and functions, accounting
+        for endianness
+      condition: C
+      standard: C
+      sub_items:
+        3.2.8.a: socket()
+        3.2.8.b: send()
+        3.2.8.c: recv()
+        3.2.8.d: sendto()
+        3.2.8.e: recvfrom()
+        3.2.8.f: bind()
+        3.2.8.g: listen()
+        3.2.8.h: connect()
+        3.2.8.i: accept()
+    3.2.9:
+      title: Describe the terms and fundamentals associated with object-oriented programming
+        using Python
+      condition: B
+      standard: A
+      dependencies:
+        - "3.2.9-knowledge"
+        - "3.2.9-python"
+      sub_items:
+        3.2.9.a: class
+        3.2.9.b: object
+        3.2.9.c: difference between an object when discussing a class
+        3.2.9.d: advantages to object-oriented programming
+        3.2.9.e: inheritance
+        3.2.9.f: the keyword "super"
+        3.2.9.g: initialization function of a constructor
+        3.2.9.h: the keyword "self"
+        3.2.9.i: the getter and setter functions
+        3.2.9.j: attributes of a class
+        3.2.9.k: factory design pattern
+        3.2.9.l: singleton design pattern
+        3.2.9.m: adapter design patter
+        3.2.9.n: bridge design pattern
+    3.2.10:
+      title: 'Demonstrate the ability to parse command-line arguments using built-in
+        functionality:'
+      condition: B
+      standard: C
+      sub_items: {}
+'3.3':
+  topic: Data Structures
+  items:
+    3.3.1:
+      title: 'Describe the concepts and terms associated with the following data structures:'
+      condition: B
+      standard: A
+      sub_items:
+        3.3.1.a: binary search tree
+        3.3.1.b: linked list
+        3.3.1.c: doubly linked list
+        3.3.1.d: circularly linked list
+        3.3.1.e: weighted graph
+        3.3.1.f: common pitfalls when using linked lists, trees, and graphs
+        3.3.1.g: the effect of first in, first out (FIFO) and last in first out (LIFO)
+    3.3.2:
+      title: 'Demonstrate skill in creating and using a linked list:'
+      condition: B
+      standard: C
+      sub_items:
+        3.3.2.a: Creating a linked list with n number of items
+        3.3.2.b: Navigating through a linked list
+        3.3.2.c: Retrieving the first occurrence of an item in a linked list
+        3.3.2.d: Sorting the linked list alphanumerically using a function pointer
+        3.3.2.e: Removing selected items from the linked list
+        3.3.2.f: Inserting an item into a specified location in a linked list
+        3.3.2.g: Removing all items from the linked list
+        3.3.2.h: Destroying a linked list
+    3.3.3:
+      title: 'Demonstrate skill in creating and using a doubly linked list:'
+      condition: B
+      standard: C
+      sub_items:
+        3.3.3.a: creating a doubly linked list with n number of items
+        3.3.3.b: navigating through ha doubly linked list
+        3.3.3.c: finding the first occurrence of an item in a doubly linked list
+        3.3.3.d: sorting the doubly linked list alphanumerically using a function
+          pointer
+        3.3.3.e: inserting an item into a specific location in a doubly linked list
+        3.3.3.f: removing all items from the doubly linked list
+        3.3.3.g: destroying a doubly linked list
+    3.3.4:
+      title: 'Demonstrate skill in creating an d using a circularly linked list:'
+      condition: B
+      standard: C
+      sub_items:
+        3.3.4.a: creating a circularly linked list with n number of items
+        3.3.4.b: navigating through a circularly linked list
+        3.3.4.c: finding the first occurrence of an item in a circularly linked list
+        3.3.4.d: sorting the circularly linked list alphanumerically using a function
+          pointer
+        3.3.4.e: removing selected items from the circularly linked list
+        3.3.4.f: inserting an item into a specified location in a circularly linked
+          list
+        3.3.4.g: removing all items from a circularly linked list
+        3.3.4.h: 'destroying a circularly linked list. '
+    3.3.5:
+      title: 'Demonstrate skill in creating and using a queue:'
+      condition: B
+      standard: C
+      sub_items:
+        3.3.5.a: creating a queue with n number of items
+        3.3.5.b: navigating through a queue to find the nth item
+        3.3.5.c: finding an item in a queue
+        3.3.5.d: removing selected items from a queue
+        3.3.5.e: removing all items from the queue
+        3.3.5.f: destroying a queue
+    3.3.6:
+      title: 'Demonstrating skill in creating and using a tree:'
+      condition: B
+      standard: C
+      sub_items:
+        3.3.6.a: creating a tree with n number of items
+        3.3.6.b: navigating through a tree
+        3.3.6.c: finding the first occurrence of an item in a tree
+        3.3.6.d: removing selected items from the tree
+        3.3.6.e: inserting an item into a specified location in a tree
+        3.3.6.f: removing all items from the tree
+        3.3.6.g: destroying a tree
+    3.3.7:
+      title: Demonstrate skill in creating and using a binary search tree
+      condition: B
+      standard: C
+      dependencies:
+        - "3.3.7.f"
+        - "3.3.7"
+      sub_items:
+        3.3.7.a: creating a binary search tree with n numbers of items
+        3.3.7.b: navigating through a binary search tree
+        3.3.7.c: locating an item in a binary tree
+        3.3.7.d: Removing selected items from the binary search tree
+        3.3.7.e: removing all items from the binary search tree
+        3.3.7.f: describe implementation strategies for a balanced binary search tree
+        3.3.7.g: destroying a binary search tree
+    3.3.8:
+      title: Demonstrate skill in creating and using a hash table
+      condition: B
+      standard: C
+      sub_items:
+        3.3.8.a: creating a hash table with n number of items
+        3.3.8.b: navigating through ha hash table to find the nth item
+        3.3.8.c: finding an item in a hash table
+        3.3.8.d: removing selected items from a hash table
+        3.3.8.e: inserting an item into a hash table
+        3.3.8.f: implement functionality to mitigate hash collisions within the hash
+          table
+        3.3.8.g: removing all items from the hash table
+        3.3.8.h: destroying a hash table
+    3.3.9:
+      title: 'Demonstrate skill in creating and using a stack:'
+      condition: B
+      standard: C
+      sub_items:
+        3.3.9.a: creating a stack with n number of items
+        3.3.9.b: navigating through a stack to find the nth item
+        3.3.9.c: adding an item on a stack
+        3.3.9.d: removing selected items from a stack
+        3.3.9.e: removing all items from  the stack
+        3.3.9.f: destroying a stack
+        3.3.9.g: preventing a stack overrun
+    3.3.10:
+      title: 'Demonstrate skill in creating and using a weighted graph:'
+      condition: B
+      standard: C
+      sub_items:
+        3.3.10.a: defining the structures required for graphs
+        3.3.10.b: creating a graph with n number of nodes
+        3.3.10.c: adding n number of edges to a graph
+        3.3.10.d: finding a node within an existing graph
+        3.3.10.e: finding an edge within a graph
+        3.3.10.f: removing an edge from a graph
+        3.3.10.g: removing a node and all of its edges from a graph
+        3.3.10.h: calculate the weight of a path within a graph
+        3.3.10.i: destroy the graph
+'3.4':
+  topic: Algorithms
+  items:
+    3.4.1:
+      title: Asymptotic Notation (Big-O) - Demonstrate ability to calculate run-time
+        efficiency for a given algorithm using Big-O notation
+      condition: B
+      standard: A
+      sub_items:
+        3.4.1.a: insertion sort
+        3.4.1.b: selection sort
+        3.4.1.c: merge sort
+        3.4.1.d: heap sort
+        3.4.1.e: quick sort
+        3.4.1.f: 'state machine '
+        3.4.1.g: hashing
+    3.4.2:
+      title: Describe the concepts associated with traversal techniques
+      condition: B
+      standard: A
+      sub_items:
+        3.4.2.a: depth first traversal
+        3.4.2.b: breadth first traversal
+        3.4.2.c: the technique of determining the weight of a given path when traversing
+          a graph
+        3.4.2.d: how the most efficient path for traversing a graph is determined
+    3.4.3:
+      title: 'Describe the concepts associated with hashing:'
+      condition: B
+      standard: A
+      sub_items:
+        3.4.3.a: data distribution as it relates to hashing
+        3.4.3.b: hash function efficiency
+        3.4.3.c: hash collisions
+    3.4.4:
+      title: demonstrate the ability to analyze sorting routines to determine the
+        most efficient one to use, using an approximation of Big-O Notation
+      condition: C
+      standard: A
+      sub_items: {}
+'3.5':
+  topic: Operating System Concepts
+  items:
+    3.5.1:
+      title: Describe terms and concepts
+      condition: B
+      standard: A
+      sub_items:
+        3.5.1.a: processes
+        3.5.1.b: cpu scheduling
+        3.5.1.c: paging tables
+        3.5.1.d: caching
+        3.5.1.e: kernel and user-mode memory
+    3.5.2:
+      title: Demonstrate the ability to use the following constructs
+      condition: C
+      standard: B
+      sub_items:
+        3.5.2.a: interrupts
+        3.5.2.b: signal handling
+    3.5.3:
+      title: 'describe the terms and concepts associated with concurrency:'
+      condition: B
+      standard: A
+      sub_items:
+        3.5.3.a: threading
+        3.5.3.b: locks
+        3.5.3.c: race conditions
+        3.5.3.d: deadlocks
+        3.5.3.e: scheduling modules (ie, round-robin, etc)
+    3.5.4:
+      title: demonstrate the ability to use the following constructs associated with
+        concurrency
+      condition: C
+      standard: B
+      sub_items:
+        3.5.4.a: threads
+        3.5.4.b: locks
+    3.5.5:
+      title: Describe the terms and concepts associated with OS persistence
+      condition: B
+      standard: A
+      sub_items:
+        3.5.5.a: Von Nuemann architecture
+        3.5.5.b: Harvard architecture
+        3.5.5.c: File systems
+        3.5.5.d: The boot process
+'3.6':
+  topic: Secure Coding
+  items:
+    3.6.1:
+      title: 'Describe the terms and concepts associated with secure coding practices:'
+      condition: B
+      standard: A
+      sub_items:
+        3.6.1.a: Common string-handling functions
+        3.6.1.b: which functions guarantee null-terminated strings
+        3.6.1.c: an off-by-one error
+        3.6.1.d: an integer overflow
+        3.6.1.e: a buffer overflow
+        3.6.1.f: the concept of use-after-free
+        3.6.1.g: resource acquisition is initialization (RAII)
+        3.6.1.h: The difference between a regular expression and a context-free grammar
+        3.6.1.i: The difference between input validation vs. input sanitization
+        3.6.1.j: The meaning of a pure function and if a function has a side-effect
+        3.6.1.k: general low-level crypto basics
+    3.6.2:
+      title: Demonstrate skill in using secure coding techniques
+      condition: C
+      standard: B
+      dependencies:
+        - "3.6.2"
+        - "3.6.2.f"
+        - "3.1.15"
+      sub_items:
+        3.6.2.a: format string vulnerabilities
+        3.6.2.b: safe buffer size allocation
+        3.6.2.c: input sanitization
+        3.6.2.d: input validation
+        3.6.2.e: Modeling complex functionality as state-machines
+        3.6.2.f: establish a secure communication channel using an SSL/TLS library
+        3.6.2.g: securely zeroing-out memory (compiler optimizations)
+'3.7':
+  topic: Networking Fundamentals
+  items:
+    3.7.1:
+      title: 'Describe the concepts and terms associated with the following networking
+        fundamentals:'
+      condition: B
+      standard: A
+      sub_items:
+        3.7.1.a: Transmission Control Protocol (TCP)
+        3.7.1.b: datagrams (UDP)
+        3.7.1.c: open systems interconnect (TCP/OSI) model
+        3.7.1.d: POSIX API/BSD sockets
+        3.7.1.e: purpose and use of sockets
+        3.7.1.f: request for  comments (RFC)
+        3.7.1.g: purpose of subnetting
+    3.7.2:
+      title: 'Describe the concepts and terms associated with common protocols and
+        their associated ports, if applicable:'
+      condition: B
+      standard: A
+      sub_items:
+        3.7.2.a: Address Resolution Protocol (ARP)
+        3.7.2.b: Hypertext Transfer Protocol/S (HTTP/HTTPS)
+        3.7.2.c: Domain Name System (DNS)
+        3.7.2.d: Simple Mail Transfer Protocol (SMTP)
+        3.7.2.e: Internet Control Message Protocol (ICMP)
+        3.7.2.f: Dynamic Host Configuration Protocol (DHCP)
+        3.7.2.g: Internet Protocol Version 4 (IPv4)
+        3.7.2.h: Internet Protocol Version 6 (IPv6)
+    3.7.3:
+      title: 'Describe the addressing associated with the following protocols:'
+      condition: B
+      standard: A
+      sub_items:
+        3.7.3.a: IPv4
+        3.7.3.b: IPv6
+        3.7.3.c: Ethernet
+'3.8':
+  topic: Serialization
+  items:
+    3.8.1:
+      title: Demonstrate the ability to handle partial reads and writes during serialization
+        and de-serialization
+      condition: C
+      standard: B
+      sub_items: {}
+    3.8.2:
+      title: Demonstrate the ability to serialize fixed-size, multi-byte types between
+        systems of different endianness
+      condition: C
+      standard: B
+      sub_items: {}
+    3.8.3:
+      title: demonstrate the ability to serialize and de-serialize variable-sized
+        data structures between systems of differing endianness
+      condition: C
+      standard: B
+      sub_items: {}
+    3.8.4:
+      title: describe libraries commonly used to aid in serialization
+      condition: B
+      standard: A
+      sub_items: {}
+'3.9':
+  topic: Basic Exam
+  items:
+    3.9.1:
+      title: With references and required resources, pass the provided basic exam
+        to demonstrate proficiency as a basic skill level Cyberspace Capability Developer
+      condition: C
+      standard: C, B
+      sub_items: {}
+'3.10':
+  topic: Basic Validation Panel
+  items:
+    3.10.1:
+      title: 'With references and required resources, having passed the basic exam,
+        pass the associated validation panel to demonstrate a firm understanding of
+        the work submitted. '
+      condition: C
+      standard: A
+      sub_items: {}

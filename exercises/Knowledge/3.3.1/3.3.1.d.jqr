@@ -1,0 +1,17 @@
+- choices:
+  - previous pointer
+  - next pointer
+  - middle pointer
+  - present pointer
+  hash: $2b$11$VBRVhJTDph8JfYdCh7S0BOBRXALc2D5WqfMAXumh9qyFSNoM4yHhm
+  text: Select all of the pointers that an item in a circularly linked list contains.
+  type: MA
+- choices: []
+  hash: $2b$11$eyZbvQ19/7B0TaM5hzA6muG4m2dK3diwsz6fBTQ1ocRR2gQOIZoJO
+  text: The last item in a circularly linked list contains a pointer to the list ______.
+  type: FIB
+- choices: []
+  hash: $2b$11$.ps9/w5vM8HgEN1RA0rQLusVl8PC5bHVO.o7QofqNlo0.LoFMq5zS
+  text: Circularly linked lists are tracked by creating an external pointer to the
+    _____ node of the list.
+  type: FIB

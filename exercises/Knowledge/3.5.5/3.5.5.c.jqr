@@ -1,0 +1,36 @@
+- choices: []
+  hash: $2b$11$3GSo7pwPqOq2ppdB5nBUfujR3JLstW0ErvSvB2YaDmr9UEZGerENm
+  text: A file system is the methods and data structures that an operating system
+    uses to keep track of files on a disk or partition.
+  type: TF
+- choices:
+  - Automobile
+  - Dogs electronic fence collar
+  - PC
+  - ATM
+  - Smart phone
+  - Analog watch
+  hash: $2b$11$XaulHgc6/OjViRLgD/htpuUEgdHqfI0Zc..1lPdOOc7ReLGC17vjG
+  text: Select examples of places file systems are used?
+  type: MA
+- choices:
+  - sector block size
+  - fragment information
+  - file size
+  - file name
+  - all of the above
+  hash: $2b$11$HEIWLkFqCmyRMMKHqfb9XegfMX0Dy/qmX6wXbiT9WLEBtdsnEFocC
+  text: File systems don't just store the files but also information about them, like&#58;
+  type: MC
+- choices: []
+  hash: $2b$11$eBuvQb/pyDXhJFxBhS9m0.OFiCs/pTAyaWJBEej2viZH16jOK8qgi
+  text: Most programs are file system independent and can work on Linux or MS Windows.
+  type: TF
+- choices:
+  - NTFS
+  - MVS
+  - HPFS
+  - all of the above
+  hash: $2b$11$F1fE4RTeKvjBdyZKL6FSSeCgLpyVgMNglSB4PT0z7xK14nhEKv0mq
+  text: File systems types include&#58;
+  type: MA

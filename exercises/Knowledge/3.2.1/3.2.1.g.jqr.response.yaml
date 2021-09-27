@@ -1,0 +1,28 @@
+- type: MC
+  resp: 2
+  text: Using import's 'from' statement may cause what problem?
+  choices:
+    - duplicate file names
+    - code reuse
+    - name collisions
+    - class refactoring
+- type: TF
+  resp: 'true'
+  text: Each module includes a unique namespace.
+  choices: null
+- type: MC
+  resp: 0
+  text: Which operator references attributes within a module?
+  choices:
+    - .
+    - '&'
+    - '@'
+    - '->'
+- type: MC
+  resp: 2
+  text: Modules are a good exmple of what?
+  choices:
+    - scope collisions
+    - overloading
+    - code reuse
+    - multi-threading

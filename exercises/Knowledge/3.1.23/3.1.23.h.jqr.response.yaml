@@ -1,0 +1,24 @@
+- type: MC
+  resp: 3
+  text: Most operating systems identify processes according to a unique ________ .
+  choices:
+    - program counter
+    - process state
+    - process number
+    - process identifier
+- type: MC
+  resp: 3
+  text: What is the return type for the function pthread_self()?
+  choices:
+    - int
+    - tid
+    - pid
+    - pthread_t
+- type: MC
+  resp: 3
+  text: Function that will never return an ERRORS?
+  choices:
+    - pthread_join()
+    - pthread_cond_wait()
+    - pthread_cancel()
+    - pthread_self()

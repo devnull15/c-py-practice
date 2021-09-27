@@ -1,0 +1,20 @@
+- choices:
+  - 11001010
+  - 10100111
+  - 4096
+  - 10110111
+  hash: $2b$11$3Nf04w.DxCP0xC4J5TiLruGHhBwx89jXbTpfLJFzjLzz3PPgebsoq
+  text: 00110101 | 10010010 =
+  type: MC
+- choices: []
+  hash: $2b$11$GoIUwgwiJj/uHUnr7M1LF.xdpNvW1H4B5yIgzpLvb.P0Aoo2hM186
+  text: The bitwise operator | is equivalent to the 'or' keyword in Python.
+  type: TF
+- choices:
+  - 0
+  - 1
+  - 10
+  - 11
+  hash: $2b$11$O2bK5OZFddI4Nh1h4u.lceYG96c7tWlfX3lA2K1QHoSzkprNMQDUG
+  text: 11 & 01 | 11 & 10
+  type: MC

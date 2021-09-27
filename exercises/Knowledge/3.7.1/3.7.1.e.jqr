@@ -1,0 +1,15 @@
+- choices:
+  - A RAW socket is a partially open one way only stream.
+  - It is a socket that has been reserved by the appropriate API call, but hasn't
+    yet been opened.
+  - It bypasses the protocol stack and allows direct interaction with the hardware.
+  - It is a socket that can be accessed from any IP aware system as it requires and
+    IP address, protocol, and port (i.e. 192.168.1.34&#58;TCP&#58;22)
+  hash: $2b$11$ZYygFlaxLChy8J2cESpPiu7t4frwlF9Auatrt59eYoZA6dmfrxyGq
+  text: What is a RAW socket?
+  type: MC
+- choices: null
+  hash: $2b$11$QUNNXk4cvGhsZmzGNhqCJ.Yp0dh1vT3HpQ.5SNNHmRxh9KO40Lwia
+  text: A socket is a single endpoint for communications and must consist of an IP
+    address, protocol, and port.
+  type: TF

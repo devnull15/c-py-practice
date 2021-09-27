@@ -1,0 +1,62 @@
+- type: MA
+  resp:
+    - 2
+    - 3
+  text: >-
+    Which of the following protocols are used to transfer MAIL from a server to
+    another server?
+  choices:
+    - IMAP
+    - POP3
+    - SMTP
+    - eSMTP
+- type: MC
+  resp: 3
+  text: >-
+    You are spoofing an email. What command will you use to spoof the source
+    email address?
+  choices:
+    - RCPT TO
+    - RCPT FROM
+    - MAIL TO
+    - MAIL FROM
+- type: MA
+  resp:
+    - 4
+    - 5
+  text: >-
+    You are spoofing an email. What command will you use to initiate an SMTP
+    converstation?
+  choices:
+    - MAIL FROM&#58;<email address>
+    - RCPT TO&#58;<email address>
+    - VRFY <username>
+    - EXPN <username>
+    - HELO <hostname>
+    - EHLO <hostname>
+- type: MA
+  resp:
+    - 0
+    - 1
+  text: >-
+    Which of the following protocols are used to transfer MAIL from a server to
+    a client?
+  choices:
+    - IMAP
+    - POP3
+    - SMTP
+    - eSMTP
+- type: MA
+  resp:
+    - 2
+    - 4
+  text: What are some techniques to secure SMTP?
+  choices:
+    - Change the protocol from SMTP to IMAP
+    - Change the protocol from SMTP to POP3
+    - Specify which domains or IP addresses you will relay mail for
+    - Switch to connectionless SMTP (SMTPc)
+    - >-
+      Configure the server perform a reverse lookup on the IP of the source
+      connection and verify that the domain matches that what was provided in
+      the initiation.

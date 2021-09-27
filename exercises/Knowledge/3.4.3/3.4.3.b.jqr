@@ -1,0 +1,47 @@
+- choices:
+  - Minimize collisions
+  - Uniform Distribution of hash values
+  - Easy to calculate
+  - Resolve any collisions
+  - Minimize array size
+  hash: $2b$11$/mBgA/MOhZ7Ff4GMVO0iGe8ywljXTO6xj97opBfafcmN1W2mBJoxu
+  text: Choosing and writing an efficient hash fuction algorithm requires?
+  type: MA
+- choices: null
+  hash: $2b$11$11DtO7kvGaAuLRN/5U1nVeSSCpaGo7ZJs5Bjm61m2/.rfVda5o.iy
+  text: In a hash function algorithm, calculations are applied to a key to transform
+    it to an address of an array
+  type: TF
+- choices:
+  - Size of an element in array
+  - Address of an element in array
+  - Data of an element in array
+  hash: $2b$11$bsQIuAWiPzWi33VEpfUKW.AuGNfaFEALgGPUJCOYvb570Qh2B5UC2
+  text: How is key defined in a hash function?
+  type: MC
+- choices:
+  - Numeric method
+  - Alphanumeric method
+  - Folding method
+  - All of the above
+  hash: $2b$11$TJ8MGXu8ahH3Wye/QAPVoOLYIE8ueV5igDeRuJ1F9Mdryh1mwLa7e
+  text: What are the methods used to calculate the key address in a hash function
+    algorithm?
+  type: MC
+- choices: null
+  hash: $2b$11$2Ub5z0RcA3g88GiekLUR7.YexCJmQtdqwFqjnY/SGTsHWIqPfCWJK
+  text: In alphanumeric method, the address of key is determined by dividing the sum
+    of key ASCII codes with size of array, and taking the remainder.
+  type: TF
+- choices:
+  - 1 iteration
+  - 1.5 iteration
+  - 2 iteration
+  hash: $2b$11$t1GDJfHFwFoHMCXLZXgmiO8PF9TLwZJLlwIuPs8laZCrRNJ0eLhaW
+  text: Access to a location of an hash array is?
+  type: MC
+- choices: null
+  hash: $2b$11$52QGIa75ZkdtnpTr6nVJKuJpkdNMUxRSBr1CaiDg1YdblRMDtQqsy
+  text: If all the keys are known in advance, it is possible to come up with a perfect
+    hash function.
+  type: TF

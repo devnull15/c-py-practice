@@ -1,0 +1,47 @@
+- choices: []
+  hash: $2b$11$7AhXwgSmQbd.sv8mvpEJZu2Y9vqrji1EAX6QYBHmsGSrMq3u.sN62
+  text: The ______ subtree of a binary search tree node contains values less than
+    the node key.
+  type: FIB
+- choices: []
+  hash: $2b$11$X.c5nTdtFZMRYuwxlXS7EO93O4nro37C1PG3p6u2fRUd3plsyji86
+  text: The ______ subtree of a binary search tree node contains values greater than
+    the node key
+  type: FIB
+- choices:
+  - stack
+  - queue
+  - binary search tree
+  - linked list
+  - array
+  - priority queue
+  hash: $2b$11$aMHdiPoF6gz.fGEAJERju.v8U/UiL2XzktiVPsu8FMwe9siLeARLW
+  text: Mark all of the data structures that are self-sorted.
+  type: MA
+- choices: []
+  hash: $2b$11$hCVuLLn3Tty.7cpUmtnbP.eDLdVwwUKHII8ivCUn65490uPQ8TcYW
+  text: In a binary search tree, the left and right descendents of any node must also
+    be binary search trees
+  type: TF
+- choices: []
+  hash: $2b$11$l3JOnxz9u0091k6xuI8Ts.QpNrJEuPPTtxyUha3ZoQiTZps9T20jO
+  text: In a binary search tree, the root node will always be the median value of
+    all of the values in the tree
+  type: TF
+- choices:
+  - - 1
+    - 2
+    - 3
+    - 4
+  - - 4
+    - 3
+    - 2
+    - 1
+  - - 1
+    - 3
+    - 2
+    - 4
+  hash: $2b$11$zPnygp1C/6nTNqi0aMSsauH6ndvHZCFoLg54CItOhLvaWwnBfUyxO
+  text: In a standard BST with a root node of 5, which is the worst case scenarion
+    for insertion order when performing a search for the value 1?
+  type: MC

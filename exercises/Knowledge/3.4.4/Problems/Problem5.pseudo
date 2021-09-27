@@ -1,0 +1,46 @@
+# We want to sort Array in ascending order.
+# Suppose A is an array of N Values, 
+# first <- starting position of A
+# last  <- ending postion of A, "length(A)-1"
+
+
+FUNCTION MergeSort(A, first, last)
+    if first < last
+        set mid = (first + last)/2
+        MergeSort(A, first, mid)          
+        MergeSort(A, mid+1, last)         
+        Merge(A,first,mid+1,last)         
+    END if
+END
+
+FUNCTION Merge(A, first, mid, last)   
+    set i = 0, k = 0
+    set j = mid
+    set out[last+1]
+    
+    while i<=mid and j<=last 
+        if A[i] < A[j]
+            out[k] = A[i]
+            i++
+        else
+            out[k] = A[j]
+            j++
+        END if 
+        k++
+    END while
+    
+    while i<=mid                      
+        out[k] = A[i]
+        i++
+        k++
+    END while
+    
+    while j<=last                     
+    begin
+            out[k] = A[j]
+            j++
+            k++
+    END while
+    
+    return out
+END 

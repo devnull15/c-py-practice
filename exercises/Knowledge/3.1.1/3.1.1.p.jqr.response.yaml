@@ -1,0 +1,26 @@
+- type: TF
+  resp: 'true'
+  text: >-
+    Because of the way little endian stores data, it is possible that the same
+    value can be read from the same address in memory, regardless of the length
+    of the data the computer is attempting to read.
+  choices: []
+- type: MC
+  resp: 2
+  text: >-
+    When organizing data using big or little endian, into what units is the data
+    divided up?
+  choices:
+    - 1 bit
+    - 4 bits
+    - 1 byte
+    - 4 bytes
+- type: MC
+  resp: 0
+  text: >-
+    int is 4 bytes. If an int is stored with the most significant (or largest)
+    byte at the smallest address in memory, this is ___ endian.
+  choices:
+    - Big
+    - Little
+    - Neither

@@ -1,0 +1,23 @@
+- type: MA
+  resp:
+    - 1
+  text: >-
+    Select all of the pointers that an item in a circularly linked list
+    contains.
+  choices:
+    - previous pointer
+    - next pointer
+    - middle pointer
+    - present pointer
+- type: FIB
+  resp: head
+  text: >-
+    The last item in a circularly linked list contains a pointer to the list
+    ______.
+  choices: []
+- type: FIB
+  resp: last
+  text: >-
+    Circularly linked lists are tracked by creating an external pointer to the
+    _____ node of the list.
+  choices: []

@@ -1,0 +1,136 @@
+- type: MA
+  resp:
+    - 0
+    - 3
+    - 5
+  text: Which of the following describe strings in C coding?
+  choices:
+    - Single dimentional array of characters
+    - Multi dimentional array of characters
+    - Minimum size is 0 characters
+    - Terminated by a character literal '\0'
+    - First byte indicates the length of the string
+    - Minimum size is 1 character
+- type: MC
+  resp: 2
+  text: What would be the return value of the function "strncmp("aaa", "aab", 3)"?
+  choices:
+    - '0'
+    - '1'
+    - '-1'
+    - '256'
+- type: MC
+  resp: 2
+  text: >-
+    You are using the strtok() fuction to separate a string where a space
+    occurs:\ 'token = strtok(str, " ")'. After the first token is obtained, what
+    command would you use to obtain the second token?
+  choices:
+    - token = strtok(token, " ");
+    - token = strtok(str, " ");
+    - token = strtok(NULL, " ");
+    - token = strtok(str, NULL);
+    - token = strtok(token, NULL);
+- type: TF
+  resp: 'false'
+  text: >-
+    After the execution of the command int length = strlen("A string"); The
+    variable length will contain the value 9 as the total length of the string
+    includes the literal '\0' that terminates the string.
+  choices: null
+- type: TF
+  resp: 'false'
+  text: >-
+    You defined a string using:\ char *mystring = "This is a string";  You can
+    modify the first character in the string using:\ mystring[0] = 'X';
+  choices: null
+- type: MA
+  resp:
+    - 1
+    - 3
+    - 4
+    - 6
+  text: >-
+    You have a string defined as\n\nchar mystring[] = "This is a
+    string";\n\nWhich of the following are ways to display the first character
+    in this string?
+  choices:
+    - printf("%c", mystring);
+    - printf("%c", mystring[0]);
+    - printf("%c", mystring[1]);
+    - printf("%c", *mystring);
+    - printf("%c", *(mystring + 0));
+    - printf("%c", *(mystring + 1));
+    - printf("%c", 0[mystring]);
+    - printf("%c", 1[mystring]);
+- type: TF
+  resp: 'false'
+  text: >-
+    You defined a string using:\ char mystring[6] = "One "; This command would
+    be safe from buffer overflows since the size is the same as the defined
+    character array:\n\nstrncat(mystring, "Two", 6);
+  choices: null
+- type: MC
+  resp: 4
+  text: >-
+    What would be displayed by this function:\ printf("%s", strrchr("This is a
+    string", 's'); ?
+  choices:
+    - s is a string
+    - Thi
+    - This
+    - tring
+    - string
+- type: MC
+  resp: 0
+  text: >-
+    What would be displayed by this function:\ printf("%s", strchr("This is a
+    string", 's'); ?
+  choices:
+    - s is a string
+    - Thi
+    - This
+    - tring
+    - string
+- type: MA
+  resp:
+    - 0
+    - 2
+  text: >-
+    You used this function in your code:\ char *buffer = strdup("My string"); 
+    What is true of this function?
+  choices:
+    - >-
+      It creates a duplicate of the string provided as a parameter to the
+      strdup() function.
+    - >-
+      The syntax is incorrect as it must be provided a character array as a
+      second argument where it will duplicate the string.
+    - >-
+      The return value is a pointer to allocated memory which can be released
+      with the free() function.
+    - >-
+      If there is not sufficient space left in the destination memory, then a
+      buffer overrun can occur.
+- type: TF
+  resp: 'false'
+  text: >-
+    The memcpy() function is defined in the string.h header. It is an alias to
+    strcpy().
+  choices: null
+- type: MA
+  resp:
+    - 0
+    - 3
+  text: >-
+    What is true about this code snippet:\n\nchar *line = NULL;\nsize_t len =
+    0;\n\ngetline(&line, &len, stdin));\n
+  choices:
+    - The getline function guarantees a NULL terminated string
+    - >-
+      The behavior will be undefined and likely fail because variable line is
+      pointing to unallocated memory.
+    - >-
+      If you type "hey" and press enter at an interactive console prompt calling
+      getline, then the return value of the getline function will be 3.
+    - The getline function will return the newline character if typed.

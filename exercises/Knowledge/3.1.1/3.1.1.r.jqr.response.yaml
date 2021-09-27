@@ -1,0 +1,17 @@
+- type: TF
+  resp: 'true'
+  text: >-
+    If a processor executes an action that is particularly lengthy or causes an
+    infinite loop, multi-threading will prevent that action from taking up all
+    available resources.
+  choices: []
+- type: MC
+  resp: 3
+  text: When running multiple threads, what is the purpose of a mutex?
+  choices:
+    - It allows multiple threads to be run concurrently on a single processor.
+    - It allows multiple threads to be split across multiple processors.
+    - It allows two different processes to share threads.
+    - >-
+      It stops two or more threads from accessing the same resource at the same
+      time.

@@ -1,0 +1,19 @@
+- choices: []
+  hash: $2b$11$4lVFqDq6okDoXLNzKSFrCOOqu8kspDX2q91MJ9tQ0/01xfFGwRlnu
+  text: Variables declared in main() can be directly accessed by functions outside
+    of main, without needing to pass them.
+  type: TF
+- choices: []
+  hash: $2b$11$Tpkrh67JIiN7DzNRHTR.3OLFr.C4NaIaKG/kSDqktyhMLoUyn3CZO
+  text: Global variables defined at the start of a program can be accessed and modified
+    by any function, making them security risks.
+  type: TF
+- choices:
+  - Variables defined in a function cannot be directly accessed outside that function.
+  - Variables defined outside of a function can be directly accessed in any function
+    after their definition.
+  - If a function changes the value of one of its parameters, it will also change
+    its value in the function that passed it.
+  hash: $2b$11$A/MATUCHOkkgWj15ukOgN.a696XcazQhTUfNjuXSl6BVxUoRA2rJi
+  text: Which of the following statements about scope are true?
+  type: MA

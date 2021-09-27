@@ -1,0 +1,21 @@
+- type: TF
+  resp: 'true'
+  text: >-
+    The adapter design pattern is used to wrap incompatible objects so that they
+    can interface.
+  choices: []
+- type: MA
+  resp:
+    - 0
+    - 1
+    - 2
+  text: Reasons to use the adapter design pattern.
+  choices:
+    - To use a class that doesn't have a required interface
+    - To make incompatible interface work together
+    - To provide alternative interfaces for use in a factory object
+    - To ensure only one instance of the object is created
+- type: TF
+  resp: 'true'
+  text: The adapter design pattern is relatable to inheritance.
+  choices: []

@@ -1,0 +1,73 @@
+- choices:
+  - This packet can propagate to only one more router before it is dropped.
+  - This packet is carrying a TCP segment that is using tcpmux.
+  - This packet is carrying ICMP data/information.
+  - This packet is the first in the series of multiple packets.
+  hash: $2b$11$A7PHftidQvc/pvb.eXyR/eUbFMj38g8Gs691Jn8Llg/mGxinsMRX.
+  text: An IPv4 packet protocol field contains the value 1. What does this mean?
+  type: MC
+- choices:
+  - The source IP address will the changed to that of said router.
+  - If the exit interface is Ethernet, the source MAC address will be changed to that
+    of said router.
+  - If the exit interface is Ethernet, the destination MAC address will be changed
+    to that of the next router or host.
+  - The Time to Live (TTL) will typically be decremented by one.
+  - The header checksum will be recalculated.
+  - The identification field will be replaced by the said router ID.
+  - The "More Fragments" flag will be set to 1 to indicate that this is one of many
+    packets.
+  hash: $2b$11$PgIjnOTz25OJR4z5u0Gg4OicqkIdsVW2Dn6b9OWwsroFHwkQ.7Ix2
+  text: An IPv4 packet makes it to a router. The router looks up the destination network,
+    and finds a matching route? What items in the packet will be changed before it
+    routed?
+  type: MA
+- choices: []
+  hash: $2b$11$z3LhnbYPIAZCDv0MNeyly.YsjFJxFXItKPo.kzs.NInKb9zCjxg/m
+  text: The version field on an IPv4 packet will contain the value ____.
+  type: FIB
+- choices:
+  - This packet can propagate to only one more router before it is dropped.
+  - This packet is carrying a TCP segment that is using tcpmux.
+  - This packet is carrying ICMP data/information.
+  - This packet is the first in the series of multiple packets.
+  hash: $2b$11$0Y2mPBYEeefazrp.V3GfrOFOU0MOEqwqH.lfRDp3kcB/0llH6De.C
+  text: An IPv4 packet protocol field contains the number 1. What does this mean?
+  type: MC
+- choices:
+  - The first fragment will have an fragment offset of 0.
+  - The first fragment will have an fragment offset of 20 as the IP header is 20 bytes
+    and the data portion starts immediately after the header.
+  - The first fragment will have the Don't Fragment (DF) flag set.
+  - The first fragment will have the More Fragments (MF) flag set.
+  - The first fragment will have no flags set.
+  - All but the first fragment will have a non-zero fragment offset.
+  - All fragments in the fragment train will have a non-zero fragment offset indicating
+    that they are part of a fragment.
+  - The last fragment will have the Don't Fragment (DF) flag set.
+  - The last fragment will have the More Fragment (MF) flag set.
+  - The last fragment will have no flags set.
+  - The last fragment will have an offset of zero indicating it is the last fragment.
+  - The last fragment will have an non-zero fragment offset
+  - The IP ID will increment so that the destination system will know how to reorder
+    the fragments.
+  - The IP ID of all fragments will be the same so the destination system knows which
+    fragments are related.
+  - The IP ID of all fragments will be set to zero indicating they are not typical
+    packets.
+  hash: $2b$11$DIrQoNJW1tnIeenze3Kks.Uih9kZNXT3MNu8JzeAbiO6AuShXEcVG
+  text: Which of the following are some rules of fragmentation?
+  type: MA
+- choices: []
+  hash: $2b$11$tW7egPLNMFs9FrJkZ7yPdeevAtbY8.z3aBdxzNxWu1buCQ80DhSlG
+  text: If an IPv4 packet has no IP options, what would the initial header length
+    (IHL) be?
+  type: FIB
+- choices: []
+  hash: $2b$11$73qDf.ouOZvtCZ4FDAKqz.yvJWDtXDNwPgsaMIOLUwR3Ret8wzo8m
+  text: What is the typical TTL from a packet originating from a Linux system?
+  type: FIB
+- choices: []
+  hash: $2b$11$7tzRsF3mAhs45e1nt1/fEuZvWtpk7F2auV/zkAKsCJ2aIKWWZkEvm
+  text: What is the typical TTL from a packet originating from a Windows system?
+  type: FIB

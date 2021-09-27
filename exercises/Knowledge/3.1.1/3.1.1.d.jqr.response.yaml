@@ -1,0 +1,27 @@
+- type: TF
+  resp: 'true'
+  text: >-
+    C is strongly typed. All variables must be defined with their specific data
+    type.
+  choices: []
+- type: MC
+  resp: 2
+  text: >-
+    What is NOT true of the "unsigned" definition for variables in C
+    programming?
+  choices:
+    - >-
+      Using the word "unsigned" before a data type declaration prevents the
+      resulting variable from being negative.
+    - >-
+      The definition of "unsigned" can be used with integer and float type
+      variables.
+    - Unsigned variables can only be either zero or a negative value.
+- type: MC
+  resp: 3
+  text: Which of the following is not a basic data type in C?
+  choices:
+    - double
+    - float
+    - char
+    - string

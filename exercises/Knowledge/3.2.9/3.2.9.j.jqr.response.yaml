@@ -1,0 +1,38 @@
+- type: TF
+  resp: 'true'
+  text: An instance attribute is defined inside the constructor.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: A class attribute is defined outside the constructor.
+  choices: []
+- type: MA
+  resp:
+    - 1
+    - 2
+  text: Select instance attribute rules.
+  choices:
+    - Belong to the class itself and will be shared by all the instances
+    - Defined inside the constructor
+    - Accessible from the scope of an object
+    - Every object instance will see the same value.
+- type: MA
+  resp:
+    - 0
+    - 1
+  text: Select class attribute rules.
+  choices:
+    - Belong to the class itself and will be shared by all the instances
+    - >-
+      Class attribute tireSize is set to 17 by object1, object2 and object1 will
+      see the same value of 17 for tireSize.
+    - Class attributes cannot have getters and setters
+    - >-
+      Class attribute tireSize is set to 17 by object1 and set to 14 by object2.
+      Object1 tireSize retains the value of 17.
+- type: TF
+  resp: 'false'
+  text: >-
+    Instance and class attributes act the same after instantiation into an
+    object.
+  choices: []

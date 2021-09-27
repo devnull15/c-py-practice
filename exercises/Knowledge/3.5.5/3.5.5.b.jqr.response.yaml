@@ -1,0 +1,47 @@
+- type: TF
+  resp: 'true'
+  text: >-
+    The von Harvard architecture has separate storage and signal pathways for
+    instructions and data.
+  choices: []
+- type: MA
+  resp:
+    - 0
+    - 1
+  text: What are characteristics of the Harvard architecture?
+  choices:
+    - >-
+      separate processor caches for the instructions and data, with separate
+      pathways into the processor for each
+    - >-
+      the word width, timing, implementation technology, and memory address
+      structure can differ from the instruction memory
+    - data operation and an ALU operation cannot occur simultaneously
+    - Crystal frequency is a limiting factor on ALU operations
+- type: TF
+  resp: 'true'
+  text: >-
+    The Harvard architecture term originated from the Harvard Mark I relay-based
+    computer, which stored instructions on punched tape (24 bits wide) and data
+    in electro-mechanical counters.
+  choices: []
+- type: MA
+  resp:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+  text: Select the components that make up the Harvard architecture.
+  choices:
+    - ALU
+    - Control unit
+    - Instruction Memory
+    - Data memory
+    - Input and output mechanisms
+- type: TF
+  resp: 'true'
+  text: >-
+    Harvard architecture improves the speed of processor operation because data
+    and addresses do not have to share the same bus lines.
+  choices: []

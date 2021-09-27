@@ -1,0 +1,55 @@
+- type: MA
+  resp:
+    - 0
+    - 1
+    - 2
+  text: A process in Operating System Design is best described as__.
+  choices:
+    - An entity or an active program which is executed in memory
+    - Holds the current values of program counter, registers, and variables
+    - A program which is in execution in memory
+    - A program that runs light weight processes in memory
+- type: MA
+  resp:
+    - 0
+    - 3
+  text: Which of the following are process states?
+  choices:
+    - New
+    - Idle
+    - Standby
+    - Running
+    - Stop
+- type: TF
+  resp: 'true'
+  text: >-
+    A program is a set of instructions written to a file. It is a passive entity
+    that does not do anything by itself.
+  choices: []
+- type: MC
+  resp: 1
+  text: Where is process-related state information stored?
+  choices:
+    - Kernel Stack
+    - Process Control Block
+    - Thread Control Block
+    - User Stack
+- type: MA
+  resp:
+    - 0
+    - 2
+  text: What are some ways to start a new process?
+  choices:
+    - CLI - Command Line Interface
+    - API - Application Programming Interface
+    - GUI - Graphical User Interface
+    - MMI - Memory Management Interface
+- type: MC
+  resp: 4
+  text: What is the layout of process stored in the main memory?
+  choices:
+    - Stack
+    - Heap
+    - Data
+    - Text
+    - All of the Above

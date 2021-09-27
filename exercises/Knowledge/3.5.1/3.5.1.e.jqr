@@ -1,0 +1,43 @@
+- choices:
+  - Software applications
+  - Processors
+  - User process execution
+  - Memory
+  hash: $2b$11$W.fCIIqy0OudaxgsVqEuw.F/12eTjcaVJXzl5vue.RxNQPEIK5Uy6
+  text: Kernel is a software program executing within an operating system that has
+    direct access to____?
+  type: MA
+- choices:
+  - Return control to user mode at the point of the fork call of the parent process.
+  - Transfer control to the child process at the return from the fork call.
+  - Transfer control to another process. Both parent and child are left in the Ready
+    to Run state.
+  hash: $2b$11$Jvu7jj5xiX7AnT463KRlh.UeZEDRYCNH5/QxbCIk2/MQNksFInGmm
+  text: ' When the kernel has executed all its functions, it can do the following
+    as part of the dispatcher routine&#58;.'
+  type: MA
+- choices: []
+  hash: $2b$11$Mkoqc/nPGHvNGJY1Nz.vLOq5XovqsAxTejMc9tUagcCqm7m29Btc6
+  text: "A user program executes in _____, where some areas of memory are protected\
+    \ from the user\u2019s use and certain instructions are not executed."
+  type: FIB
+- choices: []
+  hash: $2b$11$vczTi1.hnQgJ.WjY3NyT4OItH0W8Ob8arT4oVO/AnUoyRiqizU22G
+  text: In _____ privileged instructions may be executed and protected areas of memory
+    may be accessed.
+  type: FIB
+- choices: []
+  hash: $2b$11$pB4mD1EQyNfq4Ai/yws0J.L.gmgut5vA1xp2iE0ORY4bFgaqB1gsC
+  text: The main objective of kernel is to manage communication between hardware and
+    software.
+  type: TF
+- choices: []
+  hash: $2b$11$z2KN85TDEJwHI6f3MQFUw.qSwWd9A8Pa200b9tWKB0Dk1fVIBkax6
+  text: Kernel routines need to be reentrant to allow several processors to execute
+    the same kernel code simultaneously.
+  type: TF
+- choices: []
+  hash: $2b$11$Scr061YjYHLP7AeCBhPGjufiFFn58oiA8lyVp7hbz8bsXVtFM/T0a
+  text: Monolithic kernel includes all of the OS functionality in one large code block
+    that runs as multiple processes with multiple address spaces.
+  type: TF

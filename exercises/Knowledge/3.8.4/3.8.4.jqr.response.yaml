@@ -1,0 +1,34 @@
+- type: MA
+  resp:
+    - 0
+    - 1
+    - 2
+    - 3
+  text: Which of the following are common data serialization libraries for Python?
+  choices:
+    - Pickle
+    - Protobuf
+    - repr
+    - yaml
+- type: MA
+  resp:
+    - 0
+    - 1
+  text: >-
+    Which of the following are common data serialization libraries for C
+    programming?
+  choices:
+    - Protobuf
+    - FlatBuffers
+    - Wheaties
+- type: TF
+  resp: 'true'
+  text: The two types of data serialization are flat and nested.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    FlatBuffers was designed by google and s an efficient cross platform
+    serialization library for C++, C#, C, Go, Java, Kotlin, JavaScript, Lobster,
+    Lua, TypeScript, PHP, Python, Rust and Swift.
+  choices: []

@@ -1,0 +1,54 @@
+- choices:
+  - '[0-9]?[0-9]?[0-9]\.[0-9]?[0-9]?[0-9]\.[0-9]?[0-9]?[0-9]\.[0-9]?[0-9]?[0-9]'
+  - '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
+  - ([0-9]{1,3}\.){3}[0-9]{1,3}
+  - ([0-9]{1,3}.?){4}
+  hash: $2b$11$6762NY8s2bHRdrshouaS8Oa3CnVq4alx5xJdxpVcIANe9XBFCGAdW
+  text: Which of the following regular expressions will match only patterns of IPv4
+    addresses?
+  type: MA
+- choices:
+  - '"https&#58;//ssl." &#58; "http&#58;//www.");'
+  - http&#58;//stores.lulu.com/owasp" rel="nofollow">Books</a></li>
+  - https&#58;//www.owasp.org/index.php/Marketing/Resources" rel="nofollow">Brand
+    Resources</a></li>
+  - <a href="http&#58;//creativecommons.org/licenses/by-sa/3.0/">
+  hash: $2b$11$k1o1Z7cPe/FCWo7soFX9KulthyAk361BamYPxJpRFOMqeVdtfENxK
+  text: What would this regular expression match?  '^https?&#58;//.*'
+  type: MA
+- choices:
+  - Training resources are limited on their use.
+  - There is no one standard for regular expressions.
+  - They are not suited for very complex, recursive data formats.
+  - Syntax can be complex.
+  - Not mature.
+  hash: $2b$11$gitryGwDnVPF3upHbCoRdOnY3wkmAJbwnElR2j0.7Wlkdbhm1pvOW
+  text: What are disadvantages of regular expressions?
+  type: MA
+- choices:
+  - Context free grammar is suitable in all instances where regular expressions are
+    used.
+  - Most tools on Linux/Windows that use regular expressions have been updated to
+    support context free grammar.
+  - It is possible to use context free grammar to write a computer program which can
+    determine if sentences are grammatical or not.
+  - They provide a visual notation for the structure of sentences.
+  hash: $2b$11$xtdS04iGvHThPAvcQgoTX.IxcaZBBLGu0pfjH2tSKey1R1ANcqEDW
+  text: What are advantages of context free grammar?
+  type: MA
+- choices:
+  - "S \u2192 AB&#58;AB\\nA \u2192 0|1|2|3|4|5|6|7|8|9\\nB \u2192 a|b|c|d|e|f"
+  - "S \u2192 A&#58;A\\nA \u2192 A0|A1|A2|A3|A4|A5|A6|A7|A8|A9|Aa|Ab|Ac|Ad|Ae|Af"
+  - "S \u2192 A&#58;A\\nA \u2192 0|1|2|3|4|5|6|7|8|9|a|b|c|d|e|f"
+  - "S \u2192 AA&#58;AA\\nA \u2192 0|1|2|3|4|5|6|7|8|9|a|b|c|d|e|f"
+  hash: $2b$11$WTmJBMYt2W7eYA8zdJQM.etGrxcBQgRXxnioGKJfSxMYH3lVBHNzK
+  text: What context free grammar would be valid for this regular expression? '[0-9a-f]{2}&#58;[0-9a-f]{2}'
+  type: MC
+- choices:
+  - "S \u2192 A1A1A\\nA \u2192 A1|A0|\u03B5"
+  - "S \u2192 A1A1A\\nA \u2192 1|0|\u03B5"
+  - "S \u2192 A0A0A\\nA \u2192 A1|A0|\u03B5"
+  - "S \u2192 A1A1A\\nA \u2192 A1|A0"
+  hash: $2b$11$50/sWtPCY2GDi7Eq6ebKUOIlB7kfLy3.To3a6iLrD9GKQVUeZqkzO
+  text: Which of the following context free grammer rules would match 00100100?
+  type: MA

@@ -1,0 +1,141 @@
+- choices:
+  - It uses a known layer 2 MAC address to obtain an unknown layer 3 IPv4 address.
+  - It uses a known layer 3 IPv4 address to obtain an unknown layer 2 MAC address.
+  - It uses a known layer 2 MAC address to obtain an unknown layer 3 IPv6 address.
+  - It uses a known layer 3 IPv6 address to obtain an unknown layer 2 MAC address.
+  hash: $2b$11$MkRS/ChL9D2UKVbN0FRN0eAyC.7ez7qbqtVXXEDHZcOcFiLXl2an6
+  text: What is true of Address Resolution Protocol (ARP)?
+  type: MC
+- choices:
+  - The destination MAC address of an ARP request is the MAC address of the queried
+    host.
+  - The source MAC address of an ARP request is the MAC address of the host performing
+    the ARP request
+  - The destination MAC address of an ARP request is FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF
+  - The source MAC address of an ARP request is FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF
+  - The destination MAC address of an ARP response is the MAC address of the host
+    that performed the ARP request.
+  - The destination MAC address of an ARP response is the MAC address of the host
+    that received the ARP request.
+  - The source MAC address of an ARP response is the MAC address of the host that
+    performed the ARP request.
+  - The source MAC address of an ARP response is the MAC address of the host that
+    received the ARP request.
+  hash: $2b$11$AoyCiAy0qdlOOuIlds8L6OdjJ3LXf5//ym/6E2AdYwrsL8WSup8R.
+  text: Which are true of Address Resolution Protocol (ARP)?
+  type: MA
+- choices:
+  - 1
+  - 2
+  - 3
+  - 4
+  hash: $2b$11$lDnMlBKxIhbn2cRyWtk8v.aUK0RjWeRqUaqM2PJ/Fgg9io2IDAz.y
+  text: Address Resolution Protocol (ARP) operates at what layer of the OSI model?
+  type: MC
+- choices:
+  - 2048
+  - 2054
+  - 33024
+  - 34525
+  hash: $2b$11$41UFpG11fTS3RMdIdReglu.PDJ7mdn4a5Fn8RXrEBdQ7Wbpvcvox6
+  text: What is the type/code field for an Address Resolution Protocol (ARP) frame?
+  type: MC
+- choices:
+  - The source MAC address of the ARP request is AA&#58;AA&#58;AA&#58;AA&#58;AA&#58;AA
+  - The source MAC address of the ARP request is BB&#58;BB&#58;BB&#58;BB&#58;BB&#58;BB
+  - The source MAC address of the ARP request is CC&#58;CC&#58;CC&#58;CC&#58;CC&#58;CC
+  - The source MAC address of the ARP request is DD&#58;DD&#58;DD&#58;DD&#58;DD&#58;DD
+  - The destination MAC address of the ARP request is AA&#58;AA&#58;AA&#58;AA&#58;AA&#58;AA
+  - The destination MAC address of the ARP request is BB&#58;BB&#58;BB&#58;BB&#58;BB&#58;BB
+  - The destination MAC address of the ARP request is CC&#58;CC&#58;CC&#58;CC&#58;CC&#58;CC
+  - The destination MAC address of the ARP request is DD&#58;DD&#58;DD&#58;DD&#58;DD&#58;DD
+  - The source MAC address of the ARP response is AA&#58;AA&#58;AA&#58;AA&#58;AA&#58;AA
+  - The source MAC address of the ARP response is BB&#58;BB&#58;BB&#58;BB&#58;BB&#58;BB
+  - The source MAC address of the ARP response is CC&#58;CC&#58;CC&#58;CC&#58;CC&#58;CC
+  - The source MAC address of the ARP response is DD&#58;DD&#58;DD&#58;DD&#58;DD&#58;DD
+  - The destination MAC address of the ARP response is AA&#58;AA&#58;AA&#58;AA&#58;AA&#58;AA
+  - The destination MAC address of the ARP response is BB&#58;BB&#58;BB&#58;BB&#58;BB&#58;BB
+  - The destination MAC address of the ARP response is CC&#58;CC&#58;CC&#58;CC&#58;CC&#58;CC
+  - The destination MAC address of the ARP response is DD&#58;DD&#58;DD&#58;DD&#58;DD&#58;DD
+  - The source MAC address of the ARP request is FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF
+  - The destination MAC address of the ARP request is FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF
+  - The source MAC address of the ARP response is FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF
+  - The destination MAC address of the ARP response is FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF
+  hash: $2b$11$DwemJKhxVxNIlbHU5bDGeuWT4edfWPeA8ZeBj23vvKzbwV4yFL6a.
+  text: You are on a system with the IP address 192.168.1.2/24 and MAC address AA&#58;AA&#58;AA&#58;AA&#58;AA&#58;AA.
+    Your default router is 192.168.1.1 and its MAC address is BB&#58;BB&#58;BB&#58;BB&#58;BB&#58;BB.
+    You want to communicate with a system with the IP address 192.168.2.4/24 with
+    the MAC address CC&#58;CC&#58;CC&#58;CC&#58;CC&#58;CC that has a default router
+    of 192.168.2.1 and its MAC address is DD&#58;DD&#58;DD&#58;DD&#58;DD&#58;DD.  You
+    are attempting a connection from your system to system 192.168.2.4. What is true
+    about the first Address Resolution Protocol (ARP) request and response?
+  type: MA
+- choices:
+  - The destination MAC address of the gratuitous ARP is FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF
+  - The source MAC address of the gratuitous ARP is FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF
+  - The destination MAC address of the gratuitous ARP is that of the host performing
+    the gratuitous ARP.
+  - The source MAC address of the gratuitous ARP is that of the host performing the
+    gratuitous ARP.
+  - The sender IP address of the gratuitous ARP is that of the host performing the
+    gratuitous ARP.
+  - The sender IP address of the gratuitous ARP is 255.255.255.255.
+  - The target IP address of the gratuitous ARP is that of the host performing the
+    gratuitous ARP.
+  - The target IP address of the gratuitous ARP is 255.255.255.255.
+  hash: $2b$11$1mCSPjYTWs6qFTdgpWKmjO1AtX.Tl9Erk149iX8iiykxwNTsW12qW
+  text: What are attributes of a gratuitous Address Resolution Protocol (ARP) frame?
+  type: MA
+- choices:
+  - They are required in resolving a known layer 3 IP address to an unknown layer
+    2 MAC address.
+  - They are required in resolving a known layer 2 MAC address to an unknown layer
+    3 IP address.
+  - They can be used to determine if there are IP duplicate IP addresses on the local
+    network.
+  - They can be used to determine if there are IP duplicate IP addresses outside the
+    local network.
+  - They are useful in redundancy situations. A hosts ARP cache can be updated by
+    a gratuitous ARP so that hosts can send frames are sent to the failover device.
+  - They can be used to immediately update the CAM table of a layer 2 swtich.
+  - They can be used to immediately update the ARP cache of devices on the local network.
+  - They can be used to immediately update the ARP cache of devices outside the local
+    network.
+  hash: $2b$11$ESRHw7s3RdI/T3MQ8slkPe1zZkTwbgtvAy46i3yIN9yx3NHzDbti6
+  text: What are purposes of a gratuitous Address Resolution Protocol (ARP) frame?
+  type: MA
+- choices: null
+  hash: $2b$11$hax7KJvG7na9w67FgfbGRObolJwh9PjuzpDBtPg8ttNDKb40B.24e
+  text: Gratuitous Address Resolution Protocol (ARP) frames can be malicious.
+  type: TF
+- choices:
+  - arp -a
+  - ip arp
+  - ip neighbor
+  - show mac address table
+  - show arp
+  - arp -e
+  hash: $2b$11$swRnsdLkHY76mSG3mWSPq.AWt3FPAGiMJ5pMVMM/nd0sHNILw7O9m
+  text: What are commands to view the ARP cache on a Linux/Unix system?
+  type: MA
+- choices:
+  - arp -a
+  - ip arp
+  - ip neighbor
+  - show mac address table
+  - show arp
+  - arp -e
+  hash: $2b$11$vl5WEKgMd7wVkeZ.KZbySueH1q9c0OQQwAL1wtrfBpC5J4bpD1jh.
+  text: What are commands to view the ARP cache on a Windows system?
+  type: MA
+- choices:
+  - Powering down the system
+  - An ARP spoof request
+  - An ARP flush request from the target
+  - An ARP delete request from the target
+  - No network activity to/from the target system for a predetermined time
+  - Disconnecting the network cable from the interface of the host
+  - Running the appropriate command to delete an entry or flush the arp cache
+  hash: $2b$11$Tz6y90DwUnlR/hY5j/.PquU6kYsYA9nIdZu3KlolaKy4s2KwcVnqG
+  text: What can cause a MAC address to be removed from the ARP cache?
+  type: MA

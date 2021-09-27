@@ -1,0 +1,32 @@
+- type: MC
+  resp: 3
+  text: Where does Python search for object names?
+  choices:
+    - modules
+    - source files
+    - functions
+    - namespaces
+- type: TF
+  resp: 'false'
+  text: >-
+    Names assigned inside a def statement conflict with identical names assigned
+    outside the def statement.
+  choices: null
+- type: TF
+  resp: 'true'
+  text: Names assigned inside a function do not exist outside the function.
+  choices: null
+- type: TF
+  resp: 'true'
+  text: >-
+    The global statement enables a function to change variables outside the
+    function's scope
+  choices: null
+- type: MC
+  resp: 1
+  text: What negative effect may global variables have on Python code?
+  choices:
+    - faster execution
+    - difficult debugging
+    - enhanced readability
+    - poor multithreading

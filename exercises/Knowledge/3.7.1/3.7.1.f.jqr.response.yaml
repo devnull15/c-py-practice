@@ -1,0 +1,100 @@
+- type: MC
+  resp: 3
+  text: What best describes Request for Comments (RFCs)?
+  choices:
+    - They are the standards for all non-proprietary protocols.
+    - >-
+      They are public drafts of changes and/or additions to Internet related
+      topics that have yet to be ratified to become a standard.
+    - >-
+      They consist of historical documentation about Internet related topics,
+      but have been deprecated and replaced.
+    - They are working notes of the Internet research and development community.
+- type: TF
+  resp: 'true'
+  text: Most standards are published as Request for Comments (RFCs).
+  choices: null
+- type: MC
+  resp: 4
+  text: Who can submit a document for publication as a Request for Comment (RFC)?
+  choices:
+    - Members of the Industrial Internet Consortium.
+    - Members of the Internet Working Group.
+    - Members of the Internet Assigned Numbers Authority.
+    - Members of the Internet Engineering Task Force (IETF).
+    - Anyone
+- type: MC
+  resp: 2
+  text: >-
+    You are reading an RFC and read words such as "MUST", "MUST NOT", "SHOULD",
+    "SHOULD NOT", and "MAY". Where can you go for clarification one what these
+    mean with respect to Request for Comments (RFCs)?
+  choices:
+    - Wikipedia
+    - https&#58;//www.dictionary.com/
+    - RFC 2119
+    - https&#58;//www.thesaurus.com/
+- type: MA
+  resp:
+    - 2
+    - 3
+  text: >-
+    What words are consindered equivalent to "SHALL" with respect to Request for
+    Comments (RFCs)?
+  choices:
+    - Recommended
+    - Should
+    - Required
+    - Must
+- type: MC
+  resp: 2
+  text: >-
+    Which Request for Comments (RFC) provides information on private IP
+    addresses?
+  choices:
+    - RFC 1149
+    - RFC 1912
+    - RFC 1918
+    - RFC 2822
+- type: MC
+  resp: 3
+  text: >-
+    Which Request for Comments (RFC) has the most updated information about
+    IPv6?
+  choices:
+    - RFC 2460
+    - RFC 6437
+    - RFC 6935
+    - RFC 8200
+- type: MC
+  resp: 1
+  text: >-
+    RFC 5952 covers address compression and representation for IPv6 addresses.
+    What is the purpose of the ommission of leading zeros and zero compression?
+  choices:
+    - >-
+      Zero ommission and compression can reduce the size of a 128 bit address to
+      a much smaller address which takes less space in the IPv6 header, thus
+      reducing overhead.
+    - >-
+      Zero ommission and compression reduces the written size of an IPv6
+      address, but the address remains 128 bit.
+    - Zero ommission and compression cannot be used at the same time.
+    - Zero ommission can be used only in conjunction with zero compression.
+- type: MA
+  resp:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  text: >-
+    Using RFC 5952 which of the following are valid representations of the IPv6
+    address:\ 2001:0000:0000:D692:0000:0000:0000:0A93?
+  choices:
+    - 2001&#58;&#58;d692&#58;&#58;a93
+    - 2001&#58;&#58;d692&#58;0&#58;0&#58;0&#58;a93
+    - 2001&#58;0&#58;0&#58;d692&#58;&#58;0a93
+    - 2001&#58;0&#58;0&#58;d692&#58;0&#58;0&#58;0&#58;a93
+    - 2001&#58;&#58;d692&#58;0000&#58;0000&#58;0000&#58;0a93
+    - 2001&#58;0000&#58;0000&#58;d692&#58;&#58;0a93

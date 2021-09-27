@@ -1,0 +1,96 @@
+- choices: []
+  hash: $2b$11$EPm4HMGls63nnzXPnbfVoefB3YNd8OO2Y0kIdJ1DqEig7BgLmWYBW
+  text: An IPv6 address is a total of ___ bytes. Response should be in digits (0-9)
+  type: FIB
+- choices: []
+  hash: $2b$11$TGxdqYGuNgXjVkzoKZpVdeOIxYi0O5elwCPiEVPwK8oGvb/7t5Gxi
+  text: An IPv6 address is a total of ___ bits. Response should be in digits (0-9)
+  type: FIB
+- choices: []
+  hash: $2b$11$C85QANevY6y76vCr3xkT7.GmTnzpiwagycmo2z2YJkGt1mvYwo5Ky
+  text: IPv6 defines subnets in a different way from IPv4. What is used to define
+    the network on which an IP address exists?
+  type: FIB
+- choices: []
+  hash: $2b$11$cNmj3dQBBuKH0TvGy/bTXuLGsM.Ov.fANHJPsFZ.RqJMRtux70tvy
+  text: How many bits define the group ID in an IPv6 multicast address?
+  type: FIB
+- choices: null
+  hash: $2b$11$THllE0GqmNLqiq1yoZAEr.yfIzkBfdb61KohYQ2YrQqWm.1R8B9pa
+  text: For a unicast or anycast IPv6 address, the first __ bits are for the network
+    prefix.
+  type: FIB
+- choices: null
+  hash: $2b$11$nQAXjyGY4BavmlPB1cXgLeu5d5GGwn18aIdijIulPUBSR969cMUYq
+  text: The network prefix contains two parts; the routing prefix and the __.
+  type: FIB
+- choices:
+  - c0a8&#58;1&#58;ffff&#58;&#58;
+  - '&#58;&#58;ffff&#58;c0a8&#58;1'
+  - '&#58;&#58;c0a8&#58;1'
+  - c0a8&#58;1&#58;&#58;
+  - c0a8&#58;1&#58;ffff&#58;ffff&#58;ffff&#58;ffff&#58;ffff&#58;ffff
+  hash: $2b$11$sccMV3HV4QISH/zBTJPkVundbmuPLNjS1FA9QBEu.jmGhVUTsQ6Qq
+  text: Which IPv6 address properly embeds the IPv4 address 192.168.0.1 for a device
+    that is IPv6-capable?
+  type: MC
+- choices:
+  - 100&#58;&#58;/64
+  - ff00&#58;&#58;/8
+  - '&#58;&#58;1/128'
+  - '&#58;&#58;'
+  hash: $2b$11$dMomNj0N0hjFP7JI364nTur5cIFE9V25uV53rLD6dRRWTsOW476xO
+  text: Select the valid loopback addresses
+  type: MA
+- choices:
+  - fdbf&#58;9326&#58;b53b&#58;ffff&#58;&#58;
+  - jdbf&#58;9326&#58;b53b&#58;ffff&#58;&#58;
+  - '&#58;&#58;'
+  - fd3e&#58;8928&#58;9d49&#58;0&#58;&#58;
+  hash: $2b$11$UgqzQJx6JdgCBEdXYvmo1up/o6Dn.WYp8jL3Pxe.Q9gCYMgB9Ul0i
+  text: Select the valid ULA or private addresses (not including loopback)
+  type: MA
+- choices:
+  - fdbf&#58;9326&#58;b53b&#58;ffff&#58;&#58;
+  - feff&#58;23fa&#58;&#58;
+  - febf&#58;ffff&#58;&#58;4faf
+  - fe80&#58;&#58;5534&#58;aff4&#58;0
+  hash: $2b$11$jbJcjyO29f1NY1V50/P1tuSQzpQtk4YY5vuOvLa7Mmp.TnjDssvaW
+  text: Select the valid link-local addresses.
+  type: MA
+- choices:
+  - 2001&#58;&#58;2ac6&#58;&#58;c563&#58;531a&#58;
+  - 2001&#58;9326&#58;b53b&#58;ffff&#58;&#58;
+  - 2000&#58;&#58;1
+  - 2001&#58;8928&#58;9d49&#58;0&#58;&#58;
+  hash: $2b$11$CVgVFHNWD9BTUv0osaShiu1jWlKGMQ5AcXWFiGNSKa.6/8njRA9wK
+  text: Select the valid public address
+  type: MA
+- choices:
+  - 2601&#58;4543&#58;ad3f&#58;454a&#58;&#58;ffff&#58;
+  - 2601&#58;4543&#58;ad3f&#58;454a&#58;ffff&#58;ffff&#58;ffff&#58;ffff&#58;
+  - 2601&#58;4543&#58;ad3f&#58;454a&#58;7fff&#58;ffff&#58;ffff&#58;ffff&#58;
+  - 26ff&#58;ffff&#58;ffff&#58;ffff&#58;ffff&#58;&#58;
+  hash: $2b$11$hqyMnMcVNhC2mpZ0veqMUOOzsOBkBMI/Y.nYCeIXLiNnYjGpcHK3S
+  text: Given this IP address, 2601&#58;4543&#58;ad3f&#58;454a&#58;&#58;ad23&#58;23df/64,
+    identify the host maximum address.
+  type: MC
+- choices: []
+  hash: $2b$11$2QJH7VzsIN1H9creu0TMKuoineBFZGcyDyXUFOlp5kJtxQ3vgXRNy
+  text: For an unspecified address, identify the default in reduced form.
+  type: SA
+- choices: []
+  hash: $2b$11$xK0.bqmG7RrYWv/Y3gJyOOXf4qHkeNgYjugloDR.IDIhLlmNUzvqi
+  text: Given this IP address, 2601&#58;4543&#58;ad3f&#58;454a&#58;&#58;ad23&#58;23df/64,
+    identify the host minimum address in reduced form.
+  type: SA
+- choices: []
+  hash: $2b$11$BrqPYvG5U3kWEsIdnta3B.JFYUXUD.1iETepyCKtf3bpXfNcf6Nte
+  text: Given this IP address, 2601&#58;4543&#58;ad3f&#58;454a&#58;&#58;ad23&#58;23df/64,
+    identify the network address in reduced form.
+  type: SA
+- choices: []
+  hash: $2b$11$Oi6EB/supAU9.Cti3tILIuhO3gMiLxQraJdLd2U1kzoPBfuX/SRzm
+  text: Given this IPv6 address, &#58;&#58;ac13&#58;7b11, identify the mapped IPv4
+    address in dot-decimal notation.
+  type: SA

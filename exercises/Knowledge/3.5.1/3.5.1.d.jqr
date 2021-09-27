@@ -1,0 +1,52 @@
+- choices:
+  - A fast simulated storage area located near CPU
+  - A small and fast permanent storage area located near CPU
+  - A small and fast temporary storage area located in main memory
+  - A small and fast temporary storage area located near CPU
+  hash: $2b$11$JRkL35niItDbpGJmSNHBWOX/2s27lECAfitQsP7vloGmEGRRfaNl.
+  text: What is cache memory?
+  type: MC
+- choices:
+  - Random Access Memory (RAM)
+  - Read Only Memory (ROM)
+  - I/O Memory
+  - Flash Memory
+  hash: $2b$11$VEbTke0I78IsMzzMcs1sKO/IEqamZBd.kfbrxS4BFZ9NIXKB9dZA.
+  text: Caching is often implemented by using___
+  type: MC
+- choices:
+  - Increase Read and Write data throughput
+  - Predictable performance
+  - Implove application performance
+  - All of the Above
+  hash: $2b$11$v2AfBpAPSH2g98cXE4FvHuVD35dceifhkF8e3cOW7Xqg2MrZLDuGa
+  text: Some of the main benefits for caching are.
+  type: MC
+- choices: []
+  hash: $2b$11$/G3G2BfW2qFU9DK6LQ6UCuvLfX6o5y1g1rkYAf0Zd157Mv07//3Pq
+  text: The _____ is responsible for caching file reads and writes to enhance overall
+    performance.
+  type: FIB
+- choices: []
+  hash: $2b$11$x4wIPsnvFsj.N/9CNbrsK.Hunk1GjLg/8MbaCTPsnoGdfM6uEq5JC
+  text: _____ cache is relatively faster, smaller in memory, and embedded in the processor.
+  type: FIB
+- choices: []
+  hash: $2b$11$VOgklVSlmo5iz77aUsyNmeEZ99wFyL90shgoYL979yFMPaXLFJS0W
+  text: If each processor is equipped with a local cache, caching becomes_____efficient.
+  type: FIB
+- choices: []
+  hash: $2b$11$ChXFr/uqtACwSptc6honjeJru0xFPEKc1LOxIT3xbljZ00BTRqJPS
+  text: Caching is a short-term memory which has limited space, is faster and usually
+    contains most recently accessed data
+  type: TF
+- choices: []
+  hash: $2b$11$2jxQc/JFGwbflX9vV1f4teZUk5sQCiYRfZY.BfqNllQkHiUjTHuba
+  text: Cache is generally cheaper than the primary storage components like hard disk
+    or other I/O devices
+  type: TF
+- choices: []
+  hash: $2b$11$KP4RWmM8Z5mQqVgewREjhO5M7qoYK2z99SrgL3B637JlVI11zMSky
+  text: Caching is the technique to provide high speed access to data that can be
+    retrieved frequently
+  type: TF

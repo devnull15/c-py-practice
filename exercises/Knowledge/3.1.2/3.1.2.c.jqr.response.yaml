@@ -1,0 +1,99 @@
+- type: MA
+  resp:
+    - 1
+    - 2
+  text: >-
+    In the C calling convention, what functions are commonly used to allocate
+    memory on the heap?
+  choices:
+    - alloc
+    - malloc
+    - calloc
+    - map
+    - assign
+- type: MA
+  resp:
+    - 0
+    - 3
+  text: >-
+    What are two heap-specific vulnerabilities or bugs to be aware of when using
+    the heap?
+  choices:
+    - memory leak
+    - over allocation
+    - buffer overflow
+    - use-after-free
+- type: MC
+  resp: 0
+  text: What function is used to deallocate memory on the heap?
+  choices:
+    - free
+    - release
+    - dealloc
+    - unset
+- type: MC
+  resp: 2
+  text: >-
+    If malloc is called twice consecutively, where will the two address spaces
+    be, relative to one-another?
+  choices:
+    - immediately next to each other
+    - on opposite ends of the heap
+    - it depends on the current state of memory management in the process
+    - 4096 bytes apart
+- type: MC
+  resp: 2
+  text: What underlying function is used to allocate more space for the heap?
+  choices:
+    - memmap
+    - map
+    - mmap
+    - meme
+- type: FIB
+  resp: valgrind
+  text: What tool is most commonly used to detect memory leaks?
+  choices: []
+- type: FIB
+  resp: dynamic
+  text: The heap uses _____ allocation.
+  choices: []
+- type: FIB
+  resp: large
+  text: >-
+    The heap starts at the uninitialized data segment and grows to _____
+    addresses.
+  choices: []
+- type: FIB
+  resp: calloc
+  text: >-
+    The _____ function allocates and zeroes out memory for an array of elements
+    of a given size and returns a pointer to the allocated memory.
+  choices: []
+- type: FIB
+  resp: realloc
+  text: >-
+    The _____ function changes the size of the memory block pointed to by a
+    pointer to a given size.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    In the C programming language, the programmer is responsible for allocating
+    and deallocating data on the heap.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: The heap is limited to 4096 bytes of memory per thread.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: Data on the heap is globally accessible by the program.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: Once data is deallocated on the heap, the data no longer exists
+  choices: []
+- type: TF
+  resp: 'false'
+  text: The heap is named after the corresponding data structure.
+  choices: []

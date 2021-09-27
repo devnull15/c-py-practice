@@ -1,0 +1,38 @@
+- choices:
+  - Confidentiality
+  - Integrity
+  - Authentication
+  - Nonrepudiation
+  hash: $2b$11$A6qN5shNosCGoAjEpjqXuOOe3n6uohfvb1m58ePUxf3VTr929KANm
+  text: What is the objective of hashing?
+  type: MC
+- choices:
+  - Easy to compute
+  - Uniform distribution
+  - Data normalization
+  - Minimal collisions
+  hash: $2b$11$IhhN8oGmaDpjhFMabA3V0uQsg.FO6o5vEKJc6/xZginXX2qw1ZVgC
+  text: Which of the following characteristics should a good hash function have?
+  type: MA
+- choices:
+  - O(n)
+  - O(log n)
+  - O(1)
+  - It depends on the algorithm.
+  hash: $2b$11$4qP6TQVt2hJBDume1onZIOsRX0G7koBFpd2rXoiWqPGUFqB/w8SEK
+  text: What is the computational complexity of a hash function in big O notation?
+  type: MC
+- choices: []
+  hash: $2b$11$aw0rKKKk7MXDI7z5QccN6uHot.13exc85395wz.nyEENjKiDqwL..
+  text: If a hash function produces the same value for two different inputs, the result
+    is known as a _____.
+  type: FIB
+- choices:
+  - h(i)=i^2 mod 10
+  - h(i)=i^3 mod 10
+  - h(i)=(11*i^2) mod 10
+  - h(i)=(12*i) mod 10
+  hash: $2b$11$XnTnJIBvNM81lhzvvVcL7.0GLC6F0mbCWeBZ.AFcYD8w96fWIKE5S
+  text: Which of the following hash functions on integers will distribute keys most
+    uniformly over 10 buckets numbered 0 to 9 for i ranging from 0 to 1000?
+  type: MC

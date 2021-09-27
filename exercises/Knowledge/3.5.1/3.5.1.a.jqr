@@ -1,0 +1,47 @@
+- choices:
+  - An entity or an active program which is executed in memory
+  - Holds the current values of program counter, registers, and variables
+  - A program which is in execution in memory
+  - A program that runs light weight processes in memory
+  hash: $2b$11$iw83ZjNnhPJixpfKUzj8EOyNuFD9fDnX.N2esSlToetF5/BRdfedy
+  text: A process in Operating System Design is best described as__.
+  type: MA
+- choices:
+  - New
+  - Idle
+  - Standby
+  - Running
+  - Stop
+  hash: $2b$11$zsaQTvPNar/BEMilppb19udDOC1zSWvYojCgaLSRS0U2S73J0wOCe
+  text: Which of the following are process states?
+  type: MA
+- choices: []
+  hash: $2b$11$hTvS4Lbi6FH0uHrTYzT4DOIybH82BrWDYPfJBgAiG3ijA3d0iFyvi
+  text: A program is a set of instructions written to a file. It is a passive entity
+    that does not do anything by itself.
+  type: TF
+- choices:
+  - Kernel Stack
+  - Process Control Block
+  - Thread Control Block
+  - User Stack
+  hash: $2b$11$.N5yEmWkh.YrU9HpqjU72.855oEQGDJyR5SDM/Rp7wg.LKWOl1Eta
+  text: Where is process-related state information stored?
+  type: MC
+- choices:
+  - CLI - Command Line Interface
+  - API - Application Programming Interface
+  - GUI - Graphical User Interface
+  - MMI - Memory Management Interface
+  hash: $2b$11$566fuOs6LDNWbv6JMfTI8OjNl/0DX6K38zhH/PvFWDLsmipclUNi.
+  text: What are some ways to start a new process?
+  type: MA
+- choices:
+  - Stack
+  - Heap
+  - Data
+  - Text
+  - All of the Above
+  hash: $2b$11$5rYhKr6hDutGcn8eiljgzeUfbLn.BbQepwNGkc/AhsCH4SUnp.sFG
+  text: What is the layout of process stored in the main memory?
+  type: MC

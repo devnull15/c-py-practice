@@ -1,0 +1,35 @@
+- choices: []
+  hash: $2b$11$yTuSRrJ/IjJQr9.YJP3HduSOm9/ZAKMc9S3qpNoERM4dubSTXyaTy
+  text: The von Harvard architecture has separate storage and signal pathways for
+    instructions and data.
+  type: TF
+- choices:
+  - separate processor caches for the instructions and data, with separate pathways
+    into the processor for each
+  - the word width, timing, implementation technology, and memory address structure
+    can differ from the instruction memory
+  - data operation and an ALU operation cannot occur simultaneously
+  - Crystal frequency is a limiting factor on ALU operations
+  hash: $2b$11$SjY1d.wRQ4Ay8I/6QWK3ger97eI2AUc551ImKBZmkdlfy/g6v7i1a
+  text: What are characteristics of the Harvard architecture?
+  type: MA
+- choices: []
+  hash: $2b$11$c8rZQWpmdp/9biGzzBx4C.xCsmON.8s6uh6n2wPNf9UROhVfzlW1O
+  text: The Harvard architecture term originated from the Harvard Mark I relay-based
+    computer, which stored instructions on punched tape (24 bits wide) and data in
+    electro-mechanical counters.
+  type: TF
+- choices:
+  - ALU
+  - Control unit
+  - Instruction Memory
+  - Data memory
+  - Input and output mechanisms
+  hash: $2b$11$UL1dXUgfX5s6/MXiVlHwDethfuxOoW5TEf.YeLG1vJFc7LJRRJ/ma
+  text: Select the components that make up the Harvard architecture.
+  type: MA
+- choices: []
+  hash: $2b$11$7/x3xamcOMubnrB2WNAkhO1W0uqpObWUQcS1jWowrhV1p3ZcGhJrS
+  text: Harvard architecture improves the speed of processor operation because data
+    and addresses do not have to share the same bus lines.
+  type: TF

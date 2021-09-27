@@ -1,0 +1,96 @@
+- choices:
+  - Stack
+  - Uninitialized Data (BSS)
+  - Command-Line Args / Environment Variables
+  - Heap
+  - Initialized Data
+  - Text (Code)
+  hash: $2b$11$ZiV1akU13ocqV0G3WPbH.OvLDTWVceLnAASKLmiLlwb3ePSQe8pra
+  text: What section of memory is at the top (the highest address space)?
+  type: MC
+- choices:
+  - Stack
+  - Uninitialized Data (BSS)
+  - Command-Line Args / Environment Variables
+  - Heap
+  - Initialized Data
+  - Text (Code)
+  hash: $2b$11$TAYKGtRA4mxG3hygPrecYe6.vBqYyQzicvxrQlCWD9XsFkkdHwsjG
+  text: What section of memory is the second to the top (the second highest address
+    space)?
+  type: MC
+- choices:
+  - Stack
+  - Uninitialized Data (BSS)
+  - Command-Line Args / Environment Variables
+  - Heap
+  - Initialized Data
+  - Text (Code)
+  hash: $2b$11$tjwh8Hf3eDKmFWfhHBTh1OzRQgbJjoUVFJmUyLdys15uDEmG5B49.
+  text: What section of memory is the third to the top (the third highest address
+    space)?
+  type: MC
+- choices:
+  - Stack
+  - Uninitialized Data (BSS)
+  - Command-Line Args / Environment Variables
+  - Heap
+  - Initialized Data
+  - Text (Code)
+  hash: $2b$11$4IrGTP3mfL3Kx8DFvhWyguK3SRq4gWhp1urujExWAu.6Bj7kG.rBK
+  text: What two sections grow towards each other?
+  type: MA
+- choices:
+  - Stack
+  - Uninitialized Data (BSS)
+  - Command-Line Args / Environment Variables
+  - Heap
+  - Initialized Data
+  - Text (Code)
+  hash: $2b$11$7ULNN5NuBtZV/J5Bg0Zp..P9VVg.HO3FQ5dP5OmWyRQqi9owT2nj2
+  text: What section of memory is the third to the bottom (the third lowest address
+    space)?
+  type: MC
+- choices: []
+  hash: $2b$11$esV7kfnVEIOB.Q.TqCw7hu8h.JHNzIhGMa34HSfGkDV5n8ZuzNOT2
+  text: Statically allocated variables that have been declared but have not been assigned
+    a value in the BSS segment are initialized to 0 by the kernel _____ program execution.
+  type: FIB
+- choices: []
+  hash: $2b$11$soKEIm3VXTPmGtgMhG8W8.sIjxWric99ciT4bziGutbqbA6SuzC/G
+  text: The _____ section is at the bottom of the memory layout (the lowest address
+    space).
+  type: FIB
+- choices: []
+  hash: $2b$11$zkddxldZBGY/y0yIczx0yOnGSDkGUSKh/8ZS8oKMxXoTBTmSodCES
+  text: The _____ section of memory is the second to the bottom (the second lowest
+    address space)
+  type: FIB
+- choices: []
+  hash: $2b$11$zc5Iq6z4lLo9ESl1RphgXOYd7iPMfBRqfTh.qFf/s2A3V8s7RlhlO
+  text: The _____ segment contains the code to be executed by the program.
+  type: FIB
+- choices: []
+  hash: $2b$11$w9HaWjhkwMI8gJ4ndlSyXu4paW7SGtLYMAQA.YixPxCSHiheUl80e
+  text: The stack grows towards _____ addresses.
+  type: FIB
+- choices: []
+  hash: $2b$11$lcy/o/OUIJYU/hxofmMoneoWcCP0bDzTIrp8AA81eRo9ZMmGXhjj2
+  text: The text (code) segment is often writeable
+  type: TF
+- choices: []
+  hash: $2b$11$ppglvhKS/wfOydgRiAxJ9OyuxaActJ/IbWEEOIxV5IqeBNFklhwkC
+  text: Global and static variables are found in the data segment.
+  type: TF
+- choices: []
+  hash: $2b$11$oNTqPzEbo.fRAgBMVrrKL.fyLNP0IUnF0uwD2C4wWrS5LUemJ3Rpa
+  text: The data segment is read only.
+  type: TF
+- choices: []
+  hash: $2b$11$okJF6LSU3maPvpldY0nS7.i2QIKan9L/NB/e9.SwuoUg78vUrytLe
+  text: Environment variables are not stored in the programs memory space.
+  type: TF
+- choices: []
+  hash: $2b$11$3ytv.Zge40cb5osomwnTauUPLM8EMRyynAwx6peSoawzk0c2JtMPu
+  text: The heap can utilize syscalls to ask the kernel for more memory space.
+  type: TF

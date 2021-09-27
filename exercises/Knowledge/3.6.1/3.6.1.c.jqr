@@ -1,0 +1,35 @@
+- choices:
+  - Declare "int i" before the for loop, and change the initialization in the foor
+    loop to "i = 0"
+  - Change "char input[5]" tp "char *input[5]"
+  - Change "char input[5]" to "char input[6]"
+  - Change "int i = 0" to "int i = 1"
+  - Change the test condition in the for loop to "i < 5"
+  - Change the test condition in the foor loop to "i <= 4"
+  - Change the iteration expression from "i++" to "++i"
+  hash: $2b$11$LJFGWdbjOooOXMM/Bhrd0OGqLAIa1YDgNjDlK4pJtPf.F0yBQrcJS
+  text: What can you do to fix the following code?\n\nint input[5];\n\nfor(int i =
+    0 ; i <= 5 ; i++)\n{\n    input[i] = i;\n}
+  type: MA
+- choices:
+  - Change "++i < 5" to "i <= 5" and add "i++;" after "input[i] = i;"
+  - Change "++i < 5" to "i < 5" and add "i++;" after "input[i] = i;"
+  - Change "++i < 5" to "i < 5"
+  - Change "++i < 5" to "i++ <= 4"
+  - Change "int i = 0;" to "int i = -1;"
+  - Change "int i = 0;" to "int i = 1;"
+  - Change "++i < 5" to "++i <= 5" and update "input[i] = i;" to "input[i-1] = i;"
+  hash: $2b$11$VDrbOIDKBj9eFgf1yjak7OQsn8jun1EZnFxutdM2SLNvU9H69rQoW
+  text: What can you do to ensure this code initializes all elements in the array
+    and does not read or write out of bounds?\n\nint input[5];\nint i = 0;\nwhile(++i
+    < 5)\n{\n    input[i] = i;\n}\n
+  type: MA
+- choices:
+  - Change "input[100]" to "input[101]"
+  - Change "sizeof(input)" to "100"
+  - Change "sizeof(input)" to sizeof(input - 1)"
+  - Change "sizeof(input)" to sizeof(input) - 1"
+  hash: $2b$11$7yxJUMXZUjNp8.HTNoBiV.3qlfksmIZQheRG3ZX.djJuDIsmLwWXu
+  text: You need to ensure that "input[100]" contains a string. What changes to the
+    following code will do that?\n\nchar input[100];\n\nstrncpy(input, argv[1], sizeof(input));
+  type: MC

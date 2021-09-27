@@ -1,0 +1,4 @@
+:trainee_name: 
+
+:assign_date: 
+

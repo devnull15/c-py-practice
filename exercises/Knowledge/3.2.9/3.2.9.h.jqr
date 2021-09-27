@@ -1,0 +1,13 @@
+- choices: []
+  hash: $2b$11$PG7EIGnXKsbR0YYxw9ATl.PuNMpOUBh3i9XfkHwIN4STKRGE.oxAe
+  text: The python word self represents the instance of the class.
+  type: TF
+- choices: []
+  hash: $2b$11$gHHLOU9K2b8hhyjajszDFuCq5GWQKk51fLRrbGuo2hsdlZrti5gxi
+  text: When used with dunder init, the word self could be replaced with the name
+    of another class.
+  type: TF
+- choices: []
+  hash: $2b$11$5Ru53Ui6F/XEuc2uljHYE.lRQzWys/tuYPqgZo4p72XIGpeywJPEW
+  text: Static methods (@staticmethod) requires the use of the word self.
+  type: TF

@@ -1,0 +1,38 @@
+- choices:
+  - The process of hiding the working style of an object and showing only the required
+    information of the object in an understandable manner
+  - The ability of creating a new class from an existing class
+  - When an object acquires the property of another object
+  - "Provides reusability of a code. We don\u2019t have to write the same code again\
+    \ and again. Also, it allows us to add more features to a class without modifying\
+    \ it."
+  hash: $2b$11$zeCbA1V0E6GC92Y7aCKVq.FUn4a2hPTGt6KjFZl/llwrLGU72cPSm
+  text: Define inheritance?
+  type: MA
+- choices:
+  - class DerivedClassName &#58; BaseClassName&#58;
+  - class DerivedClassName extends BaseClassName&#58;
+  - class DerivedClassName(BaseClassName)&#58;
+  - class derived-class&#58; access-specifier base-class
+  hash: $2b$11$bfWGjm5GrH6GhuaCftaWku/vvQmkEwyL/5YpHwt3rTEx8WbqP9Dli
+  text: How to properly define a derived class from a base class in Python?
+  type: MC
+- choices:
+  - isinstance(object, BaseClassX)
+  - object instanceof BaseClassX
+  - object.GetType() == typeof(BaseClassX)
+  - object in BaseClassX'Class
+  hash: $2b$11$oiTBy2j1BaS6W.2xMkXgreoWBft8fr8qnhGTS5/b2q05BG6gs3q2C
+  text: How to determin if an objects base class is BaseClassX in Python.
+  type: MC
+- choices: []
+  hash: $2b$11$ltT.VolW2.ws8TNwQbXYDe1sRzT3umFoF.7BugG4dHoXZSc2Yr1yq
+  text: class DerivedClassName(BaseClassName1, BaseClassName2, BaseClassName3)&#58;
+    is how to inherit from multiple classes?
+  type: TF
+- choices: []
+  hash: $2b$11$If68V71EeGMAqRmj5JPxq.uImaPj4rsS/Zi5CJw8e1Mj45Uyg3nMS
+  text: Inheritance is transitive in nature, which means that if class B inherits
+    from another class A, then all the subclasses of B would automatically inherit
+    from class A.
+  type: TF

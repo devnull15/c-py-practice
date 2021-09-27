@@ -1,0 +1,25 @@
+- choices:
+  - Deadlock
+  - Error
+  - Race condition
+  - Force termination
+  hash: $2b$11$ard32Vn/gxwXiJ9KQSt0vu83L.KHlwzAHRArVNOlNjT0BDoR.o/rO
+  text: What happens if a non-recursive mutex is locked more than once?
+  type: MC
+- choices:
+  - If there are more than two threads competing for the same resource
+  - If there are exactly two threads competing for the same resource
+  - If there is a single thread competing for a resource
+  - None of the above
+  hash: $2b$11$aT1Nkp1tzwPXFFV9aQ3t4OBAjt/mrN2eKeikNLDpiDYFio/7B5zd2
+  text: Deadlock occurs when ________.
+  type: MC
+- choices:
+  - Safe
+  - Unsafe
+  - Starvation
+  - Deadlock
+  hash: $2b$11$7KtjyDqefXyi97NdtWUuEebaF6K08/uaF0YH8jxrQQvbbew4tItn2
+  text: A process said to be in ___________ state if it is permanently waiting for
+    a resource.
+  type: MC

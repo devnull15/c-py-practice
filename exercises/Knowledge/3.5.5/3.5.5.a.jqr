@@ -1,0 +1,33 @@
+- choices: []
+  hash: $2b$11$L.dilWhsP2MEcyOc.Gry6u0ZHbuDjT2Y/1bRMXG5v7iT5NiRRvERm
+  text: The von Neumann architecture is also known as the von Neumann model or Princeton
+    architecture.
+  type: TF
+- choices:
+  - An instruction fetch and an ALU operation cannot occur simultaneously
+  - An instruction fetch and a data operation cannot occur at the same time
+  - A data operation and an ALU operation cannot occur simultaneously
+  - Crystal frequency is a limiting factor on ALU operations
+  hash: $2b$11$yxJe30W9Zeh4xrQDhciOreu0uFtUfpK4.7JeflPags1vAtPEepv0q
+  text: What is the von Neumann bottleneck?
+  type: MC
+- choices: []
+  hash: $2b$11$KQ8qyYzdvhfRTF8pic6sAOUYfJOYf./0uTP/BiM2EGdukFh2tqI4S
+  text: The ENIAC has a von Neumann architecture and was programmed by setting switches
+    and inserting patch cables to route data and control signals between various functional
+    units.
+  type: TF
+- choices:
+  - Processing unit
+  - Control unit
+  - Memory
+  - External mass storage
+  - Input and output mechanisms
+  hash: $2b$11$jckld/aaWlGSHOiQulAhUOIfSJRszqtbcCCwDUKYsgZMf3Go3E0A6
+  text: Select the components that make up the von Neumann architecture.
+  type: MA
+- choices: []
+  hash: $2b$11$ZnukOV8DWnFpoIhw/hoWZeS1L9vqJAbAK6XVwsUcSLa71ez77CP9y
+  text: One of the ways of mitigating the von Neuman bottleneck is the use of instruction
+    cache and a seperate data cache on the RAM side of the shared bus.
+  type: TF

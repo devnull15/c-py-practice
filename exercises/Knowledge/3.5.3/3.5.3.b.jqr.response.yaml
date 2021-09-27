@@ -1,0 +1,56 @@
+- type: MC
+  resp: 1
+  text: >-
+    A variable that represents a status of a resource, with respect what
+    operations are possible.
+  choices:
+    - timer
+    - lock
+    - instruction pointer
+    - thread context
+- type: MA
+  resp:
+    - 0
+    - 2
+  text: What are two common types of locks?
+  choices:
+    - shared
+    - concurrent
+    - exclusive
+    - transparent
+- type: MC
+  resp: 2
+  text: What is one of the main things locks avoid?
+  choices:
+    - buffer overflows
+    - deadlocks
+    - race conditions
+    - starvation
+- type: FIB
+  resp: read
+  text: A shared lock is also known as a _____ lock
+  choices: []
+- type: FIB
+  resp: write
+  text: With an exclusive lock, a thread holds the lock for both read and _____
+  choices: []
+- type: FIB
+  resp: pthread_mutex_lock
+  text: What function from the pthread library can lock a mutex?
+  choices: []
+- type: TF
+  resp: 'false'
+  text: A mutex can be used as a signalling mechanism, just like a semaphore.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    A shared lock allows for multiple threads to hold a lock for reading a
+    resource.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    A lock should only be held for the critical section of code that accesses
+    the shared data.
+  choices: []

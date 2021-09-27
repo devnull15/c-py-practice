@@ -1,0 +1,14 @@
+# We want to sort Array in ascending order.
+# Suppose A is an array of N Values, 
+
+
+FUNCTION BubbleSort(A)
+    set size = length(A)
+    for i = 0 to size - 1           
+        for j = 0 to size-i-1       
+            if A[j] > A[j+1]        
+                Swap(A[j], A[j+1])  
+            END if
+        END for
+    END for
+END

@@ -1,0 +1,22 @@
+- type: MC
+  resp: 2
+  text: 00110101 & 10010010 =
+  choices:
+    - 11001010
+    - 10100111
+    - 4096
+    - 10110111
+- type: TF
+  resp: 'false'
+  text: The bitwise operator & is equivalent to the 'and' keyword in Python.
+  choices: []
+- type: MC
+  resp: 3
+  text: 'Bit masking uses the & operator to:'
+  choices:
+    - Encrypt data and allow it to be decrypted later.
+    - Convert a signed integer to an unsigned integer.
+    - >-
+      Reduce an integer from a larger type to a smaller type (ie uint64_t ->
+      uint8_t).
+    - Determine whether a particular bit is set (1) or clear (0).

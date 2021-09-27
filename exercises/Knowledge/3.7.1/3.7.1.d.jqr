@@ -1,0 +1,44 @@
+- choices:
+  - It is an application programming interface (API) for Internet and Unix domain
+    sockets.
+  - Sockets are represented by a handle.
+  - BSD and POSIX API sockets for the most part are the same.
+  - The are also know as BSD sockets.
+  hash: $2b$11$c7wmBOynD/v9doAypfSFIuDFMustLtxCmsBxbQN1IBNduw5b4MI/K
+  text: Which of the following describe Berkeley sockets?
+  type: MA
+- choices:
+  - By using AF_UNIX, then the communicating processes must be on the same host.
+  - By using AF_UNIX, then the communicating processes can be on different hosts providing
+    full client/server communications.
+  - You are losing portability as Windows doesn't support this.
+  - Sockets created with AF_UNIX are faster than those created with AF_INET.
+  - Sockets created with AF_UNIX are always connectionless
+  - Sockets created with AF_UNIX do not use TCP or UDP ports.
+  - Sockets created with AF_UNIX are RAW sockets and it is up to the programmer to
+    write the protocol stack.
+  hash: $2b$11$c5OZsGN091Pcd3zPu5sz3.iUWBYz9Wfu2nxlTBBDJ6F0P6n/OsIDe
+  text: You are creating a program that will communicate with another process. Although
+    you can use AF_INET, you decide to use AF_UNIX? What are the advanates/limitations?
+  type: MA
+- choices:
+  - By using AF_UNIX, then the communicating processes must be on the same host.
+  - By using AF_UNIX, then the communicating processes can be on different hosts providing
+    full client/server communications.
+  - You are losing portability as Windows doesn't support this.
+  - Sockets created with AF_UNIX are faster than those created with AF_INET.
+  - Sockets created with AF_UNIX are connectionless
+  - Sockets created with AF_UNIX do not use TCP or UDP ports.
+  - Sockets created with AF_UNIX are RAW sockets and it is up to the programmer to
+    write the protocol stack.
+  hash: $2b$11$5TncUySmuDqqDlMGun/hJOYqRVZzuAhtRZSMDjoAbldjwdh2f0wzm
+  text: Berkeley Domain Sockets are limited to IPv4 and IPv6 communications?
+  type: TF
+- choices:
+  - Forward lookup.
+  - Reverse lookup.
+  - Retrieve data from a host/protocol/port.
+  - Create connection to a host/protocol/port.
+  hash: $2b$11$bYmjeoP6L9ORjyXbGkBzoeEoK/QlrHNSWdH/sDceEZLNy9hA1T5.y
+  text: What is another way to describe the fuction gethostbyaddr()?
+  type: MC

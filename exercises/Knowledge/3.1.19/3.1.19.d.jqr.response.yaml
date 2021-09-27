@@ -1,0 +1,22 @@
+- type: MC
+  resp: 0
+  text: ~00110101 =
+  choices:
+    - 11001010
+    - 10100111
+    - 4096
+    - 10110111
+- type: TF
+  resp: 'false'
+  text: The bitwise operator ~ is equivalent to the 'not' keyword in Python.
+  choices: []
+- type: MA
+  resp:
+    - 0
+    - 1
+  text: 'The bitwise complement of a value is the same as its:'
+  choices:
+    - ones' complement
+    - two's complement - 1
+    - additive inverse
+    - multiplicative inverse

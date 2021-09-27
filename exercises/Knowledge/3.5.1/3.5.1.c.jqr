@@ -1,0 +1,33 @@
+- choices:
+  - frame location for each page in the process
+  - Memory address of a page number and offset within the page
+  - Order of execution within the page
+  - Dynamic addressing containing segment number and offset
+  hash: $2b$11$a5e.FkVPLeC7v41X.VHxseN5xW5wk/WrO6nMzXsm64XG6mP07MmNG
+  text: A page table contains the following information for each of the process.
+  type: MA
+- choices: []
+  hash: $2b$11$MHULewHKcsKyWVmcnngNvuYOwqVtduWqCDC8Q5rpJl8faiJ.tBI6u
+  text: A _____ is a fixed-length of block in the main memory.
+  type: FIB
+- choices: []
+  hash: $2b$11$SC.lX0bGSjImk/JjQtcVzeAgv38MQOKJLoMQLwhN51XkeMh7.W19.
+  text: A _____ is a fixed-length block of data that resides in secondary memory (such
+    as disk).
+  type: FIB
+- choices: []
+  hash: $2b$11$p6qPV.nyUisz1P0FJ6txSeb.QtJfcl1Z08G2tat4eZclsezJxD.wC
+  text: A _____ is a variable-length block of data that resides in secondary memory.
+  type: FIB
+- choices:
+  - Processor hardware
+  - Operating System residing on the hard disk
+  - Application software
+  - Processor Programmable Registers
+  hash: $2b$11$0NBLmYTe027oDAXLqWPeoOUMnM5eT/5W2nusYpqoEz.LmA9ZpyHBK
+  text: In paging, the logical-to-physical address translation is done by?
+  type: MC
+- choices: []
+  hash: $2b$11$Grzkv5rugC6nKmW94nB04.4dV.7USnK14lo1B30oUrYFNz5RPG4Ze
+  text: The operating system maintains a page table for each process.
+  type: TF

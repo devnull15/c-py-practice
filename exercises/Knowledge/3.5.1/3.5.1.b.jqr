@@ -1,0 +1,44 @@
+- choices:
+  - Program where multiple processes exist in main memory, the processor is kept busy
+    by creating one process while the others wait.
+  - Program where single process exist in main memory, the processor is kept busy
+    by executing the process until it terminates.
+  - Program where multiple processes exist in main memory, the processor is kept busy
+    by executing one process while the others wait.
+  - Program where single process exist in main memory, the processor is kept busy
+    by executing the threads until it terminates.
+  hash: $2b$11$ENEta5H3JM3xDh.Ib19UtOzhohYF3GL9FDX4ryGnWW0Ts6wScRcNC
+  text: What is the main purpose of CPU Scheduling?
+  type: MC
+- choices:
+  - Medium-Term Scheduling
+  - Long-Term Scheduling
+  - I/O Scheduling
+  - Short-Term Scheduling
+  - All of the Above
+  hash: $2b$11$i6e7xaDuYBJupc3IWen/3eDnAASS7pYawla3U0foNbIK4YnfrqNF.
+  text: What are the most common types of CPU Scheduling?
+  type: MA
+- choices:
+  - Real Memory
+  - Disk Memory
+  - Primary Memory
+  - Virtual Memory
+  hash: $2b$11$hiV4azpEyCq5iEIy4mHB/Os/chOnYxSCwTp4SpAMBEIIvVURvlrIe
+  text: Main Memory is also refered to as__
+  type: MA
+- choices: []
+  hash: $2b$11$9Mrw9n8r5lXM4PU/CC8WY.wWhABpuFLurdiTbW22w4w/V0dUNyRBu
+  text: The__transfers the process selected by the short-term scheduler from one state
+    to another.
+  type: FIB
+- choices: []
+  hash: $2b$11$DJIhb5BEjsCRT67dGs3WKeuaHoffyL5RvqCNwRyUjzxCHygo4Lv06
+  text: For a Non-preemptive decision mode, Once a process is in the running state,
+    it will continue until it terminates or blocks for I/O.
+  type: TF
+- choices: []
+  hash: $2b$11$d7NKn7FoIkfwwAqbE910NuGQYl33KueTjO9rPj6LxJ2xXlptWlqjC
+  text: For a Preemptive decision mode, Currently running process may be interrupted
+    and moved to the Ready state by the Operating System
+  type: TF

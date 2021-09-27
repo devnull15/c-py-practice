@@ -1,0 +1,31 @@
+- choices:
+  - Memory leaks
+  - Deadlocks
+  - Buffer overflows
+  - Heap sprays
+  - Code injection
+  hash: $2b$11$KpfBa3Md5VXroCDchT1lt.1zQiCvZYpOlZHlNnNVQyrRFZ2jHNPXC
+  text: What problems are solved by resource acquisition is initialization (RAII)?
+  type: MA
+- choices:
+  - There is an error in the code as (0 == x) should be replaced with (x == 0).
+  - The return statement expects a value as an argument, but is being called as a
+    function by specifying the parenthesis.
+  - If the variable x were never declared its value would be 0; therefore, the "if"
+    statement will always evaluate true.
+  - There is a potential memory leak with the program.
+  hash: $2b$11$8WKe5tRUgO8qNVkhwCVkz.iSxtakJpKkcNODLLPedy6RDydRzF21u
+  text: What is a potential problem with this code snippet&#58;\n\nint *myptr = (int
+    *)malloc(1024);\n\nif (0 == x)\n{\n    return(-1);\n}\n\nfree(myptr);
+  type: MC
+- choices:
+  - Only by using the RAII functions in C++ standard library.
+  - By tying resource allocation and deallocation to objects as opposed to tracking
+    it in the code.
+  - By following the standards and guidelines specified in the RAII consortium.
+  - Ensure that code checking is implemented that validates if resources, such as
+    pointers to memory, are initialized correctly by functions and not assuming they
+    worked.
+  hash: $2b$11$f9Vuf82pbgnaIu7OFy10eu9/oZJ/6UnKOwivI/IKLmWGDFhDhU7pC
+  text: How is resource acquisition is initialization (RAII) implemented?
+  type: MC

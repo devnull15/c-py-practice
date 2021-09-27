@@ -1,0 +1,56 @@
+- type: MC
+  resp: 2
+  text: What is the main purpose of CPU Scheduling?
+  choices:
+    - >-
+      Program where multiple processes exist in main memory, the processor is
+      kept busy by creating one process while the others wait.
+    - >-
+      Program where single process exist in main memory, the processor is kept
+      busy by executing the process until it terminates.
+    - >-
+      Program where multiple processes exist in main memory, the processor is
+      kept busy by executing one process while the others wait.
+    - >-
+      Program where single process exist in main memory, the processor is kept
+      busy by executing the threads until it terminates.
+- type: MA
+  resp:
+    - 0
+    - 1
+    - 3
+  text: What are the most common types of CPU Scheduling?
+  choices:
+    - Medium-Term Scheduling
+    - Long-Term Scheduling
+    - I/O Scheduling
+    - Short-Term Scheduling
+    - All of the Above
+- type: MA
+  resp:
+    - 0
+    - 2
+  text: Main Memory is also refered to as__
+  choices:
+    - Real Memory
+    - Disk Memory
+    - Primary Memory
+    - Virtual Memory
+- type: FIB
+  resp: dispatcher
+  text: >-
+    The__transfers the process selected by the short-term scheduler from one
+    state to another.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    For a Non-preemptive decision mode, Once a process is in the running state,
+    it will continue until it terminates or blocks for I/O.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    For a Preemptive decision mode, Currently running process may be interrupted
+    and moved to the Ready state by the Operating System
+  choices: []

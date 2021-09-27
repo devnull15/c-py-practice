@@ -1,0 +1,28 @@
+- choices: []
+  hash: $2b$11$hwi5wPOtlXygtTqKt0Bz.OuBHgJQe6vrenqxBsWpODN971CtVvY4G
+  text: The operating system does not allow a child to continue if its parent terminates.
+  type: TF
+- choices:
+  - pthread_stop()
+  - pthread_wait()
+  - pthread_exit()
+  - pthread_join()
+  hash: $2b$11$rDO8aB8v5rFjYBtGkD6vX.SULwjdCh3OKnCJwDlMGlQrLsUUTNLAi
+  text: Sometimes it is desired for a thread to wait for the end of execution of another
+    thread. This can be done using the______.
+  type: MC
+- choices:
+  - pthread_sleep()
+  - pthread_wait()
+  - pthread_exit()
+  - pthread_join()
+  hash: $2b$11$rDFeLW7p0wpuhleOg8pq5OWEAmGjqopE1q3gnFeCigLVeYiPAe4kG
+  text: The __________ function suspends the execution of the calling thread until
+    the joined thread is terminated.
+  type: MC
+- choices: []
+  hash: $2b$11$LVYFaFOK.f1U2ZLr3qsip.Dx09Wboccw7DiL6Ty6Osf41fYbod38i
+  text: If we have a thread that we wish would exit whenever it wants without the
+    need to join it, we should put it in the detached state by using the pthread_detach()
+    function.
+  type: TF

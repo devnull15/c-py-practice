@@ -1,0 +1,30 @@
+- choices:
+  - modules
+  - source files
+  - functions
+  - namespaces
+  hash: $2b$11$Z0iL4daVftzv471FmRy7nOGxZ11h0uU0XbrN7J8SKcUPLjzTbc2F.
+  text: Where does Python search for object names?
+  type: MC
+- choices: null
+  hash: $2b$11$6KDBrOqMVuFOtqe93.s3yOgxMZJWFPZqD40ViYDXddcuDC77kOaIe
+  text: Names assigned inside a def statement conflict with identical names assigned
+    outside the def statement.
+  type: TF
+- choices: null
+  hash: $2b$11$nJ0GlhQ/3H6RN7veHMB9luTTEtWKP0SPajEoin0xUlQ3.9THOU5AC
+  text: Names assigned inside a function do not exist outside the function.
+  type: TF
+- choices: null
+  hash: $2b$11$IpidUhvbxOC.t8U2lAh65uqAK58PaUCdFiV32p6ie0.DamxlAHWn2
+  text: The global statement enables a function to change variables outside the function's
+    scope
+  type: TF
+- choices:
+  - faster execution
+  - difficult debugging
+  - enhanced readability
+  - poor multithreading
+  hash: $2b$11$4I.h.8kiSaXlCfUEqBJJ6upd4hhkSfieJdJynNrgkzxifCeWBCGcC
+  text: What negative effect may global variables have on Python code?
+  type: MC

@@ -1,0 +1,38 @@
+# We want to sort Array in ascending order.
+# Suppose A is an array of N Values, 
+
+
+FUNCTION Heapsort(A)
+    set size = length(A)
+    for i = size/2 downto 1     
+        Heapify(A, size, i)     
+    END for
+
+    for i = size downto 2       
+        Swap(A[1],A(i))
+        size = size - 1
+        Heapify(A, size, 1)    
+    END for
+END
+
+FUNCTION Heapify(A, size, index)
+    set max = index
+    set leftchild = 2*index+1
+    set rightchild = 2*index+2
+
+    if leftchild <= size AND A[index] < A[leftchild]
+        max = leftchild
+    else
+        max = index
+    END if
+
+    if rightchild <= size AND A[max] < A[rightchild]   
+        max = rightchild
+    END if
+
+    if max != index
+        Swap(A[index], A[max])
+        Heapify(A, size, max)   
+    END if
+END
+

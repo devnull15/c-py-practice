@@ -1,0 +1,23 @@
+- choices: []
+  hash: $2b$11$1qa0gIOMIVDGtM3O4VhRWOzIbeDK0.gMhNyuQuVnmeyXQxZ/0OfWm
+  text: Assume a function contains the following line of code&#58;\n static int someNum
+    = 0\;\n If that function is called multiple times in a program, the variable someNum
+    will only be defined the first call, and its previous value on subsequent calls
+    will be kept instead of being set to 0.
+  type: TF
+- choices: []
+  hash: $2b$11$uC5VdkxqV10Y22.PsXSf1eobT3TQg3EoLaB8.QBlf3JpORSVFYnc.
+  text: Variables declared as extern are not defined. Memory must be allocated for
+    them later so they can be used.
+  type: TF
+- choices:
+  - Functions not explicitly declared as static or extern are treated by the compiler
+    as extern.
+  - Variables not explicitly declared as static or extern are treated by the compiler
+    as extern.
+  - Global variables and functions that do not need to be accessed outside of the
+    file they are defined in should be declared as static.
+  hash: $2b$11$UZGa9kwGpSg5aqNsHwqaFOwwXPyV05abUyXT5NYRcGsztNmEDyeEG
+  text: Which of the following statements about the static and extern keywords is
+    NOT true?
+  type: MC

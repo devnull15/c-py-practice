@@ -1,0 +1,114 @@
+- type: MA
+  resp:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+  text: Which of the following functions can be susceptible to buffer overflows?
+  choices:
+    - gets()
+    - fgets()
+    - strcpy()
+    - strncpy()
+    - strcat()
+    - strncat()
+    - sprintf()
+    - snprintf()
+- type: MA
+  resp:
+    - 2
+    - 4
+  text: What is true about fgets()?
+  choices:
+    - It is a direct replacement for gets() and uses the same parameters.
+    - >-
+      It requires an additional parameter over gets() and that is a file
+      descriptor.
+    - >-
+      It requires two additional parameters over gets() and that is a file
+      handle and a limit on the amount of characters to retrieve.
+    - >-
+      It is always safe to use fgets() and that is why it is considered a secure
+      replacement for gets().
+    - >-
+      It is still possible to have buffer overflow conditions with fgets()
+      through programmer error.
+- type: MA
+  resp:
+    - 1
+  text: >-
+    What can be done to this code snippet to ensure it is not susceptible to a
+    buffer overflow?\n\nchar buffer[50];\n\nstrncpy(buffer, argv[0], 150);
+  choices:
+    - Replace argv[0] with argv[1] as argv[0] is the entire commmand line.
+    - Increase the buffer size to at least 150 characters.
+    - Replace the 150 with 255 as the filename size on linux is 255 characters.
+    - >-
+      Use strcpy() instead of strncpy() as it isn't contrained with limits and
+      therefore not susceptible to buffer overflows.
+    - >-
+      Check the return value of the strncpy() command to ensure it was
+      successful.
+- type: MC
+  resp: 3
+  text: How does Data Execution Prevention (DEP) prevent buffer overflow attacks?
+  choices:
+    - >-
+      It marks sections of memory such as rodata and other sections of the data
+      segment as read only therefore overwriting these sections with code is not
+      possible.
+    - >-
+      It ensures that items allocated on the heap are set as write-once and
+      therefore can not be overwritten with arbitrary code.
+    - >-
+      It marks the code in memory as write-once and therefore the code can not
+      be polymorphic or self changing.
+    - >-
+      It marks certain data structures as non-executable and if any code is
+      placed in these areas, it will prevent it from executing.
+- type: MC
+  resp: 2
+  text: >-
+    What makes Address Space Layout Randomization (ASLR) an effective defense
+    against buffer overflows?
+  choices:
+    - >-
+      It breaks the code into psuedo random size chunks and loads each chunk in
+      a psuedo random memory location so it is more difficult to locate and
+      exploit by automated means.
+    - >-
+      Memory is no longer referred to by linear addressing but by randomized
+      virtual addressing thus making direct addressing impossible.
+    - >-
+      Each time a program is executed, the system will place code modules and
+      other memory structures in psuedo random locations reducing the
+      predictability of where these items lie.
+    - >-
+      Heap allocation ulilizes psuedo random locations reducing the
+      predictability; thus making it more difficult accessing these items.
+- type: MC
+  resp: 3
+  text: How are stack canaries an effective defense against buffer overflows?
+  choices:
+    - >-
+      By changing the location of the stack each time the program executes
+      therefore making predictability of the address where potential injected
+      code lies unlikely.
+    - >-
+      It places buffer overflow detection code on the stack and it runs in the
+      background checking the sanity of the stack and itself and provides near
+      real-time notifications when the stack is corrupted.
+    - >-
+      Stack canary code is placed on the stack running in the background sending
+      periodic keep alive messages, when those messages are no longer received
+      it can be assumed that the canary has been overwritten by a buffer
+      overflow and execution of the program stops.
+    - >-
+      A psuedo random value is placed on the stack near the return pointer and
+      code is added that runs before the function returns, checking the sanity
+      of this value. If this value changes, then it can be assumed that the
+      canary has been overwritten by a buffer overflow and execution of the
+      program stops.

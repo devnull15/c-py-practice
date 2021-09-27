@@ -1,0 +1,106 @@
+- choices: []
+  hash: $2b$11$4DJ5t3X.Z4PsKeJoqT9ZXefa2/fBRjiPd8.xZptfar2vk2TsRjdtS
+  text: The DHCP server must reside on each subnet that requires DHCP since DHCP is
+    a broadcast oriented protocol.
+  type: TF
+- choices:
+  - DHCP Discover, DHCP Request, DHCP Offer, DHCP Acknowledge
+  - DHCP Request, DHCP Offer, DHCP Acknowledge, DHCP Discover
+  - DHCP Discover, DHCP Offer, DHCP Request, DHCP Acknowledge
+  - DHCP Request, DHCP Offer, DHCP Acknowledge
+  - DHCP Discover, DHCP Request, DHCP Acknowledge
+  hash: $2b$11$A50j9ZiLGX.uobElgGVKBuiEWKKPtVB7BijCimzaGBAKNKHCKckoy
+  text: What is the proper order of a client requesting DHCP information assuming
+    that all works as planned?
+  type: MC
+- choices:
+  - Source MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF, destination MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF
+  - Source MAC is the MAC address assigned to the NIC of the client, destination MAC
+    is the MAC address of the DHCP server
+  - Source MAC is the MAC address assigned to the NIC of the client, destination MAC
+    FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF
+  - Source MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF, destination MAC is the MAC address
+    of the DHCP server
+  - Source MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF, destination MAC is the MAC address
+    of the default gatewary/router
+  - Source MAC is the MAC address assigned to the NIC of the client, destination MAC
+    is the MAC address of the default gatewary/router
+  hash: $2b$11$1twDE3muwiSUGtmRYd2G2OVHrLxpJs8AxCdhrh2h8SbK/Vw085TAe
+  text: What are the MAC addresses of a DHCP Discover message?
+  type: MC
+- choices:
+  - Source MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF, destination MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF
+  - Source MAC is the MAC address assigned to the NIC of the server, destination MAC
+    is the MAC address of the client
+  - Source MAC is the MAC address assigned to the NIC of the server, destination MAC
+    FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF
+  - Source MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF, destination MAC is the MAC address
+    of the DHCP client
+  - Source MAC is the MAC address of the default gatewary/router, destination MAC
+    is FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF
+  - Source MAC is the MAC address of the default gateway/router, destination MAC is
+    the MAC address of the client
+  hash: $2b$11$YGgioO.jAQVyY8Pt0P4IzuxKwI1JVPyep3m.gINkCRiGvo3ZvXSI.
+  text: What are the MAC addresses of a DHCP Offer message?
+  type: MC
+- choices:
+  - Source MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF, destination MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF.
+    Since DHCP is a broadcast oriented protocol, broadcast MAC addresses are used.
+  - Source MAC is the MAC address assigned to the NIC of the client, destination MAC
+    is the MAC address of the DHCP server. Because both devices have learned each
+    others MAC address from the DHCP Request and Offer, then unicast MAC addresses
+    can be used.
+  - Source MAC is the MAC address assigned to the NIC of the client, destination MAC
+    FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF. Broadcasts are typically only required
+    when the MAC address of the destination is unknown, but in this case the client
+    does have the MAC address of the DHCP server learned via the DHCP offer message,
+    but since it is possible that multiple DHCP servers provided an offer, the destination
+    MAC is set as  broadcast so that other DHCP servers are notified that the client
+    didn't accept their offer.
+  - Source MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF, destination MAC is the MAC address
+    of the DHCP server. Since DHCP is a broadcast oriented protocol, the client uses
+    the broadcast MAC addresses and since it has learned the MAC address of the server
+    from the DHCP Offer, then it can send the DHCP Request via unicast.
+  - Source MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF, destination MAC is the MAC address
+    of the default gatewary/router. Since DHCP is a broadcast oriented protocol, the
+    client uses a broadcast MAC addresses, but since it is likely that the server
+    is not on the local network segment, the default gateway/router is used to tranfer
+    the DHCP Request message.
+  - Source MAC is the MAC address assigned to the NIC of the client, destination MAC
+    is the MAC address of the default gatewary/router. Because it is likely that the
+    server is not on the local network segment, the default gateway/router is used
+    to tranfer the DHCP Request message.
+  hash: $2b$11$Bl7sG2qwB1b2sOuBLrOnm.SNYrucZ82An1f3X1yn/3mfdrGbv8puO
+  text: What are the MAC addresses of a DHCP Request message and the reason they are
+    set this way?
+  type: MC
+- choices:
+  - Source MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF, destination MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF
+  - Source MAC is the MAC address assigned to the NIC of the server, destination MAC
+    is the MAC address of the client
+  - Source MAC is the MAC address assigned to the NIC of the server, destination MAC
+    FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF
+  - Source MAC FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF, destination MAC is the MAC address
+    of the DHCP client
+  - Source MAC is the MAC address of the default gatewary/router, destination MAC
+    is FF&#58;FF&#58;FF&#58;FF&#58;FF&#58;FF
+  - Source MAC is the MAC address of the default gateway/router, destination MAC is
+    the MAC address of the client
+  hash: $2b$11$TYJZ9yEjwdgWdt08CM.boe./IkYj1ExJw3rLHEz/78BQdUDEQMuIq
+  text: What are the MAC addresses of a DHCP Acknowledge message?
+  type: MC
+- choices:
+  - Your previous address was  flushed from the DHCP pool and you received another
+    address that is part of the same network.
+  - Another client likely received your address since it wasn't in use due to you
+    having the computer turned on, so the server assigned another address in the same
+    pool.
+  - The lease on the address you had expired and in the process of requesting a new
+    lease, the DHCP server gave you a different address.
+  - The DHCP server has crashed.
+  - Your DHCP server is on a different segment and the relay agent was unresponsive.
+  hash: $2b$11$IkwP2l0Wx5byrLKmf6jXNuJe4J41GWSo6WVZrTC./j9LHQ2NhphIa
+  text: You know that the DHCP address you typically get is 172.16.2.19/16. Today,
+    you power on your computer and the address you receive is 169.254.3.22/16.  Why
+    is this?
+  type: MA

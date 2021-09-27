@@ -1,0 +1,26 @@
+- type: TF
+  resp: 'true'
+  text: >-
+    Super keyword provides access to those methods of the super-class (parent
+    class) which have been overridden in a sub-class (child class) that inherits
+    from it.
+  choices: []
+- type: MC
+  resp: 2
+  text: 'The super() keyword used inside a class named MyClass would look like:'
+  choices:
+    - super()
+    - super(MyClass, self)
+    - both
+    - neither
+- type: MC
+  resp: 0
+  text: >-
+    what does the following code snipet do:  return super(SquarePrism,
+    self).area() ?
+  choices:
+    - >-
+      Return the value from the method area() run on the parent class
+      SquarePrism
+    - Cause an invalid syntax error
+    - Return the value from the method area() run on the current class

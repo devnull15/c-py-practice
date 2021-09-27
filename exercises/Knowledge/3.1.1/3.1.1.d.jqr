@@ -1,0 +1,21 @@
+- choices: []
+  hash: $2b$11$S9wJ45vIPtrn2PKnlhZr4ODzp6PNq4as8Ae2zCnrh3uNLPC6jqAhi
+  text: C is strongly typed. All variables must be defined with their specific data
+    type.
+  type: TF
+- choices:
+  - Using the word "unsigned" before a data type declaration prevents the resulting
+    variable from being negative.
+  - The definition of "unsigned" can be used with integer and float type variables.
+  - Unsigned variables can only be either zero or a negative value.
+  hash: $2b$11$wMu34ggwXIcGUFwjxuKinerbL9eJGj5Sxady1dl2TdmJ2siVGPCWe
+  text: What is NOT true of the "unsigned" definition for variables in C programming?
+  type: MC
+- choices:
+  - double
+  - float
+  - char
+  - string
+  hash: $2b$11$VW2BK.Bn9WConoNbuKIfUOKvSmXbGdFcWJm/0EZX45w7Bv60YObeO
+  text: Which of the following is not a basic data type in C?
+  type: MC

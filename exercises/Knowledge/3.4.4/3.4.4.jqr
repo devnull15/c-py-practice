@@ -1,0 +1,72 @@
+- choices:
+  - O(n)
+  - O(n log n)
+  - O(n^2)
+  - O(nk)
+  hash: $2b$11$CrtnK/7lO.7LsXG8ldeQEuXLZ7aZSm7HjChvfEs50L/OD4lH//stG
+  text: What is the worst-case time analysis for problem 1?
+  type: MC
+- choices:
+  - O(n)
+  - O(n log n)
+  - O(n^2)
+  - O(nk)
+  hash: $2b$11$NUrVx8/xWPhoM33612rGV.8IuSNz4/olcXdYf2baVeBxbpIoEI90W
+  text: What is the worst-case time analysis for problem 2?
+  type: MC
+- choices:
+  - O(n)
+  - O(n log n)
+  - O(n^2)
+  - O(nk)
+  hash: $2b$11$OoBxoXEPHh4k4qpa5Dlj2O9D..Pr4pa0gKbzx7GCLzmmAPqvcey8G
+  text: What is the worst-case time analysis for problem 3?
+  type: MC
+- choices:
+  - O(n)
+  - O(n log n)
+  - O(n^2)
+  - O(nk)
+  hash: $2b$11$iNlBXrGanNohDPneU2Yn0.aHFIGRpSZJFLtyJyg1.Y4IVOwTQV6MW
+  text: What is the worst-case time analysis for problem 4?
+  type: MC
+- choices:
+  - O(n)
+  - O(n log n)
+  - O(n^2)
+  - O(nk)
+  hash: $2b$11$jR6iw8z1SDfoYY8qX0TiSe5sj/fSmPjf6bnscwO2pZu/gJBqoF8ie
+  text: What is the worst-case time analysis for problem 5?
+  type: MC
+- choices:
+  - O(n)
+  - O(n log n)
+  - O(n^2)
+  - O(nk)
+  hash: $2b$11$FvfYdxShpFTu0X/DI82qKe8uXv7sv9n1HJrcFmXexBu7lPQnwm2N2
+  text: What is the worst-case time analysis for problem 6?
+  type: MC
+- choices:
+  - O(n)
+  - O(n log n)
+  - O(n^2)
+  - O(nk)
+  hash: $2b$11$dVaBLWVS3S297Mcn94IzK.KLepXg5P2lO5teMal0WYKIH9cAr9ABu
+  text: What is the worst-case time analysis for problem 7?
+  type: MC
+- choices:
+  - O(n)
+  - O(n log n)
+  - O(n^2)
+  - O(nk)
+  hash: $2b$11$Ubhc/G0l3enyEElCQlSP8.eXw7LOzn8ufdfvahgJREHn17Ng7kPQC
+  text: What is the worst-case time analysis for problem 8?
+  type: MC
+- choices:
+  - O(n)
+  - O(n log n)
+  - O(n^2)
+  - O(nk)
+  hash: $2b$11$Vd5keNdxMLObYT5VpjsRxOT/QYp4wEXSPGCJozPxGo9j13E7R73ei
+  text: What is the worst-case time analysis for problem 9?
+  type: MC

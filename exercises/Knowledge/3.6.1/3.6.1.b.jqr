@@ -1,0 +1,57 @@
+- choices: null
+  hash: $2b$11$56iEgVABOlkISJENPBG9fOtnO/GOoL9usYlbffGNSYr9556BH3TDi
+  text: The strncpy() function requires an argument of the length of string to copy
+    so it will copy only up to that amount of characters to ensure a buffer overrun
+    doesn't occur. If it doesn't encounter the end of the string within the specified
+    length, then the final character is replaced with a NULL byte.
+  type: TF
+- choices:
+  - strcpy()
+  - strncpy()
+  - strlcpy()
+  - strdup()
+  - strcpy_s()
+  hash: $2b$11$uBzTLyRUn1ANwfDTveZYnuvryPZWQi55uJG3CZMSqFjLevqNFChfi
+  text: Which function(s) will copy a string and ensures the resultant string is NULL
+    terminated assuming correct implementation?
+  type: MA
+- choices:
+  - strcat()
+  - strncat()
+  - strlcat()
+  - strcat_s()
+  hash: $2b$11$Dk2Viv2WEykFeOOgO/IvcOzI3Dn0QY.YDDEa1uVH3PNLJh1IjSpvW
+  text: Which function(s) will concatenate a string and ensures the resultant string
+    is NULL terminated assuming correct implementation?
+  type: MA
+- choices:
+  - gets()
+  - fread()
+  - scanf()
+  - fgets()
+  - getline()
+  hash: $2b$11$WUhrpFllG2tjc5weAhmx8uKogC61pXknNgOKLNTCK7bTl9Fg470C2
+  text: You need a function to read characters from a file into a buffer to include
+    white space and ensures that the line read is NULL terminated. What do you use?
+  type: MC
+- choices:
+  - gets()
+  - fread()
+  - scanf()
+  - fgets()
+  - getline()
+  hash: $2b$11$zJQwudHuRPmQS/95xCAw4O7Q3/JbnU41Kjuh6EQRGdwdpM3Bjt4hi
+  text: You need a function to read characters from standard input and terminates
+    reading at the first whitespace character and ensures that the characters read
+    are NULL terminated. What do you use?
+  type: MC
+- choices:
+  - fgets(input, 20, stdin);
+  - fgets(input, 21, stdin);
+  - scanf("%s", input);
+  - scanf("%19s", input);
+  - scanf("%20s", input);
+  hash: $2b$11$eRxQm1um1ENp.mOxDjV4MeYkujxqkIXxAoVDbxBwMwuGrKp0mpI5q
+  text: Which of the following will guarantee a NULL terminated string saved to a
+    buffer defined as&#58;\ char input[20];?
+  type: MA

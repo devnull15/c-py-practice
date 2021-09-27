@@ -1,0 +1,40 @@
+- type: MA
+  resp:
+    - 0
+    - 1
+  text: An ABI defines the following (Select all that apply.)
+  choices:
+    - details of data types
+    - library files
+    - register size
+    - number of cores
+- type: MC
+  resp: 0
+  text: This determines how a program makes syscalls.
+  choices:
+    - ABI
+    - API
+    - instruction set
+    - calling-convention
+- type: MC
+  resp: 3
+  text: A common aspect of an ABI.
+  choices:
+    - human-readable
+    - high levels abstraction
+    - hardware-independence
+    - calling conventions
+- type: TF
+  resp: 'true'
+  text: An ABI defines how structures and routines are accessed in machine code.
+  choices: []
+- type: TF
+  resp: 'false'
+  text: An embedded ABI (EABI) generally has more abstractions than a complete ABI.
+  choices: []
+- type: TF
+  resp: 'true'
+  text: >-
+    Calling conventions can vary in where parameters, return values, and return
+    address are placed.
+  choices: []

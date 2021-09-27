@@ -1,0 +1,22 @@
+- choices:
+  - The main() function is the entry point into the program.
+  - The main() function is always required for C code; even if the code is a library.
+  - A program cannot run without a main() function.
+  hash: $2b$11$qLwZzYqy/nMGKRDQWmQUH.CYKXQGn8mtjyc0TOS2H8itLW4epcMLW
+  text: Which statements are true for the main() function?
+  type: MA
+- choices:
+  - The main() function cannot take user input.
+  - The main() function can take user input by adding parameters inside the parantheses,
+    but they are optional if there is no user input.
+  - The main() function can always take user input even if there are no paraemeters
+    added.
+  - The main() function always recieves user input. User input is not optional.
+  hash: $2b$11$RaSoUf9fHJD49/ShzJ63w.1pj0jOE2r7e64edB29BEbGwt91zFoCa
+  text: What is true about the main() function pertaining to user input?
+  type: MC
+- choices: []
+  hash: $2b$11$GNAH7/P6hV9VrcxaVTnTzO2Wk6gYwFaSTZu1i7aZSF9uTfB.NAqPi
+  text: Without calling another program, a program can have two or more functions
+    called main() and pick one to execute when that program is run.
+  type: TF

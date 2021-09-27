@@ -1,0 +1,76 @@
+- type: MC
+  resp: 1
+  text: ICMP operates at what layer of the OSI model?
+  choices:
+    - 2
+    - 3
+    - 4
+    - 7
+- type: FIB
+  resp: '3'
+  text: >-
+    In the process of transmission, a packet makes it to a router but the router
+    has no knowledge of the destination network in its routing table. What would
+    be the ICMP type of the response (in number form)?.
+  choices: []
+- type: FIB
+  resp: '0'
+  text: >-
+    In the process of transmission, a packet makes it to a router but the router
+    has no knowledge of the destination network in its routing table. What would
+    be the ICMP code of the response in number form?
+  choices: []
+- type: FIB
+  resp: '3'
+  text: >-
+    In the process of transmission, a packet makes it to the router directly
+    connected to the destination host. The router performs an ARP broadcast
+    requesting the MAC address of the destination host, but doesn't get a
+    response. What would be the ICMP type of the response in number form?
+  choices: []
+- type: FIB
+  resp: '1'
+  text: >-
+    In the process of transmission, a packet makes it to the router directly
+    connected to the destination host. The router performs an ARP broadcast
+    requesting the MAC address of the destination host, but doesn't get a
+    response. What would be the ICMP code of the response in number form?
+  choices: []
+- type: FIB
+  resp: '11'
+  text: >-
+    In the process of transmission, a packet gets caught in a routing loop. What
+    would be the ICMP type of the response in number form?
+  choices: []
+- type: FIB
+  resp: '0'
+  text: >-
+    In the process of transmission, a packet gets caught in a routing loop. What
+    would be the ICMP code of the response in number form?
+  choices: []
+- type: FIB
+  resp: '3'
+  text: >-
+    In the process of transmission, a packet carrying DNS request makes it to
+    the destination Linux host, but the Linux hostis not running DNS.What would
+    be the ICMP type of the response in number form?
+  choices: []
+- type: FIB
+  resp: '3'
+  text: >-
+    In the process of transmission, a packet carrying DNS request makes it to
+    the destination Linux host, but the Linux hostis not running DNS.What would
+    be the ICMP code of the response in number form?
+  choices: []
+- type: MC
+  resp: 4
+  text: >-
+    A ping packet is traversing the network on its way to the destination. It
+    reaches a router that has no knowledge of the destination network. What
+    would the router do?
+  choices:
+    - Respond with an ICMP type 3, Code 0
+    - Respond with an ICMP type 3, Code 1
+    - Respond with an ICMP type 3, Code 2
+    - Respond with an ICMP type 3, Code 3
+    - The router will send no response

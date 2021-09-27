@@ -1,0 +1,26 @@
+- choices: []
+  hash: $2b$11$fizyxCUu42T65Fw1f2LFVefGZGoFj4oF5j/qOaeN2T1H/34/4ZBFq
+  text: A class doesn't consume any memory, however an object takes memory when one
+    is created.
+  type: TF
+- choices: []
+  hash: $2b$11$CH4pBsV/5TpjIZiJwOb3SO.aNkpGmw4oD2qwXuOmt6QOjnFRq2AUu
+  text: A class is used to bind data as well as methods together as a single unit.
+  type: TF
+- choices:
+  - Belongs to a class
+  - Belongs to an object
+  - Isn't available in Python
+  - "Can\u2019t access or modify class state"
+  hash: $2b$11$wJhTQxXDT4kuAb01TiuBNONlxjxcM5ASDmPlietpY1IiHjkOc6hg2
+  text: A static method?
+  type: MA
+- choices: []
+  hash: $2b$11$zO9Gpu74hu3So08NG.V/5ugWCQ0Opx9FT9Lc6xDz2dqhzVI654sdq
+  text: Object names from the same class are not required to have unique names.
+  type: TF
+- choices: []
+  hash: $2b$11$T2VoQQ9rPBU5np5g3Z.WjetsRG/nbv1Iq.H8hJgyampR4uoURbfxG
+  text: Every class should have its own constructor to properly initialise the newly
+    created object.
+  type: TF

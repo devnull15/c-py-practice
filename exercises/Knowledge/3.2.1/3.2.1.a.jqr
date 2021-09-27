@@ -1,0 +1,27 @@
+- choices: null
+  hash: $2b$11$boGT5KWoOtJZCu7k.9vXw.N7qry7ruYETsWRuu3z3p4SAmQlRPppe
+  text: Some Python functions have no return value.
+  type: TF
+- choices:
+  - return
+  - return None
+  - return 0
+  hash: $2b$11$4u1OqwHMVH15dt3FcGmolOKlDnaf7SXPt0y7mPkP1TTHMEu4frnn2
+  text: Which return statement does not return a value of None?
+  type: MC
+- choices: null
+  hash: $2b$11$aTUdqt7le1APFeZ3w1d0ne.3th8hWdzwpTKFYaw3k/gM3dTQ5pRku
+  text: The return value of a Python function can be any Python object.
+  type: TF
+- choices: null
+  hash: $2b$11$Wk3qbVh1c/LqIqjAuNt/PeRqpmfZyCkpdKguh.LTeYcEhA7vrqIjS
+  text: An explicit return statement always terminates a function.
+  type: TF
+- choices: null
+  hash: $2b$11$CqQzgGiIvs9p5iJ6.Vs5ae697cYtXOaa2dnV/5asXA3yt8jinw4Ti
+  text: A return statement may be used outside a function or method definition.
+  type: TF
+- choices: null
+  hash: $2b$11$EtLgDyA12cnDDEn3ElCkL.MxCa0iHDgFu2jBue8lNEHqQ3StD8mAC
+  text: A return statement may return multiple values from a function.
+  type: TF

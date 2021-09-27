@@ -1,0 +1,40 @@
+# We want to sort Array in ascending order.
+# Suppose A is an array of N Values, 
+# low <- starting position of A
+# high <- ending postion of A, "length(A)-1"
+# pivot_index <- partitioning index
+
+
+FUNCTION QuickSort(A, low, high)
+    if (low < high)
+        set pivot_index = partition(A, low, high)   
+        QuickSort(A, low, pivot_index - 1)          
+        QuickSort(A, pivot_index + 1, high)         
+    END if                                          
+END                                                
+
+FUNCTION partition(A, low, high)
+    set pivot=A[low]
+    set left = low - 1 
+    set right = high + 1 
+
+    while TRUE
+        right = right - 1;
+        while right > 0 AND A[right] > pivot
+            right = right - 1 
+        END while
+
+        left = left+1
+        while A[left] <= pivot
+           left=left + 1
+        END while
+
+        if left >= right
+            BREAK                   
+        else
+            Swap(A[left], A[right])
+        END if
+    END while
+    return right;
+END
+

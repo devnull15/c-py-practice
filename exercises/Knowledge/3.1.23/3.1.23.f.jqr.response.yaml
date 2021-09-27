@@ -1,0 +1,22 @@
+- type: TF
+  resp: 'true'
+  text: >-
+    The call to pthread_exit() causes the current thread to exit and free any
+    thread-specific resources it is taking.
+  choices: []
+- type: MC
+  resp: 0
+  text: What happens when a POSIX thread calls exit()?
+  choices:
+    - All threads in the same process terminate
+    - Nothing, multithreaded programs must use pthread_exit()
+    - All threads are terminated except those that are waiting for a signal
+    - Only the calling thread terminates
+- type: MC
+  resp: 1
+  text: This function always succeeds?
+  choices:
+    - pthread_join()
+    - pthread_exit()
+    - pthread_cancel()
+    - None of the above

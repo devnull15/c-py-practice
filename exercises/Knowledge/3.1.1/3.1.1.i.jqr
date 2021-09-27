@@ -1,0 +1,18 @@
+- choices: []
+  hash: $2b$11$0TE96N9ic6vBoyheaRBeWug8pu5o7YrexxJyNnh9srqvkbz8wdjO2
+  text: Header files often contain function prototypes, declaring those functions
+    and telling the compiler that they exist and will be defined later during compilation.
+  type: TF
+- choices: []
+  hash: $2b$11$.tZXg/8HHV1FsDfYYDf/TOCWLYohW17eTFk87D5fWbblENy7pWn46
+  text: If a header file may be /#included in another file, all files /#included in
+    that header file must also be explicitly /#included in that other file.
+  type: TF
+- choices:
+  - Hiding sensitive code that poses security risks if publicly known
+  - Making code more readable and concise
+  - Separating code that is not part of the core functionality, such as macro guards
+    and other /#include statements
+  hash: $2b$11$P/pX6N1MwfLRENTelbDbBeRRk76.vBxjt57OSSGmDfORgeYw00GPO
+  text: What are header files used for?
+  type: MA

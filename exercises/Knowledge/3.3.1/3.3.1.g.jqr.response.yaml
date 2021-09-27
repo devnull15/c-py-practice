@@ -1,0 +1,36 @@
+- type: MC
+  resp: 1
+  text: Which data structure ensures a first-in-first-out (FIFO) order?
+  choices:
+    - stack
+    - queue
+    - linked list
+    - binary search tree
+- type: MC
+  resp: 0
+  text: Which data structure ensures a last-in-first-out (LIFO) order?
+  choices:
+    - stack
+    - queue
+    - linked list
+    - binary search tree
+- type: MC
+  resp: 0
+  text: >-
+    Which item entered into a queue in this order "a,b,c,d" would be retrieved
+    first?
+  choices:
+    - a
+    - b
+    - c
+    - d
+- type: MC
+  resp: 3
+  text: >-
+    Which item entered onto a stack in this order "a,b,c,d" would be retrieved
+    first?
+  choices:
+    - a
+    - b
+    - c
+    - d

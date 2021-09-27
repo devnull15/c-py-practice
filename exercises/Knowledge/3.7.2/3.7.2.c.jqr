@@ -1,0 +1,99 @@
+- choices:
+  - TTL is Time to Live and it is the number of hops a packet can traverse. When the
+    TTL reaches zero, the packet is dropped.
+  - TTL is a layer 3 concept and DNS operates at layer 7 so therefore there is no
+    TTL (Time to Live).
+  - TTL is Time to Live and with DNS it is the amount of time before the DNS records
+    become stale and a zone transfer is required.
+  - TTL is Time to Live and with DNS it is the amount of time a client that receives
+    the DNS information should cache that information. The TTL is set in the Start
+    of Authority (SOA) record and all domain records inherit the TTL from it. In order
+    to change the TTL, the SOA record must be edited.
+  - TTL is Time to Live and with DNS it is the amount of time a client that receives
+    the DNS information should cache that information. The TTL is set in the Start
+    of Authority (SOA) record and all domain records inherit the TTL from it. Each
+    record can have its own TTL.
+  hash: $2b$11$WF.GI2ACMRumLkNm1EyozeaFWWRrvTg6XEBJlie0qfm0vLzuLDAXa
+  text: With respect to DNS, what is TTL?
+  type: MC
+- choices:
+  - DNS is a one way resolver, that is it only resolves FQDN's to IPs.
+  - Use the command "dig -x AA.BB.CC.DD" where AA.BB.CC.DD is the IP address of the
+    system you are querying.
+  - Use the command "nslookup -type=PTR AA.BB.CC.DD.in-addr.arp" where AA.BB.CC.DD
+    is the IP address of the system you are querying.
+  - Use the command "nslookup -type=PTR DD.CC.BB.AA.in-addr.arp" where DD.CC.BB.AA
+    is the IP address in reverse order of the system you are querying.
+  hash: $2b$11$9YH5dQzYfV0saoDOHWa8Pe/uUwKrgJ7xzlTmgalC7sRfcJ9Fv3IuW
+  text: You are checking your logs and seen attempted connections from an IP address.
+    What can you do to find out what fully qualified domain name (FQDN) this may resolve
+    to?
+  type: MA
+- choices:
+  - The first one in the list as it traverses the list from top down.
+  - It can't be determined from this output as the MX records are handled in a round-robin
+    fashion and the server will pick the next mail server in the list.
+  - The server with the lowest priority number will be used.
+  - The server with the highest priority number will be used.
+  hash: $2b$11$YcxH5eIdzaRHSiKBlC9/9uDYEnOYsHq6w86Aed5d3xzHndcQUAfZq
+  text: You are examining google.com's MX records, if you were to send mail at the
+    time of this output, which mail server would be tried first?\n\ngoogle.com.             269     IN      MX      50
+    alt4.aspmx.l.google.com.  google.com.             269     IN      MX      10 aspmx.l.google.com.\n
+    google.com.             269     IN      MX      40 alt3.aspmx.l.google.com.\n
+    google.com.             269     IN      MX      20 alt1.aspmx.l.google.com.\n
+    google.com.             269     IN      MX      30 alt2.aspmx.l.google.com.\n\n
+  type: MC
+- choices:
+  - The response transaction ID will be the same as the request transaction ID.
+  - Transaction IDs are incremented by both the client and DNS server for each request
+    and response so they can determine if DNS is out of sync since a transaction ID
+    will be missing due to a dropped datagram.
+  - The response transaction ID will be pseudo-randomly generated in the response
+    so that can be uniquely tracked.
+  - The response transaction ID will be the request transaction ID + 1.
+  hash: $2b$11$wBc0kE3UCnoJmdDUdUz.h.7Rf.Tp8vzjMfwnjO0mn6Ba8pp0NHbB6
+  text: A hosts sends a query requesting the address for a fully qualified domain
+    name (FQDN). The transaction ID is 23922? What will be the transaction ID response
+    to this requiest?
+  type: MC
+- choices:
+  - The type and version of the queried DNS server.
+  - The source port being used by the query.
+  - The MAC address of the queried DNS server.
+  - The transaction ID in the query.
+  - The MAC address of the system performing the query.
+  hash: $2b$11$IFiXBY8Kny1kMPvwx3hX9uDbVT0VOxR7p78tMjVn0qKA9VX2ImS/m
+  text: For traditional DNS (not DNSSEC), what pieces of information would an attacker
+    need in order to successfully perform DNS cache poisoning?
+  type: MA
+- choices:
+  - Active Directory Integrated
+  - Iterative
+  - Recursive
+  - Round Robin
+  hash: $2b$11$kvm3GuUKuFSpYcwG7VKJcOdOsfawQHNRxZfZwaC0ZON84PvQrUQSe
+  text: A caching DNS server should be configured in what mode of operation?
+  type: MC
+- choices:
+  - Caching
+  - Iterative
+  - Recursive
+  - Round Robin
+  hash: $2b$11$/7R3Ew1htyEHe9O5oJVQvuL.7.fvUEjtGBvm1kkKZc53sTGf0mbCu
+  text: With respect to security, a DNS server should be configured in what mode of
+    operation?
+  type: MC
+- choices:
+  - Primary DNS server
+  - Secondary DNS server
+  - Upstream Caching Server
+  - Root DNS Server
+  - The Authoritative DNS Server
+  - The host that performed the query
+  hash: $2b$11$Ex27EJ8u4/4HlAJCa76zVOqNVzZAEq7CSTrd.guZxJS5x1j6wPCdS
+  text: A hosts primary DNS server is configured to perform iterative queries. A host
+    asks its primary DNS server for the IP address of a fully qualified domain name
+    (FQDN). The primary DNS server does not have the answer to that query. Considering
+    typical DNS configuration and operation which system will perform the query that
+    provides the answer for the host?
+  type: MC

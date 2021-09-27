@@ -1,0 +1,27 @@
+- type: TF
+  resp: 'false'
+  text: Some Python functions have no return value.
+  choices: null
+- type: MC
+  resp: 2
+  text: Which return statement does not return a value of None?
+  choices:
+    - return
+    - return None
+    - return 0
+- type: TF
+  resp: 'true'
+  text: The return value of a Python function can be any Python object.
+  choices: null
+- type: TF
+  resp: 'true'
+  text: An explicit return statement always terminates a function.
+  choices: null
+- type: TF
+  resp: 'false'
+  text: A return statement may be used outside a function or method definition.
+  choices: null
+- type: TF
+  resp: 'true'
+  text: A return statement may return multiple values from a function.
+  choices: null
