@@ -1,6 +1,9 @@
 #i have never used cmake before send help
 
 cmake_minimum_required(VERSION 3.16)
+if(NOT TARGET CUnitCI)
+  message(FATAL "!!!! CUnitCI needs to be installed - you likely aren't in the schoolhouse docker container !!!!")
+endif()
 set(JQR_ITEM "3.1.4")
 project(${JQR_ITEM} "C")
 
