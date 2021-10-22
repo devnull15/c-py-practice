@@ -13,6 +13,7 @@ add_library(${ITEM_SUBMISSION} SHARED "src/operators.c" "include/operators.h")
 
 add_library(${ITEM_TESTS} SHARED "tests/test.c")
 
+target_include_directories(${ITEM_SUBMISSION} PUBLIC include)
 
 # add the executable
 add_executable(${ITEM_EXEC} tests/main.c "include/operators.h" "src/operators.c")
