@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC   -shared -Wl,-soname,lib3.1.6_submission.so -o lib3.1.6_submission.so CMakeFiles/3.1.6_submission.dir/src/args.c.o 
