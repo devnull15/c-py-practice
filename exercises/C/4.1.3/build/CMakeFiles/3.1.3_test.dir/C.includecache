@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/csd/devon-e-budzitowski-basic/exercises/C/3.1.3/include/data_types.h
+stdint.h
+-
+
+/root/csd/devon-e-budzitowski-basic/exercises/C/3.1.3/tests/test_data_types.c
+stdlib.h
+-
+stdint.h
+-
+CUnit/CUnit.h
+-
+CUnit/Basic.h
+-
+../include/data_types.h
+/root/csd/devon-e-budzitowski-basic/exercises/C/3.1.3/include/data_types.h
+
