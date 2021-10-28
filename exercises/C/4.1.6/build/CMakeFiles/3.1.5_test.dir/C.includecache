@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/csd/devon-e-budzitowski-basic/exercises/C/3.1.5/include/operators.h
+stdint.h
+-
+
+/root/csd/devon-e-budzitowski-basic/exercises/C/3.1.5/tests/test.c
+stdlib.h
+-
+stdint.h
+-
+CUnit/CUnit.h
+-
+CUnit/Basic.h
+-
+test.h
+/root/csd/devon-e-budzitowski-basic/exercises/C/3.1.5/tests/test.h
+../include/operators.h
+/root/csd/devon-e-budzitowski-basic/exercises/C/3.1.5/include/operators.h
+
+/root/csd/devon-e-budzitowski-basic/exercises/C/3.1.5/tests/test.h
+stdint.h
+-
+

@@ -1,0 +1,5 @@
+/root/csd/devon-e-budzitowski-basic/exercises/C/3.1.5/build/CMakeFiles/rebuild_cache.dir
+/root/csd/devon-e-budzitowski-basic/exercises/C/3.1.5/build/CMakeFiles/edit_cache.dir
+/root/csd/devon-e-budzitowski-basic/exercises/C/3.1.5/build/CMakeFiles/3.1.5_exe.dir
+/root/csd/devon-e-budzitowski-basic/exercises/C/3.1.5/build/CMakeFiles/3.1.5_test.dir
+/root/csd/devon-e-budzitowski-basic/exercises/C/3.1.5/build/CMakeFiles/3.1.5_submission.dir
