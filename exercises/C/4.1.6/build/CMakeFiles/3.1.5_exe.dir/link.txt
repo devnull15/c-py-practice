@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/3.1.5_exe.dir/tests/main.c.o CMakeFiles/3.1.5_exe.dir/src/operators.c.o  -o 3.1.5_exe  -Wl,-rpath,/root/csd/devon-e-budzitowski-basic/exercises/C/3.1.5/build lib3.1.5_submission.so lib3.1.5_test.so -lcunit 

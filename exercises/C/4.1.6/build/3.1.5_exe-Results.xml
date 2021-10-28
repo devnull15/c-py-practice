@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites errors="0" failures="0" tests="1" name="./build/3.1.5_exe-Results.xml" time="0.000067">
+  <testsuite errors="0" failures="0" tests="1" name="operators_tests" time="0.000062">
+    <testcase classname=".operators_tests" name="Section 3.1.5" time="0.000004">
+    </testcase>
+  </testsuite>
+</testsuites>
