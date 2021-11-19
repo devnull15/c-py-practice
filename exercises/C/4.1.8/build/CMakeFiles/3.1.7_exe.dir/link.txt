@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/3.1.7_exe.dir/tests/main_tests.c.o CMakeFiles/3.1.7_exe.dir/src/file_io.c.o  -o 3.1.7_exe  -Wl,-rpath,/root/csd/devon-e-budzitowski-basic/exercises/C/4.1.8/build lib3.1.7_submission.so lib3.1.7_test.so -lcunit 

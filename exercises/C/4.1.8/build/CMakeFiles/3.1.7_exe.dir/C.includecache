@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/csd/devon-e-budzitowski-basic/exercises/C/4.1.8/include/file_io.h
+stdint.h
+-
+float.h
+-
+stdio.h
+-
+unistd.h
+-
+
+/root/csd/devon-e-budzitowski-basic/exercises/C/4.1.8/src/file_io.c
+../include/file_io.h
+/root/csd/devon-e-budzitowski-basic/exercises/C/4.1.8/include/file_io.h
+stdio.h
+-
+string.h
+-
+sys/stat.h
+-
+sys/types.h
+-
+
+/root/csd/devon-e-budzitowski-basic/exercises/C/4.1.8/tests/file_io_test.h
+
+/root/csd/devon-e-budzitowski-basic/exercises/C/4.1.8/tests/main_tests.c
+stdio.h
+-
+stdlib.h
+-
+CUnit/Automated.h
+-
+CUnit/Basic.h
+-
+CUnit/CUnitCI.h
+-
+file_io_test.h
+/root/csd/devon-e-budzitowski-basic/exercises/C/4.1.8/tests/file_io_test.h
+

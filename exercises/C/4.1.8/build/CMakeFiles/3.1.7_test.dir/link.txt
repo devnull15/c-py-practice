@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC   -shared -Wl,-soname,lib3.1.7_test.so -o lib3.1.7_test.so CMakeFiles/3.1.7_test.dir/tests/file_io_test.c.o 
