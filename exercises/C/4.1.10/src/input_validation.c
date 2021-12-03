@@ -13,13 +13,14 @@
  *  3.1.9.a
  */
 int valid_int(char* data) {
+  if(data == NULL) { return 0; }
   if(data[0] == '\0') { return 0; }
   if(!isdigit(data[0]) && data[0] != '-') { return 0; }
   for(size_t i = 1; i < strlen(data); i++) {
     if(!isdigit(data[i])) { return 0; }
   }
   
-  if(atol(data) > INT_MAX || atol(data) < INT_MIN) { return 0; }
+  if(strtol(data,NULL,10) > INT_MAX || strtol(data,NULL,10) < INT_MIN) { return 0; }
 
   return 1;
 }
@@ -34,6 +35,7 @@ int valid_int(char* data) {
  */
 int allowed_char(char* data) {
 
+  if(data == NULL) { return 0; }
   if(data[0] == '\0') { return 0; }
   
   int i = 0;
