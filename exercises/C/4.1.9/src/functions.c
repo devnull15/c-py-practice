@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include <assert.h>
 
 void pass_by_ref(int timer, int* val) {
+  assert(val != NULL);
   *val = timer%2;
   return;
 }
@@ -20,5 +22,6 @@ int fib_recursive(int n) {
 }
 
 int call_my_function(int (*function)(void)) {
+  assert(function != NULL);
   return (*function)();
 }
