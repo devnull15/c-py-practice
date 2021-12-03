@@ -97,8 +97,14 @@ array_t* create_array(uint64_t n) {
 	  fprintf(stderr, "! create_array: calloc failure\n");
 	  exit(1);
 	}
-	a->p_array = calloc(n,sizeof(array_node_t));
-	a->len = n;
+	if(NULL != a->p_array) {
+	  free(a);
+	  a = NULL;
+	}
+	else {
+	  a->p_array = calloc(n,sizeof(array_node_t));
+	  a->len = n;
+	}
 	
 	return a;
 }
@@ -114,11 +120,12 @@ array_t* create_array(uint64_t n) {
 
 matrix_t * create_matrix(uint64_t x, uint64_t y) {
 	if(x==0 || y==0) { return NULL; }
-	matrix_t* m = malloc(sizeof(matrix_t));
+	matrix_t* m = calloc(1,sizeof(matrix_t));
 	m->pp_array = calloc(x,sizeof(array_t));
 	m->len = x;
 	for(uint64_t i = 0; i < x; i++) {
-		m->pp_array[i] = create_array(y);
+	  m->pp_array[i] = create_array(y);
+	  if(NULL == m->pp_array[i]) { return NULL; }
 	}
 	return m;
 }
@@ -240,13 +247,14 @@ void free_array(array_t * p_array){
  * @param p_matrix pointer to the object to be freed
  */
 void free_matrix(matrix_t * p_matrix){
-	
-	for(uint64_t i = 0; i < p_matrix->len; i++) {
-		if(p_matrix->pp_array[i] != NULL) { free_array(p_matrix->pp_array[i]); }
-	}
-	free(p_matrix->pp_array);
-	p_matrix->pp_array = NULL;
-	free(p_matrix);
-	p_matrix = NULL;
+
+  if(NULL == p_matrix) { return; }
+  for(uint64_t i = 0; i < p_matrix->len; i++) {
+    if(p_matrix->pp_array[i] != NULL) { free_array(p_matrix->pp_array[i]); }
+  }
+  free(p_matrix->pp_array);
+  p_matrix->pp_array = NULL;
+  free(p_matrix);
+  p_matrix = NULL;
 }
 
