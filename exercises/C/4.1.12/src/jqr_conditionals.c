@@ -4,8 +4,10 @@
 
 int *array_map(int array[], int arrLen, int (*function)(int value)) {
   int *ret = calloc(arrLen,sizeof(int));
-  for(int i = 0; i < arrLen; i++) {
-    ret[i] = (*function)(array[i]);
+  if(ret != NULL) {
+    for(int i = 0; i < arrLen; i++) {
+      ret[i] = (*function)(array[i]);
+    }
   }
 
   return ret;
@@ -13,7 +15,7 @@ int *array_map(int array[], int arrLen, int (*function)(int value)) {
 
 int sum_list(node *head) {
   int sum = 0;
-  while(head!=NULL) {
+  while(NULL != head) {
     sum += head->data;
     head = head->next;
   }
