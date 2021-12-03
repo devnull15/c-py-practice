@@ -18,90 +18,147 @@ void _print_file(FILE *f) {
 }
 
 int create_file(char *filename, char *data) {
-	FILE *f = fopen(filename, "w");
-	if (f == NULL) { return 0; }
+  int ret = 1;
+  FILE *f = fopen(filename, "w+");
+  if (f == NULL) {
+    ret = 0;
+    goto EXIT_FUNC;
+  }
 
-	int ret = fwrite(data, 1, strlen(data), f);
-	if(ret == 0) { return 0; }
-	fclose(f);
-	f = NULL;
+  int err = fwrite(data, 1, strlen(data), f);
+  if(err == 0) {
+    ret = 0;
+    goto EXIT_FUNC;
+  }
 
-	return 1;
+ EXIT_FUNC:
+  if(f != NULL){
+    fclose(f);
+    f = NULL;
+  }
+  
+  return ret;
 }
 
 
 int modify_file(char *filename) {
 
-	FILE *f = fopen(filename, "r+");
-	if(f == NULL) { return 0; }
-	char buf[BUFSIZE] = {0};
-	char rev[BUFSIZE] = {0};
-	int len = 0;
-	char c;
+  int ret = 1;
+  FILE *f = fopen(filename, "r+");
+  if(f == NULL) {
+    ret = 0;
+    goto EXIT_FUNC;
+  }
 
-	while( EOF !=  (c = fgetc(f)) ) { 
-		buf[len] = c;
-		len++;
-		if(ferror(f) != 0) { return 0; }
-	}
+  char buf[BUFSIZE] = {0};
+  char rev[BUFSIZE] = {0};
+  int len = 0;
+  char c;
+  
+  while( EOF !=  (c = fgetc(f)) ) { 
+    buf[len] = c;
+    len++;
+    if(len > BUFSIZE) {
+      ret = 0;
+      goto EXIT_FUNC;
+    }
+    if(ferror(f) != 0) {
+      ret = 0;
+      goto EXIT_FUNC;
+    }
+  }
 	
-	for(int i = 0; i < len; i++) {
-		rev[i] = buf[len-i-1];
-	}
-	
-	rewind(f);
-	int ret = fwrite(rev, 1, len, f);
-	if(ret == 0) { return 0; }
-
-	fclose(f);
-	f = NULL;
-	
-	return 1;
+  for(int i = 0; i < len; i++) {
+    rev[i] = buf[len-i-1];
+  }
+  
+  rewind(f);
+  int err = fwrite(rev, 1, len, f);
+  if(err == 0) {
+    ret = 0;
+    goto EXIT_FUNC;
+  }
+  
+ EXIT_FUNC:
+  if(f != NULL){
+    fclose(f);
+    f = NULL;
+  }
+  
+  return ret;
 }
 
 
 int append_file(char *filename, char *data) {
 
-
-	FILE *f = fopen(filename, "a");
-	if(f == NULL) { return 0; }
-	
-	int ret = fwrite(data, 1, strlen(data), f);
-	if(ret == 0) { return 0; }
-
-	fclose(f);
-	f = NULL;
-	
-	return 1;
+  int ret = 1;
+  
+  FILE *f = fopen(filename, "a");
+  if(f == NULL) {
+    ret = 0;
+    goto EXIT_FUNC;
+  }
+  
+  int err = fwrite(data, 1, strlen(data), f);
+  if(err == 0) {
+    ret = 0;
+    goto EXIT_FUNC;
+  }
+  
+ EXIT_FUNC:
+  if(f != NULL){
+    fclose(f);
+    f = NULL;
+  }
+  
+  return ret;
 }
 
 
 int insert_file(char *filename, char *data, int index) {
   
+  int ret = 1;
+  
   FILE *f = fopen(filename, "r+");
-  if(f == NULL) { return 0; }
+  if(f == NULL) {
+    ret = 0;
+    goto EXIT_FUNC;
+  }
   
   char buf[BUFSIZE] = {0};
   int len = 0;
   if(fseek(f,index,SEEK_SET) == -1) {
-    return 0;
+    ret = 0;
+    goto EXIT_FUNC;
   }
   
   while(EOF != (buf[len] = fgetc(f))) {
     //check if fgetc had error
-    if(ferror(f) != 0) { return 0; }
+    if(ferror(f) != 0) {
+      ret = 0;
+      goto EXIT_FUNC;
+    }
     len++;
+    if(len > BUFSIZE) {
+      ret = 0;
+      goto EXIT_FUNC;
+    }
   }
   
   if(fseek(f,index,SEEK_SET) == -1) {
-    return 0;
+    ret = 0;
+    goto EXIT_FUNC;
   }
+
   len = 0;
   
   for(size_t i = 0; i < strlen(data); i++) {
     fputc(data[i], f);
     //check if putc had error
-    if(ferror(f) != 0) { return 0; }
+    if(ferror(f) != 0) {
+      ret = 0;
+      goto EXIT_FUNC;
+    }
   }
 
   // -1 to not copy the null into the file.
@@ -110,27 +167,39 @@ int insert_file(char *filename, char *data, int index) {
   }
 
   //_print_file(f);
+
+ EXIT_FUNC:
+  if(f != NULL){
+    fclose(f);
+    f = NULL;
+  }
   
-  fclose(f);
-  f = NULL;
-  
-  return 1;
+  return ret;
 }
 
 
 int find_char_file(char *filename, char needle) {
-  FILE *f = fopen(filename, "r");
-  if(f == NULL) { return 0; }
-
   int i = 0;
-  char c;
-  while(needle != (c = fgetc(f))) {
-    if(c == EOF) { return -1; }
-    i++;
+  FILE *f = fopen(filename, "r");
+  if(f == NULL) {
+    i = 0;
+    goto EXIT_FUNC;
   }
 
-  fclose(f);
-  f = NULL;
+  char c;
+  while(needle != (c = fgetc(f))) {
+    if(c == EOF) {
+      i = -1;
+      goto EXIT_FUNC;
+    }
+    i++;
+  }
+  
+ EXIT_FUNC:
+  if(f != NULL){
+    fclose(f);
+    f = NULL;
+  }
   
   return i;
   
@@ -151,7 +220,6 @@ void file_info(char *filename) {
   printf("Statistics for %s\n", filename);
   printf("File Size: %li bytes\n",fileStat.st_size);
 
-  char perms[BUFSIZE];
   printf("File Permissions: ");
   printf((S_ISDIR(fileStat.st_mode)) ? "d" : "-");
   printf((fileStat.st_mode & S_IRUSR) ? "r" : "-");
