@@ -1,0 +1,5 @@
+- overall: 3.3.7
+  test_files: [./build/3.3.7_exe-Results.xml]    # parsed relative to the location of this file
+  sub_items:
+  - name: bst_tests                # name of the test suite to load from in the xml
+    test_count: 4                    # number of tests to find in the test suite 
