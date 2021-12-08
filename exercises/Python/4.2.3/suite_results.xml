@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="5" time="0.0">
+	<testsuite disabled="0" errors="0" failures="0" name="3.2.3" skipped="0" tests="5" time="0">
+		<testcase name="3.2.3-0" classname="test.class"/>
+		<testcase name="3.2.3-1" classname="test.class"/>
+		<testcase name="3.2.3-2" classname="test.class"/>
+		<testcase name="3.2.3-3" classname="test.class"/>
+		<testcase name="3.2.3-4" classname="test.class"/>
+	</testsuite>
+</testsuites>
