@@ -30,21 +30,21 @@
  *   see: dprintf, vdprintf, write
  * 
  */
-extern volatile int g_arrays_fd_stdout;
+int g_arrays_fd_stdout = STDOUT_FILENO;
 
 /**
  * @brief whenever writing to stderr, functions must write to this file descriptor to allow for test cases to monitor standard err.
  *   see: dprintf, vdprintf, write
  * 
  */
-extern volatile int g_arrays_fd_stderr;
+int g_arrays_fd_stderr = STDERR_FILENO;
 
 /**
  * @brief whenever reading from stdin, functions must read from this file descriptor to allow for test cases to provide input to stdin
  *   see: dprintf, vdprintf, write
  * 
  */
-extern volatile int g_arrays_fd_stdin;
+int g_arrays_fd_stdin = STDIN_FILENO;
 
 /**
  * @brief node for our stacks. A stack is a LIFO (Last in First Out) oriented data structure. 
@@ -84,7 +84,7 @@ typedef struct stack
  * Items used:
  *  3.3.9.a
  */
-STACK_p_t create_stack(int *items, int numItems);
+STACK_p_t create_stack(int *items, const size_t numItems);
 
 /**
  * @brief add an item to the top of a stack

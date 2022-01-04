@@ -1,11 +1,11 @@
 #include "../include/stacks.h"
 #include <stdarg.h>
+#include <stdlib.h>
+#include <assert.h>
 
-
-volatile int g_arrays_fd_stdout = STDOUT_FILENO;
-volatile int g_arrays_fd_stderr = STDERR_FILENO;
-volatile int g_arrays_fd_stdin  = STDIN_FILENO;
-
+extern int g_arrays_fd_stdout;
+extern int g_arrays_fd_stderr;
+extern int g_arrays_fd_stdin;
 
 // these have been provided for the student
 static void local_printf(const char * format, ...) 
@@ -31,10 +31,11 @@ static void local_printf(const char * format, ...)
  * Items used:
  *  3.3.9.a
  */
-STACK_p_t create_stack(int *items, int numItems) {
+STACK_p_t create_stack(int *items, const size_t numItems) {
   STACK_p_t s = calloc(1, sizeof(STACK_t));
-  for(int i = numItems-1; i > -1; i--) {
-    push(s, items[i]);
+  assert(NULL != s);
+  for(size_t i = 1; i <= numItems; i++) {
+    push(s, items[numItems - i]);
   }
 
   return s;
@@ -49,7 +50,8 @@ STACK_p_t create_stack(int *items, int numItems) {
  * Items used:
  *  3.3.9.c
  */
-void push(STACK_p_t stack, int item) {
+void push(STACK_p_t stack, const int item) {
+  assert(NULL != stack);
   if(stack == NULL) { return; }
   NODE_p_t n = calloc(1, sizeof(NODE_t));
   n->data = item;

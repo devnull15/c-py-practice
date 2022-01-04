@@ -17,7 +17,7 @@
 
 #define TEST_STDOUT_CAPTURE_FILE "/tmp/CUnit_JQR_339_STACKS_TEST_stdout.log"
 
-extern volatile int g_arrays_fd_stdout;
+extern int g_arrays_fd_stdout;
 static FILE *fp_stdout_file = NULL;
 static int cur_stdout_fd;
 
