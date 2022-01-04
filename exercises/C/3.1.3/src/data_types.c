@@ -1,5 +1,5 @@
 #include <stdint.h>
-#include "../include/data_types.h"
+#include <data_types.h>
 
 //Declare a WORD in the following function
 //and give it the value 123, then return it
