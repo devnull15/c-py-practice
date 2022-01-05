@@ -1,1 +1,0 @@
-/usr/bin/cc    CMakeFiles/3.1.6_exe.dir/tests/main_tests.c.o CMakeFiles/3.1.6_exe.dir/src/args.c.o  -o 3.1.6_exe  -Wl,-rpath,/root/csd/devon-e-budzitowski-basic/exercises/C/3.1.6/build lib3.1.6_submission.so lib3.1.6_test.so -lcunit 
