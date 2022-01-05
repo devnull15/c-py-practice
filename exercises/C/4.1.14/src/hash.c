@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../include/hash.h"
+#include <hash.h>
 #include <string.h>
 #include <limits.h>
 
@@ -53,44 +53,33 @@ uint32_t hash (char * s, size_t slen) {
 
   if(s==NULL) { return 0; }
   
-  //debug
-  /* printf("s: %s\n", s); */
-  //debug
-  
-  int r = slen % BLOCKSIZE;
-  if(r != 0) {
-    int newslen = slen+(BLOCKSIZE-r);
-    char s2[newslen];
-    strcpy(s2,s);
-    for(int i = slen; i < newslen; i++) {
-      s2[i] = '\0';
-    }
-    slen = newslen;
-    s = s2;
-  }
+  size_t r = slen % BLOCKSIZE;
+  size_t padding = 0;
+  if(r != 0) { padding = (BLOCKSIZE-r); }
+  char *s2 = calloc(slen+padding, sizeof(char));
+  memcpy(s2,s,slen);
 
   uint32_t hash = UINT_MAX;
-  uint32_t blocks = slen/BLOCKSIZE;
+  uint32_t blocks = (slen+padding)/BLOCKSIZE;
   uint32_t block,k = 0;
-  int start,end,charIndex = 0;
-  for(int i = 0; i < blocks; i++) {
+  size_t start = 0;
+  size_t end = 0;
+  size_t charIndex = 0;
+  for(size_t i = 0; i < blocks; i++) {
     start = i*BLOCKSIZE;
     end = (i+1)*BLOCKSIZE;
     block = 0;
-    for(int j = 0; j < BLOCKSIZE; j++) {
+    for(size_t j = 0; j < BLOCKSIZE; j++) {
       charIndex = j+start;
-      hash += (int)s[charIndex]; //add byte to hash, store result as new hash
-      k = (int)s[charIndex] << ((BLOCKSIZE-j-1)*8); // write byte to block
+      hash += (int)s2[charIndex]; //add byte to hash, store result as new hash
+      k = (int)s2[charIndex] << ((BLOCKSIZE-j-1)*8); // write byte to block
       block += k;
-      //debug(hash, blocks, block, start, end, charIndex);
     }
     hash ^= block; //xor block with hash
   }
 
-  //debug
-  /* debug(hash, blocks, block, start, end, charIndex); */
-  /* printf("s: %s\n", s); */
-  //debug
+  free(s2);
+  s2 = NULL;
   
   return hash;
 }

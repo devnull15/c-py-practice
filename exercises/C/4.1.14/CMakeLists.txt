@@ -14,6 +14,7 @@ add_library(${ITEM_SUBMISSION} SHARED "src/hash.c" "include/hash.h")
 
 add_library(${ITEM_TESTS} SHARED "tests/hash_func_test.c")
 
+target_include_directories(${ITEM_SUBMISSION} PUBLIC  include)
 
 # add the executable
 add_executable(${ITEM_EXEC} tests/main_tests.c "include/hash.h" "src/hash.c")

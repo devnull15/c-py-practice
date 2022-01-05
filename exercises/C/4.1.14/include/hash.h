@@ -1,10 +1,7 @@
-#ifndef STDINT_H
-#include <stdint.h>
-#endif
-
 #ifndef HASH_H
 #define HASH_H
 
+#include <stdint.h>
 #include <stdlib.h>
 
 #define BLOCKSIZE sizeof(uint32_t)
