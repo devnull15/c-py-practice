@@ -13,6 +13,8 @@ add_library(${ITEM_SUBMISSION} SHARED "src/jqr_conditionals.c" "include/jqr_cond
 
 add_library(${ITEM_TESTS} SHARED "tests/jqr_conditionals_test.c")
 
+target_include_directories(${ITEM_SUBMISSION} PUBLIC  include)
+
 
 # add the executable
 add_executable(${ITEM_EXEC} tests/main_tests.c "include/jqr_conditionals.h" "src/jqr_conditionals.c")

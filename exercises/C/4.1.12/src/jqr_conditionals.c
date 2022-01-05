@@ -1,4 +1,4 @@
-#include "../include/jqr_conditionals.h"
+#include <jqr_conditionals.h>
 #include <stdlib.h>
 #include <ctype.h>
 
@@ -34,7 +34,6 @@ int index_of_larger(int array[], int arrLen, int num) {
 }
 
 int isEvenOdd(int value) {
-  int ret;
   return (value%2==0) ? 0 : 1;
 }
 
