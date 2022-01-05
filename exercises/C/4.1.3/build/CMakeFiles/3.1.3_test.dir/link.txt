@@ -1,1 +1,0 @@
-/usr/bin/cc -fPIC   -shared -Wl,-soname,lib3.1.3_test.so -o lib3.1.3_test.so CMakeFiles/3.1.3_test.dir/tests/test_data_types.c.o 
