@@ -13,6 +13,7 @@ add_library(${ITEM_SUBMISSION} SHARED "src/queues.c" "include/queues.h")
 
 add_library(${ITEM_TESTS} SHARED "tests/queues_test.c")
 
+target_include_directories(${ITEM_SUBMISSION} PUBLIC  include)
 
 # add the executable
 add_executable(${ITEM_EXEC} tests/main_tests.c "include/queues.h" "src/queues.c")

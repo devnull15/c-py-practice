@@ -1,5 +1,7 @@
-#include "../include/queues.h" 
+#include <queues.h>
 #include <stdarg.h>
+#include <assert.h>
+#include <stdlib.h>
 
 volatile int g_arrays_fd_stdout = STDOUT_FILENO;
 volatile int g_arrays_fd_stderr = STDERR_FILENO;
@@ -34,6 +36,7 @@ QUEUE_p_t create_queue(int *items, int numItems) {
   for(int i = 0; i < numItems; i++) {
     prev = n;
     n = calloc(1, sizeof(Q_NODE_t));
+    assert(NULL != n);
     q->tail = n;
     n->data = items[i];
     n->next = NULL;
@@ -79,6 +82,7 @@ PQUEUE_p_t create_p_queue(PQ_ITEM_t items[], int numItems) {
 void enqueue(QUEUE_p_t queue, int item) {
   if(queue == NULL) { return; }
   Q_NODE_p_t n = calloc(1,sizeof(Q_NODE_t));
+  assert(NULL != n);
   if(queue->tail != NULL) { queue->tail->next = n; }
   queue->tail = n;
   n->data = item;
