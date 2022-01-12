@@ -31,6 +31,7 @@ static void local_printf(const char * format, ...)
 
 QUEUE_p_t create_queue(int *items, int numItems) {
   QUEUE_p_t q = calloc(1, sizeof(QUEUE_t));
+  assert(NULL != q);
   Q_NODE_p_t prev = NULL;
   Q_NODE_p_t n = NULL;
   for(int i = 0; i < numItems; i++) {
@@ -60,6 +61,7 @@ QUEUE_p_t create_queue(int *items, int numItems) {
 
 PQUEUE_p_t create_p_queue(PQ_ITEM_t items[], int numItems) {
   PQUEUE_p_t q = calloc(1, sizeof(PQUEUE_t));
+  assert(NULL != q);
   PQ_NODE_p_t prev = NULL;
   PQ_NODE_p_t n = NULL;
   for(int i = 0; i < numItems; i++) {
@@ -106,6 +108,7 @@ void p_enqueue(PQUEUE_p_t queue, PQ_ITEM_t item) {
   if(queue == NULL) { return; }
 
   PQ_NODE_p_t n = calloc(1,sizeof(PQ_NODE_t));
+  assert(NULL != n);
   n->item = item;
 
   fprintf(stderr, "penqueue\n");
