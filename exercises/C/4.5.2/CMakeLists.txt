@@ -1,0 +1,25 @@
+cmake_minimum_required(VERSION 3.16)
+
+set(JQR_ITEM "3.5.2")
+project(
+    ${JQR_ITEM} 
+    LANGUAGES C)
+
+set(ITEM_HEADERS ${JQR_ITEM}_headers)
+set(ITEM_SUBMISSION ${JQR_ITEM}_submission)
+set(ITEM_TESTS ${JQR_ITEM}_test)
+set(ITEM_EXEC ${JQR_ITEM}_exe)
+
+add_library(${ITEM_SUBMISSION} SHARED "src/signals.c" "include/signals.h"
+"src/interrupts.c" "include/interrupts.h")
+
+add_library(${ITEM_TESTS} SHARED "tests/signal_test.c" "tests/interrupt_test.c")
+
+
+# add the executable
+add_executable(${ITEM_EXEC} tests/main_tests.c "include/signals.h" "src/signals.c"
+"include/interrupts.h" "src/interrupts.c")
+
+target_link_libraries(${ITEM_EXEC} ${ITEM_SUBMISSION} ${ITEM_TESTS} cunit)
+target_compile_options(${ITEM_EXEC} PUBLIC "-Wall" "-Wextra" "-g")
+add_test(${JQR_ITEM}_tests                ${ITEM_EXEC})
