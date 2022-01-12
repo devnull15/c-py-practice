@@ -11,6 +11,7 @@
 #include <stdlib.h>
 #include <CUnit/CUnitCI.h>
 #include <CUnit/CUnit.h>
+#include <assert.h>
 
 // These constants are used for data structres and give a default size for containers like lists
 #define DEFAULT_MIN_CONTAINER_SIZE 5
@@ -56,6 +57,7 @@ static inline int rand_value(void)
 node_object *new_obj(int value)
 {
     node_object *pNode = (node_object *)calloc(1, sizeof(node_object));
+    assert(NULL != pNode);
 
     pNode->data = value;
 
@@ -109,6 +111,7 @@ static void test_graph_add_node(void)
     int value = rand_container_size();
     
     int * values = calloc(value, sizeof(int));
+    assert(NULL != values);
 
     for(int i = 0; i < value; i++)
     {
