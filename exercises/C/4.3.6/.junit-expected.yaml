@@ -1,0 +1,5 @@
+- overall: 3.3.8
+  test_files: [./build/3.3.8_exe-Results.xml]    # parsed relative to the location of this file
+  sub_items:
+  - name: "hash_table test suite" # name of the test suite to load from in the xml
+    test_count: 18                    # number of tests to find in the test suite 
