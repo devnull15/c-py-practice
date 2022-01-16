@@ -185,6 +185,7 @@ static char *_capture_and_restore_stdout()
         fseek(fp_stdout_file, 0, SEEK_SET);
 
         p_output = calloc(1, file_size + 1);
+	if(NULL == p_output) { goto CALLOC_ERROR; }
         fread(p_output, file_size, 1, fp_stdout_file);
 
         fclose(fp_stdout_file);
@@ -198,6 +199,10 @@ static char *_capture_and_restore_stdout()
     }
 
     return p_output;
+
+ CALLOC_ERROR:
+    fprintf(stderr, "!!! Error in _capture_and_restore_stdout calloc\n");
+    return NULL;
 }
 
 void jqr_test_print_queue(void)

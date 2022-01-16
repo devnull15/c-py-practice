@@ -1,5 +1,6 @@
 #include "../include/queues.h" 
 #include <stdarg.h>
+#include <stdlib.h>
 
 volatile int g_arrays_fd_stdout = STDOUT_FILENO;
 volatile int g_arrays_fd_stderr = STDERR_FILENO;
@@ -29,11 +30,13 @@ static void local_printf(const char * format, ...)
 
 QUEUE_p_t create_queue(int *items, int numItems) {
   QUEUE_p_t q = calloc(1, sizeof(QUEUE_t));
+  if(NULL == q) { goto CALLOC_ERROR; }
   Q_NODE_p_t prev = NULL;
   Q_NODE_p_t n = NULL;
   for(int i = 0; i < numItems; i++) {
     prev = n;
     n = calloc(1, sizeof(Q_NODE_t));
+    if(NULL == n) { goto CALLOC_ERROR; }
     q->tail = n;
     n->data = items[i];
     n->next = NULL;
@@ -42,6 +45,9 @@ QUEUE_p_t create_queue(int *items, int numItems) {
   }
   
   return q;
+
+ CALLOC_ERROR:
+  return NULL;
 }
 
 /**
@@ -57,6 +63,7 @@ QUEUE_p_t create_queue(int *items, int numItems) {
 
 PQUEUE_p_t create_p_queue(PQ_ITEM_t items[], int numItems) {
   PQUEUE_p_t q = calloc(1, sizeof(PQUEUE_t));
+  if(NULL == q) { goto CALLOC_ERROR; }
   PQ_NODE_p_t prev = NULL;
   PQ_NODE_p_t n = NULL;
   for(int i = 0; i < numItems; i++) {
@@ -64,6 +71,10 @@ PQUEUE_p_t create_p_queue(PQ_ITEM_t items[], int numItems) {
   }
   
   return q;
+
+ CALLOC_ERROR:
+  return NULL;
+
 }
 
 /**
@@ -79,6 +90,7 @@ PQUEUE_p_t create_p_queue(PQ_ITEM_t items[], int numItems) {
 void enqueue(QUEUE_p_t queue, int item) {
   if(queue == NULL) { return; }
   Q_NODE_p_t n = calloc(1,sizeof(Q_NODE_t));
+  if(NULL == n) { fprintf(stderr, "!!! Error in calloc in enqueue\n"); }
   if(queue->tail != NULL) { queue->tail->next = n; }
   queue->tail = n;
   n->data = item;
@@ -102,6 +114,7 @@ void p_enqueue(PQUEUE_p_t queue, PQ_ITEM_t item) {
   if(queue == NULL) { return; }
 
   PQ_NODE_p_t n = calloc(1,sizeof(PQ_NODE_t));
+  if(NULL == n) { fprintf(stderr, "!!! Error in calloc in enqueue\n"); }
   n->item = item;
 
   fprintf(stderr, "penqueue\n");
