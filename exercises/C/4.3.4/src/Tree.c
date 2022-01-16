@@ -128,7 +128,7 @@ Tree_node *_merge_trees(Tree_node *pop, Tree *push) {
     
   }
   
-  return push;
+  return push->head;
 }
 
 Tree_node *tree_rm_head(Tree *tr) {
@@ -156,7 +156,7 @@ void _destroy_nodes(Tree_node *n) {
   _destroy_nodes(n->right);
   free(n);
   n = NULL;
-  return true; 
+  return; 
 }
 
 bool tree_destroy(Tree *tr) {

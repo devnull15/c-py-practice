@@ -204,7 +204,6 @@ static void
 test_tree_rm_head_to_empty(void)
 {
 
-    int first_data = 0;
     // Build Linked list to test.
     int node_count = rand_range(MIN_RAND_TREE_SIZE, MAX_RAND_TREE_SIZE);
 
@@ -215,10 +214,6 @@ test_tree_rm_head_to_empty(void)
         int num = rand_range(MIN_RAND_NODE_VALUE, MAX_RAND_NODE_VALUE);
         tree_add(test_tree, num);
 
-        if (0 == idx)
-        {
-            first_data = num;
-        }
     }
     // End of test list build
     Tree_node *old_head = NULL;
@@ -295,7 +290,7 @@ test_is_tree_not_list(void)
     CU_ASSERT_TRUE(tree_add(tree, tree->head->data + 1));
     total_nodes += 2;
 
-    int node_count = 0;
+    //    int node_count = 0;
     Tree_node *temp = tree->head;
     if (NULL != temp)
     {

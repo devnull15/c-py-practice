@@ -37,8 +37,7 @@ int main(int argc, char *argv[])
         (NULL == CU_add_test(pSuite, "Tree Remove head to empty", test_tree_rm_head_to_empty)))
     {
         CU_cleanup_registry();
-        CU_get_error();
-        return;
+        return CU_get_error();
     }
 
     CU_basic_set_mode(CU_BRM_VERBOSE);
