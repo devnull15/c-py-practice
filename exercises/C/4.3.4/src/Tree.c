@@ -13,7 +13,13 @@
         Tree * (also equal to tree*) to a newly allocated tree.
 */
 Tree *tree_new(void) {
-  return calloc(1,sizeof(Tree));
+  Tree *ret = calloc(1,sizeof(Tree));
+  if(NULL == ret) {
+    fprintf(stderr, "!!! Error in tree_new calloc\n");
+    return NULL;
+  }
+  
+  return ret;
 }
 
 /* tree_add() adds to existing tree
@@ -45,14 +51,26 @@ bool tree_add(Tree *tr, int data) {
   
   if(dir == LEFT) {
     prev->left = calloc(1,sizeof(Tree_node));
+    if(NULL == prev->left) {
+      fprintf(stderr, "!!! Error in tree_add LEFT calloc\n");
+      return NULL;
+    }
     curr = prev->left;
   }
   else if(dir == RIGHT) {
     prev->right = calloc(1,sizeof(Tree_node));
+    if(NULL == prev->right) {
+      fprintf(stderr, "!!! Error in tree_add RIGHT calloc\n");
+      return NULL;
+    }
     curr = prev->right;
   }
   else {
     tr->head = calloc(1,sizeof(Tree_node));
+    if(NULL == tr->head) {
+      fprintf(stderr, "!!! Error in tree_add HEAD calloc\n");
+      return NULL;
+    }
     curr = tr->head;
   }
   
