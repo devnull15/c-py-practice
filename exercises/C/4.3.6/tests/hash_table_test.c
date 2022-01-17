@@ -24,12 +24,12 @@ void test_create(void) {
 
 void test_create_null_func(void)
 {
-    hash_table_t *new_table = create_hashtable(NULL);
+  hash_table_t *new_table = create_hashtable(NULL);
     CU_ASSERT_PTR_NULL(new_table);
 }
 
 void test_insert_null_table(void) {
-    int retval = insert_hashtable(NULL, 1, 1);
+  int retval = insert_hashtable(NULL, 1, 1);
     CU_ASSERT_EQUAL(retval, -1);
 }
 
