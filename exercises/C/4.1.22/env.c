@@ -18,16 +18,32 @@ int main() {
   printf("\n\nGetting value of ");
   printf("%s", envtochange);
   printf(" env var...\n");
-  printf("%s\n", getenv("HOME"));
+  char *ret = getenv("HOME");
+  if(NULL != ret) {
+    printf("%s\n", ret);
+  }
+  else {
+    fprintf(stderr, "!!! env variable not found.\n");	
+  }
+
 
   printf("\n\nChanging value of ");
   printf("%s", envtochange);
   printf(" env var to ");
   printf("%s...\n", changeto);
-  setenv("HOME", "/foo/bar", 1);
+  if(-1 == setenv("HOME", "/foo/bar", 1)) {
+    fprintf(stderr, "!!! error with setenv");
+  }
+  
  
   printf("\n\nGetting value of ");
   printf("%s", envtochange);
   printf(" env var...\n");
-  printf("%s\n", getenv("HOME"));
+  ret = getenv("HOME");
+  if(NULL != ret) {
+    printf("%s\n", ret);
+  }
+  else {
+    fprintf(stderr, "!!! env variable not found.\n");	
+  }
 }
