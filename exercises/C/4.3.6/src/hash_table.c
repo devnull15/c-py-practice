@@ -17,17 +17,25 @@ hash_table_t *create_hashtable(hash_func hash_f) {
   if(hash_f == NULL) { return NULL; }
   
   hash_table_t *t = calloc(1, sizeof(hash_table_t));
+  if(NULL == t) { goto CALLOC_ERROR; }
   t->num_buckets = INIT_NUM_BUCKETS;
   t->bucket_sizes = calloc(t->num_buckets, sizeof(int));
+  if(NULL == t->bucket_sizes) { goto CALLOC_ERROR; }
   t->items = calloc(t->num_buckets, sizeof(data_item_t**));
+  if(NULL == t->items) { goto CALLOC_ERROR; }
   for(int i = 0; i < t->num_buckets; i++) {
     t->bucket_sizes[i] = INIT_BUCKET_SIZE;
     t->items[i] = calloc(t->bucket_sizes[i], sizeof(data_item_t*));
+    if(NULL == t->items[i]) { goto CALLOC_ERROR; }
   }
 
   t->hash_f = hash_f;
   
   return t;
+
+ CALLOC_ERROR:
+  fprintf(stderr, "!!! calloc error in create_hashtable\n");
+  return NULL;
 }
 
 /**
@@ -44,11 +52,16 @@ void _realloc_bucket(hash_table_t *table, int hash) {
   int oldsize = table->bucket_sizes[hash];
   table->bucket_sizes[hash] *= 2;
   data_item_t **bucket = calloc(table->bucket_sizes[hash], sizeof(data_item_t*));
+  if(NULL == bucket) { goto CALLOC_ERROR; }
   memcpy(bucket, table->items[hash], oldsize*sizeof(data_item_t));
   free(table->items[hash]); //technically a bad practice, but not sure of a better way to do it.
   table->items[hash] = bucket;
 
   return;
+  
+ CALLOC_ERROR:
+  fprintf(stderr, "!!! calloc error in _realloc_bucket\n");
+  return;  
 }
 
 
@@ -69,6 +82,7 @@ int insert_hashtable(hash_table_t *table, int key, int data) {
   data_item_t *item = get_from_hashtable(table,key);
   if(item == NULL) {
     item = calloc(1, sizeof(data_item_t));
+    if(NULL == item) { goto CALLOC_ERROR; }
     item->key = key;
     item->data = data;
     table->items[hash][i] = item;
@@ -76,6 +90,10 @@ int insert_hashtable(hash_table_t *table, int key, int data) {
   else{ item->data = data; }
   
   return 0;
+
+ CALLOC_ERROR:
+  fprintf(stderr, "!!! calloc error in _realloc_bucket\n");
+  return 1;
 }
 
 /**
