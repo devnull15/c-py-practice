@@ -48,13 +48,12 @@ hash_table_t *create_hashtable(hash_func hash_f) {
  * @return 0 on success
  */
 void _realloc_bucket(hash_table_t *table, int hash) {
-
   int oldsize = table->bucket_sizes[hash];
   table->bucket_sizes[hash] *= 2;
   data_item_t **bucket = calloc(table->bucket_sizes[hash], sizeof(data_item_t*));
   if(NULL == bucket) { goto CALLOC_ERROR; }
   memcpy(bucket, table->items[hash], oldsize*sizeof(data_item_t));
-  free(table->items[hash]); //technically a bad practice, but not sure of a better way to do it.
+  free(table->items[hash]);
   table->items[hash] = bucket;
 
   return;
@@ -66,14 +65,16 @@ void _realloc_bucket(hash_table_t *table, int hash) {
 
 
 int insert_hashtable(hash_table_t *table, int key, int data) {
+
   if(table == NULL) { return -1; }
   
   int hash = (*table->hash_f)(key);
   int i = 0;
   
 
-  while(table->items[hash][i] != NULL &&
-	i < table->bucket_sizes[hash]) {
+  
+  while(i < table->bucket_sizes[hash] &&
+	table->items[hash][i] != NULL) {
     i++;
   }
   
@@ -119,7 +120,7 @@ int delete_from_hashtable(hash_table_t *table, int key) {
 
   if(i >= table->bucket_sizes[hash]) { return 1; }
   else {
-    free(table->items[hash][i]); //technically a bad practice, but not sure of a better way to do it.
+    free(table->items[hash][i]);
     table->items[hash][i] = NULL;
   }
     
