@@ -1,7 +1,6 @@
 #include "../include/stacks.h"
 #include <stdarg.h>
 #include <stdlib.h>
-#include <assert.h>
 
 extern int g_arrays_fd_stdout;
 extern int g_arrays_fd_stderr;
@@ -33,7 +32,10 @@ static void local_printf(const char * format, ...)
  */
 STACK_p_t create_stack(int *items, const size_t numItems) {
   STACK_p_t s = calloc(1, sizeof(STACK_t));
-  assert(NULL != s);
+  if(NULL == s) {
+    fprintf(stderr, "!!! calloc error in create_stack\n")
+    return NULL;
+  }
   for(size_t i = 1; i <= numItems; i++) {
     push(s, items[numItems - i]);
   }
@@ -51,7 +53,10 @@ STACK_p_t create_stack(int *items, const size_t numItems) {
  *  3.3.9.c
  */
 void push(STACK_p_t stack, const int item) {
-  assert(NULL != stack);
+  if(NULL == stack) {
+    fprintf(stderr, "!!! NULL stack in push\n")
+      return NULL;
+  }
   if(stack == NULL) { return; }
   NODE_p_t n = calloc(1, sizeof(NODE_t));
   n->data = item;
