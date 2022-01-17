@@ -11,6 +11,9 @@
 */
 Circularly_llist *circularly_llist_new(void) {
   Circularly_llist *ret = calloc(1,sizeof(struct _Circularly_llist));
+  if(NULL == ret) {
+    fprintf(stderr, "!!! calloc failed in circularly_llist_new\n");
+  }
   return ret;
 }
 
@@ -114,9 +117,6 @@ Circularly_llist_node *circularly_llist_rm_tail(Circularly_llist *list) {
   curr->next = list->head;
   list->tail = curr;
     
-  if(list->head != NULL) { list->tail->next = list->head; }
-  else { list->tail = NULL; }
-  
   return ret;
 }
 
@@ -136,7 +136,10 @@ Circularly_llist_node *circularly_llist_rm(Circularly_llist *list, int data) {
   Circularly_llist_node *prev = list->tail;
   Circularly_llist_node *ret = NULL;
 
-  while(curr->next != list->tail) {
+
+  if(curr->data == data) { ret = curr; }
+  
+  while(curr->next != list->head) {
     if(curr->data == data) {
       ret = curr;
       if(curr == list->head) { list->head = curr->next; }
