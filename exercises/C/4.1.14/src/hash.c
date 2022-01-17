@@ -57,6 +57,11 @@ uint32_t hash (char * s, size_t slen) {
   size_t padding = 0;
   if(r != 0) { padding = (BLOCKSIZE-r); }
   char *s2 = calloc(slen+padding, sizeof(char));
+  if(NULL == s2) {
+    fprintf(stderr, "!!! calloc error in ");
+    return 0;
+  }
+  
   memcpy(s2,s,slen);
 
   uint32_t hash = UINT_MAX;
