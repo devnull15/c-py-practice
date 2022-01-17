@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stddef.h>
-#include <assert.h>
 #include "../include/Graph.h"
 
 #define EDGE_WEIGHT 1
@@ -14,7 +13,10 @@
 */
 Graph *graph_new(void) {
   Graph* new_graph = (Graph*) calloc(1, sizeof(Graph));
-  assert(NULL != new_graph);
+  if(NULL == new_graph) {
+    fprintf(stderr, "!!! calloc error in graph_new\n");
+    return NULL;
+  }
   
   return new_graph;
 }
@@ -38,7 +40,10 @@ bool graph_add_node(Graph *pGraph, node_object *obj) {
   }
 
   n = calloc(1,sizeof(node));
-  assert(NULL != n);
+  if(NULL == n) {
+    fprintf(stderr, "!!! calloc error in graph_add_node\n");
+    return 0;
+  }
   n->obj = obj;
   if(prev != NULL) { prev->next = n; }
   if(pGraph->nodes == NULL) { pGraph->nodes = n; }
@@ -71,7 +76,10 @@ bool graph_add_edge(Graph *pGraph, node_object *src_obj, node_object *dst_obj) {
     e = e->edge_next;
   }
   e = calloc(1, sizeof(edge));
-  assert(NULL != e);
+  if(NULL == e) {
+     fprintf(stderr, "!!! calloc error in graph_add_edge\n");
+     return false;
+  }
   e->weight = EDGE_WEIGHT;
   e->dst_node = dst;
   if(prev != NULL) { prev->edge_next = e; }

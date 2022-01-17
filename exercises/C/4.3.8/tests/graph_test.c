@@ -56,9 +56,12 @@ static inline int rand_value(void)
 // HELPER FUNCTIONS
 node_object *new_obj(int value)
 {
-    node_object *pNode = (node_object *)calloc(1, sizeof(node_object));
-    assert(NULL != pNode);
-
+  node_object *pNode = (node_object *)calloc(1, sizeof(node_object));
+  if(NULL == s) {
+    fprintf(stderr, "!!! calloc error in new_obj\n");
+    return NULL;
+  }
+  
     pNode->data = value;
 
     return pNode;
@@ -111,7 +114,10 @@ static void test_graph_add_node(void)
     int value = rand_container_size();
     
     int * values = calloc(value, sizeof(int));
-    assert(NULL != values);
+    if(NULL == values) {
+      fprintf(stderr, "!!! calloc error in test_graph_add_node\n");
+      return;
+    }
 
     for(int i = 0; i < value; i++)
     {
