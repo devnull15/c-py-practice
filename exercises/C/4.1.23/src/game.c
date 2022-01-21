@@ -169,12 +169,17 @@ typedef struct _character_context
 void del_doge(inventory_item_t *doge) {
   if(doge->type != ITEM_DOGE) { return; }
   free(doge->name);
+  doge->name = NULL;
   return;
 }
 
 inventory_item_t * create_item(uint32_t item_type)
 {
     inventory_item_t * new_item = malloc(sizeof(inventory_item_t));
+    if(NULL == new_item) {
+      fprintf(stderr, "!!! malloc error in inventory_item_t\n");
+      return NULL;
+    }
 
     if (new_item != NULL) 
     {
@@ -251,6 +256,7 @@ uint8_t remove_item_from_inventory(context_t *player, uint32_t item_index)
             success = 1;
 	    if(inventory_ptr->type == ITEM_DOGE) { del_doge(inventory_ptr); } //my code
 	    free(inventory_ptr); //my code
+	    inventory_ptr = NULL;
             break;
         }
         previous_ptr = inventory_ptr;
@@ -272,6 +278,7 @@ uint8_t drop_item_from_bag(context_t *player, uint32_t item_index)
         if ( inventory_ptr->item_index == item_index ) 
         {
             free(inventory_ptr); // no memory leaks here :)
+	    inventory_ptr = NULL;
             success = 1;
             break;
         }
@@ -329,6 +336,10 @@ void add_item_to_bag(context_t *player, uint32_t item_type)
         memset(buffer,'\0',MAX_STR_LEN);
         uint32_t buff_len = read_until_newline_or_limit((char *)&buffer,MAX_STR_LEN);
         new_item->name = malloc(buff_len+1); //this fucker...
+	if(NULL == new_item->name) {
+	  fprintf(stderr, "!!! malloc error in add_item_to_bag\n");
+	  return;
+	}
         memcpy(new_item->name,&buffer,buff_len);
         new_item->name[buff_len] = '\0';
     }
@@ -339,6 +350,10 @@ void add_item_to_bag(context_t *player, uint32_t item_type)
 context_t * create_new_player()
 {
     context_t *new_player = calloc(1,sizeof(context_t));
+    if(NULL == new_player) {
+      fprintf(stderr, "!!! calloc error in create_new_player\n");
+      return NULL;
+    }
 
     new_player->health = INITIAL_HEALTH;
     new_player->coins = INITIAL_COIN;
@@ -934,9 +949,11 @@ void * play_game(void *arg)
       next = player->bag->next;
       if(player->bag->type == ITEM_DOGE) { del_doge(player->bag); }
       free(player->bag);
+      player->bag = NULL;
       player->bag = next;
     }
     free(player);
+    player = NULL;
     //my code
     
     return arg;
