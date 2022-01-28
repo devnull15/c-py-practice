@@ -84,7 +84,10 @@ int broadcast_udp(int port, char *buffer, int length) {
     return sockfd;
   }
   int optval = 1;
-  setsockopt(sockfd, SOL_SOCKET, SO_BROADCAST, &optval, sizeof(optval));
+  if(-1 == setsockopt(sockfd, SOL_SOCKET, SO_BROADCAST, &optval, sizeof(optval))) {
+    perror("* setsockopt error");
+    return -1;
+  }
   //**Socket success
 
   //**sendto
