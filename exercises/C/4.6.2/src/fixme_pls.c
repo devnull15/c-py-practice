@@ -37,20 +37,32 @@ bool name_is_valid(char *name)
 char *sanitize_name(char *name)
 {
   char *new = calloc(strlen(name)+1, 1);
-    char *new_p = new;
-    char *c = name;
-    while(*c != 0) {
-      if(!_char_is_valid(*c)) {
-	while(!_char_is_valid(*c) && *c != 0) { c++; }
-      }
-
-      if(*c == 0) { break; }
-      memcpy(new_p, c, 1);
-      c++;
-      new_p++;
+  if(NULL == new) {
+    fprintf(stderr, "!!! calloc error in santitize_name\n");
+      goto ERROR;
+  }
+  char *new_p = new;
+  char *c = name;
+  while(*c != 0) {
+    if(!_char_is_valid(*c)) {
+      while(!_char_is_valid(*c) && *c != 0) { c++; }
     }
-    //strcpy(new, name);
-    return new;
+    
+    if(*c == 0) { break; }
+    if(NULL == memcpy(new_p, c, 1)) {
+      fprintf(stderr,"!!! memcpy error in santitize_name\n");
+      goto FREE_ERROR;
+    }
+    c++;
+    new_p++;
+  }
+  //strcpy(new, name);
+  return new;
+
+ FREE_ERROR:
+  free(new);
+ ERROR:
+  return NULL;
 }
 
 void ask_name(void)
@@ -95,7 +107,9 @@ void play_game(void)
     struct test goodluck;
     zero_memory(&goodluck, sizeof(struct test));
     puts("Try your luck");
-    fgets(goodluck.buf, BUFSIZE, stdin);
+    if(NULL == fgets(goodluck.buf, BUFSIZE, stdin)) {
+      fprintf(stderr, "!!! fgets errror in play_game\n");
+    }
     if (goodluck.val == 0xdeadbeef)
     {
         puts("Good job");
@@ -129,6 +143,10 @@ int my_main(void)
 {
     unsigned int choice = 0;
     usr = malloc(sizeof(struct test));
+    if(NULL == usr) {
+      fprintf(stderr, "malloc error in my_main\n");
+      return -1;
+    }
     zero_memory(usr, sizeof(struct test));
     ask_name();
     printf("Welcome, ");
@@ -155,4 +173,6 @@ int my_main(void)
 	  puts("I didn't understand that");
         }
     }
+
+    return 0;
 }
