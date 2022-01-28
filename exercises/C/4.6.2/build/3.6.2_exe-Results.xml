@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites errors="0" failures="0" tests="7" name="./build/3.6.2_exe-Results.xml" time="0.001407">
+  <testsuite errors="0" failures="0" tests="7" name="secure_code_tests" time="0.001404">
+    <testcase classname=".secure_code_tests" name="test of name_is_valid()" time="0.000002">
+    </testcase>
+    <testcase classname=".secure_code_tests" name="test of sanitize_name()" time="0.000003">
+    </testcase>
+    <testcase classname=".secure_code_tests" name="test bss overflow" time="0.000382">
+    </testcase>
+    <testcase classname=".secure_code_tests" name="test main format string" time="0.000275">
+    </testcase>
+    <testcase classname=".secure_code_tests" name="test echo" time="0.000345">
+    </testcase>
+    <testcase classname=".secure_code_tests" name="test play game" time="0.000313">
+    </testcase>
+    <testcase classname=".secure_code_tests" name="test zero memory" time="0.000004">
+    </testcase>
+  </testsuite>
+</testsuites>

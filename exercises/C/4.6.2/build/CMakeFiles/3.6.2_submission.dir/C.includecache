@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/csd/devon-e-budzitowski-basic/exercises/C/4.6.2/include/fixme_pls.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+stdbool.h
+-
+
+/root/csd/devon-e-budzitowski-basic/exercises/C/4.6.2/src/fixme_pls.c
+../include/fixme_pls.h
+/root/csd/devon-e-budzitowski-basic/exercises/C/4.6.2/include/fixme_pls.h
+ctype.h
+-
+

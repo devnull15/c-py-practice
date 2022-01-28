@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC   -shared -Wl,-soname,lib3.6.2_submission.so -o lib3.6.2_submission.so CMakeFiles/3.6.2_submission.dir/src/fixme_pls.c.o 
