@@ -91,22 +91,27 @@ static int8_t print_array_entry(array_node_t * p_in_entry) {
  */
 
 array_t* create_array(uint64_t n) {
-	if(0==n) { return NULL; } 
-	array_t* a = calloc(1,sizeof(array_t));
-	if(a == NULL) {
-	  fprintf(stderr, "! create_array: calloc failure\n");
-	  exit(1);
-	}
-	if(NULL != a->p_array) {
-	  free(a);
-	  a = NULL;
-	}
-	else {
-	  a->p_array = calloc(n,sizeof(array_node_t));
-	  a->len = n;
-	}
-	
-	return a;
+  if(0==n) { return NULL; } 
+  array_t* a = calloc(1,sizeof(array_t));
+  if(NULL == a) {
+    goto ERR1;
+  }
+  if(NULL != a->p_array) {
+    goto ERR2;
+  }
+  else {
+    a->p_array = calloc(n,sizeof(array_node_t));
+    a->len = n;
+  }
+  
+  return a;
+
+ ERR2:
+  free(a);
+  a = NULL;
+ ERR1:
+  fprintf(stderr, "! create_array: calloc failure\n");
+  return NULL;
 }
 
 
@@ -119,15 +124,27 @@ array_t* create_array(uint64_t n) {
  */
 
 matrix_t * create_matrix(uint64_t x, uint64_t y) {
-	if(x==0 || y==0) { return NULL; }
-	matrix_t* m = calloc(1,sizeof(matrix_t));
-	m->pp_array = calloc(x,sizeof(array_t));
-	m->len = x;
-	for(uint64_t i = 0; i < x; i++) {
-	  m->pp_array[i] = create_array(y);
-	  if(NULL == m->pp_array[i]) { return NULL; }
-	}
-	return m;
+  if(x==0 || y==0) { return NULL; }
+  matrix_t* m = calloc(1,sizeof(matrix_t));
+  if(NULL == m) { goto ERR1; }
+  m->pp_array = calloc(x,sizeof(array_t));
+  if(NULL == m->pp_array) { goto ERR2; }
+  m->len = x;
+  for(uint64_t i = 0; i < x; i++) {
+    m->pp_array[i] = create_array(y);
+    if(NULL == m->pp_array[i]) { goto ERR3; }
+  }
+  return m;
+
+ ERR3:
+  free(m->pp_array);
+  m->pp_array = NULL;
+ ERR2:
+  free(m);
+  m = NULL;
+ ERR1:
+  fprintf(stderr, "! create_matrix: calloc failure\n");
+  return NULL;
 }
 
 /**
