@@ -27,7 +27,7 @@ void print_sockaddr_udp_serv(struct sockaddr_storage *in) {
   }
 
   
-  fprintf(stderr,"saddr = family:%d (2=AF_INET, 10=AF_INET6)\n\t%s:%d\n",
+  fprintf(stderr,"* saddr = family:%d (2=AF_INET, 10=AF_INET6)\n\t%s:%d\n",
 	  in->ss_family, addr, port);
   
   
@@ -78,8 +78,8 @@ uint32_t _mygethostname(char *data) {
   if((err = getaddrinfo(data,NULL,&hints, &res)) != 0) { //Valgrind reports memory leak here
     fprintf(stderr, "getaddrinfo failed = %i\n", err);
     perror("* getaddrinfo error");
-    freeaddrinfo(res); //but I free here
-    return -1;
+    ret = -1;
+    goto CLEANUP;
   }
 
   //debug
@@ -91,9 +91,9 @@ uint32_t _mygethostname(char *data) {
   // getting 32bit ip out of sockaddr-gross
   ret = htonl(((struct sockaddr_in*)(res->ai_addr))->sin_addr.s_addr); 
   
-  //**cleanup
-  freeaddrinfo(res); // and here?
-  //**cleanup done
+ CLEANUP:
+  freeaddrinfo(res); // but I free it here?
+  res = NULL;
 
   return ret;
 }
@@ -118,9 +118,7 @@ void _respond_udp(uint32_t *opcode, char *data, uint32_t *sen) {
   }
   
   else if(*opcode == 0x1) { // hostname
-
     *sen = _mygethostname(data);
-    
   }
 
   else if(*opcode == 0xFFFFFFFF) { *sen = 0xFFFFFFFF; }// TERM
@@ -233,7 +231,7 @@ void converse_udp(uint16_t port, int ipDomain) {
   if((err = getaddrinfo(NULL,p,&hints, &res)) != 0) {
     fprintf(stderr, "getaddrinfo failed = %i\n", err);
     perror("* getaddrinfo error");
-    return;
+    goto CLEANUP1;
   }
   //**getaddrinfo succes
   
@@ -249,7 +247,7 @@ void converse_udp(uint16_t port, int ipDomain) {
   if ((sockfd = socket(res->ai_family, res->ai_socktype, res->ai_protocol)) < 0 ) {
     fprintf(stderr, "sockfd failed = %i\n", sockfd);
     perror("* socket error");
-    return;
+    goto CLEANUP2;
   }
   //**Socket success
   
@@ -257,14 +255,10 @@ void converse_udp(uint16_t port, int ipDomain) {
   if (bind(sockfd, res->ai_addr, res->ai_addrlen)<0) {
     fprintf(stderr, "* bind error\n");
     perror("bind"); 
-    return;
+    goto CLEANUP2;
   }
   //**bind done
-  
-  //**cleanup
-  freeaddrinfo(res);
-  //**cleanup done  
-  
+    
   //**send/recv loop
   uint32_t sen, opcode;
   char rec[HOST_NAME_MAX+OPCODE_LEN] = {0};
@@ -277,7 +271,7 @@ void converse_udp(uint16_t port, int ipDomain) {
   if(recvfrom(sockfd, &rec, HOST_NAME_MAX, 0, (struct sockaddr *)&client, &client_len) < 0) {
     fprintf(stderr, "* recvfrom error\n");
     perror("recvfrom");
-    return;
+    goto CLEANUP2;
   }
   
   //split rec into opcode and data
@@ -287,7 +281,7 @@ void converse_udp(uint16_t port, int ipDomain) {
   
   if(_check_port(&opcode) == 0) {
     fprintf(stderr, "* check_port error\n");
-    return;
+    goto CLEANUP2;
   }
 
   //if we're here port command was good
@@ -310,7 +304,7 @@ void converse_udp(uint16_t port, int ipDomain) {
     if(recvfrom(sockfd, &rec, HOST_NAME_MAX, 0, (struct sockaddr *)&client, &client_len) < 0) {
       fprintf(stderr, "* recvfrom error\n");
       perror("recvfrom");
-      return;
+      goto CLEANUP2;
     }
 
     //split rec into opcode and data
@@ -330,15 +324,18 @@ void converse_udp(uint16_t port, int ipDomain) {
     }
   }
   //**send/recs loop done
-  
-  //**close
-  close(sockfd);
-  //**close
-  
+
   //**debug
   fprintf(stderr, "Done!\n");
   //**debug
+
   
+ CLEANUP2:
+  close(sockfd);
+ CLEANUP1:
+  fprintf(stderr, "! Cleanup\n");
+  freeaddrinfo(res);
+  res = NULL;
   
   return;
 }
