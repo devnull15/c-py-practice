@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/csd/devon-e-budzitowski-basic/exercises/C/3.1.4/include/arrays.h
+stdint.h
+-
+float.h
+-
+stdio.h
+-
+unistd.h
+-
+
+/root/csd/devon-e-budzitowski-basic/exercises/C/3.1.4/tests/arrays_test.c
+../include/arrays.h
+/root/csd/devon-e-budzitowski-basic/exercises/C/3.1.4/include/arrays.h
+stdlib.h
+-
+CUnit/CUnitCI.h
+-
+CUnit/CUnit.h
+-
+

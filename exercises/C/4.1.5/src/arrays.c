@@ -5,21 +5,22 @@
 #include <stdlib.h>
 #include <string.h>
 #include "../include/arrays.h"
+// assumes the largest str representation of an entry will be characters long maximum.
+#define MAX_ENTRY_STR_SIZE 20
 
 volatile int g_arrays_fd_stdout = STDOUT_FILENO;
 volatile int g_arrays_fd_stderr = STDERR_FILENO;
 volatile int g_arrays_fd_stdin  = STDIN_FILENO;
-int MAX_ENTRY_STR_SIZE = 20; // assumes the largest str representation of an entry will be characters long maximum.
 
 
 // these have been provided for the student
-static void local_printf(const char * format, ...) 
-{
+static void local_printf(const char * format, ...) {
   va_list args; 
   va_start( args, format);
   vdprintf( g_arrays_fd_stdout, format, args ); 
   va_end( args );
 
+  
   //debug
   va_start( args, format);
   vdprintf(1, format, args ); 
@@ -28,15 +29,13 @@ static void local_printf(const char * format, ...)
 }
 
 // these have been provided for the student
-static int8_t print_array_entry(array_node_t * p_in_entry) 
-{
+static int8_t print_array_entry(array_node_t * p_in_entry) {
   int8_t ret = -1;
   array_node_entry_t entry = p_in_entry->entry;
   if (NULL != p_in_entry) 
   {
     switch(p_in_entry->type)
-      {
-	
+      {	
       case NODE_TYPE_INT16 :
         local_printf("%d", entry.int16);
 	break;
@@ -91,15 +90,21 @@ static int8_t print_array_entry(array_node_t * p_in_entry)
  * @return array_node* returns a pointer to the array of array nodes  or NULL on error, or when n is 0
  */
 
-array_t* create_array(uint64_t n){
-	if(n==0) { return NULL; }
-	array_t* a = malloc(sizeof(array_t));
-	a->p_array = calloc(n,sizeof(array_node_t));
-	a->len = n;
-
-	//debug
-	//printf("\n** my test: %p->%p\n", a, a->p_array);
-	//debug
+array_t* create_array(uint64_t n) {
+	if(0==n) { return NULL; } 
+	array_t* a = calloc(1,sizeof(array_t));
+	if(a == NULL) {
+	  fprintf(stderr, "! create_array: calloc failure\n");
+	  exit(1);
+	}
+	if(NULL != a->p_array) {
+	  free(a);
+	  a = NULL;
+	}
+	else {
+	  a->p_array = calloc(n,sizeof(array_node_t));
+	  a->len = n;
+	}
 	
 	return a;
 }
@@ -113,13 +118,14 @@ array_t* create_array(uint64_t n){
  * @return matrix_t* a pointer to the matrix object or NULL on error; returns NULL if x or y is 0
  */
 
-matrix_t * create_matrix(uint64_t x, uint64_t y){
+matrix_t * create_matrix(uint64_t x, uint64_t y) {
 	if(x==0 || y==0) { return NULL; }
-	matrix_t* m = malloc(sizeof(matrix_t));
+	matrix_t* m = calloc(1,sizeof(matrix_t));
 	m->pp_array = calloc(x,sizeof(array_t));
 	m->len = x;
 	for(uint64_t i = 0; i < x; i++) {
-		m->pp_array[i] = create_array(y);
+	  m->pp_array[i] = create_array(y);
+	  if(NULL == m->pp_array[i]) { return NULL; }
 	}
 	return m;
 }
@@ -136,11 +142,6 @@ matrix_t * create_matrix(uint64_t x, uint64_t y){
 
 
 int8_t set_array_node(array_t * array, uint64_t offset, uint8_t type, uint64_t val){
-  //debug
-  //printf("\n** my test: %p->%p[%li] = %ld\n", array, array->p_array, offset, (array->p_array)[0].entry.uint64);
-  //printf("set_array_node test %i\n", array);
-  //printf("setting array at offset %ld to %ld %f\n", offset, val, (float)val);
-  //debug
 
   if(array == NULL || array->p_array == NULL || offset>=array->len) { return -1; }
   
@@ -208,7 +209,6 @@ void print_array(array_t * p_array){
 		if(i != p_array->len-1) { local_printf(","); }
 	}
 	local_printf("\n");
-	return;
 }
 
 
@@ -226,7 +226,6 @@ void print_matrix(matrix_t * p_matrix){
 	for(uint64_t i = 0; i < p_matrix->len; i++) {
 		print_array(p_matrix->pp_array[i]);
 	}
-	return;
 }
 
 /**
@@ -237,8 +236,9 @@ void print_matrix(matrix_t * p_matrix){
 
 void free_array(array_t * p_array){
 	free(p_array->p_array);
+	p_array->p_array = NULL;
 	free(p_array);	
-	return;
+	p_array = NULL;	
 }
 
 /**
@@ -247,12 +247,14 @@ void free_array(array_t * p_array){
  * @param p_matrix pointer to the object to be freed
  */
 void free_matrix(matrix_t * p_matrix){
-	
-	for(uint64_t i = 0; i < p_matrix->len; i++) {
-		if(p_matrix->pp_array[i] != NULL) { free_array(p_matrix->pp_array[i]); }
-	}
-	free(p_matrix->pp_array);
-	free(p_matrix);
-	return;
+
+  if(NULL == p_matrix) { return; }
+  for(uint64_t i = 0; i < p_matrix->len; i++) {
+    if(p_matrix->pp_array[i] != NULL) { free_array(p_matrix->pp_array[i]); }
+  }
+  free(p_matrix->pp_array);
+  p_matrix->pp_array = NULL;
+  free(p_matrix);
+  p_matrix = NULL;
 }
 

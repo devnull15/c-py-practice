@@ -1,6 +1,9 @@
 #i have never used cmake before send help
 
 cmake_minimum_required(VERSION 3.16)
+if(NOT TARGET CUnitCI)
+	message(WARNING " If this fails because of CIUnit.h then you aren't in the schoolhouse docker container, use the following line: docker run -v '$(pwd):/code' -it registry.cybbh.space/17d/bolc/docker/build:latest /bin/bash")
+endif()
 set(JQR_ITEM "3.1.4")
 project(${JQR_ITEM} "C")
 
