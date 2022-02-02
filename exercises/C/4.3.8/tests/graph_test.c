@@ -57,7 +57,7 @@ static inline int rand_value(void)
 node_object *new_obj(int value)
 {
   node_object *pNode = (node_object *)calloc(1, sizeof(node_object));
-  if(NULL == s) {
+  if(NULL == pNode) {
     fprintf(stderr, "!!! calloc error in new_obj\n");
     return NULL;
   }
