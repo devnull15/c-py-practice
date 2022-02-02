@@ -33,7 +33,7 @@ static void local_printf(const char * format, ...)
 STACK_p_t create_stack(int *items, const size_t numItems) {
   STACK_p_t s = calloc(1, sizeof(STACK_t));
   if(NULL == s) {
-    fprintf(stderr, "!!! calloc error in create_stack\n")
+    fprintf(stderr, "!!! calloc error in create_stack\n");
     return NULL;
   }
   for(size_t i = 1; i <= numItems; i++) {
