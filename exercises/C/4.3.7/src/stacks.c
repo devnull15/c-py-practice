@@ -54,7 +54,7 @@ STACK_p_t create_stack(int *items, const size_t numItems) {
  */
 void push(STACK_p_t stack, const int item) {
   if(NULL == stack) {
-    fprintf(stderr, "!!! NULL stack in push\n")
+    fprintf(stderr, "!!! NULL stack in push\n");
       return NULL;
   }
   if(stack == NULL) { return; }
