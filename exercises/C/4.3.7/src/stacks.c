@@ -55,7 +55,7 @@ STACK_p_t create_stack(int *items, const size_t numItems) {
 void push(STACK_p_t stack, const int item) {
   if(NULL == stack) {
     fprintf(stderr, "!!! NULL stack in push\n");
-      return NULL;
+      return;
   }
   if(stack == NULL) { return; }
   NODE_p_t n = calloc(1, sizeof(NODE_t));
