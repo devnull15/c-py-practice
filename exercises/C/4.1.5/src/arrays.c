@@ -91,27 +91,31 @@ static int8_t print_array_entry(array_node_t * p_in_entry) {
  */
 
 array_t* create_array(uint64_t n) {
-  if(0==n) { return NULL; } 
-  array_t* a = calloc(1,sizeof(array_t));
+  array_t* ret = NULL;
+  array_t* a = NULL;
+  if(0==n) { goto END; }
+  
+  a = calloc(1,sizeof(array_t));
   if(NULL == a) {
-    goto ERR1;
+    fprintf(stderr, "! create_array: calloc failure\n");
+    goto END;
   }
-  if(NULL != a->p_array) {
-    goto ERR2;
-  }
-  else {
-    a->p_array = calloc(n,sizeof(array_node_t));
-    a->len = n;
+
+  a->p_array = calloc(n,sizeof(array_node_t));
+  a->len = n;
+  
+  if(NULL == a->p_array) {
+    fprintf(stderr, "! create_array: calloc failure\n");
+    goto END;
   }
   
-  return a;
-
- ERR2:
+  ret = a;
+  a = NULL;
+  
+ END:
   free(a);
   a = NULL;
- ERR1:
-  fprintf(stderr, "! create_array: calloc failure\n");
-  return NULL;
+  return ret;
 }
 
 
