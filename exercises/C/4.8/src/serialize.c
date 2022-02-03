@@ -25,37 +25,30 @@ proto_item_node_t *_readint(int,uint8_t);
 proto_item_node_t *_readstr(int);
 proto_item_node_t *_readarray(int);
 proto_item_node_t *_readdict(int);
-int _read_handler(int,void*,int);
+int _read_handler(int,void*,uint64_t);
 int _writeint(int,proto_item_node_t*);
 int _wriestr(int,proto_string_t*);
 int _writearray(int,proto_array_t*);
 int _writedict(int,proto_dict_t*);
-int _write_handler(int,char*,int);
+int _write_handler(int,char*,uint64_t);
 #endif
 
 
-int _read_handler(int fd, void* buf, int readlen) {
-  int ret = read(fd,buf,readlen);
-  if(-1 == ret) {
-    perror("error in _read_handler");
-    goto RET;
-  }
+int _read_handler(int fd, void* buf, uint64_t readlen) {
 
-  //print_buffer_as_hex(buf, ret);
+  int ret = 0;
+  uint64_t total_read = 0;
   
-  if(readlen > ret) {
-    fprintf(stderr, "!!! incomplete read: %d>%d -- Rereading...\n", readlen, ret);
-    while(readlen > 0) {
-      buf += ret;
-      readlen -= ret;
-      ret = read(fd,buf,readlen);
-      if(-1 == ret) {
-	perror("error in _read_handler");
-	goto RET;
-      }
+  while (total_read < readlen) {
+    ret = read(fd, &((char*)buf)[total_read], readlen - total_read);
+    if (0 > ret) {
+      perror("error in _read_handler");
+      goto RET;
     }
+    
+    total_read += ret;
   }
-  
+    
  RET:
   return ret;
 }
@@ -64,40 +57,44 @@ proto_item_node_t *_readdict(int fd) {
 
   uint8_t last_item = 0;
   uint8_t first = 1;
-  
-  
+  proto_item_node_t *item = NULL;
+  proto_item_node_t *ret = NULL;
+  proto_dict_t *dict = NULL;
+
   // Make item
-  proto_item_node_t *item = calloc(1,sizeof(proto_item_node_t));
+  item = calloc(1,sizeof(proto_item_node_t));
   if(NULL == item) {
-    goto ERR1;
+    perror("error in _readdict");
+    goto ERR;
   }
   item->value.dict_p = calloc(1,sizeof(proto_dict_t));
   if(NULL == item->value.dict_p) {
-    goto ERR2;
+    perror("error in _readdict");    
+    goto ERR;
   }
-  proto_dict_t *dict = item->value.dict_p; //for convenience
+  dict = item->value.dict_p; //for convenience
   dict->items = calloc(DICT_DEFAULT_LEN,sizeof(proto_dict_item_t));
-    if(NULL == dict->items) {
-    goto ERR3;
+  if(NULL == dict->items) {
+    perror("error in _readdict");
+    goto ERR;
   }
 
   proto_item_node_t *next_node = NULL;
   uint8_t key_header = 0;
   uint8_t val_header = 0;
 
-  
   // Set header
   item->type = PROTO_DICT;
 	
   while(!last_item) {    
     // read last item
     if(-1 == _read_handler(fd,(void*)&last_item,LAST_ITEM_LEN)) {
-      goto ERR4;
+      goto ERR;
     }
     
     //read key
     if(-1 == _read_handler(fd,(void*)&key_header,HEADER_LEN)) {
-      goto ERR4;
+      goto ERR;
     }
     if(first && key_header == PROTO_NULL) {
       free(dict->items);
@@ -106,16 +103,16 @@ proto_item_node_t *_readdict(int fd) {
     }
     if(!first && key_header == PROTO_NULL) {
       fprintf(stderr, "!!! Can't have a PROTO_NULL after the first dictionary key.\n");
-      goto RET_NULL;
+      goto ERR;
     }
     
     //read value
     if(-1 == _read_handler(fd,(void*)&val_header,HEADER_LEN)) {
-      goto ERR4;
+      goto ERR;
     }
     if(val_header == PROTO_NULL) {
       fprintf(stderr, "!!! Can't have a PROTO_NULL in the dictionary value\n");
-      goto RET_NULL;
+      goto ERR;
     }
 
     //copy key
@@ -131,22 +128,21 @@ proto_item_node_t *_readdict(int fd) {
     first = 0;
     dict->size += 1;
   }
+  
+  ret = item;
+  item = NULL;
 
-  return item;
-
- ERR4:
-  free(dict->items);
-  dict->items = NULL;
- ERR3:
-  free(item->value.dict_p);
-  item->value.dict_p = NULL;
- ERR2:
+ ERR:
+  if(NULL != item) {
+    free(item->value.dict_p->items);
+    item->value.dict_p->items = NULL;
+    free(item->value.dict_p);
+    item->value.dict_p = NULL;
+  }
   free(item);
   item = NULL;
- ERR1:
-  perror("error in _readdict");
- RET_NULL:
-  return NULL;
+  
+  return ret;
 }
 
 
@@ -154,22 +150,29 @@ proto_item_node_t *_readarray(int fd) {
 
   uint8_t last_item = 0;
   uint8_t first = 1;
+  proto_item_node_t *item = NULL;
+  proto_item_node_t *ret = NULL;
+  proto_array_t *arr = NULL;
+  proto_item_node_t *next_node = NULL;
+  
   
   // Make item
-  proto_item_node_t *item = calloc(1,sizeof(proto_item_node_t));
+  item = calloc(1,sizeof(proto_item_node_t));
   if(NULL == item) {
-    goto ERR1;
+    perror("error in _readarray");
+    goto ERR;
   }
   item->value.array_p = calloc(1,sizeof(proto_array_t));
   if(NULL == item->value.array_p) {
-    goto ERR2;
+    perror("error in _readarray");
+    goto ERR;
   }
-  proto_array_t *arr = item->value.array_p; //for convenience
+  arr = item->value.array_p; //for convenience
   arr->nodes = calloc(ARR_DEFAULT_LEN,sizeof(proto_item_node_t));
   if(NULL == arr->nodes) {
-    goto ERR3;
+    perror("error in _readarray");
+    goto ERR;
   }
-  proto_item_node_t *next_node = NULL;
 
 
   // Set header
@@ -178,7 +181,8 @@ proto_item_node_t *_readarray(int fd) {
   while(!last_item) {    
     // read last item
     if(-1 == _read_handler(fd,(void*)&last_item,LAST_ITEM_LEN)) {
-      goto ERR4;
+      perror("error in _readarray");
+      goto ERR;
     }
     
     //read data type
@@ -189,7 +193,7 @@ proto_item_node_t *_readarray(int fd) {
     }
     if(!first && next_node == NULL) {
       fprintf(stderr, "!!! Can't have a PROTO_NULL after the first node of an array.\n");
-      goto RET_NULL;
+      goto ERR;
     }
     if(next_node != NULL) {
       memcpy(&arr->nodes[arr->size], next_node, sizeof(proto_item_node_t));
@@ -199,21 +203,20 @@ proto_item_node_t *_readarray(int fd) {
     first = 0;
   }
 
-  return item;
+  ret = item;
+  item = NULL;
 
- ERR4:
-  free(arr->nodes);
-  arr->nodes = NULL;
- ERR3:
-  free(item->value.array_p);
-  item->value.array_p = NULL;
- ERR2:
+ ERR:
+  if(NULL != item) {
+    free(item->value.array_p->nodes);
+    item->value.array_p->nodes = NULL;
+    free(item->value.array_p);
+    item->value.array_p = NULL;
+  }
   free(item);
   item = NULL;
- ERR1:
-  perror("error in _readarray");
- RET_NULL:
-  return NULL;
+
+  return ret;
 }
 
 
@@ -222,20 +225,26 @@ proto_item_node_t *_readstr(int fd) {
   char buf[STR_MAX_LEN];
   uint16_t window_size = 0;
   uint8_t last_window = 0;
+  proto_item_node_t *item = NULL;
+  proto_item_node_t *ret = NULL;
+  proto_string_t *str = NULL; 
   
   // Make item
-  proto_item_node_t *item = calloc(1,sizeof(proto_item_node_t));
+  item = calloc(1,sizeof(proto_item_node_t));
   if(NULL == item) {
-    goto ERR1;
+    perror("error in _readstr");
+    goto ERR;
   }
   item->value.string_p = calloc(1,sizeof(proto_string_t));
   if(NULL == item->value.string_p) {
-    goto ERR2;
+    perror("error in _readstr");
+    goto ERR;
   }
-  proto_string_t *str = item->value.string_p; //for convenience
+  str = item->value.string_p; //for convenience
   str->string = calloc(1,LONG_STR_LEN);
   if(NULL == str->string) {
-    goto ERR3;
+    perror("error in _readstr");
+    goto ERR;
   }
   char *str_ptr = str->string;
 
@@ -248,78 +257,87 @@ proto_item_node_t *_readstr(int fd) {
     // read window len
     window_size = 0;
     if(-1 == _read_handler(fd,(void*)&window_size,STR_WINDOW_LENGTH_LEN)) {
-      goto ERR4;
+      perror("error in _readstr");
+      goto ERR;
     }
     window_size = be16toh(window_size);
     str->length += window_size;
     
     // read last window
     if(-1 == _read_handler(fd,(void*)&last_window,STR_LAST_WINDOW_LEN)) {
-      goto ERR4;
+      perror("error in _readstr");
+      goto ERR;
     }
     
     // read strs
     if(window_size > 0) {
       if(-1 == _read_handler(fd,buf,window_size)) {
-	goto ERR4;
+	perror("error in _readstr");
+	goto ERR;
       }
       memcpy(str_ptr, buf, window_size);
       str_ptr += window_size;
     }
   }
 
-  return item;
+  ret = item;
+  item = NULL;
 
- ERR4:
-  free(str->string);
-  str->string = NULL;
- ERR3:
-  free(item->value.string_p);
-  item->value.string_p = NULL;
- ERR2:
+ ERR:
+  if(NULL != item) {
+    free(item->value.string_p->string);
+    item->value.string_p->string = NULL;
+    free(item->value.string_p);
+    item->value.string_p = NULL;
+  }
   free(item);
   item = NULL;
- ERR1:
-  perror("error in _readstr");
-  return NULL;
+
+  return ret;
 }
 
 
 proto_item_node_t *_readint(int fd, uint8_t header) {
-  proto_item_node_t *item = calloc(1,sizeof(proto_item_node_t));
-   if(NULL == item) {
-     goto ERR1;
-   }
+  proto_item_node_t *item = NULL;
+  proto_item_node_t *ret = NULL;
   uint64_t buf = 0;
+  
+  item = calloc(1,sizeof(proto_item_node_t));
+  
+  if(NULL == item) {
+    goto ERR;
+  }
+
 
   if(header == PROTO_UINT64) {
     item->type = PROTO_UINT64;
     if(-1 == _read_handler(fd,(void*)&buf,sizeof(uint64_t))) {
-      goto ERR2;
+      perror("error in _readint");
+      goto ERR;
     }
     item->value.uint64 = be64toh(buf);
   }
   else if(header == PROTO_INT64) {
     item->type = PROTO_INT64;
     if(-1 ==_read_handler(fd,(void*)&buf,sizeof(int64_t))) {
-      goto ERR2;
+      perror("error in _readint");
+      goto ERR;
     }
     item->value.int64 = be64toh(buf);
   }
   else {
     fprintf(stderr, "!!! error in _readint\n");
-    goto RET_NULL;
+    goto ERR;
   }
 
-  return item;
+  ret = item;
+  item = NULL;
 
- ERR2:
+ ERR:
   free(item);
   item = NULL;
- ERR1:
-  perror("error in _readint");
- RET_NULL:
-  return NULL;
+
+  return ret;
 }
 
 proto_item_node_t * _deserialize_helper(int fd, uint8_t header) {
@@ -369,18 +387,20 @@ proto_item_node_t * proto_deserialize(int fd) {
   return _deserialize_helper(fd,header);
 }
 
-int _write_handler(int fd, char *buf, int writelen) {
-  fprintf(stderr, "! writing stuff...\n");
-  int ret = write(fd,buf,writelen);
-  if(-1 == ret) {
-    perror("error in _write_handler");
-    goto RET;
+int _write_handler(int fd, char *buf, uint64_t writelen) {
+
+  uint64_t total_write = 0;
+  int ret = 0;
+
+  while(total_write < writelen) {
+    ret = write(fd,buf,writelen);
+    if(0 > ret) {
+      perror("error in _write_handler");
+      goto RET;
+    }
+    total_write += ret;
   }
-  
-  if(writelen > ret) {
-    fprintf(stderr, "!!! incomplete write: %d>%d\n", writelen, ret);
-  }
-  
+       
  RET:  
   return ret;
 } 
@@ -392,8 +412,8 @@ int _writeint(int fd, proto_item_node_t *item) {
   char buf[INT_LEN];
   uint64_t num = htobe64(item->value.uint64);
   int writelen = 0;
+  
   memcpy(buf, &num, INT_LEN);
-  //print_buffer_as_hex((char*)(buf), HEADER_LEN+INT_LEN);
 
   writelen = INT_LEN;
   if(writelen > _write_handler(fd,buf,writelen)) {
