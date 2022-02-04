@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import os
+from pathlib import Path
 
 """JQR Items Covered
 
@@ -31,9 +31,8 @@ Brief: Add function parameters and your own implementation to complete
 
 def reading(f01):
     '''Open a file and return the contents'''
-    f = open(f01, 'r')
-    ret = f.read()
-    f.close()
+    with open(f01, 'r') as f:
+        ret = f.read()
     return ret
 
 
@@ -52,9 +51,8 @@ def parsing(f01):
 
 def writing(f01, quote):
     '''Write the quote to a file'''
-    f = open(f01, 'w')
-    ret = f.write(quote)
-    f.close()
+    with open(f01, 'w') as f:
+        ret = f.write(quote)
     return
 
 
@@ -75,8 +73,8 @@ def modifying(f01):
 def console(f01):
     '''Return file information using os'''
     print(f01)
-    print(os.path.getsize(f01))
-    print(os.path.getmtime(f01))
+    print(Path(f01).stat().st_size)
+    print(Path(f01).stat().st_mtime)
     return
 
 
@@ -95,18 +93,18 @@ def append(f01, str1):
 
 def delete(filename):
     '''Delete this file'''
-    os.remove(filename)
+    Path(filename).unlink()
     return
 
 
 def size(filename):
     '''Return the filesize of the given file'''
-    return os.path.getsize(filename)
+    return Path(filename).stat().st_size
 
 
 def path(filename):
     '''Return the path of the file'''
-    return os.path.abspath(filename)
+    return Path(filename).resolve()
 
 
 def insert(f01):
