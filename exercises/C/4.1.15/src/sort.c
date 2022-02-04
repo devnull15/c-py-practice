@@ -1,42 +1,40 @@
-/* #include <stdio.h> */
+#include <stdio.h>
 
-/* /\** */
-/*  * @brief Implement an Insertion sort routine using any algorithm of your choice.  */
-/*  *  */
-/*  * Input: */
-/*  * @param A - An Array of integer (pass by reference) */
-/*  * @param n - Size of input 'A' (integer array) */
-/*  *  */
-/*  * Output: */
-/*  * @return An Input 'A' should hold the sorted list of integers */
-/*  * No other explicit output */
-/*  *  */
-/*  *\/ */
+/**
+ * @brief Implement an Insertion sort routine using any algorithm of your choice.
+ *
+ * Input:
+ * @param A - An Array of integer (pass by reference)
+ * @param n - Size of input 'A' (integer array)
+ *
+ * Output:
+ * @return An Input 'A' should hold the sorted list of integers
+ * No other explicit output
+ *
+ */
 
 
-/* void print_array(int *A, int n) { */
-/*   printf("["); */
-/*   for(int i = 0; i<n; i++) { */
-/*     printf("%i,",A[i]); */
-/*   } */
-/*   printf("]\n"); */
-/*   return; */
-/* } */
+void print_array(int *A, int n) {
+  printf("[");
+  for(int i = 0; i<n; i++) {
+    printf("%i,",A[i]);
+  }
+  printf("]\n");
+  return;
+}
 
-/* void sort(int *A, int n) { */
-/*   //print_array(A,n); */
-/*   for(int i = 1; i < n; i++) { */
-/*     int temp = A[i]; //get current element */
-/*     int j = i-1; */
+void sort(int *A, int n) {
+  for(int i = 1; i < n; i++) {
+    int temp = A[i]; //get current element
+    int j = i-1;
     
-/*     while(j >= 0 && temp < A[j]) { // iterate backwards through "sorted" list until there's nothing small */er
+    while(j >= 0 && temp < A[j]) { // iterate backwards through "sorted" list until there's nothing small
       A[j+1] = A[j];
       j--;
     } //while
     
     A[j+1] = temp; //set last element looked at to current element
   } //for
-  //print_array(A,n);
 
 }
 
@@ -61,8 +59,6 @@
  * 
  */
 int binarySearch(int *A, int item, int low, int high) {
-  //print_array(A,high);
-  //printf("low: %i high: %i\n",low,high);
   
   if(A[low] > item) { return 0; } // item is lower than array
   if(A[high] < item) { return high+1; } // item is higher than array
