@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="11" time="0.0">
+	<testsuite disabled="0" errors="0" failures="0" name="3.2.4" skipped="0" tests="11" time="0">
+		<testcase name="3.2.4-0" classname="test.class"/>
+		<testcase name="3.2.4-1" classname="test.class"/>
+		<testcase name="3.2.4-2" classname="test.class"/>
+		<testcase name="3.2.4-3" classname="test.class"/>
+		<testcase name="3.2.4-4" classname="test.class"/>
+		<testcase name="3.2.4-5" classname="test.class"/>
+		<testcase name="3.2.4-6" classname="test.class"/>
+		<testcase name="3.2.4-7" classname="test.class"/>
+		<testcase name="3.2.4-8" classname="test.class"/>
+		<testcase name="3.2.4-9" classname="test.class"/>
+		<testcase name="3.2.4-10" classname="test.class"/>
+	</testsuite>
+</testsuites>
