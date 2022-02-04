@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 
-from singleton_decorator import singleton
-
 """ Docstrings for 3.2.2 types demonstrate """
 
 def integer():
@@ -40,8 +38,15 @@ def toople():
     x = (1,2,3,4)
     return x
 
-
-@singleton
+def my_singleton(inclass):
+    singleton = {}
+    def getsingleton(*args, **kwargs):
+        if inclass not in singleton:
+            singleton[inclass] = inclass(*args, **kwargs)
+        return singleton[inclass]
+    return getsingleton
+    
+@my_singleton
 class MyLogger:
     """
     Implement a class that will function as a logger.
