@@ -1,0 +1,5 @@
+- overall: 3.1.14
+  test_files: [./build/3.1.14_exe-Results.xml]    # parsed relative to the location of this file
+  sub_items:
+  - name: SORT_TEST_suite              # name of the test suite to load from in the xml
+    test_count: 1                    # number of tests to find in the test suite 
