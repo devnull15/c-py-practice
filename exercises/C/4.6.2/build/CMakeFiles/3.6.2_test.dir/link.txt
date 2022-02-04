@@ -1,1 +1,0 @@
-/usr/bin/cc -fPIC   -shared -Wl,-soname,lib3.6.2_test.so -o lib3.6.2_test.so CMakeFiles/3.6.2_test.dir/tests/secure_test.c.o 
