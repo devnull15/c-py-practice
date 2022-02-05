@@ -1,5 +1,3 @@
-#i have never used cmake before send help
-
 cmake_minimum_required(VERSION 3.16)
 set(JQR_ITEM "3.8")
 project(${JQR_ITEM} "C")
@@ -18,5 +16,7 @@ add_library(${ITEM_TESTS} SHARED "tests/general_tests.h" "tests/partial_write_te
 add_executable(${ITEM_EXEC} tests/main_tests.c "src/serialize.c")
 
 target_link_libraries(${ITEM_EXEC} ${ITEM_SUBMISSION} ${ITEM_TESTS} cunit rt)
-target_compile_options(${ITEM_EXEC} PUBLIC "-Wall" "-Wextra" "-g")
+target_compile_options(${ITEM_EXEC} PUBLIC "-Wall" "-Wextra" "-g" "-fno-omit-frame-pointer" "-fsanitize=address")
+target_link_options(${ITEM_EXEC} PUBLIC "-Wall" "-Wextra" "-g" "-fno-omit-frame-pointer" "-fsanitize=address")
 add_test(${JQR_ITEM}_tests                ${ITEM_EXEC})
+
