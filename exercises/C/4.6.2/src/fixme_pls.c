@@ -68,8 +68,11 @@ char *sanitize_name(char *name)
 void ask_name(void)
 {
     char _name[BUFSIZE];
+    char fmt[32] = {0};
+
+    snprintf(fmt, sizeof(fmt), "%%%ds", BUFSIZE-1);
     printf("What is your name?\n> ");
-    scanf("%s", _name);
+    scanf(fmt, _name);
     if (name_is_valid(_name))
     {
       strncpy(usr->buf, _name,BUFSIZE-1);
@@ -97,7 +100,7 @@ void echo(void)
 {
     char buf[0x100];
     puts("What do you want to say?");
-    scanf("%256s", buf);
+    scanf("%255s", buf);
     printf("%s", buf);
 }
 

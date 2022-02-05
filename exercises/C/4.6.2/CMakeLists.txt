@@ -18,5 +18,6 @@ add_library(${ITEM_TESTS} SHARED "tests/secure_test.c")
 add_executable(${ITEM_EXEC} tests/main_tests.c "include/fixme_pls.h" "src/fixme_pls.c")
 
 target_link_libraries(${ITEM_EXEC} ${ITEM_SUBMISSION} ${ITEM_TESTS} cunit)
-target_compile_options(${ITEM_EXEC} PUBLIC "-Wall" "-Wextra" "-g" "-O0")
+target_compile_options(${ITEM_EXEC} PUBLIC "-Wall" "-Wextra" "-g" "-fno-omit-frame-pointer" "-fsanitize=address")
+target_link_options(${ITEM_EXEC} PUBLIC "-Wall" "-Wextra" "-g" "-fno-omit-frame-pointer" "-fsanitize=address")
 add_test(${JQR_ITEM}_tests                ${ITEM_EXEC})
