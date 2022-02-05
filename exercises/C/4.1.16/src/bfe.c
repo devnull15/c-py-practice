@@ -90,43 +90,57 @@ void input(char *dp) {
 
 int l_bracket(char *dp, FILE *ip) {
   char inst;
+  int stack = 1;
+  int ret = 0;
+
+  
   if(*dp != 0) { // if data pointer is not zero do nothing and continue
-    return 1;
+    ret = 1;
+    goto RET;
   }
   else { // else set ip to inst after ']'
-    int stack = 0;
-    while(']' != (inst = fgetc(ip)) && !stack) {
+
+    while(0 < stack) {
+      //DEBUG
+      //fprintf(stderr, "JUMP stack = %i // inst = %c // ip = %ld\n", stack, inst, ftell(ip));
+      inst = fgetc(ip);
       if(feof(ip)) { // eof reached, program fails syntax rule: '[...]'
-	return 0;
+	ret = 0;
+	goto RET;
       }
       if(inst=='[') { stack++; }
       if(inst==']') { stack--; }
-      if(stack<0) { return 0; } // too many ], syntax error
     }
   }
-  return 1;
+  ret = 1;
+  
+ RET:
+  return ret;
 }
   
-int r_bracket(char *dp, FILE *ip) {
-  char inst;
-  /* if(*dp == 0) { // if data pointer is zero do nothing and continue */
-  /*   return 1; */
-  /* } */
-
-  /* else { //else go back to matching '[' */
-  int stack = 0;
-  fseek(ip,-2,SEEK_CUR);
-  while('[' != (inst = fgetc(ip)) && !stack) { // rewind until we get to matching '['
-    if(ftell(ip) == 0) { return 0; } // beginning of file, syntax error
+int r_bracket(FILE *ip) {
+  char inst = 0;
+  int stack = 1;
+  int ret = 0;
+  
+  while(0 < stack) { // rewind until we get to matching '['
+    fseek(ip,-2,SEEK_CUR);
+    //DEBUG
+    //fprintf(stderr, "REWIND stack = %i // inst = %c // ip = %ld\n", stack, inst, ftell(ip));
+    if(ftell(ip) == 0) { // beginning of file, syntax error
+      ret = 0;
+      goto RET;
+    } 
+    inst = fgetc(ip);
     if(inst==']') { stack++; } // account for nested brackets
     if(inst=='[') { stack--; }
-    if(stack<0) { return 0; } // too many [, syntax error
-    fseek(ip,-2,SEEK_CUR);
   }
-    //}
+
   ungetc(inst,ip); // put [ back in stream
+  ret = 1;
   
-  return 1;
+ RET:
+  return ret ;
 }
 
 void err(char inst, int i) {
@@ -137,22 +151,21 @@ void err(char inst, int i) {
 
 int main_event_loop(char *fname) {
 
-  // open program file
-  FILE *ip = fopen(fname, "r"); // this is technically the instruction pointer
-  if(ip == NULL) { return 0; }
-
-  //data pointer
-  char *dp = calloc(DATA_ARRAY_SIZE,sizeof(char));
-  
-  // read in each command one by one (char by char).
+  FILE *ip =  NULL; 
+  int ret = 0;
   char inst; //current instruction
-  int i = 0; //counts # of instructions executed
+  char *darr = calloc(DATA_ARRAY_SIZE,sizeof(char)); //data array
+  char *dp = darr;    //data pointer
+
+  if(fname == NULL) {
+    ret = 1;
+    goto RET;
+  }
+
+  ip = fopen(fname, "r"); // instruction pointer
+    
   
   while(EOF != (inst = fgetc(ip))) {
-    
-    //debug
-    _ip_print(inst,i);
-    //debug
 
     switch(inst) {
 
@@ -182,42 +195,35 @@ int main_event_loop(char *fname) {
       
     case '[':
       if (!l_bracket(dp,ip)) {
-	err(inst,i);
-	return -1;
+	err(inst,ftell(ip));
+	ret = -1;
+	goto RET;
       }
-      //debug
-      inst = fgetc(ip);
-      fprintf(stderr,"char after [: %#hhx:%c\n",inst,inst);
-      ungetc(inst,ip);      
-      //debug
 
       break;
       
     case ']':
-      if (!r_bracket(dp, ip)) {
-	err(inst,i);
-	return -1;
+      if (!r_bracket(ip)) {
+	err(inst,ftell(ip));
+	ret = -1;
+	goto RET;
       }
-      //debug
-      inst = fgetc(ip);
-      fprintf(stderr,"char after ]: %#hhx:%c\n",inst,inst);
-      ungetc(inst,ip);
-      //debug
       
       break;
       
     default:
-      err(inst,i);
+      err(inst,ftell(ip));
     }
-
-    //debug
-    _dp_print(dp);
-    fprintf(stderr, "------------------------------\n");
-    //debug
-    
-    i++;
-    
   }
+
+  ret = 0;
   
-  return 0;
+  
+ RET:
+  if(NULL != ip) {
+    fclose(ip);
+  }
+  free(darr);
+  darr = NULL;
+  return ret;
 }
