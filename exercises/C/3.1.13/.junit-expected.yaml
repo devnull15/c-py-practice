@@ -1,6 +1,0 @@
-- overall: 3.1.13
-  test_files: [./build/3.1.13_exe-Results.xml]    # parsed relative to the location of this file
-  sub_items:
-  - name: "hash function test suite"                # name of the test suite to load from in the xml
-    test_count: 5                 # number of tests to find in the test suite 
-
