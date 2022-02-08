@@ -43,5 +43,6 @@ add_executable(${ITEM_EXEC} "tests/main_tests.c"
 
 target_link_libraries(${ITEM_EXEC} ${ITEM_SUBMISSION} ${ITEM_TESTS} pthread
 	cunit dl)
-target_compile_options(${ITEM_EXEC} PUBLIC "-Wall" "-Wextra" "-g")
+target_compile_options(${ITEM_EXEC} PUBLIC "-Wall" "-Wextra" "-g" "-fsanitize=address")
+target_link_options(${ITEM_EXEC} PUBLIC "-Wall" "-Wextra" "-g" "-fsanitize=address")
 add_test(${JQR_ITEM}_tests                ${ITEM_EXEC})
