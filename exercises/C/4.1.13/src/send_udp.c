@@ -56,8 +56,8 @@ int send_udp(char *ipStr, uint16_t port, void *buffer, uint32_t bufSize) {
   fprintf(stderr, "send_udp sending buffer size:%i to %s:%i\n",bufSize,ipStr,port);
   //debug
 
-  char p[5];
-  sprintf(p, "%i", port);
+  char p[6] = {0};
+  snprintf(p, sizeof(p), "%i", port);
   int err;
   
   //**getaddrinfo stuff

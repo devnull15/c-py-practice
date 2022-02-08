@@ -55,8 +55,8 @@ int broadcast_udp(int port, char *buffer, int length) {
   fprintf(stderr, " broadcast_udp sending buffer size:%i to %s:%i\n",length,buffer,port);
   //debug
 
-  char p[5];
-  sprintf(p, "%i", port);
+  char p[6];
+  snprintf(p, sizeof(p), "%i", port);
   int err;
   
   //**getaddrinfo stuff

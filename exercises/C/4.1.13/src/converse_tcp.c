@@ -106,8 +106,8 @@ void converse_tcp(uint16_t port, int ipDomain) {
 
   //**getaddrinfo stuff
   // vars
-  char p[5];
-  sprintf(p, "%i", port);
+  char p[6] = {0};
+  snprintf(p, sizeof(p), "%i", port);
   int err;
 
   // hints

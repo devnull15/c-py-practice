@@ -109,7 +109,7 @@ void _respond_udp(uint32_t *opcode, char *data, uint32_t *sen) {
 
   if(*opcode == 0xCAFEBABE) { *sen = 0xDFACBABE; }
   
-  else if(*opcode == 0x90) { strcpy((char*)sen,"POON"); } // "NOOP"
+  else if(*opcode == 0x90) { strncpy((char*)sen,"POON", strlen("POON")); } // "NOOP"
   
   else if(*opcode == 0x41444432) { // "ADD2"
     memcpy(&add1,data,2);
@@ -216,8 +216,8 @@ void converse_udp(uint16_t port, int ipDomain) {
 
   //**getaddrinfo stuff
   // vars
-  char p[5];
-  sprintf(p, "%i", port);
+  char p[6] = {0};
+  snprintf(p, sizeof(p), "%i", port);
   int err;
 
   // hints
@@ -260,9 +260,10 @@ void converse_udp(uint16_t port, int ipDomain) {
   //**bind done
     
   //**send/recv loop
-  uint32_t sen, opcode;
-  char rec[HOST_NAME_MAX+OPCODE_LEN] = {0};
+  uint32_t sen = 0;
+  uint32_t opcode = 0;
   char data[HOST_NAME_MAX] = {0};
+  char rec[HOST_NAME_MAX+OPCODE_LEN] = {0};
   struct sockaddr_storage client;
   socklen_t client_len = sizeof(client);
   uint16_t c_port;
