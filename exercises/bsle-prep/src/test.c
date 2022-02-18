@@ -1,7 +1,13 @@
 #include <stdio.h>
-#include <ll.h>
 #include <stdlib.h>
+#include <test.h>
 
+#ifdef LL
+#include <ll.h>
+#endif
+
+
+#ifdef LL
 void test_ll_node_free(void *p) {
   node *n = (node*)p;
   free(n->data);
@@ -140,13 +146,17 @@ int32_t test_ll() {
  RET:
   return ret;
 }
+#endif
 
 int32_t main() {
   int32_t err = 0;
+
+#ifdef LL
   err = test_ll();
   if(0 > err) {
     fprintf(stderr, "!!! test_ll failed\n");    
   }
+#endif
 
-  return 0;
+  return err;
 }
