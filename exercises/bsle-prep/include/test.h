@@ -1,1 +1,1 @@
-/* #undef LL */
+#define LL

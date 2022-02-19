@@ -18,7 +18,7 @@ void test_ll_node_free(void *p) {
   return;
 }
 
-int32_t* ll_make_data(uint32_t i) {
+int32_t* test_ll_make_data(uint32_t i) {
   int32_t *data = NULL;
   
   data = calloc(1, sizeof(uint32_t));
@@ -36,6 +36,7 @@ int32_t test_ll() {
   ll *list = NULL;
   node_free f = test_ll_node_free;
   node *n = NULL;
+  void *data = NULL;
 
 
   
@@ -61,7 +62,7 @@ int32_t test_ll() {
 
   printf("*** Testing ll_insert ***\n");
   for(int i = 0; i < 10; i++) {
-    ret = ll_insert(list, i, (void*)ll_make_data(i), f);
+    ret = ll_insert(list, i, (void*)test_ll_make_data(i), f);
     if(0 > ret) {
       fprintf(stderr, "! ll_insert failed\n");
       goto RET;
@@ -86,7 +87,7 @@ int32_t test_ll() {
 
 
   printf("*** Testing ll_set ***\n");
-  ret = ll_set(list, 5, ll_make_data(2015));
+  ret = ll_set(list, 5, test_ll_make_data(2015));
   if(0 > ret) {
     fprintf(stderr, "ll_set failed\n");
     goto RET;
@@ -130,6 +131,52 @@ int32_t test_ll() {
     goto RET;
   }
   printf("* list len = %i\n", ret);
+  printf("*** ret=%i Passed. ***\n\n", ret);
+
+
+  printf("*** Testing push_front ***\n");
+  ret = push_front(list, test_ll_make_data(0) , f);
+  if(0 > ret) {
+    fprintf(stderr, "! push_front failed\n");
+    goto RET;
+  }
+  printf("* list len = %i\n", ll_len(list));
+  printf("*** ret=%i Passed. ***\n\n", ret);
+
+  
+  printf("*** Testing push_back ***\n");
+  ret = push_back(list, test_ll_make_data(4443) , f);
+  if(0 > ret) {
+    fprintf(stderr, "! push_back failed\n");
+    goto RET;
+  }
+  printf("* list len = %i\n", ll_len(list));
+  printf("*** ret=%i Passed. ***\n\n", ret);
+
+  
+  printf("*** Testing pop_front ***\n");
+  data = pop_front(list);
+  if(NULL == data) {
+    fprintf(stderr, "! pop_front failed\n");
+    goto RET;
+  }
+  printf("* list len = %i\n", ll_len(list));
+  printf("* data = %i\n", *(int32_t*)data);
+  free(data);
+  data = NULL;
+  printf("*** ret=%i Passed. ***\n\n", ret);
+
+
+  printf("*** Testing pop_back ***\n");
+  data = pop_back(list);
+  if(NULL == data) {
+    fprintf(stderr, "! pop_back failed\n");
+    goto RET;
+  }
+  printf("* list len = %i\n", ll_len(list));
+  printf("* data = %i\n", *(int32_t*)data);
+  free(data);
+  data = NULL;
   printf("*** ret=%i Passed. ***\n\n", ret);
 
   

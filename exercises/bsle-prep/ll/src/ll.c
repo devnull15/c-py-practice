@@ -225,3 +225,74 @@ int32_t ll_rm(ll *list, uint32_t i) {
   
 }
 
+int32_t push_front(ll *list, void *val, node_free f) {
+  int32_t ret = 0;
+
+  ret = ll_insert(list, 0, val, f);
+  if(0 > ret) {
+    fprintf(stderr, "! push_front failed\n");
+  }
+
+  return ret;
+}
+
+
+int32_t push_back(ll *list, void *val, node_free f) {
+  int32_t ret = 0;
+
+  ret = ll_insert(list, ll_len(list), val, f);
+  if(0 > ret) {
+    fprintf(stderr, "! push_front failed\n");
+  }
+
+  return ret;
+}
+
+void* pop_front(ll *list) {
+  void *ret = NULL;
+  node *n = NULL;
+
+  n = ll_get(list, 0);
+  if(NULL == n) {
+    fprintf(stderr, "! pop_front failed\n");
+    goto RET;
+  }
+
+  ret = n->data;
+  list->head = n->next;
+  n->data = NULL;
+  n->next = NULL;
+  n->f = NULL;
+  free(n);
+  n = NULL;
+  
+
+ RET:
+  return ret;
+}
+
+void* pop_back(ll *list) {
+  void *ret = NULL;
+  node *n = NULL;
+  node *prev = NULL;
+
+  prev = ll_get(list, ll_len(list)-2);
+  if(NULL == prev) {
+    fprintf(stderr, "! pop_back failed\n");
+    goto RET;
+  }
+  
+  n = prev->next;
+
+  ret = n->data;
+  prev->next = NULL;
+  n->data = NULL;
+  n->next = NULL;
+  n->f = NULL;
+  free(n);
+  n = NULL;
+  
+
+ RET:
+  return ret;
+}
