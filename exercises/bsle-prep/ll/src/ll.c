@@ -11,8 +11,8 @@ ll *ll_init() {
   return list;
 }
 
-int32_t ll_len(ll *list) {
-  int32_t ret = 0;
+int ll_len(ll *list) {
+  int ret = 0;
 
   if(NULL == list) {
     fprintf(stderr, "! NULL list given to ll_len\n");
@@ -31,8 +31,8 @@ int32_t ll_len(ll *list) {
   return ret;
 }
 
-int32_t ll_insert(ll *list, uint32_t i, void *val, node_free f) {
-  int32_t ret = 0;
+int ll_insert(ll *list, uint i, void *val, node_free f) {
+  int ret = 0;
   
   if(NULL == list || NULL == val || NULL == f) {
     fprintf(stderr, "! can't have NULL arguements in ll_insert\n");
@@ -71,8 +71,8 @@ int32_t ll_insert(ll *list, uint32_t i, void *val, node_free f) {
   return ret;
 }
 
-int32_t ll_destroy(ll *list) {
-  int32_t ret = 0;
+int ll_destroy(ll *list) {
+  int ret = 0;
   node *n = NULL;
   node *nx = NULL;
   
@@ -110,7 +110,7 @@ void  ll_print(ll* list) {
   n = list->head;
 
   while(NULL != n) {
-    printf("(<%p> data:%p f:%lx) -> ", (void*)n, (void*)n->data, (uint64_t)n->f);
+    printf("(<%p> data:%p f:%lx) -> ", (void*)n, (void*)n->data, (ulong)n->f);
     n = n->next;
   }
 
@@ -121,8 +121,8 @@ void  ll_print(ll* list) {
 }
 
 
-int32_t ll_set(ll* list, uint32_t i, void *val) {
-  int32_t ret = 0;
+int ll_set(ll* list, uint i, void *val) {
+  int ret = 0;
   node *n = NULL;
   node_free f = NULL;
   
@@ -157,7 +157,7 @@ int32_t ll_set(ll* list, uint32_t i, void *val) {
   return ret;
 }
 
-node *ll_get(ll* list, uint32_t i) {
+node *ll_get(ll* list, uint i) {
   node *ret = NULL;
   
   if(NULL == list) {
@@ -183,8 +183,8 @@ node *ll_get(ll* list, uint32_t i) {
 }
 
 
-int32_t ll_rm(ll *list, uint32_t i) {
-  int32_t ret = 0;
+int ll_rm(ll *list, uint i) {
+  int ret = 0;
   node *n = NULL;
   node *prev = NULL;
   node *nx = NULL;
@@ -225,8 +225,8 @@ int32_t ll_rm(ll *list, uint32_t i) {
   
 }
 
-int32_t push_front(ll *list, void *val, node_free f) {
-  int32_t ret = 0;
+int push_front(ll *list, void *val, node_free f) {
+  int ret = 0;
 
   ret = ll_insert(list, 0, val, f);
   if(0 > ret) {
@@ -237,8 +237,8 @@ int32_t push_front(ll *list, void *val, node_free f) {
 }
 
 
-int32_t push_back(ll *list, void *val, node_free f) {
-  int32_t ret = 0;
+int push_back(ll *list, void *val, node_free f) {
+  int ret = 0;
 
   ret = ll_insert(list, ll_len(list), val, f);
   if(0 > ret) {
