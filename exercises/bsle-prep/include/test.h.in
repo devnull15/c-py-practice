@@ -1,1 +1,3 @@
 #cmakedefine LL
+#cmakedefine THREADPOOL
+#cmakedefine NDEBUG

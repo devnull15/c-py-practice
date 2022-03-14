@@ -1,9 +1,15 @@
+#include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <test.h>
 
 #ifdef LL
 #include <ll.h>
+#endif
+
+#ifdef THREADPOOL
+#include <threadpool.h>
+#include <stdatomic.h>
 #endif
 
 
@@ -180,7 +186,7 @@ int32_t test_ll() {
   printf("*** ret=%i Passed. ***\n\n", ret);
 
   
-  printf("*** Testing ll_destory ***\n");
+  printf("*** Testing ll_destroy ***\n");
   ret = ll_destroy(list);
   if(0 > ret) {
     fprintf(stderr, "ll_destroy failed\n");
@@ -193,7 +199,64 @@ int32_t test_ll() {
  RET:
   return ret;
 }
-#endif
+#endif /* TEST_LL */
+
+#ifdef THREADPOOL
+static void increment_int(void *arg) {
+  (*(atomic_uint*)arg)++;
+  return;
+}
+
+
+
+
+int32_t test_threadpool() {
+  int32_t ret = 0;
+  threadpool *pool = NULL;
+  uint32_t nthreads = 100;
+  uint32_t njobs = 100000;
+  atomic_uint counter = 0;
+
+  printf("*** Testing thpool_init ***\n");
+  pool = thpool_init(nthreads);
+  if(NULL == pool) {
+    fprintf(stderr, "! thpool_init failed\n");
+    ret = -1;
+    goto RET;
+  }
+  printf("*** ret=%i Passed. ***\n\n", ret);
+
+  printf("*** Testing thpool_add_job ***\n");
+  for(uint i = 0; i < njobs; i++) {
+    ret = thpool_add_job(pool, increment_int, &counter);
+    if(0 != ret) {
+      fprintf(stderr, "! thpool_add_job failed\n");
+      goto RET;
+    }
+  }
+  printf("** counter=%u **\n\n", counter);
+  printf("*** ret=%i Passed. ***\n\n", ret);
+
+  printf("*** Testing thpool_destroy ***\n");
+  while(njobs != counter) {
+    printf("** counter=%u **\n\n", counter);
+    sleep(1);
+  }
+  printf("** counter=%u **\n\n", counter);
+  ret = thpool_destroy(pool);
+  if(0 != ret) {
+    fprintf(stderr, "! thpool_destroy failed\n");
+    goto RET;
+  }
+  printf("*** ret=%i Passed. ***\n\n", ret);
+
+
+
+ RET:
+  return ret;
+}
+#endif /* TEST_THREADPOOL */
+
 
 int32_t main() {
   int32_t err = 0;
@@ -203,7 +266,15 @@ int32_t main() {
   if(0 > err) {
     fprintf(stderr, "!!! test_ll failed\n");    
   }
-#endif
+#endif /* LL */
+
+#ifdef THREADPOOL
+  err = test_threadpool();
+  if(0 > err) {
+    fprintf(stderr, "!!! test_threadpool failed\n");    
+  }
+#endif /* THREADPOOL */
+
 
   return err;
 }
