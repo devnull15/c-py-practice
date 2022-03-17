@@ -3,11 +3,12 @@ cmake_minimum_required(VERSION 3.13)
 set(PROJECT bsle-prep)
 project(${PROJECT} LANGUAGES C)
 
-add_compile_options(-Werror -Wextra -Wall -pedantic -g -fsanitize=address)
+add_compile_options(-fsanitize=address -Werror -Wextra -Wall -pedantic -g)
 link_libraries(-fsanitize=address)
 
 option(LL "" OFF)
 option(THREADPOOL "" OFF)
+option(NETPOLL "" OFF)
 option(NDEBUG "" OFF)
 
 configure_file(${PROJECT_SOURCE_DIR}/include/test.h.in ${PROJECT_SOURCE_DIR}/include/test.h)
@@ -28,16 +29,11 @@ if(THREADPOOL)
   add_dependencies(threadpool ll)
 endif()
 
-
-# if(THREADPOOL OR LL)
-#   add_subdirectory(ll)
-#   list(APPEND INCLUDES ll/include)
-#   list(APPEND LIBS ll)
-
-#   add_subdirectory(threadpool)
-#   list(APPEND INCLUDES threadpool/include)
-#   list(APPEND LIBS threadpool)
-# endif()
+if(NETPOLL)
+  add_subdirectory(netpoll)
+  list(APPEND INCLUDES netpoll/include)
+  list(APPEND LIBS netpoll)
+endif()
 
 list(APPEND SOURCES src/test.c)
 list(APPEND INCLUDES ${PROJECT_SOURCE_DIR}/include)

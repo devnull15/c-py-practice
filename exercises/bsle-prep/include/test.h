@@ -1,3 +1,4 @@
 /* #undef LL */
-#define THREADPOOL
-#define NDEBUG
+/* #undef THREADPOOL */
+/* #undef NDEBUG */
+#define NETPOLL

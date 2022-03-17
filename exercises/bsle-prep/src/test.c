@@ -12,6 +12,14 @@
 #include <stdatomic.h>
 #endif
 
+#ifdef NETPOLL
+#include <netpoll.h>
+#include <sys/socket.h>
+#include <signal.h>
+#endif
+
+
+#define MAX_MESSAGE 2048
 
 #ifdef LL
 void test_ll_node_free(void *p) {
@@ -257,6 +265,68 @@ int32_t test_threadpool() {
 }
 #endif /* TEST_THREADPOOL */
 
+#ifdef NETPOLL
+
+void test_rh(int sfd) {
+  char buf[MAX_MESSAGE] = {0};
+
+  tcp_read_handler(sfd, buf, 1);
+  printf("%s", buf);
+  tcp_write_handler(sfd, buf, 1);
+  
+}
+
+void test_inthandler(int signo) {
+  if(SIGINT == signo) {
+    netpoll_keepalive = 0;
+  }
+}
+
+int32_t test_netpoll() {
+  int ret = 0;
+  int sockfd = 0;
+  uint16_t port = 22016;
+  int ipDomain = AF_INET;
+  int maxcon = 1;
+  int maxpend = 16;
+  int timeout = 6000;
+  struct sigaction sigact = {0};
+
+  sigact.sa_handler = test_inthandler;
+  sigact.sa_flags = SA_RESTART;
+  sigfillset(&sigact.sa_mask);
+  
+  ret = sigaction(SIGINT, &sigact, NULL);
+  if(-1 == ret) {
+    fprintf(stderr, "! signalaction failed\n");
+    goto RET;
+  }
+  printf("*** ret=%i Passed. ***\n\n", ret);
+  
+  
+  printf("*** Testing tcp_socketsetup ***\n");
+  sockfd = tcp_socketsetup(port, ipDomain, maxpend);
+  if(-1 == sockfd) {
+    fprintf(stderr, "! tcp_socketsetup failed\n");
+    ret = -1;
+    goto RET;
+  }
+  printf("*** ret=%i Passed. ***\n\n", ret);
+
+  printf("*** Testing tcp_netpoll ***\n");
+  ret = tcp_netpoll(sockfd, test_rh, maxcon, timeout);
+  if(-1 == sockfd) {
+    fprintf(stderr, "! tcp_socketsetup failed\n");
+    goto RET;
+  }
+  printf("*** ret=%i Passed. ***\n\n", ret);
+
+ RET:
+  return ret;
+}
+#endif /* TEST_NETPOLL */
+
+
 
 int32_t main() {
   int32_t err = 0;
@@ -275,6 +345,14 @@ int32_t main() {
   }
 #endif /* THREADPOOL */
 
+#ifdef NETPOLL  
+  err = test_netpoll();
+  if(0 > err) {
+    fprintf(stderr, "!!! test_netpoll failed\n");    
+  }
+#endif /* NETPOLL */
+
+  
 
   return err;
 }
