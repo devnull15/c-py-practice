@@ -2,7 +2,6 @@
 #include <sys/socket.h>
 #include <poll.h>
 
-
 /**
  * will keep the netpoll active until set to zero; setting this to zero
  * will free all resources used by the current poller; there is no need to
@@ -10,7 +9,6 @@
  * called
  */
 volatile int netpoll_keepalive;
-
 
 /**
  * @brief function poitner to be defined in the caller and provided to
@@ -42,7 +40,6 @@ typedef void (*reventhandler)(int sfd);
  */
 int tcp_socketsetup(uint16_t port, int ipDomain, int maxpend);
 
-
 /**
  * @brief helper function that pretty prints a sock_addr storage struct
  *
@@ -61,7 +58,7 @@ void tcp_printsockaddr(struct sockaddr_storage *in);
  *
  * @param eventhandler - a function pointer that accepts a void ponter for
  *        arguments; points a to a caller defined function that will handle
- *        events for poll notably 
+ *        events for poll notably
  *
  * @param maxcon - maximum number of connections
  *
@@ -72,8 +69,6 @@ void tcp_printsockaddr(struct sockaddr_storage *in);
  *
  */
 int tcp_netpoll(int sockfd, reventhandler rh, int maxcon, int timeout);
-
-
 
 /**
  * @brief handles partial reads from a file descriptor provided the amount
@@ -105,5 +100,3 @@ int tcp_read_handler(int fd, void *buf, uint readlen);
  *
  */
 int tcp_write_handler(int fd, char *buf, uint writelen);
-
-
